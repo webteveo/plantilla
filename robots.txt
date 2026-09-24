@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Disallow: /config/
+Disallow: /data/
+Disallow: /vendor/
+Disallow: /src/
+Disallow: /resena/gracias
+Disallow: /metricas/
+Disallow: /proyectos
+
+Sitemap: https://cerrajero.uy/sitemap.xml

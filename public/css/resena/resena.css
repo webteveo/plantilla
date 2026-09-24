@@ -1,0 +1,609 @@
+/* ===== Reset y Fuente ===== */
+.resena-page,
+.resena-page *,
+.form-resena-page,
+.form-resena-page *,
+.gracias-page,
+.gracias-page * {
+  font-family: 'Host Grotesk', sans-serif !important;
+  box-sizing: border-box;
+}
+
+.resena-page i::before,
+.form-resena-page i::before,
+.gracias-page i::before {
+  font-family: 'Font Awesome 6 Free', 'Font Awesome 6 Pro' !important;
+}
+
+/* ===== Variables CSS ===== */
+:root {
+  --resena-color-primary: var(--color-primario);
+  --resena-color-secondary: var(--color-secundario);
+  --resena-color-success: #22c55e;
+  --resena-color-warning: #f59e0b;
+  --resena-color-error: var(--color-error);
+  --resena-border-radius: 12px;
+  --resena-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --resena-transition: all 0.3s ease;
+}
+
+/* ===== Página Principal ===== */
+.resena-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, var(--color-fondo-secundario) 0%, var(--color-fondo) 100%);
+}
+
+.resena-page .container {
+  max-width: 500px;
+  width: 100%;
+  background: var(--color-fondo);
+  border-radius: var(--resena-border-radius);
+  padding: 40px 30px;
+  box-shadow: var(--resena-shadow);
+  text-align: center;
+}
+
+.resena-header {
+  margin-bottom: 30px;
+}
+
+.resena-header h1 {
+  font-size: 1.8rem;
+  color: var(--color-texto);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.resena-header p {
+  color: var(--color-texto-secundario);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ===== Selector de Estrellas ===== */
+.star-selector {
+  margin-bottom: 30px;
+}
+
+.star-question {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-texto);
+  margin-bottom: 15px;
+}
+
+.stars-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: #d1d5db;
+  transition: var(--resena-transition);
+  padding: 5px;
+  line-height: 1;
+}
+
+.star-btn:hover,
+.star-btn.active {
+  color: #fbbf24;
+  transform: scale(1.15);
+}
+
+.star-btn.active i::before {
+  content: '\f005';
+}
+
+.star-btn i::before {
+  color: inherit;
+}
+
+.star-btn.selected {
+  animation: starPop 0.3s ease;
+}
+
+@keyframes starPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1.15); }
+}
+
+.star-feedback {
+  min-height: 24px;
+  font-size: 0.95rem;
+  color: var(--color-texto-secundario);
+  margin-top: 10px;
+}
+
+/* ===== Botones de Acción ===== */
+.resena-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.btn-hidden {
+  display: none !important;
+}
+
+.btn-visible {
+  display: flex !important;
+  visibility: visible !important;
+}
+
+.btn-resena {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: var(--resena-transition);
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-family: 'Host Grotesk', sans-serif !important;
+}
+
+.btn-resena.btn-primary {
+  background: var(--resena-color-primary);
+  color: white;
+}
+
+.btn-resena.btn-primary:hover {
+  background: var(--resena-color-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+.btn-resena.btn-secondary {
+  background: var(--color-fondo-secundario);
+  color: var(--color-texto);
+  border-color: var(--color-borde);
+}
+
+.btn-resena.btn-secondary:hover {
+  border-color: var(--resena-color-primary);
+  color: var(--resena-color-primary);
+  transform: translateY(-2px);
+}
+
+/* ===== Privacy Link ===== */
+.resena-privacy {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: var(--color-texto-secundario);
+  font-family: 'Host Grotesk', sans-serif !important;
+}
+
+.resena-privacy a {
+  color: var(--resena-color-primary);
+  text-decoration: none;
+  font-family: 'Host Grotesk', sans-serif !important;
+}
+
+.resena-privacy a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Página Formulario ===== */
+.form-resena-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: var(--color-fondo-secundario);
+}
+
+.form-resena-page .container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-texto-secundario);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  transition: var(--resena-transition);
+  font-family: 'Host Grotesk', sans-serif !important;
+}
+
+.back-link:hover {
+  color: var(--resena-color-primary);
+}
+
+.form-resena-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-resena-header h1 {
+  font-size: 1.8rem;
+  color: var(--color-texto);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.form-resena-header .subtitle {
+  color: var(--color-texto-secundario);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ===== Alertas ===== */
+.alert {
+  padding: 14px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  font-family: 'Host Grotesk', sans-serif !important;
+}
+
+.alert-error {
+  background: #fef2f2;
+  color: var(--resena-color-error);
+  border: 1px solid #fecaca;
+}
+
+/* ===== Formulario ===== */
+.form-resena {
+  background: var(--color-fondo);
+  border-radius: var(--resena-border-radius);
+  padding: 30px 25px;
+  box-shadow: var(--resena-shadow);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--color-texto);
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  font-family: 'Host Grotesk', sans-serif !important;
+}
+
+.form-group label i {
+  color: var(--resena-color-primary);
+  font-size: 0.85rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid var(--color-borde);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: 'Host Grotesk', sans-serif !important;
+  transition: var(--resena-transition);
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--resena-color-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-actions {
+  margin-top: 25px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background: var(--resena-color-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--resena-transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: 'Host Grotesk', sans-serif !important;
+}
+
+.btn-submit:hover {
+  background: var(--resena-color-secondary);
+  transform: translateY(-2px);
+}
+
+.form-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-texto-secundario);
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: 'Host Grotesk', sans-serif !important;
+}
+
+/* ===== Página Gracias ===== */
+.gracias-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: var(--color-fondo-secundario);
+}
+
+.gracias-content {
+  text-align: center;
+  max-width: 400px;
+  background: var(--color-fondo);
+  padding: 40px 30px;
+  border-radius: var(--resena-border-radius);
+  box-shadow: var(--resena-shadow);
+}
+
+.gracias-icon {
+  margin-bottom: 25px;
+}
+
+.gracias-icon i {
+  font-size: 4rem;
+  color: var(--resena-color-success);
+  animation: checkBounce 0.5s ease;
+}
+
+@keyframes checkBounce {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.gracias-content h1 {
+  font-size: 1.8rem;
+  color: var(--color-texto);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.gracias-mensaje {
+  font-size: 1rem;
+  color: var(--color-texto-secundario);
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.gracias-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.gracias-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: var(--resena-transition);
+  font-family: 'Host Grotesk', sans-serif !important;
+}
+
+.gracias-actions .btn-primary {
+  background: var(--resena-color-primary);
+  color: white;
+}
+
+.gracias-actions .btn-primary:hover {
+  background: var(--resena-color-secondary);
+  transform: translateY(-2px);
+}
+
+.gracias-actions .btn-secondary {
+  background: var(--color-fondo-secundario);
+  color: var(--color-texto);
+  border: 2px solid var(--color-borde);
+}
+
+.gracias-actions .btn-secondary:hover {
+  border-color: var(--resena-color-primary);
+  color: var(--resena-color-primary);
+  transform: translateY(-2px);
+}
+
+/* ===== Página Privacidad ===== */
+.privacidad-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: var(--color-fondo-secundario);
+}
+
+.privacidad-page .container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.privacidad-header {
+  margin-bottom: 30px;
+}
+
+.privacidad-header h1 {
+  font-size: 2rem;
+  color: var(--color-texto);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.privacidad-header .subtitle {
+  color: var(--color-texto-secundario);
+  font-size: 1rem;
+}
+
+.privacidad-content {
+  background: var(--color-fondo);
+  border-radius: var(--resena-border-radius);
+  padding: 30px 25px;
+  box-shadow: var(--resena-shadow);
+  margin-bottom: 30px;
+}
+
+.privacidad-section {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.privacidad-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.privacidad-section h2 {
+  font-size: 1.2rem;
+  color: var(--color-texto);
+  margin-bottom: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.privacidad-section h2 i {
+  color: var(--resena-color-primary);
+}
+
+.privacidad-section p {
+  color: var(--color-texto-secundario);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.privacidad-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.privacidad-section ul li {
+  color: var(--color-texto-secundario);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.privacidad-section ul li::before {
+  content: '\2022';
+  color: var(--resena-color-primary);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.privacidad-section a {
+  color: var(--resena-color-primary);
+  text-decoration: none;
+}
+
+.privacidad-section a:hover {
+  text-decoration: underline;
+}
+
+.privacidad-footer {
+  text-align: center;
+}
+
+.privacidad-footer .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: var(--resena-transition);
+  font-family: 'Host Grotesk', sans-serif !important;
+  background: var(--resena-color-primary);
+  color: white;
+}
+
+.privacidad-footer .btn:hover {
+  background: var(--resena-color-secondary);
+  transform: translateY(-2px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  .resena-page .container,
+  .form-resena,
+  .gracias-content,
+  .privacidad-content {
+    padding: 25px 20px;
+  }
+
+  .resena-header h1,
+  .form-resena-header h1,
+  .gracias-content h1,
+  .privacidad-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .star-btn {
+    font-size: 2rem;
+  }
+
+  .btn-resena {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+
+  .privacidad-section h2 {
+    font-size: 1.1rem;
+  }
+}

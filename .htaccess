@@ -1,0 +1,53 @@
+RewriteEngine On
+
+# Forzar https y dominio canonico en produccion (no aplica en localhost)
+RewriteCond %{HTTP_HOST} ^www\.cerrajero\.uy$ [NC]
+RewriteRule ^(.*)$ https://cerrajero.uy/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^cerrajero\.uy$ [NC]
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^(.*)$ https://cerrajero.uy/$1 [R=301,L]
+
+# Cabeceras de seguridad
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+
+# Cache de estaticos
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# Compresion
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json application/xml text/plain image/svg+xml
+</IfModule>
+
+# Favicon raiz para crawlers y fallback de navegadores
+RewriteRule ^favicon\.ico$ public/images/logo/favicon.ico [L]
+
+# Regla para sitemap.xml - lo sirve sitemap.php
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+# llms.txt (indice para crawlers de IA) - lo sirve llms.php
+RewriteRule ^llms\.txt$ llms.php [L]
+
+# Bloquear acceso directo a carpetas internas
+RewriteRule ^(config|src|data|vendor)(/|$) - [F,L]
+
+# Regla general
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

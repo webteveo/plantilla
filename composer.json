@@ -1,0 +1,13 @@
+{
+    "license": "proprietary",
+    "name": "benjamin/plantillaweb",
+    "description": "descripcion",
+    "autoload": {
+        "psr-4": {
+            "benjamin\\plantillaweb\\": "src/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
