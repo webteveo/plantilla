@@ -177,7 +177,7 @@ function schema_faq(array $p): ?array
     ];
 }
 
-/** Review + AggregateRating a partir de reseñas reales (comun.testimonios). Nada si no hay. */
+/** Review + AggregateRating. NO se emite (self-serving); queda por si algún día Google lo vuelve a aceptar. */
 function schema_resenas(): ?array
 {
     $t = (array)(comun()['testimonios'] ?? []);
@@ -206,7 +206,8 @@ function schema_bloques(array $p): array
     if (in_array($p['tipo'], ['servicio', 'servicio-zona'], true)) $b[] = schema_service($p);
     if ($bc = schema_breadcrumb($p)) $b[] = $bc;
     if ($fq = schema_faq($p)) $b[] = $fq;
-    if ($p['tipo'] === 'home' && ($rs = schema_resenas())) $b[] = $rs;
+    // Sin aggregateRating/review del propio negocio: Google lo considera "self-serving" (inelegible para estrellas
+    // y riesgo de acción manual). Las reseñas se muestran visibles, con nombre y fecha, y enlazan a la ficha.
     return $b;
 }
 

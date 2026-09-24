@@ -31,7 +31,7 @@ lib/
                            zona_nombre_seo(), contenido_*(), paginas_todas().
   seo.php                  Fórmulas de title/description/H1/eyebrow/subtítulo/canonical/robots y migas de pan.
   texto.php                Texto automático (secciones) para páginas sin archivo de contenido.
-  schema.php               JSON-LD: LocalBusiness (subtipo de config), WebSite, WebPage, Service, BreadcrumbList, FAQPage, Review.
+  schema.php               JSON-LD: LocalBusiness (subtipo de config), WebSite, WebPage, Service, BreadcrumbList, FAQPage. Sin aggregateRating propio (self-serving).
   links.php                Enlazado interno: vecinas, otros servicios en la zona, padre, hub, hijas. Anchors variados por semilla.
   wsp.php                  Mensaje de WhatsApp por página, wsp_href(), wsp_attrs() (data-* para GA4), tel_attrs().
   pagina.php               pagina_armar(): combina datos + fórmulas en el array $pagina que reciben los templates.
