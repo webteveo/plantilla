@@ -2,7 +2,7 @@
 /** Contenido único de /galpones-prefabricados/punta-de-rieles (servicio × barrio de Montevideo). */
 return [
     'title'       => 'Punta de Rieles: galpones prefabricados – Cno. Maldonado',
-    'description' => 'Galpones prefabricados en Punta de Rieles, presupuesto por WhatsApp: taller, depósito o comercio sobre Camino Maldonado, salida de Montevideo por Ruta 8.',
+    'description' => 'Galpones prefabricados en Punta de Rieles, presupuesto por WhatsApp: taller, depósito o comercio sobre Camino Maldonado, salida por Ruta 8.',
     'h1'          => 'Galpones prefabricados en Punta de Rieles: presupuesto a medida',
     'eyebrow'     => 'Galpones metálicos en Montevideo Este',
     'subtitulo'   => 'Fabricamos la estructura en taller y la montamos en tu predio de Punta de Rieles. Coordinamos la visita y el presupuesto por WhatsApp.',

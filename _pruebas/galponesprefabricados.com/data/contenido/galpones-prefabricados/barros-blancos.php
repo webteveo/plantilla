@@ -34,7 +34,7 @@ return [
                 'Tinglado para cubrir vehículos o acopio, con cierre lateral opcional.',
             ],
             'parrafos_despues' => [
-                'Si es una cubierta abierta, mirá los <a href="/tinglados">tinglados metálicos abiertos</a>; si el galpón es para producción, las <a href="/galpones-industriales">naves industriales</a>.',
+                'Si es una cubierta abierta, mirá los <a href="/tinglados">tinglados metálicos abiertos</a>; si el galpón es para producción, las <a href="/galpones-industriales">naves industriales con portones para camiones</a>.',
             ],
         ],
         [
