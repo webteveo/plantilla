@@ -1,0 +1,8 @@
+{
+    "license": "proprietary",
+    "name": "plantilla-base/sitio-local",
+    "description": "Plantilla base para sitios de servicios locales (PHP sin framework)",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

@@ -1,0 +1,4280 @@
+{
+ "pais": "UY",
+ "descripcion": "Jerarquía de zonas de Uruguay para data/zonas.php de la plantilla: país > departamento > ciudad/localidad > barrio (Montevideo: 62 barrios INE; Ciudad de la Costa: balnearios; Punta del Este y Maldonado: barrios principales). vecinos = zonas limítrofes para el enlazado lateral (simétrico). prioridad: 1 = la zona se busca por su nombre (URL propia casi siempre), 2 = demanda probable, 3 = URL solo con datos reales, si no va como sección de la madre. referencias = disparadores para el bloque 'cómo llegamos' (confirmar con el operador). vivienda = tipo predominante (orienta el texto).",
+ "fuentes": [
+  "INE Uruguay: Barrios de Montevideo (codificador y cartografía censal 2011/2023), Censo 2023 localidades",
+  "Intendencia de Montevideo: BARRIOS SEGÚN INE (anexo cartográfico)",
+  "Intendencia de Canelones: municipios",
+  "ISO 3166-2:UY"
+ ],
+ "verificacion": "Nombres de los 62 barrios de Montevideo y las localidades principales contrastados con fuentes oficiales vía búsqueda web (24-09-2026). Los límites y vecinos se derivan de la cartografía INE; revisar antes de publicar si un vecino no aplica al servicio.",
+ "campos": {
+  "nombre": "visible",
+  "nombre_ine": "nombre oficial INE cuando difiere del corto",
+  "tipo": "pais|departamento|ciudad|localidad|barrio",
+  "padre": "slug",
+  "vecinos": "slugs",
+  "referencias": "lugares reales",
+  "vivienda": "casas|apartamentos|mixto|rural",
+  "prioridad": "1-3",
+  "codigo": "ISO 3166-2 (departamentos)",
+  "corredor": "agrupación geográfica de barrios de Montevideo"
+ },
+ "zonas": {
+  "uruguay": {
+   "nombre": "Uruguay",
+   "tipo": "pais",
+   "padre": null,
+   "vecinos": [],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "paginas": false,
+   "wikidata": "Q77"
+  },
+  "montevideo": {
+   "nombre": "Montevideo",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "canelones",
+    "san-jose"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "codigo": "UY-MO"
+  },
+  "canelones": {
+   "nombre": "Canelones",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "montevideo",
+    "san-jose",
+    "florida",
+    "lavalleja",
+    "maldonado"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "codigo": "UY-CA"
+  },
+  "maldonado": {
+   "nombre": "Maldonado",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "canelones",
+    "lavalleja",
+    "rocha"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "codigo": "UY-MA"
+  },
+  "san-jose": {
+   "nombre": "San José",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "montevideo",
+    "canelones",
+    "florida",
+    "flores",
+    "colonia"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "codigo": "UY-SJ"
+  },
+  "colonia": {
+   "nombre": "Colonia",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "san-jose",
+    "flores",
+    "soriano"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "codigo": "UY-CO"
+  },
+  "rocha": {
+   "nombre": "Rocha",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "maldonado",
+    "lavalleja",
+    "treinta-y-tres"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "codigo": "UY-RO"
+  },
+  "lavalleja": {
+   "nombre": "Lavalleja",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "canelones",
+    "maldonado",
+    "rocha",
+    "treinta-y-tres",
+    "florida",
+    "durazno"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "codigo": "UY-LA"
+  },
+  "florida": {
+   "nombre": "Florida",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "canelones",
+    "san-jose",
+    "flores",
+    "durazno",
+    "lavalleja"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "codigo": "UY-FD"
+  },
+  "flores": {
+   "nombre": "Flores",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "san-jose",
+    "colonia",
+    "soriano",
+    "durazno",
+    "florida"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "codigo": "UY-FS"
+  },
+  "durazno": {
+   "nombre": "Durazno",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "florida",
+    "flores",
+    "soriano",
+    "rio-negro",
+    "tacuarembo",
+    "cerro-largo",
+    "treinta-y-tres",
+    "lavalleja"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "codigo": "UY-DU"
+  },
+  "soriano": {
+   "nombre": "Soriano",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "colonia",
+    "flores",
+    "durazno",
+    "rio-negro"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "codigo": "UY-SO"
+  },
+  "rio-negro": {
+   "nombre": "Río Negro",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "soriano",
+    "durazno",
+    "tacuarembo",
+    "paysandu"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "codigo": "UY-RN"
+  },
+  "paysandu": {
+   "nombre": "Paysandú",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "rio-negro",
+    "tacuarembo",
+    "salto"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "codigo": "UY-PA"
+  },
+  "salto": {
+   "nombre": "Salto",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "paysandu",
+    "tacuarembo",
+    "rivera",
+    "artigas"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "codigo": "UY-SA"
+  },
+  "artigas": {
+   "nombre": "Artigas",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "salto",
+    "rivera"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "codigo": "UY-AR"
+  },
+  "rivera": {
+   "nombre": "Rivera",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "artigas",
+    "salto",
+    "tacuarembo",
+    "cerro-largo"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "codigo": "UY-RV"
+  },
+  "tacuarembo": {
+   "nombre": "Tacuarembó",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "rivera",
+    "salto",
+    "paysandu",
+    "rio-negro",
+    "durazno",
+    "cerro-largo"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "codigo": "UY-TA"
+  },
+  "cerro-largo": {
+   "nombre": "Cerro Largo",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "rivera",
+    "tacuarembo",
+    "durazno",
+    "treinta-y-tres"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "codigo": "UY-CL"
+  },
+  "treinta-y-tres": {
+   "nombre": "Treinta y Tres",
+   "tipo": "departamento",
+   "padre": "uruguay",
+   "vecinos": [
+    "cerro-largo",
+    "durazno",
+    "lavalleja",
+    "rocha"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "codigo": "UY-TT"
+  },
+  "ciudad-vieja": {
+   "nombre": "Ciudad Vieja",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "centro",
+    "barrio-sur",
+    "aguada"
+   ],
+   "referencias": [
+    "Peatonal Sarandí",
+    "Mercado del Puerto",
+    "Plaza Matriz",
+    "Puerto de Montevideo"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 1,
+   "nombre_ine": "Ciudad Vieja",
+   "corredor": "centro"
+  },
+  "centro": {
+   "nombre": "Centro",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "ciudad-vieja",
+    "barrio-sur",
+    "cordon",
+    "aguada"
+   ],
+   "referencias": [
+    "18 de Julio",
+    "Plaza Independencia",
+    "Plaza Cagancha",
+    "Intendencia"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 1,
+   "nombre_ine": "Centro",
+   "corredor": "centro"
+  },
+  "barrio-sur": {
+   "nombre": "Barrio Sur",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "ciudad-vieja",
+    "centro",
+    "palermo",
+    "cordon"
+   ],
+   "referencias": [
+    "Rambla Sur",
+    "Cementerio Central",
+    "Durazno"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "nombre_ine": "Barrio Sur",
+   "corredor": "centro"
+  },
+  "cordon": {
+   "nombre": "Cordón",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "centro",
+    "barrio-sur",
+    "palermo",
+    "parque-rodo",
+    "tres-cruces",
+    "la-comercial",
+    "aguada",
+    "punta-carretas",
+    "pocitos"
+   ],
+   "referencias": [
+    "Universidad de la República",
+    "Tristán Narvaja",
+    "18 de Julio",
+    "Constituyente"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 1,
+   "nombre_ine": "Cordón",
+   "corredor": "centro"
+  },
+  "palermo": {
+   "nombre": "Palermo",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "barrio-sur",
+    "cordon",
+    "parque-rodo"
+   ],
+   "referencias": [
+    "Gonzalo Ramírez",
+    "Isla de Flores",
+    "Rambla"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "nombre_ine": "Palermo",
+   "corredor": "centro"
+  },
+  "parque-rodo": {
+   "nombre": "Parque Rodó",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "palermo",
+    "cordon",
+    "punta-carretas",
+    "tres-cruces"
+   ],
+   "referencias": [
+    "Parque Rodó",
+    "Playa Ramírez",
+    "Facultad de Arquitectura",
+    "Bulevar Artigas"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_ine": "Parque Rodó",
+   "corredor": "costa"
+  },
+  "punta-carretas": {
+   "nombre": "Punta Carretas",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "parque-rodo",
+    "pocitos",
+    "cordon"
+   ],
+   "referencias": [
+    "Punta Carretas Shopping",
+    "Faro",
+    "Club de Golf",
+    "Ellauri"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_ine": "Punta Carretas",
+   "corredor": "costa"
+  },
+  "pocitos": {
+   "nombre": "Pocitos",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "punta-carretas",
+    "buceo",
+    "parque-batlle",
+    "cordon",
+    "tres-cruces"
+   ],
+   "referencias": [
+    "Rambla de Pocitos",
+    "Av. Brasil",
+    "26 de Marzo",
+    "Plaza Gomensoro"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 1,
+   "nombre_ine": "Pocitos",
+   "corredor": "costa"
+  },
+  "buceo": {
+   "nombre": "Buceo",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "pocitos",
+    "malvin",
+    "parque-batlle",
+    "la-blanqueada",
+    "malvin-norte"
+   ],
+   "referencias": [
+    "Montevideo Shopping",
+    "World Trade Center",
+    "Puerto del Buceo",
+    "Av. Rivera"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 1,
+   "nombre_ine": "Buceo",
+   "corredor": "costa"
+  },
+  "parque-batlle": {
+   "nombre": "Parque Batlle",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "pocitos",
+    "buceo",
+    "tres-cruces",
+    "la-blanqueada",
+    "larranaga"
+   ],
+   "referencias": [
+    "Estadio Centenario",
+    "Av. Italia",
+    "Ricaldoni",
+    "Hospital de Clínicas"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_ine": "Parque Batlle, Villa Dolores",
+   "corredor": "costa"
+  },
+  "malvin": {
+   "nombre": "Malvín",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "buceo",
+    "punta-gorda",
+    "malvin-norte",
+    "union"
+   ],
+   "referencias": [
+    "Av. Italia",
+    "Orinoco",
+    "Playa Malvín",
+    "Plaza de los Olímpicos"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_ine": "Malvín",
+   "corredor": "costa"
+  },
+  "malvin-norte": {
+   "nombre": "Malvín Norte",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "malvin",
+    "buceo",
+    "union",
+    "las-canteras",
+    "punta-gorda",
+    "carrasco-norte"
+   ],
+   "referencias": [
+    "Euskal Erría",
+    "Hipólito Yrigoyen",
+    "Camino Carrasco"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 2,
+   "nombre_ine": "Malvín Norte",
+   "corredor": "este"
+  },
+  "punta-gorda": {
+   "nombre": "Punta Gorda",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "malvin",
+    "carrasco",
+    "malvin-norte",
+    "carrasco-norte"
+   ],
+   "referencias": [
+    "Plaza Virgilio",
+    "Rambla O'Higgins",
+    "Av. Gral. Paz"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "nombre_ine": "Punta Gorda",
+   "corredor": "costa"
+  },
+  "carrasco": {
+   "nombre": "Carrasco",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "punta-gorda",
+    "carrasco-norte",
+    "banados-de-carrasco",
+    "ciudad-de-la-costa",
+    "barra-de-carrasco"
+   ],
+   "referencias": [
+    "Arocena",
+    "Hotel Carrasco",
+    "Portones Shopping",
+    "Rambla República de México"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "nombre_ine": "Carrasco",
+   "corredor": "costa"
+  },
+  "carrasco-norte": {
+   "nombre": "Carrasco Norte",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "carrasco",
+    "punta-gorda",
+    "banados-de-carrasco",
+    "malvin-norte",
+    "las-canteras",
+    "paso-carrasco"
+   ],
+   "referencias": [
+    "Av. Bolivia",
+    "Camino Carrasco",
+    "Parque Rivera"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "nombre_ine": "Carrasco Norte",
+   "corredor": "este"
+  },
+  "banados-de-carrasco": {
+   "nombre": "Bañados de Carrasco",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "carrasco-norte",
+    "carrasco",
+    "punta-de-rieles",
+    "villa-garcia",
+    "las-canteras"
+   ],
+   "referencias": [
+    "Camino Carrasco",
+    "Cochabamba",
+    "Ruta 8"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Bañados de Carrasco",
+   "corredor": "este"
+  },
+  "las-canteras": {
+   "nombre": "Las Canteras",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "malvin-norte",
+    "union",
+    "flor-de-maronas",
+    "carrasco-norte",
+    "punta-de-rieles",
+    "banados-de-carrasco"
+   ],
+   "referencias": [
+    "Camino Carrasco",
+    "Av. Italia",
+    "Bvar. Batlle y Ordóñez"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "nombre_ine": "Las Canteras",
+   "corredor": "este"
+  },
+  "union": {
+   "nombre": "Unión",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "malvin-norte",
+    "la-blanqueada",
+    "villa-espanola",
+    "maronas",
+    "las-canteras",
+    "mercado-modelo",
+    "malvin"
+   ],
+   "referencias": [
+    "8 de Octubre",
+    "Plaza de la Restauración",
+    "Av. Italia"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_ine": "Unión",
+   "corredor": "este"
+  },
+  "villa-espanola": {
+   "nombre": "Villa Española",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "union",
+    "cerrito",
+    "maronas",
+    "mercado-modelo",
+    "ituzaingo"
+   ],
+   "referencias": [
+    "Av. José Pedro Varela",
+    "Camino Corrales",
+    "8 de Octubre"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "nombre_ine": "Villa Española",
+   "corredor": "norte"
+  },
+  "maronas": {
+   "nombre": "Maroñas",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "union",
+    "villa-espanola",
+    "flor-de-maronas",
+    "ituzaingo",
+    "jardines-del-hipodromo",
+    "castro-castellanos"
+   ],
+   "referencias": [
+    "Hipódromo de Maroñas",
+    "Camino Maldonado",
+    "8 de Octubre"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "nombre_ine": "Maroñas, Parque Guaraní",
+   "corredor": "este"
+  },
+  "flor-de-maronas": {
+   "nombre": "Flor de Maroñas",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "maronas",
+    "ituzaingo",
+    "las-canteras",
+    "punta-de-rieles"
+   ],
+   "referencias": [
+    "Camino Maldonado",
+    "Cno. Corrales",
+    "Ruta 8"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Flor de Maroñas",
+   "corredor": "este"
+  },
+  "ituzaingo": {
+   "nombre": "Ituzaingó",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "maronas",
+    "flor-de-maronas",
+    "jardines-del-hipodromo",
+    "villa-espanola",
+    "punta-de-rieles"
+   ],
+   "referencias": [
+    "Camino Maldonado",
+    "Cno. Corrales"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Ituzaingó",
+   "corredor": "este"
+  },
+  "jardines-del-hipodromo": {
+   "nombre": "Jardines del Hipódromo",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "ituzaingo",
+    "maronas",
+    "piedras-blancas",
+    "punta-de-rieles",
+    "manga"
+   ],
+   "referencias": [
+    "Hipódromo",
+    "Camino Maldonado",
+    "Bvar. Aparicio Saravia"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Jardines del Hipódromo",
+   "corredor": "este"
+  },
+  "punta-de-rieles": {
+   "nombre": "Punta de Rieles",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "flor-de-maronas",
+    "ituzaingo",
+    "jardines-del-hipodromo",
+    "banados-de-carrasco",
+    "villa-garcia",
+    "las-canteras"
+   ],
+   "referencias": [
+    "Camino Maldonado",
+    "Ruta 8",
+    "Antiguo Penal de Punta de Rieles"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "nombre_ine": "Punta de Rieles, Bella Italia",
+   "corredor": "este"
+  },
+  "villa-garcia": {
+   "nombre": "Villa García",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "punta-de-rieles",
+    "banados-de-carrasco",
+    "manga"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Camino Repetto",
+    "zona semirrural"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3,
+   "nombre_ine": "Villa García, Manga Rural",
+   "corredor": "este"
+  },
+  "manga": {
+   "nombre": "Manga",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "jardines-del-hipodromo",
+    "piedras-blancas",
+    "manga-toledo-chico",
+    "villa-garcia"
+   ],
+   "referencias": [
+    "Camino Mendoza",
+    "Ruta 8",
+    "Cno. Toledo Chico"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Manga",
+   "corredor": "norte"
+  },
+  "manga-toledo-chico": {
+   "nombre": "Toledo Chico",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "manga",
+    "piedras-blancas",
+    "casavalle",
+    "toledo"
+   ],
+   "referencias": [
+    "Camino Toledo Chico",
+    "Ruta 6",
+    "Cno. Mendoza"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3,
+   "nombre_ine": "Manga, Toledo Chico",
+   "corredor": "norte"
+  },
+  "piedras-blancas": {
+   "nombre": "Piedras Blancas",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "las-acacias",
+    "casavalle",
+    "jardines-del-hipodromo",
+    "manga",
+    "cerrito",
+    "manga-toledo-chico"
+   ],
+   "referencias": [
+    "Camino Mendoza",
+    "Bvar. Aparicio Saravia",
+    "Av. José Belloni"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "nombre_ine": "Piedras Blancas",
+   "corredor": "norte"
+  },
+  "las-acacias": {
+   "nombre": "Las Acacias",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "cerrito",
+    "piedras-blancas",
+    "casavalle",
+    "aires-puros",
+    "castro-castellanos"
+   ],
+   "referencias": [
+    "Av. José Belloni",
+    "Bvar. Aparicio Saravia",
+    "Camino Mendoza"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Las Acacias",
+   "corredor": "norte"
+  },
+  "castro-castellanos": {
+   "nombre": "Castro y Castellanos",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "cerrito",
+    "las-acacias",
+    "mercado-modelo",
+    "maronas"
+   ],
+   "referencias": [
+    "Av. Gral. Flores",
+    "Bvar. Aparicio Saravia",
+    "Camino Corrales"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Castro, Castellanos",
+   "corredor": "norte"
+  },
+  "mercado-modelo": {
+   "nombre": "Mercado Modelo",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "villa-espanola",
+    "cerrito",
+    "castro-castellanos",
+    "union"
+   ],
+   "referencias": [
+    "Ex Mercado Modelo",
+    "Bvar. José Batlle y Ordóñez",
+    "Camino Corrales"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "nombre_ine": "Mercado Modelo, Bolívar",
+   "corredor": "norte"
+  },
+  "cerrito": {
+   "nombre": "Cerrito de la Victoria",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "brazo-oriental",
+    "villa-espanola",
+    "las-acacias",
+    "aires-puros",
+    "mercado-modelo",
+    "castro-castellanos",
+    "piedras-blancas"
+   ],
+   "referencias": [
+    "Santuario del Cerrito",
+    "Av. Gral. Flores",
+    "Bvar. Aparicio Saravia"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "nombre_ine": "Cerrito de la Victoria",
+   "corredor": "norte"
+  },
+  "aires-puros": {
+   "nombre": "Aires Puros",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "cerrito",
+    "las-acacias",
+    "brazo-oriental",
+    "atahualpa",
+    "casavalle"
+   ],
+   "referencias": [
+    "Bvar. Aparicio Saravia",
+    "Av. Burgues",
+    "Av. Millán"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Aires Puros",
+   "corredor": "norte"
+  },
+  "casavalle": {
+   "nombre": "Casavalle",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "aires-puros",
+    "las-acacias",
+    "piedras-blancas",
+    "manga-toledo-chico",
+    "penarol-lavalleja"
+   ],
+   "referencias": [
+    "Bvar. Aparicio Saravia",
+    "Av. San Martín",
+    "Camino Casavalle"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "nombre_ine": "Casavalle",
+   "corredor": "norte"
+  },
+  "brazo-oriental": {
+   "nombre": "Brazo Oriental",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "reducto",
+    "jacinto-vera",
+    "cerrito",
+    "aires-puros",
+    "atahualpa",
+    "la-figurita"
+   ],
+   "referencias": [
+    "Bvar. Artigas",
+    "Av. Gral. Flores",
+    "Av. Burgues"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Brazo Oriental",
+   "corredor": "norte"
+  },
+  "jacinto-vera": {
+   "nombre": "Jacinto Vera",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "brazo-oriental",
+    "reducto",
+    "la-figurita",
+    "larranaga",
+    "la-comercial",
+    "villa-munoz"
+   ],
+   "referencias": [
+    "Bvar. Batlle y Ordóñez",
+    "Av. Gral. Flores",
+    "Av. San Martín"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "nombre_ine": "Jacinto Vera",
+   "corredor": "norte"
+  },
+  "la-figurita": {
+   "nombre": "La Figurita",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "jacinto-vera",
+    "larranaga",
+    "brazo-oriental"
+   ],
+   "referencias": [
+    "Bvar. Batlle y Ordóñez",
+    "Av. Gral. Flores"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "La Figurita",
+   "corredor": "norte"
+  },
+  "larranaga": {
+   "nombre": "Larrañaga",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "la-figurita",
+    "jacinto-vera",
+    "la-blanqueada",
+    "parque-batlle",
+    "tres-cruces",
+    "la-comercial"
+   ],
+   "referencias": [
+    "Av. Larrañaga",
+    "Garibaldi",
+    "Parque de los Aliados"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Larrañaga",
+   "corredor": "centro"
+  },
+  "la-blanqueada": {
+   "nombre": "La Blanqueada",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "parque-batlle",
+    "buceo",
+    "union",
+    "larranaga",
+    "tres-cruces"
+   ],
+   "referencias": [
+    "8 de Octubre",
+    "Hospital Militar",
+    "Garibaldi"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "nombre_ine": "La Blanqueada",
+   "corredor": "centro"
+  },
+  "tres-cruces": {
+   "nombre": "Tres Cruces",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "cordon",
+    "la-comercial",
+    "larranaga",
+    "la-blanqueada",
+    "parque-batlle",
+    "pocitos",
+    "parque-rodo"
+   ],
+   "referencias": [
+    "Terminal Tres Cruces",
+    "Bvar. Artigas",
+    "8 de Octubre",
+    "Hospital Pereira Rossell"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 1,
+   "nombre_ine": "Tres Cruces",
+   "corredor": "centro"
+  },
+  "la-comercial": {
+   "nombre": "La Comercial",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "cordon",
+    "aguada",
+    "villa-munoz",
+    "tres-cruces",
+    "jacinto-vera",
+    "larranaga"
+   ],
+   "referencias": [
+    "Justicia",
+    "Democracia",
+    "Arenal Grande"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "La Comercial",
+   "corredor": "centro"
+  },
+  "villa-munoz": {
+   "nombre": "Villa Muñoz",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "la-comercial",
+    "aguada",
+    "reducto",
+    "jacinto-vera"
+   ],
+   "referencias": [
+    "Plaza de las Misiones",
+    "Arenal Grande",
+    "Domingo Aramburú"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Villa Muñoz, Retiro",
+   "corredor": "centro"
+  },
+  "aguada": {
+   "nombre": "Aguada",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "centro",
+    "ciudad-vieja",
+    "cordon",
+    "la-comercial",
+    "villa-munoz",
+    "reducto",
+    "capurro-bella-vista"
+   ],
+   "referencias": [
+    "Palacio Legislativo",
+    "Torre de Antel",
+    "Estación Central",
+    "Av. Libertador"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 2,
+   "nombre_ine": "Aguada",
+   "corredor": "centro"
+  },
+  "reducto": {
+   "nombre": "Reducto",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "aguada",
+    "villa-munoz",
+    "jacinto-vera",
+    "brazo-oriental",
+    "atahualpa",
+    "capurro-bella-vista"
+   ],
+   "referencias": [
+    "Av. San Martín",
+    "Av. Gral. Flores",
+    "Arroyo Seco"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Reducto",
+   "corredor": "norte"
+  },
+  "atahualpa": {
+   "nombre": "Atahualpa",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "reducto",
+    "brazo-oriental",
+    "aires-puros",
+    "prado",
+    "sayago"
+   ],
+   "referencias": [
+    "Av. Millán",
+    "Av. Burgues",
+    "Bvar. Artigas"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Atahualpa",
+   "corredor": "norte"
+  },
+  "prado": {
+   "nombre": "Prado",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "atahualpa",
+    "capurro-bella-vista",
+    "belvedere",
+    "sayago",
+    "paso-de-las-duranas"
+   ],
+   "referencias": [
+    "Parque del Prado",
+    "Rosedal",
+    "Rural del Prado",
+    "Av. Agraciada",
+    "Paso Molino"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "nombre_ine": "Prado, Nueva Savona",
+   "corredor": "oeste"
+  },
+  "capurro-bella-vista": {
+   "nombre": "Capurro",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "aguada",
+    "reducto",
+    "prado",
+    "belvedere",
+    "la-teja"
+   ],
+   "referencias": [
+    "Parque Capurro",
+    "Av. Agraciada",
+    "Bahía de Montevideo"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "nombre_ine": "Capurro, Bella Vista",
+   "corredor": "oeste"
+  },
+  "belvedere": {
+   "nombre": "Belvedere",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "prado",
+    "la-teja",
+    "nuevo-paris",
+    "tres-ombues-victoria",
+    "capurro-bella-vista",
+    "paso-de-las-duranas"
+   ],
+   "referencias": [
+    "Av. Carlos María Ramírez",
+    "Paso Molino",
+    "Cementerio del Cerro"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "nombre_ine": "Belvedere",
+   "corredor": "oeste"
+  },
+  "la-teja": {
+   "nombre": "La Teja",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "belvedere",
+    "tres-ombues-victoria",
+    "capurro-bella-vista",
+    "cerro"
+   ],
+   "referencias": [
+    "Av. Carlos María Ramírez",
+    "Refinería de La Teja",
+    "Plaza Lafone"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "nombre_ine": "La Teja",
+   "corredor": "oeste"
+  },
+  "tres-ombues-victoria": {
+   "nombre": "Tres Ombúes",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "la-teja",
+    "belvedere",
+    "nuevo-paris",
+    "cerro",
+    "paso-de-la-arena"
+   ],
+   "referencias": [
+    "Camino Cibils",
+    "Av. Carlos María Ramírez",
+    "Pueblo Victoria"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Tres Ombúes, Victoria",
+   "corredor": "oeste"
+  },
+  "nuevo-paris": {
+   "nombre": "Nuevo París",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "belvedere",
+    "tres-ombues-victoria",
+    "paso-de-la-arena",
+    "conciliacion",
+    "sayago",
+    "paso-de-las-duranas"
+   ],
+   "referencias": [
+    "Camino Cibils",
+    "Av. Carlos María Ramírez",
+    "Bvar. Batlle y Ordóñez"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "nombre_ine": "Nuevo París",
+   "corredor": "oeste"
+  },
+  "paso-de-la-arena": {
+   "nombre": "Paso de la Arena",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "nuevo-paris",
+    "tres-ombues-victoria",
+    "la-paloma-tomkinson",
+    "lezica-melilla",
+    "conciliacion",
+    "ciudad-del-plata"
+   ],
+   "referencias": [
+    "Ruta 1",
+    "Camino Tomkinson",
+    "Cno. Cibils"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "nombre_ine": "Paso de la Arena",
+   "corredor": "oeste"
+  },
+  "la-paloma-tomkinson": {
+   "nombre": "La Paloma",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "paso-de-la-arena",
+    "cerro",
+    "casabo-pajas-blancas"
+   ],
+   "referencias": [
+    "Camino Tomkinson",
+    "Ruta 1",
+    "Cno. Sanfuentes"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "La Paloma, Tomkinson",
+   "corredor": "oeste"
+  },
+  "cerro": {
+   "nombre": "Cerro",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "la-paloma-tomkinson",
+    "casabo-pajas-blancas",
+    "tres-ombues-victoria",
+    "la-teja"
+   ],
+   "referencias": [
+    "Fortaleza del Cerro",
+    "Rambla del Cerro",
+    "Playa del Cerro",
+    "Grecia"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "nombre_ine": "Cerro",
+   "corredor": "oeste"
+  },
+  "casabo-pajas-blancas": {
+   "nombre": "Casabó",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "cerro",
+    "la-paloma-tomkinson"
+   ],
+   "referencias": [
+    "Camino Bajo de la Petisa",
+    "Playa Pajas Blancas",
+    "Santa Catalina"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Casabó, Pajas Blancas",
+   "corredor": "oeste"
+  },
+  "paso-de-las-duranas": {
+   "nombre": "Paso de las Duranas",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "prado",
+    "sayago",
+    "belvedere",
+    "nuevo-paris"
+   ],
+   "referencias": [
+    "Av. Millán",
+    "Camino Castro",
+    "Bvar. Batlle y Ordóñez"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Paso de las Duranas",
+   "corredor": "oeste"
+  },
+  "sayago": {
+   "nombre": "Sayago",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "prado",
+    "atahualpa",
+    "paso-de-las-duranas",
+    "conciliacion",
+    "penarol-lavalleja",
+    "nuevo-paris"
+   ],
+   "referencias": [
+    "Estación Sayago",
+    "Av. Millán",
+    "Camino Ariel",
+    "Av. Sayago"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "nombre_ine": "Sayago",
+   "corredor": "norte"
+  },
+  "conciliacion": {
+   "nombre": "Conciliación",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "sayago",
+    "nuevo-paris",
+    "colon-sudeste-abayuba",
+    "penarol-lavalleja",
+    "paso-de-la-arena",
+    "lezica-melilla"
+   ],
+   "referencias": [
+    "Camino Colman",
+    "Av. Garzón",
+    "Camino Ariel"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Conciliación",
+   "corredor": "norte"
+  },
+  "penarol-lavalleja": {
+   "nombre": "Peñarol",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "sayago",
+    "conciliacion",
+    "colon-sudeste-abayuba",
+    "casavalle",
+    "colon-centro-noroeste"
+   ],
+   "referencias": [
+    "Barrio histórico Peñarol",
+    "Estación Peñarol",
+    "Av. Sayago",
+    "Ruta 5"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "nombre_ine": "Peñarol, Lavalleja",
+   "corredor": "norte"
+  },
+  "colon-sudeste-abayuba": {
+   "nombre": "Colón Sudeste",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "penarol-lavalleja",
+    "conciliacion",
+    "colon-centro-noroeste",
+    "lezica-melilla"
+   ],
+   "referencias": [
+    "Av. Garzón",
+    "Camino Colman",
+    "Plaza Vidiella"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "nombre_ine": "Colón Sudeste, Abayubá",
+   "corredor": "norte"
+  },
+  "colon-centro-noroeste": {
+   "nombre": "Colón",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "colon-sudeste-abayuba",
+    "lezica-melilla",
+    "penarol-lavalleja",
+    "la-paz",
+    "las-piedras"
+   ],
+   "referencias": [
+    "Av. Garzón",
+    "Plaza Vidiella",
+    "Ruta 5",
+    "Camino Melilla"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "nombre_ine": "Colón Centro y Noroeste",
+   "corredor": "norte"
+  },
+  "lezica-melilla": {
+   "nombre": "Lezica",
+   "tipo": "barrio",
+   "padre": "montevideo",
+   "vecinos": [
+    "colon-centro-noroeste",
+    "colon-sudeste-abayuba",
+    "paso-de-la-arena",
+    "conciliacion",
+    "la-paz"
+   ],
+   "referencias": [
+    "Camino Melilla",
+    "Ruta 5",
+    "Aeródromo de Melilla",
+    "quintas"
+   ],
+   "vivienda": "rural",
+   "prioridad": 2,
+   "nombre_ine": "Lezica, Melilla",
+   "corredor": "norte"
+  },
+  "ciudad-de-la-costa": {
+   "nombre": "Ciudad de la Costa",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "carrasco",
+    "paso-carrasco",
+    "colonia-nicolich",
+    "salinas"
+   ],
+   "referencias": [
+    "Av. Giannattasio",
+    "Ruta Interbalnearia",
+    "Costa Urbana Shopping",
+    "Rambla Costanera"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1
+  },
+  "barra-de-carrasco": {
+   "nombre": "Barra de Carrasco",
+   "tipo": "barrio",
+   "padre": "ciudad-de-la-costa",
+   "vecinos": [
+    "carrasco",
+    "paso-carrasco",
+    "shangrila",
+    "parque-carrasco"
+   ],
+   "referencias": [
+    "Arroyo Carrasco",
+    "Av. de las Américas",
+    "Rambla"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "parque-carrasco": {
+   "nombre": "Parque Carrasco",
+   "tipo": "barrio",
+   "padre": "ciudad-de-la-costa",
+   "vecinos": [
+    "barra-de-carrasco",
+    "shangrila",
+    "paso-carrasco"
+   ],
+   "referencias": [
+    "Av. Giannattasio",
+    "Racine"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "shangrila": {
+   "nombre": "Shangrilá",
+   "tipo": "barrio",
+   "padre": "ciudad-de-la-costa",
+   "vecinos": [
+    "parque-carrasco",
+    "barra-de-carrasco",
+    "san-jose-de-carrasco",
+    "paso-carrasco"
+   ],
+   "referencias": [
+    "Av. Giannattasio km 18",
+    "Rambla Costanera",
+    "Cruz del Sur"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "san-jose-de-carrasco": {
+   "nombre": "San José de Carrasco",
+   "tipo": "barrio",
+   "padre": "ciudad-de-la-costa",
+   "vecinos": [
+    "shangrila",
+    "lagomar"
+   ],
+   "referencias": [
+    "Av. Giannattasio",
+    "Av. Racine"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "lagomar": {
+   "nombre": "Lagomar",
+   "tipo": "barrio",
+   "padre": "ciudad-de-la-costa",
+   "vecinos": [
+    "san-jose-de-carrasco",
+    "solymar",
+    "colonia-nicolich"
+   ],
+   "referencias": [
+    "Costa Urbana Shopping",
+    "Av. Giannattasio",
+    "Rambla"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1
+  },
+  "solymar": {
+   "nombre": "Solymar",
+   "tipo": "barrio",
+   "padre": "ciudad-de-la-costa",
+   "vecinos": [
+    "lagomar",
+    "lomas-de-solymar",
+    "el-pinar"
+   ],
+   "referencias": [
+    "Av. Giannattasio",
+    "Av. Central",
+    "calles de arena"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1
+  },
+  "lomas-de-solymar": {
+   "nombre": "Lomas de Solymar",
+   "tipo": "barrio",
+   "padre": "ciudad-de-la-costa",
+   "vecinos": [
+    "solymar",
+    "el-pinar",
+    "colonia-nicolich"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia",
+    "Av. Solymar Norte",
+    "Camino de los Horneros"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "el-pinar": {
+   "nombre": "El Pinar",
+   "tipo": "barrio",
+   "padre": "ciudad-de-la-costa",
+   "vecinos": [
+    "solymar",
+    "lomas-de-solymar",
+    "neptunia",
+    "pinamar",
+    "salinas"
+   ],
+   "referencias": [
+    "Pinar Norte",
+    "Av. Pérez Butler",
+    "Ruta Interbalnearia"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1
+  },
+  "paso-carrasco": {
+   "nombre": "Paso Carrasco",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "ciudad-de-la-costa",
+    "barra-de-carrasco",
+    "carrasco-norte",
+    "colonia-nicolich",
+    "parque-carrasco",
+    "shangrila"
+   ],
+   "referencias": [
+    "Ruta 101",
+    "Av. de las Américas",
+    "Aeropuerto de Carrasco",
+    "Zonamerica"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "colonia-nicolich": {
+   "nombre": "Colonia Nicolich",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "paso-carrasco",
+    "barros-blancos",
+    "lomas-de-solymar",
+    "lagomar",
+    "ciudad-de-la-costa"
+   ],
+   "referencias": [
+    "Ruta 101",
+    "Aeropuerto de Carrasco",
+    "Zonamerica",
+    "Ruta 102"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "barros-blancos": {
+   "nombre": "Barros Blancos",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "colonia-nicolich",
+    "pando",
+    "toledo"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Villa Aeroparque",
+    "Ruta 102"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "pando": {
+   "nombre": "Pando",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "barros-blancos",
+    "toledo",
+    "empalme-olmos",
+    "joaquin-suarez",
+    "sauce"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Ruta 75",
+    "Plaza de Pando",
+    "zona industrial"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1
+  },
+  "empalme-olmos": {
+   "nombre": "Empalme Olmos",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "pando",
+    "soca",
+    "sauce"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Ruta 75",
+    "Estación Empalme Olmos"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "toledo": {
+   "nombre": "Toledo",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "pando",
+    "barros-blancos",
+    "joaquin-suarez",
+    "manga-toledo-chico"
+   ],
+   "referencias": [
+    "Ruta 6",
+    "Ruta 33",
+    "Camino Toledo Chico"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "joaquin-suarez": {
+   "nombre": "Joaquín Suárez",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "toledo",
+    "sauce",
+    "pando"
+   ],
+   "referencias": [
+    "Ruta 74",
+    "Ruta 33",
+    "Ruta 6"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "sauce": {
+   "nombre": "Sauce",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "joaquin-suarez",
+    "ciudad-de-canelones",
+    "pando",
+    "santa-rosa",
+    "empalme-olmos"
+   ],
+   "referencias": [
+    "Ruta 33",
+    "Ruta 6",
+    "Fiesta de la Uva"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "las-piedras": {
+   "nombre": "Las Piedras",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "la-paz",
+    "progreso",
+    "colon-centro-noroeste",
+    "18-de-mayo"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Av. Artigas",
+    "Plaza de Las Piedras",
+    "Parque Artigas"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1
+  },
+  "la-paz": {
+   "nombre": "La Paz",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "las-piedras",
+    "lezica-melilla",
+    "colon-centro-noroeste",
+    "18-de-mayo"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Av. César Mayo Gutiérrez",
+    "Ruta 48"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1
+  },
+  "18-de-mayo": {
+   "nombre": "18 de Mayo",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "las-piedras",
+    "la-paz",
+    "progreso"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Ruta 48",
+    "Camino del Andaluz"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "progreso": {
+   "nombre": "Progreso",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "las-piedras",
+    "18-de-mayo",
+    "ciudad-de-canelones",
+    "juanico"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Ruta 32",
+    "Ruta 36"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "juanico": {
+   "nombre": "Juanicó",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "progreso",
+    "ciudad-de-canelones",
+    "los-cerrillos"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "bodegas",
+    "Ruta 36"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "ciudad-de-canelones": {
+   "nombre": "Canelones (ciudad)",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "progreso",
+    "santa-lucia",
+    "los-cerrillos",
+    "sauce",
+    "san-antonio",
+    "juanico",
+    "san-ramon"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Plaza Tomás Berreta",
+    "Intendencia",
+    "Ruta 11"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_en": "Canelones"
+  },
+  "santa-lucia": {
+   "nombre": "Santa Lucía",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "ciudad-de-canelones",
+    "25-de-agosto",
+    "aguas-corrientes",
+    "los-cerrillos"
+   ],
+   "referencias": [
+    "Ruta 11",
+    "Río Santa Lucía",
+    "Ruta 5"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "aguas-corrientes": {
+   "nombre": "Aguas Corrientes",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "santa-lucia",
+    "los-cerrillos"
+   ],
+   "referencias": [
+    "Ruta 11",
+    "planta de OSE",
+    "Río Santa Lucía"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "los-cerrillos": {
+   "nombre": "Los Cerrillos",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "ciudad-de-canelones",
+    "santa-lucia",
+    "aguas-corrientes",
+    "juanico"
+   ],
+   "referencias": [
+    "Ruta 36",
+    "Ruta 46"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "san-antonio": {
+   "nombre": "San Antonio",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "ciudad-de-canelones",
+    "santa-rosa",
+    "san-bautista"
+   ],
+   "referencias": [
+    "Ruta 6",
+    "Ruta 11"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "santa-rosa": {
+   "nombre": "Santa Rosa",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "san-antonio",
+    "sauce",
+    "san-bautista",
+    "san-jacinto"
+   ],
+   "referencias": [
+    "Ruta 6",
+    "Ruta 11"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "san-bautista": {
+   "nombre": "San Bautista",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "santa-rosa",
+    "san-antonio",
+    "san-jacinto",
+    "san-ramon"
+   ],
+   "referencias": [
+    "Ruta 6",
+    "Ruta 81"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "san-jacinto": {
+   "nombre": "San Jacinto",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "santa-rosa",
+    "san-bautista",
+    "migues",
+    "soca"
+   ],
+   "referencias": [
+    "Ruta 7",
+    "Ruta 81"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "san-ramon": {
+   "nombre": "San Ramón",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "san-bautista",
+    "tala",
+    "ciudad-de-canelones"
+   ],
+   "referencias": [
+    "Ruta 6",
+    "Ruta 12",
+    "Río Santa Lucía"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3
+  },
+  "tala": {
+   "nombre": "Tala",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "san-ramon",
+    "migues",
+    "montes"
+   ],
+   "referencias": [
+    "Ruta 7",
+    "Ruta 12"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3
+  },
+  "migues": {
+   "nombre": "Migues",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "tala",
+    "san-jacinto",
+    "montes"
+   ],
+   "referencias": [
+    "Ruta 80",
+    "Ruta 81"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "montes": {
+   "nombre": "Montes",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "migues",
+    "tala",
+    "soca"
+   ],
+   "referencias": [
+    "Ruta 80",
+    "Ruta 8"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "soca": {
+   "nombre": "Soca",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "empalme-olmos",
+    "san-jacinto",
+    "montes",
+    "la-floresta"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Ruta 70",
+    "Ruta 35"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "salinas": {
+   "nombre": "Salinas",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "pinamar",
+    "neptunia",
+    "marindia",
+    "atlantida",
+    "el-pinar",
+    "ciudad-de-la-costa"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia",
+    "Salinas Norte",
+    "Rambla de Salinas"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1
+  },
+  "pinamar": {
+   "nombre": "Pinamar",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "el-pinar",
+    "neptunia",
+    "salinas"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 32",
+    "Rambla"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "neptunia": {
+   "nombre": "Neptunia",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "pinamar",
+    "salinas",
+    "el-pinar"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 35",
+    "Rambla de Neptunia"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "marindia": {
+   "nombre": "Marindia",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "salinas",
+    "atlantida",
+    "villa-argentina"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 41",
+    "Rambla de Marindia"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "atlantida": {
+   "nombre": "Atlántida",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "marindia",
+    "villa-argentina",
+    "parque-del-plata",
+    "salinas",
+    "estacion-atlantida"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 45",
+    "El Águila",
+    "Rambla de Atlántida",
+    "Terminal"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1
+  },
+  "estacion-atlantida": {
+   "nombre": "Estación Atlántida",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "atlantida",
+    "parque-del-plata"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia",
+    "Camino del Andaluz",
+    "Ruta 11"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "villa-argentina": {
+   "nombre": "Villa Argentina",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "atlantida",
+    "marindia"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 44",
+    "Rambla"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "parque-del-plata": {
+   "nombre": "Parque del Plata",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "atlantida",
+    "las-toscas",
+    "estacion-atlantida"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 49",
+    "Arroyo Solís Chico",
+    "Rambla"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1
+  },
+  "las-toscas": {
+   "nombre": "Las Toscas",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "parque-del-plata",
+    "la-floresta"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 52",
+    "Rambla"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "la-floresta": {
+   "nombre": "La Floresta",
+   "tipo": "ciudad",
+   "padre": "canelones",
+   "vecinos": [
+    "las-toscas",
+    "costa-azul",
+    "soca",
+    "san-luis"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 55",
+    "Rambla de La Floresta"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "costa-azul": {
+   "nombre": "Costa Azul",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "la-floresta",
+    "bello-horizonte"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 58",
+    "Rambla"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "bello-horizonte": {
+   "nombre": "Bello Horizonte",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "costa-azul",
+    "guazuvira"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 60",
+    "Rambla"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "guazuvira": {
+   "nombre": "Guazuvirá",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "bello-horizonte",
+    "san-luis"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 62"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "san-luis": {
+   "nombre": "San Luis",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "guazuvira",
+    "araminda",
+    "la-floresta"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 64",
+    "Rambla de San Luis"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "araminda": {
+   "nombre": "Araminda",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "san-luis",
+    "santa-ana"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 66"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "santa-ana": {
+   "nombre": "Santa Ana",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "araminda",
+    "biarritz",
+    "cuchilla-alta"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 68"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "biarritz": {
+   "nombre": "Biarritz",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "santa-ana",
+    "cuchilla-alta"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 70"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "cuchilla-alta": {
+   "nombre": "Cuchilla Alta",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "santa-ana",
+    "biarritz",
+    "jaureguiberry"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 72",
+    "Rambla"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "jaureguiberry": {
+   "nombre": "Jaureguiberry",
+   "tipo": "localidad",
+   "padre": "canelones",
+   "vecinos": [
+    "cuchilla-alta",
+    "solis"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 80",
+    "Arroyo Solís Grande"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "25-de-agosto": {
+   "nombre": "25 de Agosto",
+   "tipo": "localidad",
+   "padre": "florida",
+   "vecinos": [
+    "santa-lucia",
+    "cardal"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Ruta 76"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "ciudad-de-maldonado": {
+   "nombre": "Maldonado (ciudad)",
+   "tipo": "ciudad",
+   "padre": "maldonado",
+   "vecinos": [
+    "punta-del-este",
+    "san-carlos",
+    "pinares-las-delicias",
+    "cerro-pelado",
+    "punta-ballena"
+   ],
+   "referencias": [
+    "Plaza San Fernando",
+    "Av. Aparicio Saravia",
+    "Terminal de Maldonado",
+    "Cerro Pelado"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_en": "Maldonado"
+  },
+  "cerro-pelado": {
+   "nombre": "Cerro Pelado / Maldonado Nuevo",
+   "tipo": "barrio",
+   "padre": "ciudad-de-maldonado",
+   "vecinos": [
+    "san-carlos",
+    "pinares-las-delicias",
+    "ciudad-de-maldonado"
+   ],
+   "referencias": [
+    "Bvar. Artigas",
+    "Maldonado Nuevo",
+    "Cerro Pelado"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "punta-del-este": {
+   "nombre": "Punta del Este",
+   "tipo": "ciudad",
+   "padre": "maldonado",
+   "vecinos": [
+    "ciudad-de-maldonado",
+    "punta-ballena",
+    "la-barra",
+    "pinares-las-delicias"
+   ],
+   "referencias": [
+    "Península",
+    "Gorlero",
+    "Playa Brava",
+    "Playa Mansa",
+    "Av. Roosevelt"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 1
+  },
+  "pinares-las-delicias": {
+   "nombre": "Pinares / Las Delicias",
+   "tipo": "barrio",
+   "padre": "punta-del-este",
+   "vecinos": [
+    "ciudad-de-maldonado",
+    "punta-ballena",
+    "cerro-pelado",
+    "punta-del-este"
+   ],
+   "referencias": [
+    "Av. Roosevelt",
+    "Pinares",
+    "Rincón del Indio"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "punta-ballena": {
+   "nombre": "Punta Ballena",
+   "tipo": "localidad",
+   "padre": "maldonado",
+   "vecinos": [
+    "pinares-las-delicias",
+    "portezuelo",
+    "punta-del-este",
+    "ciudad-de-maldonado"
+   ],
+   "referencias": [
+    "Casapueblo",
+    "Ruta 10",
+    "Laguna del Sauce",
+    "Arboretum Lussich"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1
+  },
+  "portezuelo": {
+   "nombre": "Portezuelo / Chihuahua",
+   "tipo": "localidad",
+   "padre": "maldonado",
+   "vecinos": [
+    "punta-ballena",
+    "solis",
+    "piriapolis",
+    "punta-colorada"
+   ],
+   "referencias": [
+    "Ruta 10",
+    "Playa Chihuahua",
+    "Laguna del Sauce"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "solis": {
+   "nombre": "Balneario Solís",
+   "tipo": "localidad",
+   "padre": "maldonado",
+   "vecinos": [
+    "portezuelo",
+    "piriapolis",
+    "jaureguiberry"
+   ],
+   "referencias": [
+    "Ruta Interbalnearia km 84",
+    "Arroyo Solís Grande",
+    "Bella Vista"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "piriapolis": {
+   "nombre": "Piriápolis",
+   "tipo": "ciudad",
+   "padre": "maldonado",
+   "vecinos": [
+    "solis",
+    "pan-de-azucar",
+    "punta-colorada",
+    "portezuelo"
+   ],
+   "referencias": [
+    "Rambla de los Argentinos",
+    "Cerro San Antonio",
+    "Argentino Hotel",
+    "Cerro Pan de Azúcar"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1
+  },
+  "punta-colorada": {
+   "nombre": "Punta Colorada / Punta Negra",
+   "tipo": "localidad",
+   "padre": "maldonado",
+   "vecinos": [
+    "piriapolis",
+    "portezuelo"
+   ],
+   "referencias": [
+    "Ruta 10",
+    "Playa Punta Colorada"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "pan-de-azucar": {
+   "nombre": "Pan de Azúcar",
+   "tipo": "ciudad",
+   "padre": "maldonado",
+   "vecinos": [
+    "piriapolis",
+    "san-carlos",
+    "aigua"
+   ],
+   "referencias": [
+    "Ruta 9",
+    "Ruta 60",
+    "Cerro Pan de Azúcar"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "san-carlos": {
+   "nombre": "San Carlos",
+   "tipo": "ciudad",
+   "padre": "maldonado",
+   "vecinos": [
+    "ciudad-de-maldonado",
+    "la-barra",
+    "pan-de-azucar",
+    "cerro-pelado",
+    "aigua",
+    "garzon"
+   ],
+   "referencias": [
+    "Ruta 39",
+    "Ruta 9",
+    "Plaza de San Carlos",
+    "Rodríguez Barrios"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1
+  },
+  "la-barra": {
+   "nombre": "La Barra",
+   "tipo": "localidad",
+   "padre": "maldonado",
+   "vecinos": [
+    "punta-del-este",
+    "manantiales",
+    "san-carlos"
+   ],
+   "referencias": [
+    "Puente ondulante",
+    "Ruta 10",
+    "Playa Bikini",
+    "Manantiales"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1
+  },
+  "manantiales": {
+   "nombre": "Manantiales / El Chorro",
+   "tipo": "localidad",
+   "padre": "maldonado",
+   "vecinos": [
+    "la-barra",
+    "jose-ignacio"
+   ],
+   "referencias": [
+    "Ruta 10",
+    "Playa Bikini",
+    "El Chorro"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "jose-ignacio": {
+   "nombre": "José Ignacio",
+   "tipo": "localidad",
+   "padre": "maldonado",
+   "vecinos": [
+    "manantiales",
+    "garzon"
+   ],
+   "referencias": [
+    "Ruta 10",
+    "Faro de José Ignacio",
+    "Laguna Garzón"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "garzon": {
+   "nombre": "Pueblo Garzón",
+   "tipo": "localidad",
+   "padre": "maldonado",
+   "vecinos": [
+    "jose-ignacio",
+    "san-carlos"
+   ],
+   "referencias": [
+    "Ruta 9",
+    "Laguna Garzón",
+    "Pueblo Garzón"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "aigua": {
+   "nombre": "Aiguá",
+   "tipo": "ciudad",
+   "padre": "maldonado",
+   "vecinos": [
+    "pan-de-azucar",
+    "san-carlos"
+   ],
+   "referencias": [
+    "Ruta 39",
+    "Ruta 13",
+    "Grutas de Salamanca"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "san-jose-de-mayo": {
+   "nombre": "San José de Mayo",
+   "tipo": "ciudad",
+   "padre": "san-jose",
+   "vecinos": [
+    "libertad",
+    "ecilda-paullier",
+    "rodriguez",
+    "rafael-perazza"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Ruta 11",
+    "Plaza de los 33",
+    "Teatro Macció"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1
+  },
+  "ciudad-del-plata": {
+   "nombre": "Ciudad del Plata",
+   "tipo": "ciudad",
+   "padre": "san-jose",
+   "vecinos": [
+    "libertad",
+    "paso-de-la-arena",
+    "playa-pascual"
+   ],
+   "referencias": [
+    "Ruta 1",
+    "Delta del Tigre",
+    "Playa Pascual",
+    "Puente de la Barra de Santa Lucía"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1
+  },
+  "playa-pascual": {
+   "nombre": "Playa Pascual",
+   "tipo": "localidad",
+   "padre": "san-jose",
+   "vecinos": [
+    "ciudad-del-plata",
+    "libertad"
+   ],
+   "referencias": [
+    "Ruta 1 km 30",
+    "Rambla de Playa Pascual"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "libertad": {
+   "nombre": "Libertad",
+   "tipo": "ciudad",
+   "padre": "san-jose",
+   "vecinos": [
+    "san-jose-de-mayo",
+    "ciudad-del-plata",
+    "rodriguez",
+    "puntas-de-valdez",
+    "playa-pascual",
+    "rafael-perazza"
+   ],
+   "referencias": [
+    "Ruta 1 km 50",
+    "Ruta 45"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "puntas-de-valdez": {
+   "nombre": "Puntas de Valdez",
+   "tipo": "localidad",
+   "padre": "san-jose",
+   "vecinos": [
+    "libertad",
+    "ecilda-paullier"
+   ],
+   "referencias": [
+    "Ruta 1 km 60"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "ecilda-paullier": {
+   "nombre": "Ecilda Paullier",
+   "tipo": "localidad",
+   "padre": "san-jose",
+   "vecinos": [
+    "san-jose-de-mayo",
+    "puntas-de-valdez"
+   ],
+   "referencias": [
+    "Ruta 1 km 90",
+    "Ruta 11"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "rodriguez": {
+   "nombre": "Rodríguez",
+   "tipo": "localidad",
+   "padre": "san-jose",
+   "vecinos": [
+    "san-jose-de-mayo",
+    "libertad"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Ruta 11"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "rafael-perazza": {
+   "nombre": "Rafael Perazza",
+   "tipo": "localidad",
+   "padre": "san-jose",
+   "vecinos": [
+    "libertad",
+    "san-jose-de-mayo"
+   ],
+   "referencias": [
+    "Ruta 1 km 70",
+    "Ruta 11"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "colonia-del-sacramento": {
+   "nombre": "Colonia del Sacramento",
+   "tipo": "ciudad",
+   "padre": "colonia",
+   "vecinos": [
+    "tarariras",
+    "nueva-helvecia",
+    "carmelo",
+    "juan-lacaze"
+   ],
+   "referencias": [
+    "Barrio Histórico",
+    "Puerto de Colonia",
+    "Rambla de las Américas",
+    "Ruta 1"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1
+  },
+  "carmelo": {
+   "nombre": "Carmelo",
+   "tipo": "ciudad",
+   "padre": "colonia",
+   "vecinos": [
+    "nueva-palmira",
+    "colonia-del-sacramento",
+    "ombues-de-lavalle"
+   ],
+   "referencias": [
+    "Puente giratorio",
+    "Arroyo de las Vacas",
+    "Ruta 21"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "nueva-palmira": {
+   "nombre": "Nueva Palmira",
+   "tipo": "localidad",
+   "padre": "colonia",
+   "vecinos": [
+    "carmelo",
+    "ombues-de-lavalle"
+   ],
+   "referencias": [
+    "Puerto de Nueva Palmira",
+    "Ruta 21"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3
+  },
+  "juan-lacaze": {
+   "nombre": "Juan Lacaze",
+   "tipo": "ciudad",
+   "padre": "colonia",
+   "vecinos": [
+    "rosario",
+    "colonia-valdense",
+    "colonia-del-sacramento"
+   ],
+   "referencias": [
+    "Puerto Sauce",
+    "Ruta 1",
+    "Ruta 54"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "rosario": {
+   "nombre": "Rosario",
+   "tipo": "localidad",
+   "padre": "colonia",
+   "vecinos": [
+    "juan-lacaze",
+    "colonia-valdense",
+    "nueva-helvecia"
+   ],
+   "referencias": [
+    "Ruta 1",
+    "Ruta 2"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3
+  },
+  "colonia-valdense": {
+   "nombre": "Colonia Valdense",
+   "tipo": "localidad",
+   "padre": "colonia",
+   "vecinos": [
+    "rosario",
+    "nueva-helvecia",
+    "juan-lacaze"
+   ],
+   "referencias": [
+    "Ruta 1 km 121"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "nueva-helvecia": {
+   "nombre": "Nueva Helvecia",
+   "tipo": "ciudad",
+   "padre": "colonia",
+   "vecinos": [
+    "colonia-valdense",
+    "rosario",
+    "colonia-del-sacramento",
+    "tarariras"
+   ],
+   "referencias": [
+    "Ruta 1 km 120",
+    "Plaza de los Fundadores"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "tarariras": {
+   "nombre": "Tarariras",
+   "tipo": "localidad",
+   "padre": "colonia",
+   "vecinos": [
+    "colonia-del-sacramento",
+    "nueva-helvecia"
+   ],
+   "referencias": [
+    "Ruta 22",
+    "Ruta 50"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "ombues-de-lavalle": {
+   "nombre": "Ombúes de Lavalle",
+   "tipo": "localidad",
+   "padre": "colonia",
+   "vecinos": [
+    "carmelo",
+    "nueva-palmira",
+    "florencio-sanchez"
+   ],
+   "referencias": [
+    "Ruta 12",
+    "Ruta 21"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "florencio-sanchez": {
+   "nombre": "Florencio Sánchez",
+   "tipo": "localidad",
+   "padre": "colonia",
+   "vecinos": [
+    "ombues-de-lavalle",
+    "cardona"
+   ],
+   "referencias": [
+    "Ruta 2",
+    "Ruta 12"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "ciudad-de-rocha": {
+   "nombre": "Rocha (ciudad)",
+   "tipo": "ciudad",
+   "padre": "rocha",
+   "vecinos": [
+    "la-paloma",
+    "castillos",
+    "velazquez",
+    "lascano"
+   ],
+   "referencias": [
+    "Ruta 9",
+    "Plaza Independencia",
+    "Ruta 15"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_en": "Rocha"
+  },
+  "la-paloma": {
+   "nombre": "La Paloma",
+   "tipo": "ciudad",
+   "padre": "rocha",
+   "vecinos": [
+    "ciudad-de-rocha",
+    "la-pedrera"
+   ],
+   "referencias": [
+    "Puerto de La Paloma",
+    "Faro del Cabo Santa María",
+    "Ruta 15",
+    "Playa Los Botes"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1
+  },
+  "la-pedrera": {
+   "nombre": "La Pedrera",
+   "tipo": "ciudad",
+   "padre": "rocha",
+   "vecinos": [
+    "la-paloma",
+    "castillos"
+   ],
+   "referencias": [
+    "Ruta 10",
+    "Playa del Desplayado"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "castillos": {
+   "nombre": "Castillos",
+   "tipo": "ciudad",
+   "padre": "rocha",
+   "vecinos": [
+    "ciudad-de-rocha",
+    "la-pedrera",
+    "punta-del-diablo",
+    "aguas-dulces"
+   ],
+   "referencias": [
+    "Ruta 9",
+    "Ruta 16",
+    "Laguna de Castillos"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "aguas-dulces": {
+   "nombre": "Aguas Dulces",
+   "tipo": "localidad",
+   "padre": "rocha",
+   "vecinos": [
+    "castillos",
+    "punta-del-diablo"
+   ],
+   "referencias": [
+    "Ruta 16",
+    "Rambla de Aguas Dulces"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "punta-del-diablo": {
+   "nombre": "Punta del Diablo",
+   "tipo": "ciudad",
+   "padre": "rocha",
+   "vecinos": [
+    "castillos",
+    "aguas-dulces",
+    "chuy"
+   ],
+   "referencias": [
+    "Ruta 9 km 298",
+    "Playa de los Pescadores",
+    "Parque Santa Teresa"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "chuy": {
+   "nombre": "Chuy",
+   "tipo": "ciudad",
+   "padre": "rocha",
+   "vecinos": [
+    "punta-del-diablo",
+    "18-de-julio"
+   ],
+   "referencias": [
+    "Ruta 9",
+    "Av. Internacional",
+    "frontera con Brasil"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "18-de-julio": {
+   "nombre": "18 de Julio",
+   "tipo": "localidad",
+   "padre": "rocha",
+   "vecinos": [
+    "chuy"
+   ],
+   "referencias": [
+    "Ruta 9",
+    "Ruta 19"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "lascano": {
+   "nombre": "Lascano",
+   "tipo": "localidad",
+   "padre": "rocha",
+   "vecinos": [
+    "ciudad-de-rocha",
+    "velazquez",
+    "cebollati"
+   ],
+   "referencias": [
+    "Ruta 15",
+    "Ruta 14"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "velazquez": {
+   "nombre": "Velázquez",
+   "tipo": "localidad",
+   "padre": "rocha",
+   "vecinos": [
+    "ciudad-de-rocha",
+    "lascano"
+   ],
+   "referencias": [
+    "Ruta 15",
+    "Ruta 13"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "cebollati": {
+   "nombre": "Cebollatí",
+   "tipo": "localidad",
+   "padre": "rocha",
+   "vecinos": [
+    "lascano"
+   ],
+   "referencias": [
+    "Ruta 15",
+    "Río Cebollatí"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "minas": {
+   "nombre": "Minas",
+   "tipo": "ciudad",
+   "padre": "lavalleja",
+   "vecinos": [
+    "solis-de-mataojo",
+    "jose-batlle-y-ordonez",
+    "mariscala"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Plaza Libertad",
+    "Cerro Arequita",
+    "Villa Serrana"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1
+  },
+  "jose-pedro-varela": {
+   "nombre": "José Pedro Varela",
+   "tipo": "localidad",
+   "padre": "lavalleja",
+   "vecinos": [
+    "mariscala",
+    "pirarajá"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Ruta 14"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "solis-de-mataojo": {
+   "nombre": "Solís de Mataojo",
+   "tipo": "localidad",
+   "padre": "lavalleja",
+   "vecinos": [
+    "minas"
+   ],
+   "referencias": [
+    "Ruta 8 km 96",
+    "Ruta 81"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "mariscala": {
+   "nombre": "Mariscala",
+   "tipo": "localidad",
+   "padre": "lavalleja",
+   "vecinos": [
+    "minas",
+    "jose-pedro-varela"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Ruta 40"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "jose-batlle-y-ordonez": {
+   "nombre": "José Batlle y Ordóñez",
+   "tipo": "localidad",
+   "padre": "lavalleja",
+   "vecinos": [
+    "minas"
+   ],
+   "referencias": [
+    "Ruta 7",
+    "Ruta 14"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "pirarajá": {
+   "nombre": "Pirarajá",
+   "tipo": "localidad",
+   "padre": "lavalleja",
+   "vecinos": [
+    "jose-pedro-varela"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Ruta 14"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "ciudad-de-florida": {
+   "nombre": "Florida (ciudad)",
+   "tipo": "ciudad",
+   "padre": "florida",
+   "vecinos": [
+    "sarandi-grande",
+    "cardal",
+    "fray-marcos",
+    "casupa"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Piedra Alta",
+    "Plaza Asamblea",
+    "Prado de la Piedra Alta"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_en": "Florida"
+  },
+  "sarandi-grande": {
+   "nombre": "Sarandí Grande",
+   "tipo": "localidad",
+   "padre": "florida",
+   "vecinos": [
+    "ciudad-de-florida"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Ruta 77"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3
+  },
+  "casupa": {
+   "nombre": "Casupá",
+   "tipo": "localidad",
+   "padre": "florida",
+   "vecinos": [
+    "fray-marcos",
+    "ciudad-de-florida"
+   ],
+   "referencias": [
+    "Ruta 7",
+    "Ruta 94"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "fray-marcos": {
+   "nombre": "Fray Marcos",
+   "tipo": "localidad",
+   "padre": "florida",
+   "vecinos": [
+    "casupa",
+    "ciudad-de-florida"
+   ],
+   "referencias": [
+    "Ruta 7",
+    "Ruta 6"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "cardal": {
+   "nombre": "Cardal",
+   "tipo": "localidad",
+   "padre": "florida",
+   "vecinos": [
+    "ciudad-de-florida",
+    "25-de-agosto"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Ruta 76"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "trinidad": {
+   "nombre": "Trinidad",
+   "tipo": "ciudad",
+   "padre": "flores",
+   "vecinos": [
+    "ismael-cortinas"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Ruta 23",
+    "Plaza Constitución",
+    "Grutas del Palacio"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1
+  },
+  "ismael-cortinas": {
+   "nombre": "Ismael Cortinas",
+   "tipo": "localidad",
+   "padre": "flores",
+   "vecinos": [
+    "trinidad",
+    "cardona"
+   ],
+   "referencias": [
+    "Ruta 23",
+    "Ruta 2"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "ciudad-de-durazno": {
+   "nombre": "Durazno (ciudad)",
+   "tipo": "ciudad",
+   "padre": "durazno",
+   "vecinos": [
+    "santa-bernardina",
+    "sarandi-del-yi",
+    "carlos-reyles",
+    "villa-del-carmen"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Plaza Independencia",
+    "Río Yí",
+    "Aeropuerto de Santa Bernardina"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_en": "Durazno"
+  },
+  "santa-bernardina": {
+   "nombre": "Santa Bernardina",
+   "tipo": "localidad",
+   "padre": "durazno",
+   "vecinos": [
+    "ciudad-de-durazno"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Aeropuerto"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "sarandi-del-yi": {
+   "nombre": "Sarandí del Yí",
+   "tipo": "localidad",
+   "padre": "durazno",
+   "vecinos": [
+    "ciudad-de-durazno",
+    "villa-del-carmen"
+   ],
+   "referencias": [
+    "Ruta 6",
+    "Ruta 14"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3
+  },
+  "villa-del-carmen": {
+   "nombre": "Villa del Carmen",
+   "tipo": "localidad",
+   "padre": "durazno",
+   "vecinos": [
+    "sarandi-del-yi",
+    "ciudad-de-durazno"
+   ],
+   "referencias": [
+    "Ruta 14",
+    "Ruta 6"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "carlos-reyles": {
+   "nombre": "Carlos Reyles",
+   "tipo": "localidad",
+   "padre": "durazno",
+   "vecinos": [
+    "ciudad-de-durazno",
+    "paso-de-los-toros"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Ruta 4"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "mercedes": {
+   "nombre": "Mercedes",
+   "tipo": "ciudad",
+   "padre": "soriano",
+   "vecinos": [
+    "dolores",
+    "jose-enrique-rodo",
+    "palmitas"
+   ],
+   "referencias": [
+    "Ruta 2",
+    "Rambla del Río Negro",
+    "Plaza Independencia",
+    "Ruta 14"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1
+  },
+  "dolores": {
+   "nombre": "Dolores",
+   "tipo": "ciudad",
+   "padre": "soriano",
+   "vecinos": [
+    "mercedes",
+    "cardona"
+   ],
+   "referencias": [
+    "Ruta 96",
+    "Ruta 21",
+    "Río San Salvador"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "cardona": {
+   "nombre": "Cardona",
+   "tipo": "localidad",
+   "padre": "soriano",
+   "vecinos": [
+    "dolores",
+    "florencio-sanchez",
+    "ismael-cortinas",
+    "jose-enrique-rodo"
+   ],
+   "referencias": [
+    "Ruta 2",
+    "Ruta 12"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3
+  },
+  "jose-enrique-rodo": {
+   "nombre": "José Enrique Rodó",
+   "tipo": "localidad",
+   "padre": "soriano",
+   "vecinos": [
+    "mercedes",
+    "cardona"
+   ],
+   "referencias": [
+    "Ruta 2",
+    "Ruta 55"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "palmitas": {
+   "nombre": "Palmitas",
+   "tipo": "localidad",
+   "padre": "soriano",
+   "vecinos": [
+    "mercedes"
+   ],
+   "referencias": [
+    "Ruta 2",
+    "Ruta 55"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "fray-bentos": {
+   "nombre": "Fray Bentos",
+   "tipo": "ciudad",
+   "padre": "rio-negro",
+   "vecinos": [
+    "young",
+    "nuevo-berlin"
+   ],
+   "referencias": [
+    "Ruta 2",
+    "Anglo (Patrimonio UNESCO)",
+    "Puente Libertador Gral. San Martín",
+    "Ruta 24"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1
+  },
+  "young": {
+   "nombre": "Young",
+   "tipo": "ciudad",
+   "padre": "rio-negro",
+   "vecinos": [
+    "fray-bentos",
+    "nuevo-berlin",
+    "san-javier"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Ruta 25",
+    "Plaza de Young"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "nuevo-berlin": {
+   "nombre": "Nuevo Berlín",
+   "tipo": "localidad",
+   "padre": "rio-negro",
+   "vecinos": [
+    "fray-bentos",
+    "young",
+    "san-javier"
+   ],
+   "referencias": [
+    "Ruta 24",
+    "Río Uruguay"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "san-javier": {
+   "nombre": "San Javier",
+   "tipo": "localidad",
+   "padre": "rio-negro",
+   "vecinos": [
+    "young",
+    "nuevo-berlin"
+   ],
+   "referencias": [
+    "Ruta 24",
+    "Río Uruguay"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "ciudad-de-paysandu": {
+   "nombre": "Paysandú (ciudad)",
+   "tipo": "ciudad",
+   "padre": "paysandu",
+   "vecinos": [
+    "nuevo-paysandu",
+    "porvenir",
+    "quebracho"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Puente Gral. Artigas",
+    "Plaza Constitución",
+    "Termas de Guaviyú"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_en": "Paysandú"
+  },
+  "nuevo-paysandu": {
+   "nombre": "Nuevo Paysandú",
+   "tipo": "localidad",
+   "padre": "paysandu",
+   "vecinos": [
+    "ciudad-de-paysandu"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Ruta 90"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "porvenir": {
+   "nombre": "Porvenir",
+   "tipo": "localidad",
+   "padre": "paysandu",
+   "vecinos": [
+    "ciudad-de-paysandu"
+   ],
+   "referencias": [
+    "Ruta 90"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "guichon": {
+   "nombre": "Guichón",
+   "tipo": "localidad",
+   "padre": "paysandu",
+   "vecinos": [
+    "quebracho",
+    "piedras-coloradas"
+   ],
+   "referencias": [
+    "Ruta 90",
+    "Termas de Almirón"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "quebracho": {
+   "nombre": "Quebracho",
+   "tipo": "localidad",
+   "padre": "paysandu",
+   "vecinos": [
+    "ciudad-de-paysandu",
+    "guichon"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Ruta 4"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "piedras-coloradas": {
+   "nombre": "Piedras Coloradas",
+   "tipo": "localidad",
+   "padre": "paysandu",
+   "vecinos": [
+    "guichon"
+   ],
+   "referencias": [
+    "Ruta 90",
+    "Ruta 4"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "ciudad-de-salto": {
+   "nombre": "Salto (ciudad)",
+   "tipo": "ciudad",
+   "padre": "salto",
+   "vecinos": [
+    "termas-del-dayman",
+    "san-antonio-salto",
+    "constitucion",
+    "termas-del-arapey",
+    "colonia-lavalleja"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Represa de Salto Grande",
+    "Costanera",
+    "Plaza Artigas"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_en": "Salto"
+  },
+  "termas-del-dayman": {
+   "nombre": "Termas del Daymán",
+   "tipo": "ciudad",
+   "padre": "salto",
+   "vecinos": [
+    "ciudad-de-salto"
+   ],
+   "referencias": [
+    "Ruta 3 km 487",
+    "complejo termal"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "termas-del-arapey": {
+   "nombre": "Termas del Arapey",
+   "tipo": "localidad",
+   "padre": "salto",
+   "vecinos": [
+    "ciudad-de-salto",
+    "constitucion"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Ruta 31"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "san-antonio-salto": {
+   "nombre": "San Antonio (Salto)",
+   "tipo": "localidad",
+   "padre": "salto",
+   "vecinos": [
+    "ciudad-de-salto"
+   ],
+   "referencias": [
+    "Ruta 31"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "constitucion": {
+   "nombre": "Constitución",
+   "tipo": "localidad",
+   "padre": "salto",
+   "vecinos": [
+    "ciudad-de-salto",
+    "belen",
+    "termas-del-arapey"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Río Uruguay"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "belen": {
+   "nombre": "Belén",
+   "tipo": "localidad",
+   "padre": "salto",
+   "vecinos": [
+    "constitucion"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Ruta 4"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "colonia-lavalleja": {
+   "nombre": "Colonia Lavalleja",
+   "tipo": "localidad",
+   "padre": "salto",
+   "vecinos": [
+    "ciudad-de-salto"
+   ],
+   "referencias": [
+    "Ruta 31"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "ciudad-de-artigas": {
+   "nombre": "Artigas (ciudad)",
+   "tipo": "ciudad",
+   "padre": "artigas",
+   "vecinos": [
+    "tomas-gomensoro",
+    "bella-union",
+    "baltasar-brum"
+   ],
+   "referencias": [
+    "Ruta 30",
+    "Puente de la Concordia",
+    "frontera con Quaraí"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_en": "Artigas"
+  },
+  "bella-union": {
+   "nombre": "Bella Unión",
+   "tipo": "ciudad",
+   "padre": "artigas",
+   "vecinos": [
+    "tomas-gomensoro",
+    "ciudad-de-artigas"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Ruta 30",
+    "Río Uruguay"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "tomas-gomensoro": {
+   "nombre": "Tomás Gomensoro",
+   "tipo": "localidad",
+   "padre": "artigas",
+   "vecinos": [
+    "bella-union",
+    "ciudad-de-artigas"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Ruta 30"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "baltasar-brum": {
+   "nombre": "Baltasar Brum",
+   "tipo": "localidad",
+   "padre": "artigas",
+   "vecinos": [
+    "ciudad-de-artigas"
+   ],
+   "referencias": [
+    "Ruta 4",
+    "Ruta 30"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "ciudad-de-rivera": {
+   "nombre": "Rivera (ciudad)",
+   "tipo": "ciudad",
+   "padre": "rivera",
+   "vecinos": [
+    "tranqueras",
+    "minas-de-corrales"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Plaza Internacional",
+    "Av. Sarandí",
+    "frontera con Santana do Livramento"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_en": "Rivera"
+  },
+  "tranqueras": {
+   "nombre": "Tranqueras",
+   "tipo": "localidad",
+   "padre": "rivera",
+   "vecinos": [
+    "ciudad-de-rivera",
+    "minas-de-corrales"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Ruta 30",
+    "Valle del Lunarejo"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "minas-de-corrales": {
+   "nombre": "Minas de Corrales",
+   "tipo": "localidad",
+   "padre": "rivera",
+   "vecinos": [
+    "ciudad-de-rivera",
+    "tranqueras",
+    "vichadero"
+   ],
+   "referencias": [
+    "Ruta 29",
+    "Ruta 5"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "vichadero": {
+   "nombre": "Vichadero",
+   "tipo": "localidad",
+   "padre": "rivera",
+   "vecinos": [
+    "minas-de-corrales"
+   ],
+   "referencias": [
+    "Ruta 6",
+    "Ruta 27"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "ciudad-de-tacuarembo": {
+   "nombre": "Tacuarembó (ciudad)",
+   "tipo": "ciudad",
+   "padre": "tacuarembo",
+   "vecinos": [
+    "paso-de-los-toros",
+    "san-gregorio-de-polanco",
+    "ansina"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Ruta 26",
+    "Plaza 19 de Abril",
+    "Valle Edén"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_en": "Tacuarembó"
+  },
+  "paso-de-los-toros": {
+   "nombre": "Paso de los Toros",
+   "tipo": "ciudad",
+   "padre": "tacuarembo",
+   "vecinos": [
+    "ciudad-de-tacuarembo",
+    "carlos-reyles",
+    "san-gregorio-de-polanco"
+   ],
+   "referencias": [
+    "Ruta 5",
+    "Represa Rincón del Bonete",
+    "Río Negro"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "san-gregorio-de-polanco": {
+   "nombre": "San Gregorio de Polanco",
+   "tipo": "localidad",
+   "padre": "tacuarembo",
+   "vecinos": [
+    "ciudad-de-tacuarembo",
+    "paso-de-los-toros"
+   ],
+   "referencias": [
+    "Ruta 43",
+    "Lago de Rincón del Bonete"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3
+  },
+  "ansina": {
+   "nombre": "Ansina",
+   "tipo": "localidad",
+   "padre": "tacuarembo",
+   "vecinos": [
+    "ciudad-de-tacuarembo"
+   ],
+   "referencias": [
+    "Ruta 26",
+    "Río Tacuarembó"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "melo": {
+   "nombre": "Melo",
+   "tipo": "ciudad",
+   "padre": "cerro-largo",
+   "vecinos": [
+    "fraile-muerto",
+    "rio-branco",
+    "acegua"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Ruta 26",
+    "Plaza Constitución",
+    "Posta del Chuy"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1
+  },
+  "rio-branco": {
+   "nombre": "Río Branco",
+   "tipo": "ciudad",
+   "padre": "cerro-largo",
+   "vecinos": [
+    "melo",
+    "acegua"
+   ],
+   "referencias": [
+    "Ruta 26",
+    "Puente Mauá",
+    "frontera con Jaguarão"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "fraile-muerto": {
+   "nombre": "Fraile Muerto",
+   "tipo": "localidad",
+   "padre": "cerro-largo",
+   "vecinos": [
+    "melo",
+    "tupambae"
+   ],
+   "referencias": [
+    "Ruta 7"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "acegua": {
+   "nombre": "Aceguá",
+   "tipo": "localidad",
+   "padre": "cerro-largo",
+   "vecinos": [
+    "melo",
+    "rio-branco"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "frontera con Brasil"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "tupambae": {
+   "nombre": "Tupambaé",
+   "tipo": "localidad",
+   "padre": "cerro-largo",
+   "vecinos": [
+    "fraile-muerto"
+   ],
+   "referencias": [
+    "Ruta 7"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "ciudad-de-treinta-y-tres": {
+   "nombre": "Treinta y Tres (ciudad)",
+   "tipo": "ciudad",
+   "padre": "treinta-y-tres",
+   "vecinos": [
+    "vergara",
+    "santa-clara-de-olimar",
+    "cerro-chato"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Ruta 17",
+    "Plaza 19 de Abril",
+    "Quebrada de los Cuervos"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "nombre_en": "Treinta y Tres"
+  },
+  "vergara": {
+   "nombre": "Vergara",
+   "tipo": "localidad",
+   "padre": "treinta-y-tres",
+   "vecinos": [
+    "ciudad-de-treinta-y-tres"
+   ],
+   "referencias": [
+    "Ruta 18",
+    "Río Cebollatí"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "santa-clara-de-olimar": {
+   "nombre": "Santa Clara de Olimar",
+   "tipo": "localidad",
+   "padre": "treinta-y-tres",
+   "vecinos": [
+    "ciudad-de-treinta-y-tres",
+    "cerro-chato"
+   ],
+   "referencias": [
+    "Ruta 7",
+    "Ruta 19"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  },
+  "cerro-chato": {
+   "nombre": "Cerro Chato",
+   "tipo": "localidad",
+   "padre": "treinta-y-tres",
+   "vecinos": [
+    "santa-clara-de-olimar",
+    "ciudad-de-treinta-y-tres"
+   ],
+   "referencias": [
+    "Ruta 7",
+    "Ruta 14"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3
+  }
+ }
+}

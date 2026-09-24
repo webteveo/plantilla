@@ -1,0 +1,4253 @@
+{
+ "pais": "AR",
+ "descripcion": "CABA (48 barrios oficiales, Ley 2650, con comuna) y los 40 partidos del AMBA (24 del Gran Buenos Aires según INDEC + 16 de la Región Metropolitana) con vecinos limítrofes y localidades principales. Jerarquía para data/zonas.php: argentina > caba > barrio; argentina > buenos-aires > amba > partido > localidad. vecinos = límite real (simétrico dentro del mismo tipo; los barrios de CABA incluyen partidos limítrofes cruzando General Paz o el Riachuelo). prioridad: 1 = se busca por su nombre, 2 = demanda probable, 3 = URL solo con datos reales.",
+ "fuentes": [
+  "Gobierno de la Ciudad de Buenos Aires: Ley 2650 (48 barrios) y Ley 1777 (15 comunas); data.buenosaires.gob.ar barrios por comuna",
+  "INDEC: Gran Buenos Aires, 24 partidos (folleto ¿Qué es el Gran Buenos Aires?)",
+  "Observatorio AMBA / RMBA: 40 partidos",
+  "ISO 3166-2:AR"
+ ],
+ "verificacion": "Listas de barrios, comunas y partidos contrastadas con fuentes oficiales vía búsqueda web (24-09-2026). Los vecinos se derivan de la cartografía oficial; revisar si un vecino no aplica al servicio.",
+ "campos": {
+  "nombre": "visible",
+  "tipo": "pais|provincia|region|partido|localidad|barrio",
+  "padre": "slug",
+  "vecinos": "slugs",
+  "referencias": "lugares reales",
+  "vivienda": "casas|apartamentos|mixto|rural|comercial",
+  "prioridad": "1-3",
+  "comuna": "1-15 (barrios CABA)",
+  "cordon": "gba24|rmba (partidos)",
+  "zona_gba": "norte|oeste|sur|sudoeste|sudeste|noroeste",
+  "localidades": "nombres de localidades del partido (todas), aparte de las que tienen entrada propia"
+ },
+ "zonas": {
+  "argentina": {
+   "nombre": "Argentina",
+   "tipo": "pais",
+   "padre": null,
+   "vecinos": [],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "paginas": false,
+   "wikidata": "Q414"
+  },
+  "caba": {
+   "nombre": "Ciudad de Buenos Aires",
+   "tipo": "provincia",
+   "padre": "argentina",
+   "vecinos": [
+    "vicente-lopez",
+    "general-san-martin",
+    "tres-de-febrero",
+    "la-matanza",
+    "lomas-de-zamora",
+    "lanus",
+    "avellaneda"
+   ],
+   "referencias": [
+    "Obelisco",
+    "Av. General Paz",
+    "Riachuelo",
+    "Río de la Plata"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 1,
+   "codigo": "AR-C",
+   "nombre_en": "la Ciudad de Buenos Aires",
+   "wikidata": "Q1486",
+   "alias": [
+    "CABA",
+    "Capital Federal",
+    "Buenos Aires"
+   ]
+  },
+  "buenos-aires": {
+   "nombre": "Provincia de Buenos Aires",
+   "tipo": "provincia",
+   "padre": "argentina",
+   "vecinos": [
+    "caba"
+   ],
+   "referencias": [],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "codigo": "AR-B",
+   "paginas": false,
+   "wikidata": "Q44754"
+  },
+  "amba": {
+   "nombre": "Gran Buenos Aires",
+   "tipo": "region",
+   "padre": "buenos-aires",
+   "vecinos": [
+    "caba"
+   ],
+   "referencias": [
+    "Av. General Paz",
+    "Camino de Cintura",
+    "Ruta 8",
+    "Autopista Panamericana",
+    "Autopista Ricchieri",
+    "Autopista Buenos Aires-La Plata"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "paginas": true,
+   "nombre_en": "el Gran Buenos Aires",
+   "alias": [
+    "AMBA",
+    "Conurbano",
+    "GBA"
+   ]
+  },
+  "retiro": {
+   "nombre": "Retiro",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "san-nicolas",
+    "recoleta",
+    "puerto-madero"
+   ],
+   "referencias": [
+    "Estación Retiro",
+    "Plaza San Martín",
+    "Torres de Catalinas",
+    "Av. del Libertador"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 2,
+   "comuna": 1,
+   "corredor": "centro"
+  },
+  "san-nicolas": {
+   "nombre": "San Nicolás",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "retiro",
+    "recoleta",
+    "balvanera",
+    "montserrat",
+    "puerto-madero"
+   ],
+   "referencias": [
+    "Obelisco",
+    "Florida",
+    "Av. Corrientes",
+    "Microcentro",
+    "Tribunales"
+   ],
+   "vivienda": "comercial",
+   "prioridad": 1,
+   "comuna": 1,
+   "corredor": "centro"
+  },
+  "puerto-madero": {
+   "nombre": "Puerto Madero",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "retiro",
+    "san-nicolas",
+    "montserrat",
+    "san-telmo",
+    "la-boca"
+   ],
+   "referencias": [
+    "Diques",
+    "Puente de la Mujer",
+    "Reserva Ecológica",
+    "torres nuevas"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 2,
+   "comuna": 1,
+   "corredor": "centro"
+  },
+  "montserrat": {
+   "nombre": "Montserrat",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "san-nicolas",
+    "puerto-madero",
+    "san-telmo",
+    "constitucion",
+    "balvanera",
+    "san-cristobal"
+   ],
+   "referencias": [
+    "Plaza de Mayo",
+    "Av. de Mayo",
+    "Av. 9 de Julio",
+    "Congreso"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 2,
+   "comuna": 1,
+   "corredor": "centro"
+  },
+  "san-telmo": {
+   "nombre": "San Telmo",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "montserrat",
+    "puerto-madero",
+    "la-boca",
+    "barracas",
+    "constitucion"
+   ],
+   "referencias": [
+    "Plaza Dorrego",
+    "Defensa",
+    "Parque Lezama",
+    "conventillos reciclados"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "comuna": 1,
+   "corredor": "centro"
+  },
+  "constitucion": {
+   "nombre": "Constitución",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "montserrat",
+    "san-telmo",
+    "barracas",
+    "parque-patricios",
+    "san-cristobal"
+   ],
+   "referencias": [
+    "Estación Constitución",
+    "Av. Brasil",
+    "Av. 9 de Julio Sur"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 2,
+   "comuna": 1,
+   "corredor": "centro"
+  },
+  "recoleta": {
+   "nombre": "Recoleta",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "retiro",
+    "san-nicolas",
+    "balvanera",
+    "almagro",
+    "palermo"
+   ],
+   "referencias": [
+    "Av. Callao",
+    "Av. Alvear",
+    "Cementerio de la Recoleta",
+    "Plaza Francia",
+    "Av. Santa Fe"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 1,
+   "comuna": 2,
+   "corredor": "norte"
+  },
+  "balvanera": {
+   "nombre": "Balvanera",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "san-nicolas",
+    "recoleta",
+    "almagro",
+    "san-cristobal",
+    "montserrat"
+   ],
+   "referencias": [
+    "Once",
+    "Congreso",
+    "Abasto",
+    "Av. Pueyrredón",
+    "Av. Corrientes"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 1,
+   "comuna": 3,
+   "corredor": "centro"
+  },
+  "san-cristobal": {
+   "nombre": "San Cristóbal",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "balvanera",
+    "constitucion",
+    "montserrat",
+    "parque-patricios",
+    "boedo"
+   ],
+   "referencias": [
+    "Av. Jujuy",
+    "Av. San Juan",
+    "Av. Independencia"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 3,
+   "comuna": 3,
+   "corredor": "centro"
+  },
+  "la-boca": {
+   "nombre": "La Boca",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "barracas",
+    "san-telmo",
+    "puerto-madero",
+    "avellaneda"
+   ],
+   "referencias": [
+    "Caminito",
+    "La Bombonera",
+    "Av. Almirante Brown",
+    "Puente Avellaneda"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "comuna": 4,
+   "corredor": "sur"
+  },
+  "barracas": {
+   "nombre": "Barracas",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "parque-patricios",
+    "constitucion",
+    "san-telmo",
+    "la-boca",
+    "nueva-pompeya",
+    "avellaneda",
+    "lanus"
+   ],
+   "referencias": [
+    "Av. Montes de Oca",
+    "Av. Regimiento de Patricios",
+    "galpones reciclados",
+    "Puente Pueyrredón"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "comuna": 4,
+   "corredor": "sur"
+  },
+  "parque-patricios": {
+   "nombre": "Parque Patricios",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "boedo",
+    "san-cristobal",
+    "constitucion",
+    "barracas",
+    "nueva-pompeya"
+   ],
+   "referencias": [
+    "Parque Patricios",
+    "Distrito Tecnológico",
+    "Av. Caseros",
+    "Av. Amancio Alcorta"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "comuna": 4,
+   "corredor": "sur"
+  },
+  "nueva-pompeya": {
+   "nombre": "Nueva Pompeya",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "parque-patricios",
+    "barracas",
+    "villa-soldati",
+    "parque-chacabuco",
+    "boedo",
+    "lanus"
+   ],
+   "referencias": [
+    "Av. Sáenz",
+    "Puente Alsina",
+    "Basílica de Pompeya"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "comuna": 4,
+   "corredor": "sur"
+  },
+  "almagro": {
+   "nombre": "Almagro",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "recoleta",
+    "balvanera",
+    "boedo",
+    "caballito",
+    "villa-crespo",
+    "palermo"
+   ],
+   "referencias": [
+    "Av. Rivadavia",
+    "Av. Medrano",
+    "Abasto",
+    "Av. Corrientes",
+    "Estación Almagro"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 1,
+   "comuna": 5,
+   "corredor": "centro"
+  },
+  "boedo": {
+   "nombre": "Boedo",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "almagro",
+    "san-cristobal",
+    "parque-patricios",
+    "parque-chacabuco",
+    "caballito",
+    "nueva-pompeya"
+   ],
+   "referencias": [
+    "Av. Boedo",
+    "Av. San Juan",
+    "Av. Independencia"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "comuna": 5,
+   "corredor": "centro"
+  },
+  "caballito": {
+   "nombre": "Caballito",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "almagro",
+    "villa-crespo",
+    "boedo",
+    "parque-chacabuco",
+    "flores",
+    "villa-general-mitre"
+   ],
+   "referencias": [
+    "Parque Rivadavia",
+    "Parque Centenario",
+    "Primera Junta",
+    "Av. Rivadavia",
+    "Av. Acoyte"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 1,
+   "comuna": 6,
+   "corredor": "centro"
+  },
+  "flores": {
+   "nombre": "Flores",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "caballito",
+    "parque-chacabuco",
+    "floresta",
+    "villa-santa-rita",
+    "villa-general-mitre",
+    "parque-avellaneda",
+    "villa-soldati"
+   ],
+   "referencias": [
+    "Plaza Flores",
+    "Av. Rivadavia",
+    "Av. Nazca",
+    "Av. Avellaneda",
+    "Bajo Flores"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "comuna": 7,
+   "corredor": "oeste"
+  },
+  "parque-chacabuco": {
+   "nombre": "Parque Chacabuco",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "caballito",
+    "boedo",
+    "flores",
+    "nueva-pompeya",
+    "villa-soldati"
+   ],
+   "referencias": [
+    "Parque Chacabuco",
+    "Av. Asamblea",
+    "Av. Directorio",
+    "Emilio Mitre"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "comuna": 7,
+   "corredor": "sur"
+  },
+  "villa-soldati": {
+   "nombre": "Villa Soldati",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "villa-lugano",
+    "villa-riachuelo",
+    "parque-avellaneda",
+    "flores",
+    "parque-chacabuco",
+    "nueva-pompeya",
+    "lomas-de-zamora"
+   ],
+   "referencias": [
+    "Parque Roca",
+    "Av. Roca",
+    "Puente La Noria",
+    "Parque de la Ciudad"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "comuna": 8,
+   "corredor": "sur"
+  },
+  "villa-riachuelo": {
+   "nombre": "Villa Riachuelo",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "villa-lugano",
+    "villa-soldati",
+    "lomas-de-zamora",
+    "la-matanza"
+   ],
+   "referencias": [
+    "Autódromo de Buenos Aires",
+    "Av. General Paz",
+    "Riachuelo"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "comuna": 8,
+   "corredor": "sur"
+  },
+  "villa-lugano": {
+   "nombre": "Villa Lugano",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "mataderos",
+    "parque-avellaneda",
+    "villa-soldati",
+    "villa-riachuelo",
+    "la-matanza",
+    "lomas-de-zamora"
+   ],
+   "referencias": [
+    "Av. Escalada",
+    "Av. Cruz",
+    "Av. General Paz",
+    "Lugano I y II"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "comuna": 8,
+   "corredor": "sur"
+  },
+  "liniers": {
+   "nombre": "Liniers",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "versalles",
+    "villa-luro",
+    "mataderos",
+    "tres-de-febrero",
+    "la-matanza"
+   ],
+   "referencias": [
+    "Estación Liniers",
+    "San Cayetano",
+    "Av. Rivadavia",
+    "Av. General Paz"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "comuna": 9,
+   "corredor": "oeste"
+  },
+  "mataderos": {
+   "nombre": "Mataderos",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "liniers",
+    "villa-luro",
+    "parque-avellaneda",
+    "villa-lugano",
+    "la-matanza"
+   ],
+   "referencias": [
+    "Feria de Mataderos",
+    "Av. Alberdi",
+    "Av. Eva Perón",
+    "Av. Emilio Castro"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "comuna": 9,
+   "corredor": "oeste"
+  },
+  "parque-avellaneda": {
+   "nombre": "Parque Avellaneda",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "mataderos",
+    "villa-luro",
+    "floresta",
+    "flores",
+    "villa-lugano",
+    "villa-soldati"
+   ],
+   "referencias": [
+    "Parque Avellaneda",
+    "Av. Directorio",
+    "Av. Lacarra",
+    "Autopista Perito Moreno"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "comuna": 9,
+   "corredor": "oeste"
+  },
+  "villa-real": {
+   "nombre": "Villa Real",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "villa-devoto",
+    "monte-castro",
+    "versalles",
+    "villa-luro",
+    "tres-de-febrero"
+   ],
+   "referencias": [
+    "Av. General Paz",
+    "Av. Lope de Vega",
+    "Av. Álvarez Jonte"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "comuna": 10,
+   "corredor": "oeste"
+  },
+  "monte-castro": {
+   "nombre": "Monte Castro",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "villa-devoto",
+    "villa-del-parque",
+    "villa-santa-rita",
+    "velez-sarsfield",
+    "villa-real",
+    "villa-luro"
+   ],
+   "referencias": [
+    "Av. Álvarez Jonte",
+    "Av. Segurola",
+    "Av. Juan B. Justo"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "comuna": 10,
+   "corredor": "oeste"
+  },
+  "versalles": {
+   "nombre": "Versalles",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "villa-real",
+    "villa-luro",
+    "liniers",
+    "villa-devoto",
+    "tres-de-febrero"
+   ],
+   "referencias": [
+    "Av. General Paz",
+    "Av. Juan B. Justo",
+    "Estación Versalles"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "comuna": 10,
+   "corredor": "oeste"
+  },
+  "floresta": {
+   "nombre": "Floresta",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "flores",
+    "villa-santa-rita",
+    "velez-sarsfield",
+    "villa-luro",
+    "parque-avellaneda"
+   ],
+   "referencias": [
+    "Av. Rivadavia",
+    "Av. Juan B. Justo",
+    "Av. Gaona",
+    "Estación Floresta"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "comuna": 10,
+   "corredor": "oeste"
+  },
+  "velez-sarsfield": {
+   "nombre": "Vélez Sársfield",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "floresta",
+    "villa-luro",
+    "monte-castro",
+    "villa-santa-rita"
+   ],
+   "referencias": [
+    "Av. Juan B. Justo",
+    "Av. Álvarez Jonte",
+    "Estación Vélez Sársfield"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "comuna": 10,
+   "corredor": "oeste"
+  },
+  "villa-luro": {
+   "nombre": "Villa Luro",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "versalles",
+    "villa-real",
+    "monte-castro",
+    "velez-sarsfield",
+    "floresta",
+    "liniers",
+    "parque-avellaneda",
+    "mataderos"
+   ],
+   "referencias": [
+    "Av. Rivadavia",
+    "Av. Juan B. Justo",
+    "Estación Villa Luro"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "comuna": 10,
+   "corredor": "oeste"
+  },
+  "villa-general-mitre": {
+   "nombre": "Villa General Mitre",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "villa-santa-rita",
+    "la-paternal",
+    "villa-crespo",
+    "caballito",
+    "flores"
+   ],
+   "referencias": [
+    "Av. Gaona",
+    "Av. San Martín",
+    "Av. Juan B. Justo"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "comuna": 11,
+   "corredor": "oeste"
+  },
+  "villa-devoto": {
+   "nombre": "Villa Devoto",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "villa-pueyrredon",
+    "villa-del-parque",
+    "monte-castro",
+    "villa-real",
+    "versalles",
+    "tres-de-febrero",
+    "general-san-martin"
+   ],
+   "referencias": [
+    "Plaza Arenales",
+    "Av. Francisco Beiró",
+    "Av. General Paz",
+    "casas con jardín"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "comuna": 11,
+   "corredor": "oeste"
+  },
+  "villa-del-parque": {
+   "nombre": "Villa del Parque",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "villa-devoto",
+    "agronomia",
+    "la-paternal",
+    "villa-santa-rita",
+    "monte-castro"
+   ],
+   "referencias": [
+    "Estación Villa del Parque",
+    "Av. Nazca",
+    "Cuenca",
+    "Av. Beiró"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "comuna": 11,
+   "corredor": "oeste"
+  },
+  "villa-santa-rita": {
+   "nombre": "Villa Santa Rita",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "villa-del-parque",
+    "villa-general-mitre",
+    "flores",
+    "floresta",
+    "monte-castro",
+    "velez-sarsfield"
+   ],
+   "referencias": [
+    "Av. Nazca",
+    "Av. Álvarez Jonte",
+    "Av. Gaona"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "comuna": 11,
+   "corredor": "oeste"
+  },
+  "coghlan": {
+   "nombre": "Coghlan",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "belgrano",
+    "nunez",
+    "saavedra",
+    "villa-urquiza"
+   ],
+   "referencias": [
+    "Estación Coghlan",
+    "Av. Congreso",
+    "casas bajas"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "comuna": 12,
+   "corredor": "norte"
+  },
+  "saavedra": {
+   "nombre": "Saavedra",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "nunez",
+    "coghlan",
+    "villa-urquiza",
+    "villa-pueyrredon",
+    "vicente-lopez"
+   ],
+   "referencias": [
+    "Parque Saavedra",
+    "Av. General Paz",
+    "Av. Balbín",
+    "Av. Cabildo"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "comuna": 12,
+   "corredor": "norte"
+  },
+  "villa-urquiza": {
+   "nombre": "Villa Urquiza",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "belgrano",
+    "coghlan",
+    "saavedra",
+    "villa-pueyrredon",
+    "parque-chas",
+    "villa-ortuzar"
+   ],
+   "referencias": [
+    "Av. Triunvirato",
+    "Av. Monroe",
+    "Estación Villa Urquiza",
+    "Av. Olazábal"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "comuna": 12,
+   "corredor": "norte"
+  },
+  "villa-pueyrredon": {
+   "nombre": "Villa Pueyrredón",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "villa-urquiza",
+    "saavedra",
+    "agronomia",
+    "villa-devoto",
+    "general-san-martin"
+   ],
+   "referencias": [
+    "Av. Mosconi",
+    "Av. General Paz",
+    "Estación Pueyrredón"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "comuna": 12,
+   "corredor": "norte"
+  },
+  "nunez": {
+   "nombre": "Núñez",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "belgrano",
+    "saavedra",
+    "coghlan",
+    "vicente-lopez"
+   ],
+   "referencias": [
+    "Av. del Libertador",
+    "Estadio Monumental",
+    "Ciudad Universitaria",
+    "Av. Cabildo"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "comuna": 13,
+   "corredor": "norte"
+  },
+  "belgrano": {
+   "nombre": "Belgrano",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "palermo",
+    "colegiales",
+    "nunez",
+    "villa-urquiza",
+    "coghlan",
+    "villa-ortuzar"
+   ],
+   "referencias": [
+    "Av. Cabildo",
+    "Barrancas de Belgrano",
+    "Belgrano R",
+    "Belgrano C",
+    "Barrio Chino",
+    "Av. del Libertador"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 1,
+   "comuna": 13,
+   "corredor": "norte"
+  },
+  "colegiales": {
+   "nombre": "Colegiales",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "palermo",
+    "belgrano",
+    "chacarita",
+    "villa-ortuzar"
+   ],
+   "referencias": [
+    "Av. Federico Lacroze",
+    "Av. Cabildo",
+    "Mercado de las Pulgas",
+    "Av. Álvarez Thomas"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "comuna": 13,
+   "corredor": "norte"
+  },
+  "palermo": {
+   "nombre": "Palermo",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "recoleta",
+    "almagro",
+    "villa-crespo",
+    "chacarita",
+    "colegiales",
+    "belgrano"
+   ],
+   "referencias": [
+    "Bosques de Palermo",
+    "Plaza Serrano",
+    "Palermo Soho",
+    "Palermo Hollywood",
+    "Las Cañitas",
+    "Av. Santa Fe"
+   ],
+   "vivienda": "apartamentos",
+   "prioridad": 1,
+   "comuna": 14,
+   "corredor": "norte"
+  },
+  "chacarita": {
+   "nombre": "Chacarita",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "palermo",
+    "villa-crespo",
+    "la-paternal",
+    "villa-ortuzar",
+    "colegiales",
+    "agronomia",
+    "parque-chas"
+   ],
+   "referencias": [
+    "Cementerio de la Chacarita",
+    "Av. Corrientes",
+    "Av. Federico Lacroze",
+    "Estación Chacarita"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "comuna": 15,
+   "corredor": "norte"
+  },
+  "villa-crespo": {
+   "nombre": "Villa Crespo",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "palermo",
+    "almagro",
+    "caballito",
+    "chacarita",
+    "la-paternal",
+    "villa-general-mitre"
+   ],
+   "referencias": [
+    "Av. Corrientes",
+    "Av. Scalabrini Ortiz",
+    "Av. Warnes",
+    "outlets de Aguirre"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "comuna": 15,
+   "corredor": "centro"
+  },
+  "la-paternal": {
+   "nombre": "La Paternal",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "chacarita",
+    "villa-crespo",
+    "villa-general-mitre",
+    "villa-del-parque",
+    "agronomia"
+   ],
+   "referencias": [
+    "Av. San Martín",
+    "Av. Warnes",
+    "Estación La Paternal"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "comuna": 15,
+   "corredor": "oeste"
+  },
+  "villa-ortuzar": {
+   "nombre": "Villa Ortúzar",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "chacarita",
+    "colegiales",
+    "villa-urquiza",
+    "parque-chas",
+    "belgrano"
+   ],
+   "referencias": [
+    "Av. Álvarez Thomas",
+    "Av. Triunvirato",
+    "Av. de los Incas"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "comuna": 15,
+   "corredor": "norte"
+  },
+  "agronomia": {
+   "nombre": "Agronomía",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "chacarita",
+    "la-paternal",
+    "villa-del-parque",
+    "villa-pueyrredon",
+    "parque-chas"
+   ],
+   "referencias": [
+    "Facultad de Agronomía",
+    "Av. San Martín",
+    "Av. de los Constituyentes"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "comuna": 15,
+   "corredor": "oeste"
+  },
+  "parque-chas": {
+   "nombre": "Parque Chas",
+   "tipo": "barrio",
+   "padre": "caba",
+   "vecinos": [
+    "agronomia",
+    "villa-ortuzar",
+    "villa-urquiza",
+    "chacarita"
+   ],
+   "referencias": [
+    "calles circulares",
+    "Av. Triunvirato",
+    "Av. de los Incas"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "comuna": 15,
+   "corredor": "norte"
+  },
+  "vicente-lopez": {
+   "nombre": "Vicente López",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "san-isidro",
+    "general-san-martin",
+    "nunez",
+    "saavedra"
+   ],
+   "referencias": [
+    "Av. Maipú",
+    "Av. del Libertador",
+    "Quinta de Olivos",
+    "Puerto de Olivos"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "norte",
+   "localidades": [
+    "Olivos",
+    "Florida",
+    "Munro",
+    "Villa Martelli",
+    "La Lucila",
+    "Vicente López",
+    "Carapachay",
+    "Villa Adelina"
+   ]
+  },
+  "san-isidro": {
+   "nombre": "San Isidro",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "vicente-lopez",
+    "san-fernando",
+    "tigre",
+    "general-san-martin"
+   ],
+   "referencias": [
+    "Catedral de San Isidro",
+    "Av. Centenario",
+    "Unicenter",
+    "Panamericana"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "norte",
+   "localidades": [
+    "San Isidro",
+    "Martínez",
+    "Acassuso",
+    "Beccar",
+    "Boulogne",
+    "Villa Adelina"
+   ]
+  },
+  "san-fernando": {
+   "nombre": "San Fernando",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "san-isidro",
+    "tigre"
+   ],
+   "referencias": [
+    "Av. Presidente Perón",
+    "Puerto de San Fernando",
+    "Delta"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "cordon": "gba24",
+   "zona_gba": "norte",
+   "localidades": [
+    "San Fernando",
+    "Victoria",
+    "Virreyes"
+   ]
+  },
+  "tigre": {
+   "nombre": "Tigre",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "san-fernando",
+    "san-isidro",
+    "malvinas-argentinas",
+    "escobar"
+   ],
+   "referencias": [
+    "Puerto de Frutos",
+    "Nordelta",
+    "Panamericana ramal Tigre",
+    "Delta del Paraná"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "norte",
+   "localidades": [
+    "Tigre",
+    "Don Torcuato",
+    "General Pacheco",
+    "Benavídez",
+    "Rincón de Milberg",
+    "Nordelta",
+    "El Talar",
+    "Troncos del Talar",
+    "Dique Luján"
+   ]
+  },
+  "general-san-martin": {
+   "nombre": "General San Martín",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "vicente-lopez",
+    "san-isidro",
+    "tres-de-febrero",
+    "malvinas-argentinas",
+    "san-miguel",
+    "villa-pueyrredon",
+    "villa-devoto"
+   ],
+   "referencias": [
+    "Av. General Paz",
+    "Ruta 8",
+    "Estación San Martín",
+    "zona industrial"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "noroeste",
+   "localidades": [
+    "San Martín",
+    "Villa Ballester",
+    "Villa Lynch",
+    "San Andrés",
+    "José León Suárez",
+    "Villa Maipú",
+    "Billinghurst",
+    "Chilavert",
+    "Loma Hermosa"
+   ]
+  },
+  "tres-de-febrero": {
+   "nombre": "Tres de Febrero",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "general-san-martin",
+    "hurlingham",
+    "moron",
+    "la-matanza",
+    "villa-devoto",
+    "villa-real",
+    "versalles",
+    "liniers"
+   ],
+   "referencias": [
+    "Av. General Paz",
+    "Ruta 8",
+    "Estación Caseros",
+    "Ciudad Jardín"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "oeste",
+   "localidades": [
+    "Caseros",
+    "Ciudadela",
+    "Santos Lugares",
+    "Sáenz Peña",
+    "Villa Bosch",
+    "Martín Coronado",
+    "Ciudad Jardín Lomas del Palomar",
+    "Loma Hermosa",
+    "El Libertador",
+    "Pablo Podestá"
+   ]
+  },
+  "hurlingham": {
+   "nombre": "Hurlingham",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "tres-de-febrero",
+    "moron",
+    "ituzaingo",
+    "san-miguel"
+   ],
+   "referencias": [
+    "Camino del Buen Ayre",
+    "Av. Vergara",
+    "Estación Hurlingham"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "cordon": "gba24",
+   "zona_gba": "oeste",
+   "localidades": [
+    "Hurlingham",
+    "Villa Tesei",
+    "William C. Morris"
+   ]
+  },
+  "ituzaingo": {
+   "nombre": "Ituzaingó",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "hurlingham",
+    "moron",
+    "merlo",
+    "moreno",
+    "san-miguel"
+   ],
+   "referencias": [
+    "Av. Rivadavia",
+    "Acceso Oeste",
+    "Estación Ituzaingó"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "cordon": "gba24",
+   "zona_gba": "oeste",
+   "localidades": [
+    "Ituzaingó",
+    "Villa Udaondo",
+    "Ituzaingó Sur"
+   ]
+  },
+  "moron": {
+   "nombre": "Morón",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "tres-de-febrero",
+    "hurlingham",
+    "ituzaingo",
+    "merlo",
+    "la-matanza"
+   ],
+   "referencias": [
+    "Av. Rivadavia",
+    "Acceso Oeste",
+    "Plaza San Martín de Morón",
+    "Estación Morón"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "oeste",
+   "localidades": [
+    "Morón",
+    "Castelar",
+    "Haedo",
+    "El Palomar",
+    "Villa Sarmiento"
+   ]
+  },
+  "merlo": {
+   "nombre": "Merlo",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "moron",
+    "ituzaingo",
+    "moreno",
+    "la-matanza",
+    "marcos-paz"
+   ],
+   "referencias": [
+    "Av. Rivadavia",
+    "Ruta 200",
+    "Estación Merlo",
+    "Acceso Oeste"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "oeste",
+   "localidades": [
+    "Merlo",
+    "San Antonio de Padua",
+    "Libertad",
+    "Mariano Acosta",
+    "Parque San Martín",
+    "Pontevedra"
+   ]
+  },
+  "moreno": {
+   "nombre": "Moreno",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "merlo",
+    "ituzaingo",
+    "san-miguel",
+    "jose-c-paz",
+    "pilar",
+    "general-rodriguez",
+    "marcos-paz"
+   ],
+   "referencias": [
+    "Acceso Oeste",
+    "Ruta 23",
+    "Estación Moreno",
+    "Ruta 25"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "oeste",
+   "localidades": [
+    "Moreno",
+    "Paso del Rey",
+    "Francisco Álvarez",
+    "Cuartel V",
+    "Trujui",
+    "La Reja"
+   ]
+  },
+  "san-miguel": {
+   "nombre": "San Miguel",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "jose-c-paz",
+    "malvinas-argentinas",
+    "moreno",
+    "hurlingham",
+    "ituzaingo",
+    "general-san-martin"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Ruta 23",
+    "Estación San Miguel",
+    "Camino del Buen Ayre"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "noroeste",
+   "localidades": [
+    "San Miguel",
+    "Bella Vista",
+    "Muñiz",
+    "Campo de Mayo"
+   ]
+  },
+  "jose-c-paz": {
+   "nombre": "José C. Paz",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "san-miguel",
+    "malvinas-argentinas",
+    "moreno",
+    "pilar"
+   ],
+   "referencias": [
+    "Ruta 197",
+    "Ruta 8",
+    "Estación José C. Paz"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "cordon": "gba24",
+   "zona_gba": "noroeste",
+   "localidades": [
+    "José C. Paz",
+    "Tortuguitas",
+    "Del Viso"
+   ]
+  },
+  "malvinas-argentinas": {
+   "nombre": "Malvinas Argentinas",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "san-miguel",
+    "jose-c-paz",
+    "tigre",
+    "pilar",
+    "escobar",
+    "general-san-martin"
+   ],
+   "referencias": [
+    "Panamericana ramal Pilar",
+    "Ruta 197",
+    "Ruta 8"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "cordon": "gba24",
+   "zona_gba": "norte",
+   "localidades": [
+    "Los Polvorines",
+    "Grand Bourg",
+    "Tortuguitas",
+    "Villa de Mayo",
+    "Pablo Nogués",
+    "Ingeniero Pablo Nogués",
+    "Ingeniero Adolfo Sourdeaux"
+   ]
+  },
+  "la-matanza": {
+   "nombre": "La Matanza",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "tres-de-febrero",
+    "moron",
+    "merlo",
+    "marcos-paz",
+    "canuelas",
+    "ezeiza",
+    "esteban-echeverria",
+    "lomas-de-zamora",
+    "liniers",
+    "mataderos",
+    "villa-lugano",
+    "villa-riachuelo"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Camino de Cintura",
+    "Autopista Ricchieri",
+    "Av. General Paz",
+    "Mercado Central"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "sudoeste",
+   "localidades": [
+    "San Justo",
+    "Ramos Mejía",
+    "Ciudad Evita",
+    "Isidro Casanova",
+    "González Catán",
+    "Villa Luzuriaga",
+    "Lomas del Mirador",
+    "Tapiales",
+    "Villa Madero",
+    "Villa Celina",
+    "Laferrere",
+    "Rafael Castillo",
+    "Virrey del Pino",
+    "La Tablada",
+    "Aldo Bonzi",
+    "20 de Junio"
+   ]
+  },
+  "lomas-de-zamora": {
+   "nombre": "Lomas de Zamora",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "la-matanza",
+    "lanus",
+    "almirante-brown",
+    "esteban-echeverria",
+    "quilmes",
+    "villa-soldati",
+    "villa-lugano",
+    "villa-riachuelo"
+   ],
+   "referencias": [
+    "Av. Hipólito Yrigoyen",
+    "Camino Negro",
+    "Estación Lomas",
+    "Puente La Noria"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "sur",
+   "localidades": [
+    "Lomas de Zamora",
+    "Banfield",
+    "Temperley",
+    "Turdera",
+    "Llavallol",
+    "Villa Fiorito",
+    "Ingeniero Budge",
+    "Villa Centenario"
+   ]
+  },
+  "lanus": {
+   "nombre": "Lanús",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "lomas-de-zamora",
+    "avellaneda",
+    "quilmes",
+    "barracas",
+    "nueva-pompeya"
+   ],
+   "referencias": [
+    "Av. Hipólito Yrigoyen",
+    "Puente Alsina",
+    "Estación Lanús",
+    "Camino General Belgrano"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "sur",
+   "localidades": [
+    "Lanús",
+    "Remedios de Escalada",
+    "Valentín Alsina",
+    "Gerli",
+    "Monte Chingolo",
+    "Villa Diamante"
+   ]
+  },
+  "avellaneda": {
+   "nombre": "Avellaneda",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "lanus",
+    "quilmes",
+    "la-boca",
+    "barracas"
+   ],
+   "referencias": [
+    "Av. Mitre",
+    "Puente Pueyrredón",
+    "Autopista Buenos Aires-La Plata",
+    "Alto Avellaneda"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "sur",
+   "localidades": [
+    "Avellaneda",
+    "Wilde",
+    "Sarandí",
+    "Dock Sud",
+    "Piñeyro",
+    "Villa Domínico",
+    "Gerli",
+    "Crucecita"
+   ]
+  },
+  "quilmes": {
+   "nombre": "Quilmes",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "avellaneda",
+    "lanus",
+    "lomas-de-zamora",
+    "almirante-brown",
+    "florencio-varela",
+    "berazategui"
+   ],
+   "referencias": [
+    "Av. Calchaquí",
+    "Autopista Buenos Aires-La Plata",
+    "Rambla de Quilmes",
+    "Estación Quilmes"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "sur",
+   "localidades": [
+    "Quilmes",
+    "Bernal",
+    "Ezpeleta",
+    "Don Bosco",
+    "San Francisco Solano",
+    "Villa La Florida",
+    "Quilmes Oeste"
+   ]
+  },
+  "berazategui": {
+   "nombre": "Berazategui",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "quilmes",
+    "florencio-varela",
+    "la-plata",
+    "ensenada"
+   ],
+   "referencias": [
+    "Autopista Buenos Aires-La Plata",
+    "Ruta 2",
+    "Estación Berazategui"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "cordon": "gba24",
+   "zona_gba": "sudeste",
+   "localidades": [
+    "Berazategui",
+    "Ranelagh",
+    "Hudson",
+    "Plátanos",
+    "Villa España",
+    "Sourigues",
+    "El Pato"
+   ]
+  },
+  "florencio-varela": {
+   "nombre": "Florencio Varela",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "quilmes",
+    "berazategui",
+    "almirante-brown",
+    "presidente-peron",
+    "san-vicente",
+    "la-plata"
+   ],
+   "referencias": [
+    "Ruta 2",
+    "Camino General Belgrano",
+    "Ruta 53",
+    "Estación Varela"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "cordon": "gba24",
+   "zona_gba": "sudeste",
+   "localidades": [
+    "Florencio Varela",
+    "Bosques",
+    "Zeballos",
+    "Villa Vatteone",
+    "Ingeniero Allan",
+    "Gobernador Costa"
+   ]
+  },
+  "almirante-brown": {
+   "nombre": "Almirante Brown",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "lomas-de-zamora",
+    "quilmes",
+    "florencio-varela",
+    "presidente-peron",
+    "esteban-echeverria",
+    "san-vicente"
+   ],
+   "referencias": [
+    "Av. Hipólito Yrigoyen",
+    "Ruta 4 (Camino de Cintura)",
+    "Estación Adrogué",
+    "Ruta 210"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "sur",
+   "localidades": [
+    "Adrogué",
+    "Burzaco",
+    "Glew",
+    "Longchamps",
+    "Rafael Calzada",
+    "Claypole",
+    "José Mármol",
+    "Ministro Rivadavia",
+    "San José",
+    "Malvinas Argentinas"
+   ]
+  },
+  "esteban-echeverria": {
+   "nombre": "Esteban Echeverría",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "lomas-de-zamora",
+    "almirante-brown",
+    "ezeiza",
+    "la-matanza",
+    "presidente-peron"
+   ],
+   "referencias": [
+    "Autopista Ricchieri",
+    "Camino de Cintura",
+    "Estación Monte Grande",
+    "Canning"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "cordon": "gba24",
+   "zona_gba": "sudoeste",
+   "localidades": [
+    "Monte Grande",
+    "Luis Guillón",
+    "El Jagüel",
+    "Canning",
+    "9 de Abril"
+   ]
+  },
+  "ezeiza": {
+   "nombre": "Ezeiza",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "esteban-echeverria",
+    "la-matanza",
+    "canuelas",
+    "presidente-peron",
+    "san-vicente"
+   ],
+   "referencias": [
+    "Aeropuerto de Ezeiza",
+    "Autopista Ricchieri",
+    "Ruta 205",
+    "Ruta 52"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2,
+   "cordon": "gba24",
+   "zona_gba": "sudoeste",
+   "localidades": [
+    "Ezeiza",
+    "Tristán Suárez",
+    "Carlos Spegazzini",
+    "La Unión",
+    "Canning"
+   ]
+  },
+  "la-plata": {
+   "nombre": "La Plata",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "berazategui",
+    "ensenada",
+    "berisso",
+    "florencio-varela",
+    "san-vicente",
+    "brandsen"
+   ],
+   "referencias": [
+    "Plaza Moreno",
+    "Catedral",
+    "Diagonal 74",
+    "Camino Centenario",
+    "Ruta 2"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 1,
+   "cordon": "rmba",
+   "zona_gba": "sudeste",
+   "localidades": [
+    "La Plata",
+    "City Bell",
+    "Gonnet",
+    "Villa Elisa",
+    "Tolosa",
+    "Los Hornos",
+    "Ringuelet",
+    "Melchor Romero",
+    "Olmos",
+    "Abasto",
+    "Villa Elvira",
+    "Altos de San Lorenzo"
+   ]
+  },
+  "berisso": {
+   "nombre": "Berisso",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "ensenada",
+    "la-plata"
+   ],
+   "referencias": [
+    "Av. Montevideo",
+    "Puerto La Plata",
+    "Isla Paulino"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "cordon": "rmba",
+   "zona_gba": "sudeste",
+   "localidades": [
+    "Berisso",
+    "Villa Progreso",
+    "Los Talas"
+   ]
+  },
+  "ensenada": {
+   "nombre": "Ensenada",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "berisso",
+    "la-plata",
+    "berazategui"
+   ],
+   "referencias": [
+    "Puerto La Plata",
+    "Astillero Río Santiago",
+    "Camino Rivadavia"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 3,
+   "cordon": "rmba",
+   "zona_gba": "sudeste",
+   "localidades": [
+    "Ensenada",
+    "Punta Lara",
+    "Dique"
+   ]
+  },
+  "brandsen": {
+   "nombre": "Brandsen",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "la-plata",
+    "san-vicente"
+   ],
+   "referencias": [
+    "Ruta 2",
+    "Ruta 210"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3,
+   "cordon": "rmba",
+   "zona_gba": "sudeste",
+   "localidades": [
+    "Brandsen",
+    "Jeppener"
+   ]
+  },
+  "san-vicente": {
+   "nombre": "San Vicente",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "presidente-peron",
+    "ezeiza",
+    "canuelas",
+    "florencio-varela",
+    "brandsen",
+    "almirante-brown",
+    "la-plata"
+   ],
+   "referencias": [
+    "Ruta 210",
+    "Ruta 6",
+    "Ruta 58"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "cordon": "rmba",
+   "zona_gba": "sur",
+   "localidades": [
+    "San Vicente",
+    "Alejandro Korn",
+    "Domselaar"
+   ]
+  },
+  "presidente-peron": {
+   "nombre": "Presidente Perón",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "almirante-brown",
+    "esteban-echeverria",
+    "ezeiza",
+    "san-vicente",
+    "florencio-varela"
+   ],
+   "referencias": [
+    "Ruta 210",
+    "Ruta 16",
+    "Estación Guernica"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "cordon": "rmba",
+   "zona_gba": "sur",
+   "localidades": [
+    "Guernica"
+   ]
+  },
+  "canuelas": {
+   "nombre": "Cañuelas",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "la-matanza",
+    "ezeiza",
+    "san-vicente",
+    "marcos-paz",
+    "general-las-heras"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Ruta 205",
+    "Ruta 6",
+    "Autopista Ezeiza-Cañuelas"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3,
+   "cordon": "rmba",
+   "zona_gba": "sudoeste",
+   "localidades": [
+    "Cañuelas",
+    "Máximo Paz",
+    "Alejandro Petión",
+    "Uribelarrea",
+    "Vicente Casares"
+   ]
+  },
+  "marcos-paz": {
+   "nombre": "Marcos Paz",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "merlo",
+    "moreno",
+    "general-rodriguez",
+    "general-las-heras",
+    "la-matanza",
+    "canuelas"
+   ],
+   "referencias": [
+    "Ruta 40",
+    "Ruta 6",
+    "Ruta 200"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3,
+   "cordon": "rmba",
+   "zona_gba": "oeste",
+   "localidades": [
+    "Marcos Paz"
+   ]
+  },
+  "general-las-heras": {
+   "nombre": "General Las Heras",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "general-rodriguez",
+    "marcos-paz",
+    "lujan",
+    "canuelas"
+   ],
+   "referencias": [
+    "Ruta 6",
+    "Ruta 40"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3,
+   "cordon": "rmba",
+   "zona_gba": "oeste",
+   "localidades": [
+    "General Las Heras",
+    "Plomer",
+    "Villars"
+   ]
+  },
+  "general-rodriguez": {
+   "nombre": "General Rodríguez",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "lujan",
+    "pilar",
+    "moreno",
+    "marcos-paz",
+    "general-las-heras"
+   ],
+   "referencias": [
+    "Acceso Oeste",
+    "Ruta 6",
+    "Ruta 28",
+    "Ruta 24"
+   ],
+   "vivienda": "casas",
+   "prioridad": 3,
+   "cordon": "rmba",
+   "zona_gba": "oeste",
+   "localidades": [
+    "General Rodríguez"
+   ]
+  },
+  "lujan": {
+   "nombre": "Luján",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "pilar",
+    "exaltacion-de-la-cruz",
+    "general-rodriguez",
+    "general-las-heras"
+   ],
+   "referencias": [
+    "Basílica de Luján",
+    "Acceso Oeste",
+    "Ruta 7",
+    "Ruta 6"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "cordon": "rmba",
+   "zona_gba": "oeste",
+   "localidades": [
+    "Luján",
+    "Open Door",
+    "Jáuregui",
+    "Olivera",
+    "Torres"
+   ]
+  },
+  "pilar": {
+   "nombre": "Pilar",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "escobar",
+    "malvinas-argentinas",
+    "jose-c-paz",
+    "moreno",
+    "general-rodriguez",
+    "exaltacion-de-la-cruz",
+    "lujan",
+    "campana"
+   ],
+   "referencias": [
+    "Panamericana ramal Pilar",
+    "Ruta 8",
+    "Km 50",
+    "barrios cerrados",
+    "Ruta 25"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "cordon": "rmba",
+   "zona_gba": "norte",
+   "localidades": [
+    "Pilar",
+    "Del Viso",
+    "Presidente Derqui",
+    "Villa Rosa",
+    "Manzanares",
+    "Fátima",
+    "Manuel Alberti",
+    "Villa Astolfi",
+    "Zelaya"
+   ]
+  },
+  "escobar": {
+   "nombre": "Escobar",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "tigre",
+    "malvinas-argentinas",
+    "pilar",
+    "campana"
+   ],
+   "referencias": [
+    "Panamericana ramal Escobar",
+    "Ruta 25",
+    "Ruta 26",
+    "Fiesta de la Flor"
+   ],
+   "vivienda": "casas",
+   "prioridad": 1,
+   "cordon": "rmba",
+   "zona_gba": "norte",
+   "localidades": [
+    "Belén de Escobar",
+    "Garín",
+    "Ingeniero Maschwitz",
+    "Matheu",
+    "Maquinista Savio",
+    "Loma Verde"
+   ]
+  },
+  "campana": {
+   "nombre": "Campana",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "escobar",
+    "pilar",
+    "exaltacion-de-la-cruz",
+    "zarate"
+   ],
+   "referencias": [
+    "Panamericana ramal Campana",
+    "Ruta 6",
+    "Puente Zárate-Brazo Largo",
+    "Parque Industrial"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "cordon": "rmba",
+   "zona_gba": "norte",
+   "localidades": [
+    "Campana",
+    "Los Cardales",
+    "Alto Los Cardales"
+   ]
+  },
+  "zarate": {
+   "nombre": "Zárate",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "campana",
+    "exaltacion-de-la-cruz"
+   ],
+   "referencias": [
+    "Ruta 9",
+    "Puente Zárate-Brazo Largo",
+    "Puerto de Zárate",
+    "Ruta 12"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2,
+   "cordon": "rmba",
+   "zona_gba": "norte",
+   "localidades": [
+    "Zárate",
+    "Lima",
+    "Escalada"
+   ]
+  },
+  "exaltacion-de-la-cruz": {
+   "nombre": "Exaltación de la Cruz",
+   "tipo": "partido",
+   "padre": "amba",
+   "vecinos": [
+    "campana",
+    "zarate",
+    "pilar",
+    "lujan"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Ruta 6",
+    "Ruta 193"
+   ],
+   "vivienda": "rural",
+   "prioridad": 3,
+   "cordon": "rmba",
+   "zona_gba": "norte",
+   "localidades": [
+    "Capilla del Señor",
+    "Los Cardales",
+    "Parada Robles",
+    "Pavón"
+   ]
+  },
+  "olivos": {
+   "nombre": "Olivos",
+   "tipo": "localidad",
+   "padre": "vicente-lopez",
+   "vecinos": [
+    "florida-vl",
+    "munro",
+    "villa-martelli",
+    "la-lucila"
+   ],
+   "referencias": [
+    "Quinta de Olivos",
+    "Puerto de Olivos",
+    "Av. Maipú"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "florida-vl": {
+   "nombre": "Florida (Vicente López)",
+   "tipo": "localidad",
+   "padre": "vicente-lopez",
+   "vecinos": [
+    "olivos",
+    "munro",
+    "villa-martelli",
+    "la-lucila"
+   ],
+   "referencias": [
+    "Estación Florida",
+    "Av. San Martín"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "munro": {
+   "nombre": "Munro",
+   "tipo": "localidad",
+   "padre": "vicente-lopez",
+   "vecinos": [
+    "olivos",
+    "florida-vl",
+    "villa-martelli",
+    "la-lucila"
+   ],
+   "referencias": [
+    "Av. Vélez Sarsfield",
+    "Av. Mitre"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "villa-martelli": {
+   "nombre": "Villa Martelli",
+   "tipo": "localidad",
+   "padre": "vicente-lopez",
+   "vecinos": [
+    "olivos",
+    "florida-vl",
+    "munro",
+    "la-lucila"
+   ],
+   "referencias": [
+    "Av. General Paz",
+    "Tecnópolis"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "la-lucila": {
+   "nombre": "La Lucila",
+   "tipo": "localidad",
+   "padre": "vicente-lopez",
+   "vecinos": [
+    "olivos",
+    "florida-vl",
+    "munro",
+    "villa-martelli"
+   ],
+   "referencias": [
+    "Av. del Libertador",
+    "Estación La Lucila"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "martinez": {
+   "nombre": "Martínez",
+   "tipo": "localidad",
+   "padre": "san-isidro",
+   "vecinos": [
+    "acassuso",
+    "beccar",
+    "boulogne",
+    "villa-adelina"
+   ],
+   "referencias": [
+    "Unicenter",
+    "Av. Santa Fe",
+    "Estación Martínez"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "acassuso": {
+   "nombre": "Acassuso",
+   "tipo": "localidad",
+   "padre": "san-isidro",
+   "vecinos": [
+    "martinez",
+    "beccar",
+    "boulogne",
+    "villa-adelina"
+   ],
+   "referencias": [
+    "Av. del Libertador",
+    "Estación Acassuso"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "beccar": {
+   "nombre": "Beccar",
+   "tipo": "localidad",
+   "padre": "san-isidro",
+   "vecinos": [
+    "martinez",
+    "acassuso",
+    "boulogne",
+    "villa-adelina"
+   ],
+   "referencias": [
+    "Av. Centenario",
+    "Estación Beccar"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "boulogne": {
+   "nombre": "Boulogne",
+   "tipo": "localidad",
+   "padre": "san-isidro",
+   "vecinos": [
+    "martinez",
+    "acassuso",
+    "beccar",
+    "villa-adelina"
+   ],
+   "referencias": [
+    "Av. Rolón",
+    "Camino Real"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "villa-adelina": {
+   "nombre": "Villa Adelina",
+   "tipo": "localidad",
+   "padre": "san-isidro",
+   "vecinos": [
+    "martinez",
+    "acassuso",
+    "beccar",
+    "boulogne"
+   ],
+   "referencias": [
+    "Av. de Mayo",
+    "Estación Villa Adelina"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "don-torcuato": {
+   "nombre": "Don Torcuato",
+   "tipo": "localidad",
+   "padre": "tigre",
+   "vecinos": [
+    "general-pacheco",
+    "benavidez",
+    "nordelta",
+    "rincon-de-milberg",
+    "el-talar"
+   ],
+   "referencias": [
+    "Ruta 202",
+    "Panamericana"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "general-pacheco": {
+   "nombre": "General Pacheco",
+   "tipo": "localidad",
+   "padre": "tigre",
+   "vecinos": [
+    "don-torcuato",
+    "benavidez",
+    "nordelta",
+    "rincon-de-milberg",
+    "el-talar"
+   ],
+   "referencias": [
+    "Ruta 197",
+    "Panamericana"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "benavidez": {
+   "nombre": "Benavídez",
+   "tipo": "localidad",
+   "padre": "tigre",
+   "vecinos": [
+    "don-torcuato",
+    "general-pacheco",
+    "nordelta",
+    "rincon-de-milberg",
+    "el-talar"
+   ],
+   "referencias": [
+    "Ruta 27",
+    "Estación Benavídez"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "nordelta": {
+   "nombre": "Nordelta",
+   "tipo": "localidad",
+   "padre": "tigre",
+   "vecinos": [
+    "don-torcuato",
+    "general-pacheco",
+    "benavidez",
+    "rincon-de-milberg",
+    "el-talar"
+   ],
+   "referencias": [
+    "Av. de los Lagos",
+    "Centro Comercial Nordelta"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "rincon-de-milberg": {
+   "nombre": "Rincón de Milberg",
+   "tipo": "localidad",
+   "padre": "tigre",
+   "vecinos": [
+    "don-torcuato",
+    "general-pacheco",
+    "benavidez",
+    "nordelta"
+   ],
+   "referencias": [
+    "Ruta 27",
+    "Av. Santa María de las Conchas"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "el-talar": {
+   "nombre": "El Talar",
+   "tipo": "localidad",
+   "padre": "tigre",
+   "vecinos": [
+    "don-torcuato",
+    "general-pacheco",
+    "benavidez",
+    "nordelta"
+   ],
+   "referencias": [
+    "Ruta 197",
+    "Av. Hipólito Yrigoyen"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "villa-ballester": {
+   "nombre": "Villa Ballester",
+   "tipo": "localidad",
+   "padre": "general-san-martin",
+   "vecinos": [
+    "san-andres",
+    "jose-leon-suarez",
+    "villa-lynch"
+   ],
+   "referencias": [
+    "Estación Villa Ballester",
+    "Av. Balbín"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "san-andres": {
+   "nombre": "San Andrés",
+   "tipo": "localidad",
+   "padre": "general-san-martin",
+   "vecinos": [
+    "villa-ballester",
+    "jose-leon-suarez",
+    "villa-lynch"
+   ],
+   "referencias": [
+    "Estación San Andrés",
+    "Av. Balbín"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "jose-leon-suarez": {
+   "nombre": "José León Suárez",
+   "tipo": "localidad",
+   "padre": "general-san-martin",
+   "vecinos": [
+    "villa-ballester",
+    "san-andres",
+    "villa-lynch"
+   ],
+   "referencias": [
+    "Ruta 4",
+    "Estación Suárez"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "villa-lynch": {
+   "nombre": "Villa Lynch",
+   "tipo": "localidad",
+   "padre": "general-san-martin",
+   "vecinos": [
+    "villa-ballester",
+    "san-andres",
+    "jose-leon-suarez"
+   ],
+   "referencias": [
+    "Av. General Paz",
+    "Ruta 8"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "caseros": {
+   "nombre": "Caseros",
+   "tipo": "localidad",
+   "padre": "tres-de-febrero",
+   "vecinos": [
+    "ciudadela",
+    "santos-lugares",
+    "saenz-pena",
+    "villa-bosch",
+    "martin-coronado",
+    "ciudad-jardin"
+   ],
+   "referencias": [
+    "Estación Caseros",
+    "Av. San Martín"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "ciudadela": {
+   "nombre": "Ciudadela",
+   "tipo": "localidad",
+   "padre": "tres-de-febrero",
+   "vecinos": [
+    "caseros",
+    "santos-lugares",
+    "saenz-pena",
+    "villa-bosch",
+    "martin-coronado",
+    "ciudad-jardin"
+   ],
+   "referencias": [
+    "Av. General Paz",
+    "Av. Rivadavia"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "santos-lugares": {
+   "nombre": "Santos Lugares",
+   "tipo": "localidad",
+   "padre": "tres-de-febrero",
+   "vecinos": [
+    "caseros",
+    "ciudadela",
+    "saenz-pena",
+    "villa-bosch",
+    "martin-coronado",
+    "ciudad-jardin"
+   ],
+   "referencias": [
+    "Estación Santos Lugares",
+    "Av. La Plata"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "saenz-pena": {
+   "nombre": "Sáenz Peña",
+   "tipo": "localidad",
+   "padre": "tres-de-febrero",
+   "vecinos": [
+    "caseros",
+    "ciudadela",
+    "santos-lugares",
+    "villa-bosch",
+    "martin-coronado",
+    "ciudad-jardin"
+   ],
+   "referencias": [
+    "Estación Sáenz Peña",
+    "Av. San Martín"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "villa-bosch": {
+   "nombre": "Villa Bosch",
+   "tipo": "localidad",
+   "padre": "tres-de-febrero",
+   "vecinos": [
+    "caseros",
+    "ciudadela",
+    "santos-lugares",
+    "saenz-pena"
+   ],
+   "referencias": [
+    "Estación Villa Bosch"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "martin-coronado": {
+   "nombre": "Martín Coronado",
+   "tipo": "localidad",
+   "padre": "tres-de-febrero",
+   "vecinos": [
+    "caseros",
+    "ciudadela",
+    "santos-lugares",
+    "saenz-pena"
+   ],
+   "referencias": [
+    "Estación Martín Coronado"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "ciudad-jardin": {
+   "nombre": "Ciudad Jardín Lomas del Palomar",
+   "tipo": "localidad",
+   "padre": "tres-de-febrero",
+   "vecinos": [
+    "caseros",
+    "ciudadela",
+    "santos-lugares",
+    "saenz-pena"
+   ],
+   "referencias": [
+    "Plaza de Ciudad Jardín",
+    "Ruta 8"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "castelar": {
+   "nombre": "Castelar",
+   "tipo": "localidad",
+   "padre": "moron",
+   "vecinos": [
+    "haedo",
+    "el-palomar",
+    "villa-sarmiento"
+   ],
+   "referencias": [
+    "Estación Castelar",
+    "Av. Arias"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "haedo": {
+   "nombre": "Haedo",
+   "tipo": "localidad",
+   "padre": "moron",
+   "vecinos": [
+    "castelar",
+    "el-palomar",
+    "villa-sarmiento"
+   ],
+   "referencias": [
+    "Estación Haedo",
+    "Av. Rivadavia"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "el-palomar": {
+   "nombre": "El Palomar",
+   "tipo": "localidad",
+   "padre": "moron",
+   "vecinos": [
+    "castelar",
+    "haedo",
+    "villa-sarmiento"
+   ],
+   "referencias": [
+    "Estación El Palomar",
+    "Ruta 8"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "villa-sarmiento": {
+   "nombre": "Villa Sarmiento",
+   "tipo": "localidad",
+   "padre": "moron",
+   "vecinos": [
+    "castelar",
+    "haedo",
+    "el-palomar"
+   ],
+   "referencias": [
+    "Av. Rivadavia",
+    "Av. Vergara"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "san-antonio-de-padua": {
+   "nombre": "San Antonio de Padua",
+   "tipo": "localidad",
+   "padre": "merlo",
+   "vecinos": [
+    "libertad",
+    "mariano-acosta",
+    "parque-san-martin"
+   ],
+   "referencias": [
+    "Estación Padua",
+    "Av. Rivadavia"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "libertad": {
+   "nombre": "Libertad",
+   "tipo": "localidad",
+   "padre": "merlo",
+   "vecinos": [
+    "san-antonio-de-padua",
+    "mariano-acosta",
+    "parque-san-martin"
+   ],
+   "referencias": [
+    "Estación Libertad",
+    "Ruta 200"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "mariano-acosta": {
+   "nombre": "Mariano Acosta",
+   "tipo": "localidad",
+   "padre": "merlo",
+   "vecinos": [
+    "san-antonio-de-padua",
+    "libertad",
+    "parque-san-martin"
+   ],
+   "referencias": [
+    "Ruta 200",
+    "Estación Mariano Acosta"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "parque-san-martin": {
+   "nombre": "Parque San Martín",
+   "tipo": "localidad",
+   "padre": "merlo",
+   "vecinos": [
+    "san-antonio-de-padua",
+    "libertad",
+    "mariano-acosta"
+   ],
+   "referencias": [
+    "Ruta 21",
+    "Av. Eva Perón"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "paso-del-rey": {
+   "nombre": "Paso del Rey",
+   "tipo": "localidad",
+   "padre": "moreno",
+   "vecinos": [
+    "francisco-alvarez",
+    "cuartel-v",
+    "trujui",
+    "la-reja"
+   ],
+   "referencias": [
+    "Estación Paso del Rey",
+    "Acceso Oeste"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "francisco-alvarez": {
+   "nombre": "Francisco Álvarez",
+   "tipo": "localidad",
+   "padre": "moreno",
+   "vecinos": [
+    "paso-del-rey",
+    "cuartel-v",
+    "trujui",
+    "la-reja"
+   ],
+   "referencias": [
+    "Estación Francisco Álvarez",
+    "Acceso Oeste"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "cuartel-v": {
+   "nombre": "Cuartel V",
+   "tipo": "localidad",
+   "padre": "moreno",
+   "vecinos": [
+    "paso-del-rey",
+    "francisco-alvarez",
+    "trujui",
+    "la-reja"
+   ],
+   "referencias": [
+    "Ruta 24",
+    "Ruta 25"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "trujui": {
+   "nombre": "Trujui",
+   "tipo": "localidad",
+   "padre": "moreno",
+   "vecinos": [
+    "paso-del-rey",
+    "francisco-alvarez",
+    "cuartel-v",
+    "la-reja"
+   ],
+   "referencias": [
+    "Ruta 23",
+    "Av. Gaona"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "la-reja": {
+   "nombre": "La Reja",
+   "tipo": "localidad",
+   "padre": "moreno",
+   "vecinos": [
+    "paso-del-rey",
+    "francisco-alvarez",
+    "cuartel-v",
+    "trujui"
+   ],
+   "referencias": [
+    "Estación La Reja",
+    "Acceso Oeste"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "bella-vista": {
+   "nombre": "Bella Vista",
+   "tipo": "localidad",
+   "padre": "san-miguel",
+   "vecinos": [
+    "muniz"
+   ],
+   "referencias": [
+    "Estación Bella Vista",
+    "Ruta 8"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "muniz": {
+   "nombre": "Muñiz",
+   "tipo": "localidad",
+   "padre": "san-miguel",
+   "vecinos": [
+    "bella-vista"
+   ],
+   "referencias": [
+    "Estación Muñiz",
+    "Ruta 8"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "los-polvorines": {
+   "nombre": "Los Polvorines",
+   "tipo": "localidad",
+   "padre": "malvinas-argentinas",
+   "vecinos": [
+    "grand-bourg",
+    "tortuguitas",
+    "villa-de-mayo"
+   ],
+   "referencias": [
+    "Estación Los Polvorines",
+    "Ruta 197"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "grand-bourg": {
+   "nombre": "Grand Bourg",
+   "tipo": "localidad",
+   "padre": "malvinas-argentinas",
+   "vecinos": [
+    "los-polvorines",
+    "tortuguitas",
+    "villa-de-mayo"
+   ],
+   "referencias": [
+    "Estación Grand Bourg",
+    "Ruta 197"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "tortuguitas": {
+   "nombre": "Tortuguitas",
+   "tipo": "localidad",
+   "padre": "malvinas-argentinas",
+   "vecinos": [
+    "los-polvorines",
+    "grand-bourg",
+    "villa-de-mayo"
+   ],
+   "referencias": [
+    "Panamericana ramal Pilar",
+    "Estación Tortuguitas"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "villa-de-mayo": {
+   "nombre": "Villa de Mayo",
+   "tipo": "localidad",
+   "padre": "malvinas-argentinas",
+   "vecinos": [
+    "los-polvorines",
+    "grand-bourg",
+    "tortuguitas"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Estación Villa de Mayo"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "san-justo": {
+   "nombre": "San Justo",
+   "tipo": "localidad",
+   "padre": "la-matanza",
+   "vecinos": [
+    "ramos-mejia",
+    "ciudad-evita",
+    "isidro-casanova",
+    "gonzalez-catan",
+    "villa-luzuriaga",
+    "lomas-del-mirador",
+    "tapiales",
+    "villa-madero",
+    "laferrere",
+    "rafael-castillo",
+    "virrey-del-pino",
+    "la-tablada"
+   ],
+   "referencias": [
+    "Plaza San Justo",
+    "Ruta 3",
+    "Camino de Cintura"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "ramos-mejia": {
+   "nombre": "Ramos Mejía",
+   "tipo": "localidad",
+   "padre": "la-matanza",
+   "vecinos": [
+    "san-justo",
+    "ciudad-evita",
+    "isidro-casanova",
+    "gonzalez-catan",
+    "villa-luzuriaga",
+    "lomas-del-mirador",
+    "tapiales",
+    "villa-madero",
+    "laferrere",
+    "rafael-castillo",
+    "virrey-del-pino",
+    "la-tablada"
+   ],
+   "referencias": [
+    "Estación Ramos Mejía",
+    "Av. de Mayo",
+    "Av. Rivadavia"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "ciudad-evita": {
+   "nombre": "Ciudad Evita",
+   "tipo": "localidad",
+   "padre": "la-matanza",
+   "vecinos": [
+    "san-justo",
+    "ramos-mejia",
+    "isidro-casanova",
+    "gonzalez-catan",
+    "villa-luzuriaga",
+    "lomas-del-mirador",
+    "tapiales",
+    "villa-madero",
+    "laferrere",
+    "rafael-castillo",
+    "virrey-del-pino",
+    "la-tablada"
+   ],
+   "referencias": [
+    "Autopista Ricchieri",
+    "Camino de Cintura"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "isidro-casanova": {
+   "nombre": "Isidro Casanova",
+   "tipo": "localidad",
+   "padre": "la-matanza",
+   "vecinos": [
+    "san-justo",
+    "ramos-mejia",
+    "ciudad-evita",
+    "gonzalez-catan",
+    "villa-luzuriaga",
+    "lomas-del-mirador",
+    "tapiales",
+    "villa-madero",
+    "laferrere",
+    "rafael-castillo",
+    "virrey-del-pino",
+    "la-tablada"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Estación Casanova"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "gonzalez-catan": {
+   "nombre": "González Catán",
+   "tipo": "localidad",
+   "padre": "la-matanza",
+   "vecinos": [
+    "san-justo",
+    "ramos-mejia",
+    "ciudad-evita",
+    "isidro-casanova"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Estación González Catán"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "villa-luzuriaga": {
+   "nombre": "Villa Luzuriaga",
+   "tipo": "localidad",
+   "padre": "la-matanza",
+   "vecinos": [
+    "san-justo",
+    "ramos-mejia",
+    "ciudad-evita",
+    "isidro-casanova"
+   ],
+   "referencias": [
+    "Camino de Cintura",
+    "Av. Don Bosco"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "lomas-del-mirador": {
+   "nombre": "Lomas del Mirador",
+   "tipo": "localidad",
+   "padre": "la-matanza",
+   "vecinos": [
+    "san-justo",
+    "ramos-mejia",
+    "ciudad-evita",
+    "isidro-casanova"
+   ],
+   "referencias": [
+    "Av. General Paz",
+    "Av. Mosconi"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "tapiales": {
+   "nombre": "Tapiales",
+   "tipo": "localidad",
+   "padre": "la-matanza",
+   "vecinos": [
+    "san-justo",
+    "ramos-mejia",
+    "ciudad-evita",
+    "isidro-casanova"
+   ],
+   "referencias": [
+    "Mercado Central",
+    "Estación Tapiales"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "villa-madero": {
+   "nombre": "Villa Madero",
+   "tipo": "localidad",
+   "padre": "la-matanza",
+   "vecinos": [
+    "san-justo",
+    "ramos-mejia",
+    "ciudad-evita",
+    "isidro-casanova"
+   ],
+   "referencias": [
+    "Av. General Paz",
+    "Estación Villa Madero"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "laferrere": {
+   "nombre": "Gregorio de Laferrere",
+   "tipo": "localidad",
+   "padre": "la-matanza",
+   "vecinos": [
+    "san-justo",
+    "ramos-mejia",
+    "ciudad-evita",
+    "isidro-casanova"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Estación Laferrere"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "rafael-castillo": {
+   "nombre": "Rafael Castillo",
+   "tipo": "localidad",
+   "padre": "la-matanza",
+   "vecinos": [
+    "san-justo",
+    "ramos-mejia",
+    "ciudad-evita",
+    "isidro-casanova"
+   ],
+   "referencias": [
+    "Ruta 3",
+    "Estación Castillo"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "virrey-del-pino": {
+   "nombre": "Virrey del Pino",
+   "tipo": "localidad",
+   "padre": "la-matanza",
+   "vecinos": [
+    "san-justo",
+    "ramos-mejia",
+    "ciudad-evita",
+    "isidro-casanova"
+   ],
+   "referencias": [
+    "Ruta 3 km 32",
+    "Ruta 21"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "la-tablada": {
+   "nombre": "La Tablada",
+   "tipo": "localidad",
+   "padre": "la-matanza",
+   "vecinos": [
+    "san-justo",
+    "ramos-mejia",
+    "ciudad-evita",
+    "isidro-casanova"
+   ],
+   "referencias": [
+    "Camino de Cintura",
+    "Av. Crovara"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "banfield": {
+   "nombre": "Banfield",
+   "tipo": "localidad",
+   "padre": "lomas-de-zamora",
+   "vecinos": [
+    "temperley",
+    "turdera",
+    "llavallol",
+    "villa-fiorito",
+    "ingeniero-budge"
+   ],
+   "referencias": [
+    "Estación Banfield",
+    "Av. Hipólito Yrigoyen"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "temperley": {
+   "nombre": "Temperley",
+   "tipo": "localidad",
+   "padre": "lomas-de-zamora",
+   "vecinos": [
+    "banfield",
+    "turdera",
+    "llavallol",
+    "villa-fiorito",
+    "ingeniero-budge"
+   ],
+   "referencias": [
+    "Estación Temperley",
+    "Av. Meeks"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "turdera": {
+   "nombre": "Turdera",
+   "tipo": "localidad",
+   "padre": "lomas-de-zamora",
+   "vecinos": [
+    "banfield",
+    "temperley",
+    "llavallol",
+    "villa-fiorito",
+    "ingeniero-budge"
+   ],
+   "referencias": [
+    "Estación Turdera"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "llavallol": {
+   "nombre": "Llavallol",
+   "tipo": "localidad",
+   "padre": "lomas-de-zamora",
+   "vecinos": [
+    "banfield",
+    "temperley",
+    "turdera",
+    "villa-fiorito",
+    "ingeniero-budge"
+   ],
+   "referencias": [
+    "Estación Llavallol",
+    "Camino de Cintura"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "villa-fiorito": {
+   "nombre": "Villa Fiorito",
+   "tipo": "localidad",
+   "padre": "lomas-de-zamora",
+   "vecinos": [
+    "banfield",
+    "temperley",
+    "turdera",
+    "llavallol"
+   ],
+   "referencias": [
+    "Puente La Noria",
+    "Camino Negro"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "ingeniero-budge": {
+   "nombre": "Ingeniero Budge",
+   "tipo": "localidad",
+   "padre": "lomas-de-zamora",
+   "vecinos": [
+    "banfield",
+    "temperley",
+    "turdera",
+    "llavallol"
+   ],
+   "referencias": [
+    "Camino Negro",
+    "Puente La Noria"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "remedios-de-escalada": {
+   "nombre": "Remedios de Escalada",
+   "tipo": "localidad",
+   "padre": "lanus",
+   "vecinos": [
+    "valentin-alsina",
+    "gerli",
+    "monte-chingolo",
+    "lanus-oeste",
+    "lanus-este"
+   ],
+   "referencias": [
+    "Estación Escalada",
+    "Av. Hipólito Yrigoyen"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "valentin-alsina": {
+   "nombre": "Valentín Alsina",
+   "tipo": "localidad",
+   "padre": "lanus",
+   "vecinos": [
+    "remedios-de-escalada",
+    "gerli",
+    "monte-chingolo",
+    "lanus-oeste",
+    "lanus-este"
+   ],
+   "referencias": [
+    "Puente Alsina",
+    "Av. Remedios de Escalada"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "gerli": {
+   "nombre": "Gerli",
+   "tipo": "localidad",
+   "padre": "lanus",
+   "vecinos": [
+    "remedios-de-escalada",
+    "valentin-alsina",
+    "monte-chingolo",
+    "lanus-oeste",
+    "lanus-este"
+   ],
+   "referencias": [
+    "Estación Gerli",
+    "Av. Hipólito Yrigoyen"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "monte-chingolo": {
+   "nombre": "Monte Chingolo",
+   "tipo": "localidad",
+   "padre": "lanus",
+   "vecinos": [
+    "remedios-de-escalada",
+    "valentin-alsina",
+    "gerli",
+    "lanus-oeste",
+    "lanus-este"
+   ],
+   "referencias": [
+    "Camino General Belgrano",
+    "Av. Eva Perón"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "lanus-oeste": {
+   "nombre": "Lanús Oeste",
+   "tipo": "localidad",
+   "padre": "lanus",
+   "vecinos": [
+    "remedios-de-escalada",
+    "valentin-alsina",
+    "gerli",
+    "monte-chingolo"
+   ],
+   "referencias": [
+    "Estación Lanús",
+    "Av. 9 de Julio"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "lanus-este": {
+   "nombre": "Lanús Este",
+   "tipo": "localidad",
+   "padre": "lanus",
+   "vecinos": [
+    "remedios-de-escalada",
+    "valentin-alsina",
+    "gerli",
+    "monte-chingolo"
+   ],
+   "referencias": [
+    "Estación Lanús",
+    "Av. 25 de Mayo"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "wilde": {
+   "nombre": "Wilde",
+   "tipo": "localidad",
+   "padre": "avellaneda",
+   "vecinos": [
+    "sarandi",
+    "dock-sud",
+    "pineyro",
+    "villa-dominico"
+   ],
+   "referencias": [
+    "Estación Wilde",
+    "Av. Mitre"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "sarandi": {
+   "nombre": "Sarandí",
+   "tipo": "localidad",
+   "padre": "avellaneda",
+   "vecinos": [
+    "wilde",
+    "dock-sud",
+    "pineyro",
+    "villa-dominico"
+   ],
+   "referencias": [
+    "Estación Sarandí",
+    "Av. Mitre"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "dock-sud": {
+   "nombre": "Dock Sud",
+   "tipo": "localidad",
+   "padre": "avellaneda",
+   "vecinos": [
+    "wilde",
+    "sarandi",
+    "pineyro",
+    "villa-dominico"
+   ],
+   "referencias": [
+    "Puente Nicolás Avellaneda",
+    "Puerto Dock Sud"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "pineyro": {
+   "nombre": "Piñeyro",
+   "tipo": "localidad",
+   "padre": "avellaneda",
+   "vecinos": [
+    "wilde",
+    "sarandi",
+    "dock-sud",
+    "villa-dominico"
+   ],
+   "referencias": [
+    "Estación Avellaneda",
+    "Av. Mitre"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "villa-dominico": {
+   "nombre": "Villa Domínico",
+   "tipo": "localidad",
+   "padre": "avellaneda",
+   "vecinos": [
+    "wilde",
+    "sarandi",
+    "dock-sud",
+    "pineyro"
+   ],
+   "referencias": [
+    "Estación Domínico",
+    "Av. Mitre"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "bernal": {
+   "nombre": "Bernal",
+   "tipo": "localidad",
+   "padre": "quilmes",
+   "vecinos": [
+    "ezpeleta",
+    "don-bosco",
+    "san-francisco-solano",
+    "quilmes-oeste"
+   ],
+   "referencias": [
+    "Estación Bernal",
+    "Av. San Martín"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "ezpeleta": {
+   "nombre": "Ezpeleta",
+   "tipo": "localidad",
+   "padre": "quilmes",
+   "vecinos": [
+    "bernal",
+    "don-bosco",
+    "san-francisco-solano",
+    "quilmes-oeste"
+   ],
+   "referencias": [
+    "Estación Ezpeleta",
+    "Av. Mitre"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "don-bosco": {
+   "nombre": "Don Bosco",
+   "tipo": "localidad",
+   "padre": "quilmes",
+   "vecinos": [
+    "bernal",
+    "ezpeleta",
+    "san-francisco-solano",
+    "quilmes-oeste"
+   ],
+   "referencias": [
+    "Estación Don Bosco",
+    "Av. Mitre"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "san-francisco-solano": {
+   "nombre": "San Francisco Solano",
+   "tipo": "localidad",
+   "padre": "quilmes",
+   "vecinos": [
+    "bernal",
+    "ezpeleta",
+    "don-bosco",
+    "quilmes-oeste"
+   ],
+   "referencias": [
+    "Av. San Martín",
+    "Estación Solano"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "quilmes-oeste": {
+   "nombre": "Quilmes Oeste",
+   "tipo": "localidad",
+   "padre": "quilmes",
+   "vecinos": [
+    "bernal",
+    "ezpeleta",
+    "don-bosco",
+    "san-francisco-solano"
+   ],
+   "referencias": [
+    "Av. Calchaquí",
+    "Camino General Belgrano"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "ranelagh": {
+   "nombre": "Ranelagh",
+   "tipo": "localidad",
+   "padre": "berazategui",
+   "vecinos": [
+    "hudson",
+    "platanos"
+   ],
+   "referencias": [
+    "Estación Ranelagh",
+    "Av. Eva Perón"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "hudson": {
+   "nombre": "Hudson",
+   "tipo": "localidad",
+   "padre": "berazategui",
+   "vecinos": [
+    "ranelagh",
+    "platanos"
+   ],
+   "referencias": [
+    "Ruta 2",
+    "Estación Hudson",
+    "Autopista"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "platanos": {
+   "nombre": "Plátanos",
+   "tipo": "localidad",
+   "padre": "berazategui",
+   "vecinos": [
+    "ranelagh",
+    "hudson"
+   ],
+   "referencias": [
+    "Estación Plátanos",
+    "Ruta 2"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "adrogue": {
+   "nombre": "Adrogué",
+   "tipo": "localidad",
+   "padre": "almirante-brown",
+   "vecinos": [
+    "burzaco",
+    "glew",
+    "longchamps",
+    "rafael-calzada",
+    "claypole",
+    "jose-marmol"
+   ],
+   "referencias": [
+    "Estación Adrogué",
+    "Av. Espora"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "burzaco": {
+   "nombre": "Burzaco",
+   "tipo": "localidad",
+   "padre": "almirante-brown",
+   "vecinos": [
+    "adrogue",
+    "glew",
+    "longchamps",
+    "rafael-calzada",
+    "claypole",
+    "jose-marmol"
+   ],
+   "referencias": [
+    "Estación Burzaco",
+    "Av. Espora"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "glew": {
+   "nombre": "Glew",
+   "tipo": "localidad",
+   "padre": "almirante-brown",
+   "vecinos": [
+    "adrogue",
+    "burzaco",
+    "longchamps",
+    "rafael-calzada",
+    "claypole",
+    "jose-marmol"
+   ],
+   "referencias": [
+    "Estación Glew",
+    "Ruta 210"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "longchamps": {
+   "nombre": "Longchamps",
+   "tipo": "localidad",
+   "padre": "almirante-brown",
+   "vecinos": [
+    "adrogue",
+    "burzaco",
+    "glew",
+    "rafael-calzada",
+    "claypole",
+    "jose-marmol"
+   ],
+   "referencias": [
+    "Estación Longchamps",
+    "Ruta 210"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "rafael-calzada": {
+   "nombre": "Rafael Calzada",
+   "tipo": "localidad",
+   "padre": "almirante-brown",
+   "vecinos": [
+    "adrogue",
+    "burzaco",
+    "glew",
+    "longchamps"
+   ],
+   "referencias": [
+    "Estación Calzada",
+    "Ruta 4"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "claypole": {
+   "nombre": "Claypole",
+   "tipo": "localidad",
+   "padre": "almirante-brown",
+   "vecinos": [
+    "adrogue",
+    "burzaco",
+    "glew",
+    "longchamps"
+   ],
+   "referencias": [
+    "Estación Claypole",
+    "Ruta 4"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "jose-marmol": {
+   "nombre": "José Mármol",
+   "tipo": "localidad",
+   "padre": "almirante-brown",
+   "vecinos": [
+    "adrogue",
+    "burzaco",
+    "glew",
+    "longchamps"
+   ],
+   "referencias": [
+    "Estación Mármol",
+    "Av. Espora"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "monte-grande": {
+   "nombre": "Monte Grande",
+   "tipo": "localidad",
+   "padre": "esteban-echeverria",
+   "vecinos": [
+    "luis-guillon",
+    "el-jaguel",
+    "canning"
+   ],
+   "referencias": [
+    "Estación Monte Grande",
+    "Av. Nuestras Malvinas"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "luis-guillon": {
+   "nombre": "Luis Guillón",
+   "tipo": "localidad",
+   "padre": "esteban-echeverria",
+   "vecinos": [
+    "monte-grande",
+    "el-jaguel",
+    "canning"
+   ],
+   "referencias": [
+    "Estación Luis Guillón",
+    "Camino de Cintura"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "el-jaguel": {
+   "nombre": "El Jagüel",
+   "tipo": "localidad",
+   "padre": "esteban-echeverria",
+   "vecinos": [
+    "monte-grande",
+    "luis-guillon",
+    "canning"
+   ],
+   "referencias": [
+    "Estación El Jagüel",
+    "Ruta 205"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "canning": {
+   "nombre": "Canning",
+   "tipo": "localidad",
+   "padre": "esteban-echeverria",
+   "vecinos": [
+    "monte-grande",
+    "luis-guillon",
+    "el-jaguel"
+   ],
+   "referencias": [
+    "Ruta 58",
+    "barrios cerrados de Canning"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "tristan-suarez": {
+   "nombre": "Tristán Suárez",
+   "tipo": "localidad",
+   "padre": "ezeiza",
+   "vecinos": [
+    "carlos-spegazzini"
+   ],
+   "referencias": [
+    "Estación Tristán Suárez",
+    "Ruta 205"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "carlos-spegazzini": {
+   "nombre": "Carlos Spegazzini",
+   "tipo": "localidad",
+   "padre": "ezeiza",
+   "vecinos": [
+    "tristan-suarez"
+   ],
+   "referencias": [
+    "Estación Spegazzini",
+    "Ruta 205"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "city-bell": {
+   "nombre": "City Bell",
+   "tipo": "localidad",
+   "padre": "la-plata",
+   "vecinos": [
+    "gonnet",
+    "villa-elisa",
+    "tolosa",
+    "los-hornos",
+    "ringuelet"
+   ],
+   "referencias": [
+    "Camino Centenario",
+    "Estación City Bell",
+    "Cantilo"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "gonnet": {
+   "nombre": "Manuel B. Gonnet",
+   "tipo": "localidad",
+   "padre": "la-plata",
+   "vecinos": [
+    "city-bell",
+    "villa-elisa",
+    "tolosa",
+    "los-hornos",
+    "ringuelet"
+   ],
+   "referencias": [
+    "Camino Centenario",
+    "Estación Gonnet"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "villa-elisa": {
+   "nombre": "Villa Elisa",
+   "tipo": "localidad",
+   "padre": "la-plata",
+   "vecinos": [
+    "city-bell",
+    "gonnet",
+    "tolosa",
+    "los-hornos",
+    "ringuelet"
+   ],
+   "referencias": [
+    "Camino Centenario",
+    "Estación Villa Elisa"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "tolosa": {
+   "nombre": "Tolosa",
+   "tipo": "localidad",
+   "padre": "la-plata",
+   "vecinos": [
+    "city-bell",
+    "gonnet",
+    "villa-elisa",
+    "los-hornos",
+    "ringuelet"
+   ],
+   "referencias": [
+    "Estación Tolosa",
+    "Av. 1"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "los-hornos": {
+   "nombre": "Los Hornos",
+   "tipo": "localidad",
+   "padre": "la-plata",
+   "vecinos": [
+    "city-bell",
+    "gonnet",
+    "villa-elisa",
+    "tolosa"
+   ],
+   "referencias": [
+    "Av. 66",
+    "Av. 137"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "ringuelet": {
+   "nombre": "Ringuelet",
+   "tipo": "localidad",
+   "padre": "la-plata",
+   "vecinos": [
+    "city-bell",
+    "gonnet",
+    "villa-elisa",
+    "tolosa"
+   ],
+   "referencias": [
+    "Camino Centenario",
+    "Estación Ringuelet"
+   ],
+   "vivienda": "mixto",
+   "prioridad": 2
+  },
+  "del-viso": {
+   "nombre": "Del Viso",
+   "tipo": "localidad",
+   "padre": "pilar",
+   "vecinos": [
+    "presidente-derqui",
+    "villa-rosa",
+    "manuel-alberti"
+   ],
+   "referencias": [
+    "Ruta 26",
+    "Estación Del Viso"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "presidente-derqui": {
+   "nombre": "Presidente Derqui",
+   "tipo": "localidad",
+   "padre": "pilar",
+   "vecinos": [
+    "del-viso",
+    "villa-rosa",
+    "manuel-alberti"
+   ],
+   "referencias": [
+    "Ruta 8",
+    "Estación Derqui"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "villa-rosa": {
+   "nombre": "Villa Rosa",
+   "tipo": "localidad",
+   "padre": "pilar",
+   "vecinos": [
+    "del-viso",
+    "presidente-derqui",
+    "manuel-alberti"
+   ],
+   "referencias": [
+    "Ruta 25",
+    "Estación Villa Rosa"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "manuel-alberti": {
+   "nombre": "Manuel Alberti",
+   "tipo": "localidad",
+   "padre": "pilar",
+   "vecinos": [
+    "del-viso",
+    "presidente-derqui",
+    "villa-rosa"
+   ],
+   "referencias": [
+    "Panamericana km 42",
+    "Estación Alberti"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "belen-de-escobar": {
+   "nombre": "Belén de Escobar",
+   "tipo": "localidad",
+   "padre": "escobar",
+   "vecinos": [
+    "garin",
+    "ingeniero-maschwitz",
+    "maquinista-savio"
+   ],
+   "referencias": [
+    "Ruta 25",
+    "Estación Escobar"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "garin": {
+   "nombre": "Garín",
+   "tipo": "localidad",
+   "padre": "escobar",
+   "vecinos": [
+    "belen-de-escobar",
+    "ingeniero-maschwitz",
+    "maquinista-savio"
+   ],
+   "referencias": [
+    "Ruta 26",
+    "Estación Garín"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "ingeniero-maschwitz": {
+   "nombre": "Ingeniero Maschwitz",
+   "tipo": "localidad",
+   "padre": "escobar",
+   "vecinos": [
+    "belen-de-escobar",
+    "garin",
+    "maquinista-savio"
+   ],
+   "referencias": [
+    "Panamericana ramal Escobar",
+    "Estación Maschwitz"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  },
+  "maquinista-savio": {
+   "nombre": "Maquinista Savio",
+   "tipo": "localidad",
+   "padre": "escobar",
+   "vecinos": [
+    "belen-de-escobar",
+    "garin",
+    "ingeniero-maschwitz"
+   ],
+   "referencias": [
+    "Ruta 26",
+    "Estación Savio"
+   ],
+   "vivienda": "casas",
+   "prioridad": 2
+  }
+ }
+}
