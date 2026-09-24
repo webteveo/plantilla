@@ -1,0 +1,46 @@
+RewriteEngine On
+
+# Dominio canónico: https y sin www. Solo actúa cuando el host es el de producción (no afecta localhost ni staging).
+# COMPLETAR: reemplazar "mi-dominio.uy" por el dominio de config.php (sin https://). Es el único dato repetido fuera de config.php,
+# porque .htaccess no puede leer PHP. Si se deja "mi-dominio.uy" las reglas no hacen nada.
+RewriteCond %{HTTP_HOST} ^www\.(mi-dominio\.uy)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^mi-dominio\.uy$ [NC]
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Cabeceras de seguridad
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+
+# Cache de estáticos
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# Compresión
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json application/xml text/plain image/svg+xml
+</IfModule>
+
+# Bloquear acceso directo a carpetas internas
+RewriteRule ^(config\.php|composer\.(json|lock)|PLANTILLA\.md|INVENTARIO\.md)$ - [F,L]
+RewriteRule ^(lib|data|templates|partials|vendor|bin)(/|$) - [F,L]
+
+# Todo lo que no es un archivo real lo resuelve el router (incluye sitemap.xml, robots.txt y llms.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
