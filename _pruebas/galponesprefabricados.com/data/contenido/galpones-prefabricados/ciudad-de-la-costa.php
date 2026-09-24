@@ -2,7 +2,7 @@
 /** Contenido único de /galpones-prefabricados/ciudad-de-la-costa (servicio × ciudad de Canelones). */
 return [
     'title'       => 'Galpones prefabricados en Ciudad de la Costa – Sobre arena',
-    'description' => 'Galpones prefabricados en Ciudad de la Costa, presupuesto por WhatsApp: depósito, lancha o comercio sobre Giannattasio, con base calculada para suelo de arena.',
+    'description' => 'Galpones prefabricados en Ciudad de la Costa, presupuesto por WhatsApp: depósito, lancha o comercio sobre Giannattasio, con base para suelo de arena.',
     'h1'          => 'Galpones prefabricados en Ciudad de la Costa: base firme sobre arena',
     'eyebrow'     => 'Galpones metálicos en la Costa de Canelones',
     'subtitulo'   => 'Galpones de estructura metálica para casas, comercios y depósitos de Shangrilá a El Pinar. Relevamos el terreno y cotizamos por WhatsApp.',
@@ -11,7 +11,7 @@ return [
             'h2'       => 'Galpones prefabricados en Ciudad de la Costa: cómo trabajamos',
             'parrafos' => [
                 'Galpones Prefabricados fabrica en taller y monta en obra galpones metálicos en Ciudad de la Costa, entre el arroyo Carrasco y el arroyo Pando. Casi todo el suelo es arena, así que la visita al predio sirve para definir la platea y los anclajes antes de cotizar. Te pasamos el presupuesto por ítem por WhatsApp y coordinamos el montaje.',
-                'Cubrimos Shangrilá, Lagomar, Solymar, Lomas de Solymar y El Pinar desde esta página. Los pedidos más comunes son galpones para guardar lanchas, vehículos y herramientas en casas con terreno, y depósitos para comercios de la avenida. Mirá el servicio completo en <a href="/galpones-prefabricados">galpones prefabricados a medida</a>.',
+                'Cubrimos Shangrilá, Lagomar, Solymar, Lomas de Solymar y El Pinar desde esta página. Los pedidos más comunes son galpones para guardar lanchas, vehículos y herramientas en casas con terreno, y depósitos para comercios de la avenida. Mirá el servicio completo en <a href="/galpones-prefabricados">galpones prefabricados: alcance del servicio</a>.',
             ],
         ],
         [

@@ -2,7 +2,7 @@
 /** Contenido único de /galpones-prefabricados/barros-blancos (servicio × ciudad de Canelones). */
 return [
     'title'       => 'Barros Blancos: galpones prefabricados por WhatsApp',
-    'description' => 'Galpones prefabricados en Barros Blancos, presupuesto por WhatsApp: talleres, depósitos y galpones para casas con terreno sobre Ruta 8, camino a Pando.',
+    'description' => 'Galpones prefabricados en Barros Blancos, presupuesto por WhatsApp: talleres, depósitos y galpones para casas con terreno sobre Ruta 8, rumbo a Pando.',
     'h1'          => 'Galpones prefabricados en Barros Blancos con presupuesto por WhatsApp',
     'eyebrow'     => 'Galpones metálicos sobre Ruta 8, Canelones',
     'subtitulo'   => 'Galpones de estructura metálica para talleres, depósitos y terrenos de Barros Blancos. Mandanos medidas y uso, y te pasamos el presupuesto por ítem.',
@@ -18,13 +18,13 @@ return [
             'h2'       => 'Cómo llegamos y qué encontramos en Barros Blancos',
             'parrafos' => [
                 'La Ruta 8 es la columna de la localidad: por ahí entra el camión con las piezas y por ahí están los comercios, gomerías, talleres y depósitos. La Ruta 102 conecta Barros Blancos con la Ruta 101, el aeropuerto y Villa Aeroparque, lo que suma pedidos de empresas de transporte. Hacia los costados de la ruta hay barrios de casas con terrenos largos, muchos con fondo libre para un galpón.',
-                'El suelo es firme en general, y los accesos internos son calles de balasto o bitumen. Seguimos por la ruta con <a href="/galpones-prefabricados/pando">galpones para la zona industrial de Pando</a>, hacia el norte con <a href="/galpones-prefabricados/toledo">galpones prefabricados en Toledo</a> y hacia el aeropuerto con <a href="/galpones-prefabricados/colonia-nicolich">naves y depósitos en Colonia Nicolich</a>.',
+                'El suelo es firme en general, y los accesos internos son calles de balasto o bitumen. Seguimos por la ruta con <a href="/galpones-prefabricados/pando">naves y galpones en Pando</a>, hacia el norte con <a href="/galpones-prefabricados/toledo">galpones prefabricados en Toledo</a> y hacia el aeropuerto con <a href="/galpones-prefabricados/colonia-nicolich">naves y depósitos en Colonia Nicolich</a>.',
             ],
         ],
         [
             'h2'       => 'Usos típicos de galpones en Barros Blancos',
             'parrafos' => [
-                'Lo que más se pide en Barros Blancos, por su mezcla de ruta comercial y barrios de casas:',
+                'Los galpones prefabricados en Barros Blancos responden a una mezcla de ruta comercial y barrios de casas. Lo que más se pide:',
             ],
             'lista' => [
                 'Taller mecánico, gomería o chapería con portón corredizo sobre Ruta 8.',
@@ -34,7 +34,7 @@ return [
                 'Tinglado para cubrir vehículos o acopio, con cierre lateral opcional.',
             ],
             'parrafos_despues' => [
-                'Si es una cubierta abierta, mirá <a href="/tinglados">tinglados</a>; si el galpón es para producción, <a href="/galpones-industriales">galpones industriales</a>.',
+                'Si es una cubierta abierta, mirá los <a href="/tinglados">tinglados metálicos abiertos</a>; si el galpón es para producción, las <a href="/galpones-industriales">naves industriales</a>.',
             ],
         ],
         [

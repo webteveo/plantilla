@@ -2,7 +2,7 @@
 /** Contenido único de /galpones-prefabricados/banados-de-carrasco (servicio × barrio de Montevideo). */
 return [
     'title'       => 'Bañados de Carrasco: galpones prefabricados con platea',
-    'description' => 'Galpones prefabricados en Bañados de Carrasco, Montevideo, presupuesto por WhatsApp: estructura metálica y platea calculada para suelo bajo cerca del arroyo.',
+    'description' => 'Galpones prefabricados en Bañados de Carrasco, presupuesto por WhatsApp: estructura metálica y platea calculada para el suelo bajo cerca del arroyo.',
     'h1'          => 'Galpones prefabricados en Bañados de Carrasco con platea a medida',
     'eyebrow'     => 'Galpones metálicos en Montevideo',
     'subtitulo'   => 'Montamos galpones de estructura metálica entre Camino Carrasco y Ruta 8. Relevamos el terreno, resolvemos la platea y te pasamos el presupuesto por WhatsApp.',
@@ -11,7 +11,7 @@ return [
             'h2'       => '¿Cómo hacemos un galpón prefabricado en Bañados de Carrasco?',
             'parrafos' => [
                 'Galpones Prefabricados fabrica en taller y monta en obra galpones de estructura metálica en Bañados de Carrasco, la franja de Montevideo que va desde Camino Carrasco hasta la Ruta 8 y termina en el arroyo Carrasco, límite con Canelones. Como parte del barrio es terreno bajo, la visita al predio define la platea antes que nada. Escribinos por WhatsApp para coordinarla.',
-                'El presupuesto se detalla por ítem: estructura, techo de chapa, cerramientos, platea o fundaciones y montaje. Así podés comparar y decidir qué hacer en una primera etapa. Todo lo que incluye el servicio está en la página de <a href="/galpones-prefabricados">galpones prefabricados de estructura metálica</a>.',
+                'El presupuesto se detalla por ítem: estructura, techo de chapa, cerramientos, platea o fundaciones y montaje. Así podés comparar y decidir qué hacer en una primera etapa. Todo lo que incluye el servicio está en la página de <a href="/galpones-prefabricados">galpones prefabricados: estructura, techo y platea</a>.',
             ],
         ],
         [
@@ -47,7 +47,7 @@ return [
     'faq' => [
         ['q' => '¿Se puede hacer un galpón en un terreno bajo de Bañados de Carrasco?', 'a' => 'Sí, con la platea y las fundaciones calculadas para ese suelo. En el relevamiento vemos el nivel del terreno, si hubo relleno y cómo escurre el agua, y con eso se define la base. Galpones Prefabricados lo incluye como ítem separado en el presupuesto.'],
         ['q' => '¿Qué chapa conviene cerca del arroyo Carrasco?', 'a' => 'Chapa galvanizada, con estructura protegida con antióxido o galvanizado, por la humedad de la zona. Las opciones concretas se acuerdan en el presupuesto según el uso del galpón.'],
-        ['q' => '¿Hacen galpones para chacras y viveros en Bañados de Carrasco?', 'a' => 'Sí: depósitos de herramientas, galpones para maquinaria chica y estructuras semicerradas para acopio. Si el predio es rural, mirá también la página de <a href="/galpones-agricolas">galpones agrícolas</a>.'],
+        ['q' => '¿Hacen galpones para chacras y viveros en Bañados de Carrasco?', 'a' => 'Sí: depósitos de herramientas, galpones para maquinaria chica y estructuras semicerradas para acopio. Si el predio es rural, mirá también la página de <a href="/galpones-agricolas">galpones para uso rural</a>.'],
     ],
     'actualizado' => '2026-09-24',
 ];

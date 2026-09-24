@@ -2,7 +2,7 @@
 /** Contenido único de /galpones-prefabricados/punta-de-rieles (servicio × barrio de Montevideo). */
 return [
     'title'       => 'Punta de Rieles: galpones prefabricados – Cno. Maldonado',
-    'description' => 'Galpones prefabricados en Punta de Rieles, Montevideo, con presupuesto por WhatsApp: taller, depósito o comercio sobre Camino Maldonado, salida por Ruta 8.',
+    'description' => 'Galpones prefabricados en Punta de Rieles, presupuesto por WhatsApp: taller, depósito o comercio sobre Camino Maldonado, salida de Montevideo por Ruta 8.',
     'h1'          => 'Galpones prefabricados en Punta de Rieles: presupuesto a medida',
     'eyebrow'     => 'Galpones metálicos en Montevideo Este',
     'subtitulo'   => 'Fabricamos la estructura en taller y la montamos en tu predio de Punta de Rieles. Coordinamos la visita y el presupuesto por WhatsApp.',
@@ -11,7 +11,7 @@ return [
             'h2'       => 'Galpones prefabricados en Punta de Rieles: cómo trabajamos',
             'parrafos' => [
                 'Galpones Prefabricados hace galpones de estructura metálica en Punta de Rieles, el barrio que Camino Maldonado atraviesa antes de convertirse en Ruta 8 rumbo a Canelones. Relevamos medidas, uso y terreno en el predio, armamos un presupuesto por ítem y fabricamos la estructura en taller para montarla en obra. Escribinos por WhatsApp y coordinamos la visita.',
-                'Es una de las salidas del este de Montevideo con más talleres, depósitos y predios de trabajo sobre la ruta. Ese perfil marca lo que se pide: galpones para guardar vehículos y herramientas, depósitos de materiales y locales con espacio de carga. Podés ver el detalle del servicio en la página de <a href="/galpones-prefabricados">galpones prefabricados</a>.',
+                'Es una de las salidas del este de Montevideo con más talleres, depósitos y predios de trabajo sobre la ruta. Ese perfil marca lo que se pide: galpones para guardar vehículos y herramientas, depósitos de materiales y locales con espacio de carga. Podés ver el detalle del servicio en la página del <a href="/galpones-prefabricados">servicio de galpones prefabricados de estructura metálica</a>.',
             ],
         ],
         [
@@ -34,7 +34,7 @@ return [
                 'Tinglado para cubrir vehículos o acopio, que se puede cerrar más adelante.',
             ],
             'parrafos_despues' => [
-                'Si lo que necesitás es una estructura abierta, mirá la página de <a href="/tinglados">tinglados</a>; si es un depósito grande con portones para camiones, la de <a href="/galpones-industriales">galpones industriales</a>.',
+                'Si lo que necesitás es una estructura abierta, mirá <a href="/tinglados">tinglados abiertos sobre Ruta 8</a>; si es un depósito grande con portones para camiones, <a href="/galpones-industriales">galpones industriales para depósito</a>.',
             ],
         ],
         [
@@ -45,7 +45,7 @@ return [
         ],
     ],
     'faq' => [
-        ['q' => '¿Entra un camión con la estructura en un predio de Punta de Rieles?', 'a' => 'En general sí. Las calles del barrio son anchas cerca de Camino Maldonado y la mayoría de los predios tienen frente para descargar. Si el acceso es angosto, lo vemos en el relevamiento y planificamos la descarga por tramos.'],
+        ['q' => '¿Entra un camión con la estructura en un predio de Punta de Rieles?', 'a' => 'En general sí. Las calles cercanas a Camino Maldonado son anchas y la mayoría de los predios tienen frente para descargar. Si el acceso es angosto, planificamos la descarga por tramos.'],
         ['q' => '¿Hacen galpones para taller mecánico en Punta de Rieles?', 'a' => 'Sí. Es uno de los pedidos más frecuentes sobre Ruta 8: estructura metálica, techo de chapa, portón corredizo y altura para levantar vehículos. Galpones Prefabricados define las medidas con vos según los autos o camionetas que vas a atender.'],
         ['q' => '¿Cuánto demora el montaje de un galpón prefabricado en Punta de Rieles?', 'a' => 'El plazo se define en el presupuesto según las medidas y el terreno. Al fabricar la estructura en taller, los días de trabajo en tu predio son menos que en una obra tradicional.'],
         ['q' => '¿Puedo poner un galpón en el fondo de una casa del barrio?', 'a' => 'Se puede, siempre que el terreno tenga espacio para el galpón y para maniobrar el montaje, y que el permiso de la Intendencia de Montevideo lo habilite. Te lo confirmamos con las medidas del predio.'],

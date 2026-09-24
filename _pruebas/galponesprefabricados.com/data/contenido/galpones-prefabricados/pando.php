@@ -11,7 +11,7 @@ return [
             'h2'       => 'Galpones prefabricados en Pando: cómo trabajamos',
             'parrafos' => [
                 'Galpones Prefabricados fabrica en taller y monta en obra galpones de estructura metálica en Pando, la ciudad de Canelones que concentra sobre la Ruta 8 una de las zonas industriales más activas del área metropolitana. Atendemos a fábricas y depósitos de la ruta, a comercios del centro y a chacras de los alrededores. Escribinos por WhatsApp con medidas y uso y coordinamos el relevamiento.',
-                'El presupuesto se abre por ítem: estructura, techo, cerramientos, platea y montaje. Podés ver alcances y variantes en la página del <a href="/galpones-prefabricados">servicio de galpones prefabricados</a>.',
+                'El presupuesto se abre por ítem: estructura, techo, cerramientos, platea y montaje. Podés ver alcances y variantes en la página del <a href="/galpones-prefabricados">servicio completo de galpones prefabricados</a>.',
             ],
         ],
         [
@@ -34,7 +34,7 @@ return [
                 'Permiso de construcción y habilitación industrial cuando corresponde.',
             ],
             'parrafos_despues' => [
-                'Con esos datos te mandamos el presupuesto por WhatsApp. Para naves de mayor porte, mirá también <a href="/galpones-industriales">galpones industriales</a>; para maquinaria y acopio en chacras, <a href="/galpones-agricolas">galpones agrícolas</a>.',
+                'Con esos datos te mandamos el presupuesto por WhatsApp. Para naves de mayor porte, mirá también <a href="/galpones-industriales">naves para fábricas y logística</a>; para maquinaria y acopio en chacras, <a href="/galpones-agricolas">galpones para chacras y acopio</a>.',
             ],
         ],
         [

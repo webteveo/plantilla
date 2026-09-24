@@ -2,7 +2,7 @@
 /** Contenido único de /galpones-prefabricados/canelones (servicio × departamento; hub de las localidades de Canelones). */
 return [
     'title'       => 'Galpones prefabricados en Canelones – Todo el departamento',
-    'description' => 'Galpones prefabricados en Canelones: Las Piedras, Pando, Ciudad de la Costa y el campo. Estructura metálica a medida, presupuesto por WhatsApp.',
+    'description' => 'Galpones prefabricados en Canelones, presupuesto por WhatsApp: Las Piedras, Pando, Ciudad de la Costa y el campo. Estructura metálica a medida.',
     'h1'          => 'Galpones prefabricados en Canelones para campo, industria y comercio',
     'eyebrow'     => 'Galpones metálicos en el departamento de Canelones',
     'subtitulo'   => 'Fabricamos en taller y montamos en cualquier localidad de Canelones, del corredor de Ruta 5 a la costa y el este rural. Presupuesto por ítem por WhatsApp.',
@@ -17,9 +17,9 @@ return [
         [
             'h2'       => 'Cómo llegamos y qué encontramos en Canelones',
             'parrafos' => [
-                'Canelones se organiza por corredores. Sobre la Ruta 5 está <a href="/galpones-prefabricados/las-piedras">Las Piedras</a>, con comercio y talleres, y más al norte <a href="/galpones-prefabricados/ciudad-de-canelones">Canelones ciudad</a>, la capital, junto a <a href="/galpones-prefabricados/santa-lucia">Santa Lucía</a> por Ruta 11, en una zona de chacras, granjas y viñedos.',
-                'La Ruta 8 concentra el perfil industrial y logístico: <a href="/galpones-prefabricados/barros-blancos">Barros Blancos</a> y <a href="/galpones-prefabricados/pando">Pando</a>, con su zona industrial sobre la ruta. Cerca del aeropuerto, por Ruta 101 y Ruta 102, <a href="/galpones-prefabricados/colonia-nicolich">Colonia Nicolich</a> reúne depósitos y empresas de transporte.',
-                'Sobre la Interbalnearia, <a href="/galpones-prefabricados/ciudad-de-la-costa">Ciudad de la Costa</a> y <a href="/galpones-prefabricados/atlantida">Atlántida</a> tienen suelo arenoso y pedidos de galpones para lanchas, vehículos y comercios. Hacia el este rural, por las rutas 6, 7 y 12, <a href="/galpones-prefabricados/san-ramon">San Ramón</a> y <a href="/galpones-prefabricados/tala">Tala</a> piden galpones para maquinaria agrícola y acopio.',
+                'Canelones se organiza por corredores. Sobre la Ruta 5 está <a href="/galpones-prefabricados/las-piedras">galpones prefabricados en Las Piedras</a>, con comercio y talleres, y más al norte <a href="/galpones-prefabricados/ciudad-de-canelones">galpones en Canelones ciudad</a>, la capital, junto a <a href="/galpones-prefabricados/santa-lucia">galpones en Santa Lucía</a> por Ruta 11, en una zona de chacras, granjas y viñedos.',
+                'La Ruta 8 concentra el perfil industrial y logístico: <a href="/galpones-prefabricados/barros-blancos">galpones en Barros Blancos</a> y <a href="/galpones-prefabricados/pando">naves en Pando</a>, con su zona industrial sobre la ruta. Cerca del aeropuerto, por Ruta 101 y Ruta 102, <a href="/galpones-prefabricados/colonia-nicolich">depósitos en Colonia Nicolich</a> reúne depósitos y empresas de transporte.',
+                'Sobre la Interbalnearia, <a href="/galpones-prefabricados/ciudad-de-la-costa">Ciudad de la Costa</a> y <a href="/galpones-prefabricados/atlantida">galpones en Atlántida</a> tienen suelo arenoso y pedidos de galpones para lanchas, vehículos y comercios. Hacia el este rural, por las rutas 6, 7 y 12, <a href="/galpones-prefabricados/san-ramon">galpones rurales en San Ramón</a> y <a href="/galpones-prefabricados/tala">galpones para maquinaria en Tala</a> piden galpones para maquinaria agrícola y acopio.',
             ],
         ],
         [
@@ -34,7 +34,7 @@ return [
                 'Residencial y balneario: galpones para vehículos, lanchas y herramientas en terrenos de la costa.',
             ],
             'parrafos_despues' => [
-                'Cada uso tiene su página: <a href="/galpones-agricolas">galpones agrícolas</a>, <a href="/galpones-industriales">galpones industriales</a> y <a href="/tinglados">tinglados</a>.',
+                'Cada uso tiene su página: <a href="/galpones-agricolas">galpones agrícolas para chacras</a>, <a href="/galpones-industriales">naves industriales sobre ruta</a> y <a href="/tinglados">tinglados para cubrir maquinaria</a>.',
             ],
         ],
         [

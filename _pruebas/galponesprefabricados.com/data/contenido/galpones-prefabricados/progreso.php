@@ -2,7 +2,7 @@
 /** Contenido único de /galpones-prefabricados/progreso (servicio principal × ciudad, Canelones). */
 return [
     'title'       => 'Galpones prefabricados en Progreso – Packing y acopio',
-    'description' => 'Galpones prefabricados en Progreso, Canelones. Presupuesto a medida por WhatsApp para packing, acopio y depósito de maquinaria en chacras sobre Ruta 5, 32 y 36.',
+    'description' => 'Galpones prefabricados en Progreso, Canelones. Presupuesto a medida por WhatsApp para packing, acopio y depósito de maquinaria en chacras de Ruta 5.',
     'h1'          => 'Galpones prefabricados en Progreso: packing, acopio y maquinaria',
     'eyebrow'     => 'Galpones para chacras y comercio en Canelones',
     'subtitulo'   => 'Estructura metálica fabricada en taller y montada en tu predio de Progreso, sea una chacra o un lote en la ciudad. Coordinamos por WhatsApp.',

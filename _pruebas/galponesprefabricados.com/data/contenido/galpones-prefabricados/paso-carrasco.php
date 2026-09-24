@@ -24,7 +24,7 @@ return [
         [
             'h2'       => 'Usos típicos de galpones en Paso Carrasco',
             'parrafos' => [
-                'Por la cercanía con el aeropuerto y las rutas 101 y 102, en Paso Carrasco predominan los galpones de trabajo:',
+                'Por la cercanía con el aeropuerto y las rutas 101 y 102, los galpones prefabricados en Paso Carrasco son casi siempre galpones de trabajo:',
             ],
             'lista' => [
                 'Depósito para distribuidoras y comercios que abastecen a Montevideo y la costa.',
@@ -34,7 +34,7 @@ return [
                 'Galpón chico en casas con terreno para herramientas, moto o emprendimiento.',
             ],
             'parrafos_despues' => [
-                'Para naves con portones para camiones y oficinas integradas, mirá <a href="/galpones-industriales">galpones industriales</a>; para una cubierta abierta, <a href="/tinglados">tinglados</a>.',
+                'Para naves con portones para camiones y oficinas integradas, mirá <a href="/galpones-industriales">galpones industriales con oficinas</a>; para una cubierta abierta, <a href="/tinglados">tinglados semicerrados</a>.',
             ],
         ],
         [

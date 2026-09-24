@@ -2,7 +2,7 @@
 /** Contenido único de /galpones-prefabricados/juanico (servicio principal × localidad, Canelones). */
 return [
     'title'       => 'Galpones prefabricados en Juanicó – Bodegas y viñedos',
-    'description' => 'Galpones prefabricados en Juanicó, Canelones. Presupuesto por WhatsApp para galpones de bodegas, viñedos y chacras: maquinaria, acopio y depósito sobre Ruta 5.',
+    'description' => 'Galpones prefabricados en Juanicó, Canelones. Presupuesto por WhatsApp para galpones de bodegas, viñedos y chacras: maquinaria, acopio y depósito.',
     'h1'          => 'Galpones prefabricados en Juanicó para bodegas, viñedos y chacras',
     'eyebrow'     => 'Galpones para el campo en Canelones',
     'subtitulo'   => 'Estructura metálica fabricada en taller y montada en tu establecimiento de Juanicó. Relevamiento del predio y presupuesto por WhatsApp.',

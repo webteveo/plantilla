@@ -2,7 +2,7 @@
 /** Contenido único de /galpones-prefabricados/joaquin-suarez (servicio principal × localidad, Canelones). */
 return [
     'title'       => 'Joaquín Suárez: galpones prefabricados para chacras',
-    'description' => 'Galpones prefabricados en Joaquín Suárez, Canelones. Presupuesto por WhatsApp para galpones de maquinaria, acopio, granjas y quintas, con montaje en tu predio.',
+    'description' => 'Galpones prefabricados en Joaquín Suárez, Canelones. Presupuesto por WhatsApp para galpones de maquinaria, acopio, granjas y quintas.',
     'h1'          => 'Galpones prefabricados en Joaquín Suárez para chacras y granjas',
     'eyebrow'     => 'Galpones para el campo en Canelones',
     'subtitulo'   => 'Estructura metálica fabricada en taller y montada en tu predio de Joaquín Suárez. Relevamiento y presupuesto coordinados por WhatsApp.',

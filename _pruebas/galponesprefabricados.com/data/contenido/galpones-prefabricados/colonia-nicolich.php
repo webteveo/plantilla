@@ -2,7 +2,7 @@
 /** Contenido único de /galpones-prefabricados/colonia-nicolich (servicio × ciudad de Canelones). */
 return [
     'title'       => 'Galpones prefabricados en Colonia Nicolich – Logística',
-    'description' => 'Galpones prefabricados en Colonia Nicolich, presupuesto por WhatsApp: depósitos y naves para logística sobre Ruta 101, junto al Aeropuerto de Carrasco.',
+    'description' => 'Galpones prefabricados en Colonia Nicolich, presupuesto por WhatsApp: depósitos y naves para logística sobre Ruta 101, al lado del aeropuerto.',
     'h1'          => 'Galpones prefabricados en Colonia Nicolich para logística y depósito',
     'eyebrow'     => 'Galpones metálicos junto al aeropuerto',
     'subtitulo'   => 'Naves y depósitos de estructura metálica para empresas y particulares de Nicolich. Relevamiento en el predio y presupuesto por ítem por WhatsApp.',
@@ -11,7 +11,7 @@ return [
             'h2'       => 'Galpones prefabricados en Colonia Nicolich: cómo trabajamos',
             'parrafos' => [
                 'Galpones Prefabricados fabrica y monta galpones de estructura metálica en Colonia Nicolich, sobre la Ruta 101 y al lado del Aeropuerto de Carrasco. Es una de las zonas de Canelones con más movimiento de carga, y eso se nota en los pedidos: depósitos, naves para logística y galpones para transportistas. Relevamos el predio, cotizamos por ítem y coordinamos el montaje por WhatsApp.',
-                'Trabajamos igual con una empresa que necesita una nave con portones para camiones y con un vecino que quiere un galpón para guardar el camión en su terreno. Todo el detalle del servicio está en <a href="/galpones-prefabricados">galpones prefabricados en Montevideo y Canelones</a>.',
+                'Trabajamos igual con una empresa que necesita una nave con portones para camiones y con un vecino que quiere un galpón para guardar el camión en su terreno. Todo el detalle del servicio está en <a href="/galpones-prefabricados">galpones prefabricados para empresas y particulares</a>.',
             ],
         ],
         [
@@ -34,13 +34,13 @@ return [
                 'Permiso de construcción y, para uso comercial, la habilitación que corresponda.',
             ],
             'parrafos_despues' => [
-                'Cada ítem va separado en el presupuesto, para que puedas hacer la obra por etapas. Si es una nave grande, mirá también <a href="/galpones-industriales">galpones industriales</a>.',
+                'Cada ítem va separado en el presupuesto, para que puedas hacer la obra por etapas. Si es una nave grande, mirá también la página de <a href="/galpones-industriales">naves industriales con puente grúa y muelles</a>.',
             ],
         ],
         [
             'h2'       => 'Permisos y trámites en Colonia Nicolich',
             'parrafos' => [
-                'Colonia Nicolich es Canelones: el permiso de construcción se gestiona en línea ante la Intendencia de Canelones con técnico registrado. Por la cercanía con el aeropuerto pueden existir restricciones de altura en algunos predios; es un punto a consultar antes de definir la altura del galpón, y te orientamos para hacerlo. Para el resto de los servicios en la zona, entrá a <a href="/colonia-nicolich">Colonia Nicolich</a>.',
+                'Colonia Nicolich es Canelones: el permiso de construcción se gestiona en línea ante la Intendencia de Canelones con técnico registrado. Por la cercanía con el aeropuerto pueden existir restricciones de altura en algunos predios; es un punto a consultar antes de definir la altura del galpón, y te orientamos para hacerlo. Para el resto de los servicios en la zona, entrá a <a href="/colonia-nicolich">más servicios en Colonia Nicolich</a>.',
             ],
         ],
     ],
