@@ -2,7 +2,7 @@
 /** Contenido único de /galpones-prefabricados/toledo (servicio principal × ciudad, Canelones). */
 return [
     'title'       => 'Galpones prefabricados en Toledo – Acceso por Ruta 6',
-    'description' => 'Galpones prefabricados en Toledo, Canelones: depósitos, talleres y galpones para chacras sobre Ruta 6 y Camino Toledo Chico. Pedí presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones prefabricados en Toledo, Canelones. Presupuesto a medida por WhatsApp para depósitos, talleres y chacras sobre Ruta 6 y Camino Toledo Chico.',
     'h1'          => 'Galpones prefabricados en Toledo: presupuesto a medida sobre Ruta 6',
     'eyebrow'     => 'Galpones metálicos en Canelones',
     'subtitulo'   => 'Fabricamos la estructura en taller y la montamos en tu predio de Toledo. Coordinamos la visita de relevamiento por WhatsApp.',

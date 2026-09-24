@@ -1,9 +1,9 @@
 <?php
 /** Tinglados × Pando (subservicio; la página principal de la zona es /galpones-prefabricados/pando). */
 return [
-    'title'       => 'Tinglados en Pando – Techado para la zona industrial de Ruta 8',
-    'description' => 'Tinglados metálicos en Pando para flotas, maquinaria vial y acopio en la zona industrial de Ruta 8. Estructura y techo de chapa a medida. Presupuesto por WhatsApp sin cargo.',
-    'h1'          => 'Tinglados en Pando: techado metálico para flotas, acopio y playas de carga',
+    'title'       => 'Tinglados en Pando – Flotas de la zona industrial Ruta 8',
+    'description' => 'Tinglados en Pando para flotas, maquinaria vial y acopio en la zona industrial de Ruta 8. Estructura y chapa a medida. Presupuesto por WhatsApp.',
+    'h1'          => 'Tinglados en Pando: techado metálico para flotas y playas de carga',
     'eyebrow'     => 'Tinglados metálicos en Canelones',
     'subtitulo'   => 'Cubrimos playas de camiones, acopio y áreas de carga en empresas de Pando y Ruta 8. Medimos en el predio y presupuestamos por WhatsApp.',
     'secciones'   => [
@@ -18,7 +18,7 @@ return [
             'h2' => 'Cómo llegamos y qué encontramos en Pando',
             'parrafos' => [
                 'Llegamos por Ruta 8, que atraviesa la zona industrial, o por Ruta 101 desde el aeropuerto. Ruta 75 sale hacia Empalme Olmos y sirve para los predios del sur de la ciudad. Los camiones con la estructura entran sin problema en la mayoría de los predios industriales; en el casco urbano, cerca de la Plaza de Pando, revisamos el ancho de la calle antes.',
-                'Los predios de la zona industrial son llanos y amplios, con playas de maniobra ya niveladas. En los terrenos cercanos al arroyo Pando revisamos el nivel para definir la altura de las bases. Nos piden techado para camiones y semirremolques, para maquinaria vial y para acopio de pallets, chapas o materiales que no pueden mojarse.',
+                'Los predios de la zona industrial son llanos y amplios, con playas de maniobra ya niveladas. En los terrenos cercanos al arroyo Pando revisamos el nivel para definir la altura de las bases. Los tinglados en Pando que nos piden son para camiones y semirremolques, para maquinaria vial y para acopio de pallets, chapas o materiales que no pueden mojarse.',
                 'Cerca de Pando también trabajamos en <a href="/galpones-industriales/barros-blancos">galpones industriales en Barros Blancos</a>, <a href="/galpones-prefabricados/toledo">galpones en Toledo</a> y <a href="/galpones-prefabricados/empalme-olmos">depósitos en Empalme Olmos</a>. Para el resto del departamento, <a href="/tinglados/canelones">tinglados en Canelones</a>.',
             ],
         ],
@@ -47,7 +47,7 @@ return [
         ['q' => '¿Pueden techar la playa de camiones de una empresa en la zona industrial de Pando?', 'a' => 'Sí. Es el pedido más común en Pando: un tinglado alto, sin laterales o con uno cerrado, sobre la playa donde paran los camiones o donde se carga. Relevamos altura de vehículos y radios de giro antes de cotizar.'],
         ['q' => '¿Se puede apoyar el tinglado en un galpón existente?', 'a' => 'Depende de la estructura del galpón. Preferimos columnas propias para no cargar la estructura vieja; se evalúa en la visita.'],
         ['q' => '¿Qué pasa con el viento en un tinglado abierto?', 'a' => 'Un techado sin paredes recibe empuje de abajo. Se dimensionan columnas, anclajes y bases para eso, y por eso conviene decidir desde el inicio si va a llevar laterales.'],
-        ['q' => '¿Galpones Prefabricados se ocupa del permiso en Pando?', 'a' => 'Te orientamos con lo que pide la Intendencia de Canelones y coordinamos con tu técnico. El trámite es en línea y necesita planos firmados.'],
+        ['q' => '¿Galpones Prefabricados se ocupa del permiso de tinglados en Pando?', 'a' => 'Te orientamos con lo que pide la Intendencia de Canelones y coordinamos con tu técnico. El trámite es en línea y necesita planos firmados.'],
     ],
     'actualizado' => '2026-09-24',
 ];

@@ -1,8 +1,8 @@
 <?php
 /** Galpones agrícolas × Canelones (departamento; la página principal es /galpones-prefabricados/canelones). */
 return [
-    'title'       => 'Galpones agrícolas en Canelones – Chacras, viñedos y granjas',
-    'description' => 'Galpones agrícolas prefabricados en Canelones para maquinaria, acopio de forraje, packing y granjas, en chacras de Ruta 5, 6, 7 y 8. Presupuesto a medida por WhatsApp, sin cargo.',
+    'title'       => 'Galpones agrícolas en Canelones – Chacras y granjas',
+    'description' => 'Galpones agrícolas en Canelones para maquinaria, forraje, packing y granjas en chacras de Ruta 5, 6, 7 y 8. Presupuesto a medida por WhatsApp.',
     'h1'          => 'Galpones agrícolas en Canelones: maquinaria, acopio, packing y granja',
     'eyebrow'     => 'Galpones rurales en el departamento de Canelones',
     'subtitulo'   => 'Estructura metálica fabricada en taller y montada en tu establecimiento, de la zona hortifrutícola del sur a los tambos del noreste. Relevamiento y presupuesto por WhatsApp.',

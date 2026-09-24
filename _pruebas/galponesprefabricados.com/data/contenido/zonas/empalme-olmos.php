@@ -2,7 +2,7 @@
 /** Hub de zona: /empalme-olmos. Servicio disponible: galpones prefabricados. */
 return [
     'title'       => 'Galpones en Empalme Olmos – Cruce de Ruta 8 y Ruta 75',
-    'description' => 'Galpones rurales, depósitos y tinglados en Empalme Olmos, en el cruce de Ruta 8 y Ruta 75, al este de Pando. Presupuesto por WhatsApp según el terreno.',
+    'description' => 'Galpones rurales, depósitos y tinglados en Empalme Olmos, en el cruce de Ruta 8 y Ruta 75, al este de Pando. Presupuesto por WhatsApp según medidas.',
     'h1'          => 'Galpones y tinglados en Empalme Olmos',
     'eyebrow'     => 'Galpones en Empalme Olmos, Canelones',
     'subtitulo'   => 'Galpones rurales y depósitos en el cruce de Ruta 8 y Ruta 75, al este de Pando. Presupuesto por WhatsApp según medidas y terreno.',

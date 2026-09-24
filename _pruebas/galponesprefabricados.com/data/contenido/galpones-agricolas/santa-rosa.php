@@ -1,9 +1,9 @@
 <?php
 /** Galpones agrícolas × Santa Rosa (subservicio; la página principal de la zona es /galpones-prefabricados/santa-rosa). */
 return [
-    'title'       => 'Galpones agrícolas en Santa Rosa – Granja y packing, Ruta 6 y 11',
-    'description' => 'Galpones agrícolas en Santa Rosa, Canelones: packing, depósito de ración e insumos y maquinaria para chacras y granjas del cruce de Ruta 6 y Ruta 11. Presupuesto por WhatsApp.',
-    'h1'          => 'Galpones agrícolas en Santa Rosa: packing, ración e insumos para la granja',
+    'title'       => 'Galpones agrícolas en Santa Rosa – Granja y packing',
+    'description' => 'Galpones agrícolas en Santa Rosa: packing, ración e insumos para chacras y granjas del cruce de Ruta 6 y Ruta 11. Pedí presupuesto por WhatsApp.',
+    'h1'          => 'Galpones agrícolas en Santa Rosa: packing, ración e insumos',
     'eyebrow'     => 'Galpones rurales en la zona de granja de Canelones',
     'subtitulo'   => 'Estructura metálica prefabricada para chacras, granjas y frutales de Santa Rosa y alrededores. Relevamiento en el predio y presupuesto por WhatsApp.',
     'secciones'   => [
@@ -43,7 +43,7 @@ return [
     'faq' => [
         ['q' => '¿Qué galpón conviene para una granja avícola en Santa Rosa?', 'a' => 'Un depósito cerrado para ración, huevos y equipos, con piso de hormigón y acceso de camión, ubicado aparte de los galpones de aves. Lo dimensionamos con el volumen de ración que manejás.'],
         ['q' => '¿Un packing en una chacra chica de Santa Rosa entra en poco terreno?', 'a' => 'Sí. Se diseña con la superficie que hay, cuidando retiros y la maniobra del camión, y se puede ampliar por módulos si crece la producción.'],
-        ['q' => '¿Hacen galpones agrícolas en las chacras que dan a Ruta 11?', 'a' => 'Sí, sobre Ruta 6, Ruta 11 y los caminos vecinales que salen de ellas. El acceso se releva en la visita.'],
+        ['q' => '¿Hacen galpones agrícolas en Santa Rosa sobre las chacras que dan a Ruta 11?', 'a' => 'Sí, sobre Ruta 6, Ruta 11 y los caminos vecinales que salen de ellas. El acceso se releva en la visita.'],
         ['q' => '¿Galpones Prefabricados presupuesta el piso de hormigón por separado?', 'a' => 'Sí. Estructura, techo, cerramientos, platea y montaje van cada uno en su ítem, así decidís qué hacer ahora y qué después.'],
     ],
     'actualizado' => '2026-09-24',

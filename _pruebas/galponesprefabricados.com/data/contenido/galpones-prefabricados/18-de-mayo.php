@@ -2,7 +2,7 @@
 /** Contenido único de /galpones-prefabricados/18-de-mayo (servicio principal × ciudad, Canelones). */
 return [
     'title'       => 'Galpones prefabricados en 18 de Mayo – A medida del lote',
-    'description' => 'Galpones prefabricados en 18 de Mayo, Canelones: depósitos, talleres y galpones para vehículos en lotes con terreno, cerca de Ruta 5 y Ruta 48. Presupuesto por WhatsApp.',
+    'description' => 'Galpones prefabricados en 18 de Mayo, Canelones. Presupuesto por WhatsApp para galpones de vehículos, talleres y depósitos en lotes con terreno, cerca de Ruta 5 y 48.',
     'h1'          => 'Galpones prefabricados en 18 de Mayo: a medida del terreno y del uso',
     'eyebrow'     => 'Galpones metálicos en Canelones',
     'subtitulo'   => 'Galpones de estructura metálica para el fondo de tu lote o para un predio comercial en 18 de Mayo. Relevamiento y presupuesto por WhatsApp.',

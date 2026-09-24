@@ -2,7 +2,7 @@
 /** Contenido único de /galpones-prefabricados/empalme-olmos (servicio principal × localidad, Canelones). */
 return [
     'title'       => 'Galpones prefabricados en Empalme Olmos – Ruta 8 y campo',
-    'description' => 'Galpones prefabricados en Empalme Olmos, Canelones: depósitos sobre Ruta 8 y galpones para chacras y granjas. Presupuesto a medida por WhatsApp, con montaje en tu predio.',
+    'description' => 'Galpones prefabricados en Empalme Olmos, Canelones. Presupuesto a medida por WhatsApp para depósitos sobre Ruta 8 y galpones para chacras y granjas.',
     'h1'          => 'Galpones prefabricados en Empalme Olmos: para Ruta 8 y para el campo',
     'eyebrow'     => 'Galpones metálicos en Canelones',
     'subtitulo'   => 'Estructura fabricada en taller y montada en Empalme Olmos, sea un depósito sobre la ruta o un galpón en la chacra. Coordinamos el relevamiento por WhatsApp.',

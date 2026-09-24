@@ -1,8 +1,8 @@
 <?php
 /** Contenido único de /galpones-prefabricados/la-paz (servicio principal × ciudad, Canelones). */
 return [
-    'title'       => 'Galpones prefabricados en La Paz – Presupuesto por WhatsApp',
-    'description' => 'Galpones prefabricados en La Paz, Canelones: depósitos, talleres y galpones metálicos con acceso por Ruta 5 y César Mayo Gutiérrez. Pedí presupuesto a medida por WhatsApp.',
+    'title'       => 'Galpones prefabricados en La Paz – Pedilo por WhatsApp',
+    'description' => 'Galpones prefabricados en La Paz, Canelones. Pedí presupuesto por WhatsApp para depósitos, talleres y galpones metálicos con acceso por Ruta 5.',
     'h1'          => 'Galpones prefabricados en La Paz con presupuesto a medida por WhatsApp',
     'eyebrow'     => 'Galpones metálicos en Canelones',
     'subtitulo'   => 'Depósitos, talleres y galpones para comercio en La Paz, fabricados en taller y montados en tu terreno. Presupuesto detallado por ítem.',

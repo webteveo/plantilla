@@ -1,8 +1,8 @@
 <?php
 /** Galpones agrícolas × Tala (subservicio; la página principal de la zona es /galpones-prefabricados/tala). */
 return [
-    'title'       => 'Galpones agrícolas en Tala – Forraje y maquinaria sobre Ruta 7',
-    'description' => 'Galpones agrícolas en Tala, este de Canelones: depósito de maquinaria, forraje y granos para campos de Ruta 7 y Ruta 12. Estructura metálica prefabricada. Presupuesto por WhatsApp.',
+    'title'       => 'Galpones agrícolas en Tala – Forraje y granos, Ruta 7',
+    'description' => 'Galpones agrícolas en Tala para maquinaria, forraje y granos en campos de Ruta 7 y Ruta 12. Estructura metálica prefabricada. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones agrícolas en Tala: forraje, granos y maquinaria bajo techo',
     'eyebrow'     => 'Galpones para campo en el este de Canelones',
     'subtitulo'   => 'Galpones metálicos fabricados en taller y montados en establecimientos de Tala y su zona rural. Relevamiento del predio y presupuesto por ítem por WhatsApp.',
@@ -45,7 +45,7 @@ return [
         ['q' => '¿Qué altura de portón necesita un galpón para cosechadora en Tala?', 'a' => 'La que marque la cosechadora con la tolva o el cabezal más alto, más margen. Mandanos el modelo por WhatsApp y lo calculamos; es el dato que más cambia el galpón en los campos de Tala.'],
         ['q' => '¿Conviene piso de hormigón para acopiar granos en bolsas?', 'a' => 'Sí, para no tomar humedad del suelo y poder maniobrar con autoelevador o pala. Se cotiza aparte de la estructura.'],
         ['q' => '¿Pueden montar en un campo a varios kilómetros de Ruta 7?', 'a' => 'Sí. Relevamos el camino y coordinamos el ingreso de camión y grúa para un día con acceso firme.'],
-        ['q' => '¿Galpones Prefabricados hace el galpón con una parte para taller?', 'a' => 'Sí. Se separa un sector cerrado con piso de hormigón y luz, y el resto queda para forraje o máquinas.'],
+        ['q' => '¿Galpones Prefabricados hace galpones agrícolas en Tala con una parte para taller?', 'a' => 'Sí. Se separa un sector cerrado con piso de hormigón y luz, y el resto queda para forraje o máquinas.'],
     ],
     'actualizado' => '2026-09-24',
 ];

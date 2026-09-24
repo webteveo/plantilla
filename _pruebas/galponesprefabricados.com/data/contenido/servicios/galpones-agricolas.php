@@ -2,7 +2,7 @@
 /** Troncal: galpones agrícolas en Montevideo y Canelones (intención: uso rural). */
 return [
     'title'       => 'Galpones agrícolas en Montevideo y Canelones – Uso rural',
-    'description' => 'Galpones agrícolas para chacras y establecimientos rurales de Canelones y Montevideo: maquinaria, forraje, packing e insumos. Presupuesto por WhatsApp.',
+    'description' => 'Galpones agrícolas para chacras y establecimientos rurales de Canelones y Montevideo: maquinaria, forraje y packing. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones agrícolas en Montevideo y Canelones: presupuesto por WhatsApp',
     'eyebrow'     => 'Galpones rurales en Montevideo y Canelones',
     'subtitulo'   => 'Estructura metálica prefabricada con portones altos y ventilación, montada en tu predio. Contanos qué guardás y cómo se llega, y te pasamos el presupuesto por ítem.',
@@ -18,7 +18,7 @@ return [
         [
             'h2' => '¿Cómo se diseña y monta un galpón rural?',
             'parrafos' => [
-                'El diseño arranca por la lista de lo que se va a guardar. La máquina más alta define la altura del portón y del galpón; la más ancha define la luz y el espacio de maniobra. Después se resuelve el resto:',
+                'El diseño arranca por la lista de lo que se va a guardar. La máquina más alta define la altura del portón y del galpón; la más ancha define la luz y el espacio de maniobra:',
             ],
             'lista' => [
                 'Relevamiento del predio: medidas, orientación, tipo de suelo y por qué camino entra el camión con la estructura.',
@@ -35,7 +35,7 @@ return [
         [
             'h2' => '¿Qué define el precio de un galpón agrícola?',
             'parrafos' => [
-                'Dos galpones rurales del mismo tamaño pueden costar distinto según el cerramiento, el piso y el acceso al predio. Estos son los factores que más pesan cuando presupuestamos en Canelones y Montevideo:',
+                'Dos galpones rurales del mismo tamaño pueden costar distinto según el cerramiento, el piso y el acceso al predio. Los factores que más pesan al presupuestar en Canelones y Montevideo:',
             ],
             'lista' => [
                 'Medidas y altura: definidas por la maquinaria más grande y por el volumen de acopio.',
@@ -74,7 +74,7 @@ return [
     'faq' => [
         ['q' => '¿Conviene galpón cerrado o semicerrado para acopiar forraje?', 'a' => 'El forraje necesita ventilación para no calentarse ni tomar humedad. Suele resolverse con un galpón semicerrado o con laterales ventilados, y cerrado solo en el sector de insumos. Lo definimos según lo que acopiás.'],
         ['q' => '¿Se puede hacer un galpón agrícola con sector de packing?', 'a' => 'Sí. Se separa un sector cerrado con piso de hormigón, luz y ventilación para clasificar y embalar, y el resto queda para maquinaria o acopio. Contanos el volumen que manejás y Galpones Prefabricados lo incluye en el diseño.'],
-        ['q' => '¿Cómo entra el camión con la estructura en una chacra con camino de tierra?', 'a' => 'Lo relevamos antes de fabricar: ancho del portón de entrada, estado del camino y lugar de descarga. Si hace falta, se coordina el ingreso en días secos o se prepara el acceso.'],
+        ['q' => '¿Cómo entra el camión con la estructura en una chacra con camino de tierra?', 'a' => 'Lo relevamos antes de fabricar: ancho del portón de entrada, estado del camino y lugar de descarga. Si hace falta, se coordina el ingreso en días secos.'],
         ['q' => '¿Piso de tierra o de hormigón en un galpón rural?', 'a' => 'Para maquinaria pesada y tránsito de camiones conviene piso de hormigón armado; para acopio liviano puede alcanzar con una platea simple o tierra compactada. Se cotiza como ítem aparte para que compares.'],
     ],
 

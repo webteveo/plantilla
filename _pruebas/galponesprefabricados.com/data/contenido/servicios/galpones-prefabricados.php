@@ -12,13 +12,13 @@ return [
             'h2' => '¿Qué es un galpón prefabricado y para qué sirve?',
             'parrafos' => [
                 'Galpones Prefabricados fabrica galpones de estructura metálica en Montevideo y Canelones: las piezas se cortan y arman en taller y se montan en obra sobre una platea o fundaciones. Sirven como depósito, taller, local comercial, nave para logística o galpón de campo. Mandanos medidas, uso y ubicación del terreno por WhatsApp y te pasamos un presupuesto a medida, detallado por ítem.',
-                'Un galpón prefabricado se resuelve con pórticos de columnas y vigas, correas y cubierta de chapa trapezoidal galvanizada, con laterales de chapa, bloque o mixtos según el uso. Frente a una construcción tradicional de mampostería, la ventaja está en que casi todo el trabajo se hace en taller: en el terreno quedan la platea, el montaje y las terminaciones. Conviene definir desde el principio para qué lo vas a usar: no es lo mismo guardar herramientas que recibir camiones con mercadería.',
+                'Un galpón prefabricado se resuelve con pórticos de columnas y vigas, correas y cubierta de chapa trapezoidal galvanizada, con laterales de chapa, bloque o mixtos según el uso. Frente a una construcción tradicional de mampostería, la ventaja está en que casi todo el trabajo se hace en taller: en el terreno quedan la platea, el montaje y las terminaciones.',
             ],
         ],
         [
             'h2' => '¿Qué incluye un galpón prefabricado y cómo se fabrica y monta?',
             'parrafos' => [
-                'El presupuesto de Galpones Prefabricados separa cada ítem para que sepas qué estás pagando: estructura metálica, techo, cerramientos, platea o fundaciones y montaje. Los portones, canalones, bajadas y la aislación térmica se cotizan aparte cuando los pedís. El proceso completo es este:',
+                'El presupuesto de Galpones Prefabricados separa cada ítem para que sepas qué estás pagando: estructura metálica, techo, cerramientos, platea o fundaciones y montaje. Portones, canalones y aislación térmica se cotizan aparte. El proceso:',
             ],
             'lista' => [
                 'Relevamiento: nos contás medidas aproximadas, uso, tipo de terreno y cómo se accede. Si hace falta, coordinamos visita.',
@@ -35,7 +35,7 @@ return [
         [
             'h2' => '¿Qué define el precio de un galpón prefabricado?',
             'parrafos' => [
-                'No hay un precio por metro cuadrado fijo: dos galpones del mismo tamaño pueden costar distinto según la altura, los cerramientos y el suelo. Estos son los factores que más pesan en un presupuesto en Montevideo y Canelones:',
+                'Dos galpones del mismo tamaño pueden costar distinto según la altura, los cerramientos y el suelo. Los factores que más pesan en un presupuesto en Montevideo y Canelones:',
             ],
             'lista' => [
                 'Medidas: ancho, largo y altura libre. La luz que se quiere cubrir sin columnas intermedias cambia el tipo de viga.',
@@ -72,7 +72,7 @@ return [
     ],
 
     'faq' => [
-        ['q' => '¿Cuánto tiempo lleva montar un galpón prefabricado?', 'a' => 'Depende de las medidas, del terreno y de si hay que hacer platea. Como la estructura se fabrica en taller, los días en obra son menos que en una construcción tradicional. El plazo concreto se define en el presupuesto.'],
+        ['q' => '¿Cuánto tiempo lleva montar un galpón prefabricado?', 'a' => 'Depende de las medidas, del terreno y de si hay que hacer platea. Al fabricarse en taller, los días en obra son menos; el plazo concreto se define en el presupuesto.'],
         ['q' => '¿Se puede hacer un galpón prefabricado en un terreno con pendiente o suelo blando?', 'a' => 'Sí. Se resuelve con la platea o las fundaciones adecuadas al suelo: no es lo mismo la arena de la costa que un bañado o una loma. Por eso pedimos datos del terreno antes de presupuestar.'],
         ['q' => '¿Qué altura conviene para un galpón que recibe camiones?', 'a' => 'La altura libre se define por el vehículo más alto que va a entrar y por el portón. Contanos qué camiones usás y Galpones Prefabricados te propone la altura y el tipo de portón.'],
         ['q' => '¿Trabajan igual en Montevideo que en Canelones?', 'a' => 'Sí. Fabricamos en taller y montamos en cualquier zona de los dos departamentos. Lo que cambia es la intendencia ante la que se tramita el permiso y, a veces, el acceso del camión al predio.'],

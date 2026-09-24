@@ -2,7 +2,7 @@
 /** Galpones agrícolas × Sauce (subservicio; la página principal de la zona es /galpones-prefabricados/sauce). */
 return [
     'title'       => 'Galpones agrícolas en Sauce – Viñedos, chacras y granjas',
-    'description' => 'Galpones agrícolas en Sauce, Canelones: depósito para viñedos, chacras hortícolas y granjas sobre Ruta 33 y Ruta 6. Maquinaria, insumos y packing. Pedí presupuesto por WhatsApp.',
+    'description' => 'Galpones agrícolas en Sauce para viñedos, chacras y granjas de Ruta 33 y Ruta 6: maquinaria, insumos y packing. Pedí presupuesto por WhatsApp.',
     'h1'          => 'Galpones agrícolas en Sauce: depósito para viñedos, chacras y granjas',
     'eyebrow'     => 'Galpones rurales en Sauce, Canelones',
     'subtitulo'   => 'Galpones metálicos prefabricados para productores de Sauce y su zona rural. Medimos en el predio y te pasamos el presupuesto por WhatsApp.',

@@ -1,9 +1,9 @@
 <?php
 /** Tinglados × Ciudad de la Costa (subservicio; la página principal de la zona es /galpones-prefabricados/ciudad-de-la-costa). */
 return [
-    'title'       => 'Tinglados en Ciudad de la Costa – Lanchas, autos y comercio',
-    'description' => 'Tinglados metálicos en Ciudad de la Costa para lanchas, vehículos y comercios de Av. Giannattasio. Bases pensadas para suelo arenoso. Pedí presupuesto por WhatsApp.',
-    'h1'          => 'Tinglados en Ciudad de la Costa: techado metálico para lanchas, vehículos y locales',
+    'title'       => 'Tinglados en Ciudad de la Costa – Lanchas y vehículos',
+    'description' => 'Tinglados en Ciudad de la Costa para lanchas, vehículos y locales de Av. Giannattasio, con bases para arena. Pedí presupuesto por WhatsApp.',
+    'h1'          => 'Tinglados en Ciudad de la Costa: techado para lanchas y vehículos',
     'eyebrow'     => 'Techados metálicos en la costa de Canelones',
     'subtitulo'   => 'Cobertizos abiertos o semicerrados sobre terreno de arena, desde Paso Carrasco hasta El Pinar. Relevamiento en el predio y presupuesto por WhatsApp.',
     'secciones'   => [

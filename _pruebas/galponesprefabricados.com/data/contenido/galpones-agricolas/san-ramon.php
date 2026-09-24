@@ -1,9 +1,9 @@
 <?php
 /** Galpones agrícolas × San Ramón (subservicio; la página principal de la zona es /galpones-prefabricados/san-ramon). */
 return [
-    'title'       => 'Galpones agrícolas en San Ramón – Tambos y acopio sobre Ruta 6',
-    'description' => 'Galpones agrícolas en San Ramón, Canelones: acopio de ración y forraje, maquinaria y depósito para tambos y campos de Ruta 6 y Ruta 12. Presupuesto por WhatsApp sin cargo.',
-    'h1'          => 'Galpones agrícolas en San Ramón: acopio, maquinaria y depósito para el tambo',
+    'title'       => 'Galpones agrícolas en San Ramón – Tambos sobre Ruta 6',
+    'description' => 'Galpones agrícolas en San Ramón: acopio de ración, maquinaria y depósito para tambos y campos de Ruta 6 y Ruta 12. Presupuesto por WhatsApp sin cargo.',
+    'h1'          => 'Galpones agrícolas en San Ramón: acopio y maquinaria para el tambo',
     'eyebrow'     => 'Galpones rurales en el noreste de Canelones',
     'subtitulo'   => 'Estructura metálica prefabricada para campos y tambos de San Ramón y la cuenca del Santa Lucía. Visitamos el predio y presupuestamos por WhatsApp.',
     'secciones'   => [
@@ -44,7 +44,7 @@ return [
         ['q' => '¿Un galpón agrícola en San Ramón puede tener una parte abierta y otra cerrada?', 'a' => 'Sí. Es lo más pedido en los tambos de la zona: sector cerrado para ración e insumos y sector abierto para máquinas, sobre la misma estructura.'],
         ['q' => '¿Cómo entra la estructura si el campo está lejos de Ruta 6?', 'a' => 'Relevamos el camino vecinal en la visita. Las piezas van en camión y se coordina el ingreso para un día con el acceso firme.'],
         ['q' => '¿Qué ventilación necesita un galpón para acopio de ración?', 'a' => 'Aberturas altas en los laterales o cumbrera ventilada para que salga el aire caliente y no se condense humedad. Se define según qué acopiás y cuánto.'],
-        ['q' => '¿Galpones Prefabricados hace galpones para tambos chicos?', 'a' => 'Sí. Se cotiza por ítem, con las medidas que necesita el establecimiento, y se puede ampliar por módulos más adelante.'],
+        ['q' => '¿Galpones Prefabricados hace galpones agrícolas en San Ramón para tambos chicos?', 'a' => 'Sí. Se cotiza por ítem, con las medidas que necesita el establecimiento, y se puede ampliar por módulos más adelante.'],
     ],
     'actualizado' => '2026-09-24',
 ];

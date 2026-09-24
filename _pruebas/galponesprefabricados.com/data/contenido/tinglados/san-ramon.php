@@ -1,9 +1,9 @@
 <?php
 /** Tinglados × San Ramón (subservicio; la página principal de la zona es /galpones-prefabricados/san-ramon). */
 return [
-    'title'       => 'Tinglados en San Ramón – Techado rural, presupuesto por WhatsApp',
-    'description' => 'Tinglados en San Ramón, Canelones: techado abierto para maquinaria, rollos de forraje y camiones en campos y chacras de Ruta 6 y Ruta 12. Presupuesto por WhatsApp sin cargo.',
-    'h1'          => 'Tinglados en San Ramón: techado abierto para maquinaria, rollos y camiones',
+    'title'       => 'Tinglados en San Ramón – Presupuesto por WhatsApp',
+    'description' => 'Tinglados en San Ramón para maquinaria, rollos y camiones en campos de Ruta 6 y Ruta 12. Techado abierto a medida. Presupuesto por WhatsApp sin cargo.',
+    'h1'          => 'Tinglados en San Ramón: techado abierto para maquinaria y rollos',
     'eyebrow'     => 'Techados para el campo en Canelones',
     'subtitulo'   => 'Cobertizos metálicos para establecimientos rurales del noreste de Canelones. Medimos en el campo y presupuestamos por ítem por WhatsApp.',
     'secciones'   => [
@@ -18,7 +18,7 @@ return [
             'h2' => 'Cómo llegamos y qué encontramos en San Ramón',
             'parrafos' => [
                 'Llegamos por Ruta 6 desde Montevideo; Ruta 12 conecta con Tala hacia el este. La ciudad tiene casco urbano chico y un entorno de campos ganaderos, tambos y chacras. El último tramo suele ser camino vecinal de balasto: lo relevamos antes de mandar el camión con la estructura, sobre todo después de lluvias.',
-                'Los predios son amplios y con lomas suaves. Elegimos con el productor el lugar del tinglado según el drenaje y la maniobra de la maquinaria. Cerca del río Santa Lucía revisamos el nivel del terreno antes de ubicar las bases. Nos piden techado para tractores y cosechadoras, para rollos y fardos que se arruinan a la intemperie, y para camiones que cargan en el establecimiento.',
+                'Los predios son amplios y con lomas suaves. Elegimos con el productor el lugar del tinglado según el drenaje y la maniobra de la maquinaria. Cerca del río Santa Lucía revisamos el nivel del terreno antes de ubicar las bases. Nos piden tinglados en San Ramón para tractores y cosechadoras, para rollos y fardos que se arruinan a la intemperie, y para camiones que cargan en el establecimiento.',
                 'También hacemos <a href="/galpones-prefabricados/tala">galpones en Tala</a>, <a href="/galpones-prefabricados/san-bautista">galpones prefabricados en San Bautista</a> y <a href="/galpones-prefabricados/ciudad-de-canelones">galpones en Canelones ciudad</a>, por Ruta 6 hacia el sur.',
             ],
         ],
@@ -44,7 +44,7 @@ return [
     'faq' => [
         ['q' => '¿Cuánta altura necesita un tinglado para una cosechadora en San Ramón?', 'a' => 'La define la máquina más alta que vas a guardar, con margen para entrar y salir. Mandanos el modelo por WhatsApp y calculamos la altura libre bajo cabriada.'],
         ['q' => '¿Se puede hacer el tinglado en un campo con camino de balasto?', 'a' => 'Sí. Relevamos el camino en la visita y coordinamos el ingreso del camión con la estructura para un día en que el acceso esté firme.'],
-        ['q' => '¿Un tinglado protege los rollos de forraje en San Ramón?', 'a' => 'Protege de la lluvia y del sol, que es lo que más los arruina. Si el viento trae agua de un lado, se cierra ese lateral y el resto queda abierto para ventilar.'],
+        ['q' => '¿Los tinglados en San Ramón protegen los rollos de forraje?', 'a' => 'Protege de la lluvia y del sol, que es lo que más los arruina. Si el viento trae agua de un lado, se cierra ese lateral y el resto queda abierto para ventilar.'],
         ['q' => '¿Galpones Prefabricados hace tinglados chicos, para un solo tractor?', 'a' => 'Sí. Se cotiza igual, por ítem: estructura, techo y bases. El tamaño mínimo lo define lo que vas a guardar.'],
     ],
     'actualizado' => '2026-09-24',
