@@ -2,7 +2,7 @@
 /** Galpones prefabricados × Peñarol / Lavalleja (norte de Montevideo, estación y talleres ferroviarios). */
 return [
     'title'       => 'Galpones prefabricados en Peñarol – Junto a la vía férrea',
-    'description' => 'Galpones prefabricados en Peñarol, Montevideo: talleres y depósitos en el barrio de la estación, con salida a Ruta 5. Presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones prefabricados en Peñarol, Montevideo: talleres y depósitos en el barrio de la estación, con salida a Ruta 5. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones prefabricados en Peñarol: predios junto a la vía y Ruta 5',
     'eyebrow'     => 'Galpones metálicos en Peñarol y Lavalleja',
     'subtitulo'   => 'Galpones de estructura metálica para talleres y depósitos en Peñarol. Fabricación en taller, montaje en tu predio y presupuesto por WhatsApp.',
@@ -19,7 +19,7 @@ return [
             'h2' => 'Cómo llegamos y qué encontramos en Peñarol',
             'parrafos' => [
                 'Se llega por Avenida Sayago, que conecta el barrio con Sayago y con Garzón, por Bulevar Aparicio Saravia desde el este y por Ruta 5 desde La Paz. La vía del tren y la estación Peñarol parten el barrio en dos, y eso obliga a planificar por qué cruce entra el camión con la estructura.',
-                'El barrio histórico, con sus casas de los ferroviarios, tiene calles angostas y lotes con fondo; alrededor quedan galpones antiguos de mampostería y chapa que se reemplazan por estructura metálica nueva. El terreno y la platea se revisan en la visita. Desde Peñarol seguimos hacia <a href="/galpones-prefabricados/colon-centro-noroeste">galpones en Colón</a>, cruzamos a <a href="/galpones-prefabricados/la-paz">La Paz, ya en Canelones</a>, y cubrimos <a href="/galpones-prefabricados/montevideo">todos los barrios de Montevideo</a>.',
+                'El barrio histórico, con sus casas de los ferroviarios, tiene calles angostas y lotes con fondo; alrededor quedan galpones antiguos de mampostería y chapa que se reemplazan por estructura metálica nueva. El terreno y la platea se revisan en la visita. Desde Peñarol seguimos hacia <a href="/galpones-prefabricados/colon-centro-noroeste">Colón y Avenida Garzón</a>, cruzamos a <a href="/galpones-prefabricados/la-paz">La Paz, ya en Canelones</a>, y cubrimos <a href="/galpones-prefabricados/montevideo">todos los barrios de Montevideo</a>.',
             ],
         ],
         [

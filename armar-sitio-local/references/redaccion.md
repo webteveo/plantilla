@@ -56,3 +56,29 @@ Lo que **no** puede aparecer sin confirmación: tiempos de llegada, precios, añ
 3. ¿Title 45–58, H1 ≤ 70, description 120–150, un solo H1, ≥ 3 H2, ≥ 3 FAQ?
 4. ¿2–4 enlaces contextuales a vecinas/troncal con anchors distintos?
 5. ¿`actualizado` con fecha de hoy?
+
+## Plantilla del brief para una tanda (llenar y guardar fuera del sitio; se pasa a cada redactor)
+
+```
+# Brief — {dominio} ({rank and rent | cliente}, {país}, {con/sin operador})
+Sitio: {ruta}. NO tocar lib/, templates/, partials/, config.php, data/servicios.php, data/zonas.php; solo crear los archivos asignados.
+Leer antes: {ruta skill}/references/redaccion.md · {ruta skill}/references/plantilla.md §formato · seo-local-semantico-2026/references/on-page-formulas.md §1–3 · location-pages.md §1 y §4
+Datos: data/servicios.php (nombre, sinónimos, entidades, faq base, 'zonas' de cada servicio) · data/zonas.php (nombre exacto, vecinos, referencias, vivienda) · {ruta skill}/assets/zonas-{uy|caba-amba}.json
+
+## Marca y negocio (lo único que se puede afirmar)
+- Marca, rubro, cobertura, cómo se coordina (WhatsApp, formulario), horario real.
+- Cómo trabaja (proceso neutro válido para cualquier operador del rubro).
+- NO EXISTEN y NO se escriben: {años, cantidad de trabajos, técnicos, reseñas, precios, plazos, tiempos de llegada, "24 hs", direcciones, marcas, garantías…}. Sustitutos: "presupuesto por WhatsApp", "se define en el presupuesto según…".
+- SÍ se puede escribir de cada zona: {accesos y rutas, tipo de predio/vivienda, usos típicos del servicio ahí, qué intendencia/municipio da el permiso, referencias reales del JSON}. Si no estás seguro de una referencia, no la uses.
+
+## Formato de salida
+Archivo PHP `<?php return [...]` con: title (45–58; keyword + zona en los primeros 30; gancho DISTINTO por zona; guion; sin marca si no entra), description (120–150, "por WhatsApp" en los primeros 120), h1 (≤ 70), eyebrow, subtitulo, secciones (3–5: answer-first con marca + dato propio; cómo llegamos / qué encontramos con 2–3 vecinas enlazadas; precio-factores o usos; permisos o subservicios), faq (3–4 propias, distintas de las base), actualizado (hoy).
+Enlaces: 1 troncal (/{servicio}), 1 hub (/{zona}), 2–3 vecinas (/{servicio}/{vecina}) solo con combinaciones existentes; anchors distintos entre páginas.
+Largo del texto propio: servicio × zona 350–600; hub 250–400; troncal 600–900. Español rioplatense, sin relleno. Cada archivo pasa `php -l`.
+
+## Asignación
+Servicio {slug} × zonas: {lista de slugs}. Salida: data/contenido/{servicio}/{zona}.php
+Reportar al terminar: archivos, title y caracteres, qué datos no pudiste afirmar.
+```
+
+Notas de la prueba de punta a punta (galponesprefabricados.com, 117 páginas, 13 tandas en paralelo): con este brief los redactores produjeron páginas con similitud máxima 14 % entre sí y cero enlaces rotos; los avisos típicos fueron titles con la zona adelante ("Pando: galpones…", válido) y referencias geográficas que el redactor marcó como "a confirmar": pasarlas a ENTREGA.md tal cual las reporta.

@@ -34,7 +34,7 @@ return [
                 'Tinglado abierto para cubrir implementos o forraje, que se puede cerrar más adelante.',
             ],
             'parrafos_despues' => [
-                'Cada uso cambia la altura, la luz libre y los cerramientos. Si dudás entre galpón cerrado o techo abierto, en <a href="/tinglados">tinglados metálicos</a> explicamos la diferencia, y en <a href="/galpones-prefabricados">galpones prefabricados en Montevideo y Canelones</a> qué incluye el servicio completo.',
+                'Cada uso cambia la altura, la luz libre y los cerramientos. Si dudás entre galpón cerrado o techo abierto, en <a href="/tinglados">tinglados abiertos o semicerrados</a> explicamos la diferencia, y en <a href="/galpones-prefabricados">el servicio completo de galpones prefabricados</a> qué incluye cada ítem.',
             ],
         ],
         [

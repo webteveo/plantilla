@@ -36,7 +36,7 @@ return [
                 'Permiso de construcción y planos firmados por técnico.',
             ],
             'parrafos_despues' => [
-                'Cómo armamos cada ítem está explicado en <a href="/galpones-prefabricados">cómo cotizamos un galpón prefabricado</a>; para las versiones pensadas para producción, mirá <a href="/galpones-agricolas">galpones agrícolas</a>.',
+                'Cómo armamos cada ítem está explicado en <a href="/galpones-prefabricados">cómo cotizamos un galpón prefabricado</a>; para las versiones pensadas para producción, mirá <a href="/galpones-agricolas">galpones agrícolas para producción</a>.',
             ],
         ],
         [

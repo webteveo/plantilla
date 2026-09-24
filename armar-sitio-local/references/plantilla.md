@@ -102,3 +102,11 @@ php bin/verificar.php --base=http://127.0.0.1:8000 --grep="Plomero Ejemplo,plome
 python3 <skill>/scripts/qa.py --sitio <sitio> --reporte QA.md
 php bin/indexnow.php        # después de publicar, con analitica.indexnow_key cargada
 ```
+
+## Errores que aparecieron en la prueba y cómo evitarlos
+
+- El title de la home de `config.php → sitio.titulo_home` también cuenta para el largo (≤ 58): no repetir "Presupuesto a medida" si no entra.
+- `.htaccess`: reemplazar el dominio en las dos líneas `RewriteCond` (el comentario puede quedar).
+- `bin/verificar.php --grep` no revisa `PLANTILLA.md` ni `INVENTARIO.md`; `qa.py` no revisa `bin/`.
+- Los hubs (`zonas/{zona}.php`) necesitan title y H1 propios ("Galpones en {Zona} – …", "Galpones y tinglados en {Zona}"); si se dejan las fórmulas compiten con la página servicio × zona.
+- Zonas seleccionadas sin vecinas dentro de la selección (ej. Cerro con vecinos fuera de Montevideo elegido): la plantilla enlaza a las hermanas del mismo padre; no hace falta editar `vecinos`.

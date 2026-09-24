@@ -19,7 +19,7 @@ return [
             'parrafos' => [
                 'Desde Montevideo el camino es Ruta 8 hasta la altura de Pando y desde ahí Ruta 7 hacia el norte, que atraviesa San Jacinto y sigue a Tala. Ruta 81 conecta con San Bautista y Ruta 6. Las rutas son asfaltadas; los caminos vecinales hacia los predios pueden ser de tosca y los revisamos antes del montaje.',
                 'El terreno es de lomas y cañadas, con suelo firme en la mayoría de los predios y algunos bajos donde la platea se levanta. Se piden galpones para maquinaria y acoplados, acopio de forraje y grano, depósitos de insumos y estructuras para tambos y granjas.',
-                'Con la misma logística cubrimos <a href="/galpones-prefabricados/santa-rosa">galpones en Santa Rosa</a>, <a href="/galpones-prefabricados/migues">Migues</a> y <a href="/galpones-prefabricados/soca">las chacras de Soca</a>, hacia el sur. Para los usos de producción tenemos también <a href="/galpones-agricolas/san-jacinto">galpones agrícolas en San Jacinto</a>.',
+                'Con la misma logística cubrimos <a href="/galpones-prefabricados/santa-rosa">galpones en Santa Rosa</a>, <a href="/galpones-prefabricados/migues">los campos de Migues</a> y <a href="/galpones-prefabricados/soca">las chacras de Soca</a>, hacia el sur. Para los usos de producción tenemos también <a href="/galpones-agricolas/san-jacinto">galpones agrícolas en San Jacinto</a>.',
             ],
         ],
         [

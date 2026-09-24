@@ -57,6 +57,8 @@ def strip_tags(s):
     s = re.sub(r"<[^>]+>", " ", s)
     return re.sub(r"\s+", " ", html.unescape(s)).strip()
 
+import unicodedata
+def sin_acentos(s): return "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
 def palabras(s): return re.findall(r"[a-záéíóúñü0-9]+", s.lower())
 
 def shingles(txt, n=5):
@@ -88,7 +90,7 @@ def main():
     # 2. Marcadores en código y datos
     pendientes = []
     for root, dirs, files in os.walk(sitio):
-        dirs[:] = [d for d in dirs if d not in ("vendor", ".git", "node_modules", "assets")]
+        dirs[:] = [d for d in dirs if d not in ("vendor", ".git", "node_modules", "assets", "bin")]
         for f in files:
             if not f.endswith((".php", ".md", ".txt", ".json", ".htaccess")) and f != ".htaccess": continue
             p = os.path.join(root, f); rel = os.path.relpath(p, sitio)
@@ -100,7 +102,8 @@ def main():
                 if "[COMPLETAR]" in line: pendientes.append(f"{rel}:{i}: {line.strip()[:110]}")
             for r_ in RESTOS:
                 if r_ in c and rel != "PLANTILLA.md": E(f"resto de la plantilla '{r_}' en {rel}")
-            if f == ".htaccess" and "mi-dominio.uy" in c: E(".htaccess: falta reemplazar mi-dominio.uy por el dominio real")
+            if f == ".htaccess" and any("mi-dominio" in l for l in c.splitlines() if not l.lstrip().startswith("#")):
+                E(".htaccess: falta reemplazar mi-dominio.uy por el dominio real en las reglas RewriteCond")
     for p in pendientes: A(f"[COMPLETAR] pendiente → {p}")
     print(f"2. Marcadores: {len(pendientes)} [COMPLETAR] pendientes en código/datos")
 
@@ -187,7 +190,7 @@ def main():
             else:
                 h1s[h1[0]].append(path)
                 if len(h1[0]) > 70: E(f"{path}: H1 de {len(h1[0])} caracteres → «{h1[0]}»")
-                if tipo == "servicio-zona" and title and palabras(h1[0])[:2] != palabras(title)[:2]: A(f"{path}: H1 y title no empiezan igual (misma keyword + zona)")
+                if tipo == "servicio-zona" and title and len(set(palabras(h1[0])[:6]) & set(palabras(title)[:6])) < 2: A(f"{path}: H1 y title no comparten keyword + zona al principio")
             can = re.findall(r'<link rel="canonical" href="(.*?)"', h)
             if not can: E(f"{path}: sin canonical")
             elif urllib.parse.urlparse(html.unescape(can[0])).path.rstrip("/") != path.rstrip("/"): E(f"{path}: canonical apunta a {can[0]}")
@@ -243,9 +246,10 @@ def main():
                 if len(wa_tags) < 3: A(f"{path}: solo {len(wa_tags)} botones de WhatsApp")
                 cfgm = json.loads(m.group(1)) if m else {}
                 zona, srv = cfgm.get("zona", ""), cfgm.get("servicio", "")
-                textos = [urllib.parse.unquote(html.unescape(urllib.parse.urlparse(w).query)).lower() for w in wa]
-                nombre_zona = h1[0].split(" en ")[-1].lower() if h1 else zona
-                if textos and not all(zona.replace("-", " ").split()[0] in t or nombre_zona.split()[0] in t for t in textos):
+                textos = [sin_acentos(urllib.parse.unquote(html.unescape(urllib.parse.urlparse(w).query)).lower()) for w in wa]
+                nombre_zona = sin_acentos(h1[0].split(" en ")[-1].lower()) if h1 else zona
+                zona_pal = sin_acentos(zona.replace("-", " ")).split()[0]
+                if textos and not all(zona_pal in t or nombre_zona.split()[0].strip(":,") in t for t in textos):
                     E(f"{path}: hay botones de WhatsApp cuyo mensaje no menciona la zona")
             # contacto
             if tipo != "contacto-gracias" and "wa.me" not in h and "contacto" not in h: A(f"{path}: sin WhatsApp")

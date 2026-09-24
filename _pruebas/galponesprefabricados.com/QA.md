@@ -1,6 +1,6 @@
 # QA — galponesprefabricados.com
 
-Fecha: 2026-09-24 15:50
+Fecha: 2026-09-24 15:53
 
 Páginas por tipo: contacto: 1, home: 1, nosotros: 1, privacidad: 1, servicio: 5, servicio-zona: 65, terminos: 1, zona: 41, zonas: 1
 

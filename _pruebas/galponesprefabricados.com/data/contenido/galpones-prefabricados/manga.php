@@ -2,7 +2,7 @@
 /** Galpones prefabricados × Manga (noreste de Montevideo, Belloni / Perimetral / Manga Rural). */
 return [
     'title'       => 'Galpones prefabricados en Manga – Belloni y Perimetral',
-    'description' => 'Galpones prefabricados en Manga, Montevideo: depósitos, talleres y galpones para chacras entre Belloni y el Anillo Perimetral. Presupuesto por WhatsApp.',
+    'description' => 'Galpones prefabricados en Manga, Montevideo: depósitos, talleres y galpones para chacras entre Belloni y el Perimetral. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones prefabricados en Manga: para depósito y chacras',
     'eyebrow'     => 'Galpones metálicos en el noreste de Montevideo',
     'subtitulo'   => 'Galpones de estructura metálica para predios urbanos y semirrurales de Manga. Fabricamos en taller, montamos en obra y coordinamos por WhatsApp.',

@@ -19,7 +19,7 @@ return [
             'parrafos' => [
                 'Se llega por Ruta 11 desde la ciudad de Canelones, unos 10 km hacia el oeste, o desde San José de Mayo cruzando el puente sobre el río Santa Lucía. Desde Montevideo el camino habitual es Ruta 5 hasta Canelones y después Ruta 11: alrededor de 60 km.',
                 'Alrededor de la ciudad hay chacras de hortifruticultura y viñedos, con producción que necesita packing y acopio bajo techo; en el casco urbano se piden depósitos para comercios y talleres. Los galpones prefabricados en Santa Lucía más pedidos son para packing de fruta y verdura, acopio de cajones e insumos, y maquinaria de chacra.',
-                'Cubrimos también los predios de <a href="/galpones-prefabricados/los-cerrillos">Los Cerrillos</a> y el resto de las chacras hacia <a href="/galpones-prefabricados/ciudad-de-canelones">galpones en la ciudad de Canelones</a>. Si buscás solo la estructura, mirá <a href="/galpones-metalicos/santa-lucia">galpones metálicos en Santa Lucía</a>; para el servicio completo, la página de <a href="/galpones-prefabricados">galpones prefabricados</a> explica qué incluye cada ítem.',
+                'Cubrimos también <a href="/galpones-prefabricados/los-cerrillos">los predios de Los Cerrillos</a> y el resto de las chacras hacia <a href="/galpones-prefabricados/ciudad-de-canelones">galpones en la ciudad de Canelones</a>. Si buscás solo la estructura, mirá <a href="/galpones-metalicos/santa-lucia">galpones metálicos en Santa Lucía</a>; para el servicio completo, en <a href="/galpones-prefabricados">qué incluye un galpón prefabricado</a> explicamos cada ítem.',
             ],
         ],
         [

@@ -2,7 +2,7 @@
 /** Galpones prefabricados × Lezica / Melilla (Montevideo rural, noroeste). */
 return [
     'title'       => 'Galpones prefabricados en Lezica – Quintas y Cno. Melilla',
-    'description' => 'Galpones prefabricados en Lezica y Melilla, zona rural de Montevideo: packing, maquinaria y acopio en quintas y viñedos. Presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones prefabricados en Lezica y Melilla, zona rural de Montevideo: packing, maquinaria y acopio en quintas y viñedos. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones prefabricados en Lezica y Melilla: para quintas y viñedos',
     'eyebrow'     => 'Galpones para el Montevideo rural',
     'subtitulo'   => 'Galpones agrícolas y depósitos de estructura metálica para las quintas de Lezica y Melilla. Relevamos el predio y coordinamos el montaje por WhatsApp.',

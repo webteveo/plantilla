@@ -2,7 +2,7 @@
 /** Galpones prefabricados × Cerro (oeste de Montevideo). */
 return [
     'title'       => 'Galpones prefabricados en el Cerro – Talleres y depósitos',
-    'description' => 'Galpones prefabricados en el Cerro, Montevideo: talleres y depósitos metálicos en predios sobre Grecia, Cibils y la rambla. Presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones prefabricados en el Cerro, Montevideo: talleres y depósitos metálicos sobre Grecia, Cibils y la rambla. Presupuesto a medida por WhatsApp.',
     'h1'          => 'Galpones prefabricados en el Cerro: talleres y depósitos a medida',
     'eyebrow'     => 'Galpones metálicos en el oeste de Montevideo',
     'subtitulo'   => 'Estructura metálica fabricada en taller y montada en tu predio del Cerro. Relevamos medidas y acceso, y te pasamos el presupuesto por WhatsApp.',
@@ -19,7 +19,7 @@ return [
             'h2' => 'Cómo llegamos y qué encontramos en el Cerro',
             'parrafos' => [
                 'Al Cerro se entra por la Rambla del Cerro bordeando la bahía, por la calle Grecia, que es su avenida comercial, o desde el norte por Camino Cibils, que lo conecta con Ruta 1. El camión con la estructura y la grúa entran sin problema por la rambla y por Cibils; en las calles internas del casco viejo del barrio hay cuadras angostas, así que relevamos el acceso antes de fabricar.',
-                'Los predios son variados: casas con fondo largo donde se pide un galpón chico para taller o depósito, terrenos industriales con frente a la rambla y lotes hacia Casabó y Cibils con más espacio. El suelo sube en loma hacia la Fortaleza y baja hacia la playa, y eso cambia la platea. Con la misma logística llegamos a <a href="/galpones-prefabricados/paso-de-la-arena">galpones en Paso de la Arena</a> y a las <a href="/galpones-prefabricados/lezica-melilla">quintas de Lezica y Melilla</a>; el resto de la capital está en <a href="/galpones-prefabricados/montevideo">galpones prefabricados en Montevideo</a>.',
+                'Los predios son variados: casas con fondo largo donde se pide un galpón chico para taller o depósito, terrenos industriales con frente a la rambla y lotes hacia Casabó y Cibils con más espacio. El suelo sube en loma hacia la Fortaleza y baja hacia la playa, y eso cambia la platea. Con la misma logística llegamos a <a href="/galpones-prefabricados/paso-de-la-arena">galpones en Paso de la Arena</a> y a las <a href="/galpones-prefabricados/lezica-melilla">zona rural de Lezica y Melilla</a>; el resto de la capital está en <a href="/galpones-prefabricados/montevideo">galpones prefabricados en Montevideo</a>.',
             ],
         ],
         [
@@ -48,7 +48,7 @@ return [
 
     'faq' => [
         ['q' => '¿Pueden montar un galpón en un terreno chico del Cerro?', 'a' => 'Sí. Muchos pedidos del barrio son galpones chicos para taller o depósito en el fondo de una casa. Se fabrican piezas que pasen por el acceso disponible y se montan con equipo liviano.'],
-        ['q' => '¿El aire salino de la bahía afecta la estructura?', 'a' => 'Cerca de la costa conviene prever protección extra: chapa galvanizada, pintura anticorrosiva en la estructura y cuidado en los anclajes. Lo tenemos en cuenta al presupuestar un galpón en el Cerro.'],
+        ['q' => '¿El aire salino de la bahía afecta la estructura?', 'a' => 'Cerca de la costa conviene prever chapa galvanizada, pintura anticorrosiva en la estructura y cuidado en los anclajes. Lo tenemos en cuenta al presupuestar un galpón en el Cerro.'],
         ['q' => '¿Hacen galpones para talleres mecánicos en el Cerro?', 'a' => 'Sí, es de lo más pedido en la zona: altura para elevador, portón ancho para la entrada de vehículos y, si querés, una oficina integrada.'],
         ['q' => '¿Atienden Casabó y Pajas Blancas también?', 'a' => 'Sí. Galpones Prefabricados cubre el Cerro y todo el oeste de Montevideo, incluidas las chacras hacia Pajas Blancas y Punta Espinillo. Escribinos por WhatsApp con la ubicación y coordinamos la visita.'],
     ],

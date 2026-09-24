@@ -12,7 +12,7 @@ return [
             'h2' => 'Galpones prefabricados en Colón: cómo trabajamos',
             'parrafos' => [
                 'Galpones Prefabricados hace galpones de estructura metálica en Colón, el barrio del norte de Montevideo que se organiza alrededor de Avenida Garzón y la Plaza Vidiella, justo antes de que la avenida se convierta en Ruta 5. Fabricamos la estructura en taller y la montamos en tu predio: depósitos para comercios de Garzón, talleres y galpones en los terrenos hacia Camino Melilla. Coordinamos por WhatsApp y el presupuesto llega detallado por ítem.',
-                'Colón es la puerta de salida de la capital hacia Canelones, y por eso concentra comercios de materiales, distribuidoras y talleres que necesitan cubrir stock. Un <a href="/galpones-prefabricados">galpón prefabricado de estructura metálica</a> se monta en el fondo del local sin frenar la actividad del frente.',
+                'Colón es la salida de la capital hacia Canelones y concentra comercios de materiales, distribuidoras y talleres que necesitan cubrir stock. Un <a href="/galpones-prefabricados">galpón prefabricado de estructura metálica</a> se monta en el fondo del local sin frenar la actividad del frente.',
             ],
         ],
         [
@@ -49,7 +49,7 @@ return [
     'faq' => [
         ['q' => '¿Pueden montar un galpón en el fondo de un local de Avenida Garzón?', 'a' => 'Sí, es un pedido frecuente en Colón. Relevamos por dónde entran las piezas; si no hay pasaje, la estructura se fabrica en tramos cortos y se arma adentro. El frente sigue funcionando durante el montaje.'],
         ['q' => '¿Hacen galpones en La Paz y Las Piedras desde Colón?', 'a' => 'Sí. Galpones Prefabricados trabaja a ambos lados del límite: Colón, La Paz y Las Piedras están sobre el mismo eje de Ruta 5. Lo que cambia es la intendencia que da el permiso: Montevideo en Colón, Canelones al cruzar.'],
-        ['q' => '¿Qué altura conviene para un depósito con estanterías?', 'a' => 'Se define por la altura de la última estantería más el margen del equipo de carga. Nos pasás cuántos niveles querés y calculamos la altura libre bajo viga.'],
+        ['q' => '¿Qué altura conviene para un depósito con estanterías?', 'a' => 'Por la altura de la última estantería más el margen del equipo de carga. Nos pasás cuántos niveles querés y calculamos la altura libre bajo viga.'],
         ['q' => '¿Cuánto tarda el montaje de un galpón en Colón?', 'a' => 'El plazo se define en el presupuesto según medidas y terreno. Como la estructura viene hecha de taller, en obra son menos días que en una construcción tradicional.'],
     ],
 

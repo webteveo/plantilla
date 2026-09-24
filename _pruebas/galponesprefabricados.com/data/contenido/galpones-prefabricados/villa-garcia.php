@@ -12,7 +12,7 @@ return [
             'h2' => 'Galpones prefabricados en Villa García: cómo trabajamos',
             'parrafos' => [
                 'Galpones Prefabricados hace galpones de estructura metálica en Villa García, la zona semirrural del este de Montevideo que se extiende a lo largo de Ruta 8 hasta el límite con Canelones y Barros Blancos. Fabricamos en taller y montamos en el predio depósitos logísticos, galpones para chacras y talleres. Coordinamos por WhatsApp: medidas, uso y ubicación, y el presupuesto llega detallado por ítem.',
-                'Villa García combina frentes sobre la ruta, donde se instalan depósitos y empresas de transporte, con caminos interiores como Camino Repetto, donde siguen las chacras y los predios grandes. Por eso se piden tanto naves con portón para camiones como galpones para tractor y acopio. En <a href="/galpones-prefabricados">la página general de galpones prefabricados</a> está qué incluye cada ítem.',
+                'Villa García combina frentes sobre la ruta, con depósitos y empresas de transporte, y caminos interiores como Camino Repetto, donde siguen las chacras. Por eso se piden tanto naves con portón para camiones como galpones para tractor y acopio. En <a href="/galpones-prefabricados">la página general de galpones prefabricados</a> está qué incluye cada ítem.',
             ],
         ],
         [
@@ -48,7 +48,7 @@ return [
 
     'faq' => [
         ['q' => '¿Hacen galpones logísticos sobre Ruta 8 en Villa García?', 'a' => 'Sí. Galpones Prefabricados diseña depósitos con la altura libre y los portones que piden tus camiones, con oficina integrada si hace falta. La salida por Ruta 8 y el Perimetral es lo que más valoran las empresas.'],
-        ['q' => '¿El galpón puede estar en una chacra de Camino Repetto?', 'a' => 'Sí, siempre que el camino soporte el camión con la estructura y la grúa. Si el acceso es de balasto, lo confirmamos en la visita y elegimos la fecha de montaje según el clima.'],
+        ['q' => '¿El galpón puede estar en una chacra de Camino Repetto?', 'a' => 'Sí, siempre que el camino soporte el camión con la estructura y la grúa. Si es de balasto, lo confirmamos en la visita y elegimos la fecha de montaje según el clima.'],
         ['q' => '¿Qué diferencia hay entre pedirlo en Villa García o en Barros Blancos?', 'a' => 'El galpón es el mismo; cambia el permiso. En Villa García lo da la Intendencia de Montevideo; en Barros Blancos, la de Canelones, con trámite en línea y técnico registrado. Trabajamos a los dos lados del límite.'],
         ['q' => '¿Qué platea necesita un galpón para camiones?', 'a' => 'Una platea de hormigón calculada para el peso de los camiones cargados, con espesor y armadura según el uso. Se presupuesta como ítem aparte y cambia con el suelo del predio.'],
     ],

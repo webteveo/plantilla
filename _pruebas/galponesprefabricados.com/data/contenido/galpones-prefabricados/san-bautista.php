@@ -19,7 +19,7 @@ return [
             'parrafos' => [
                 'El acceso es por Ruta 6, que viene desde Montevideo pasando cerca de Toledo y Sauce, o por Ruta 81 desde San Jacinto y Ruta 7. Las dos son asfaltadas y aptas para el camión con la estructura; solo los últimos metros hasta el predio pueden ser de tosca.',
                 'Predios de chacra con lomas bajas, cañadas y suelo firme en la mayoría de los casos. Se piden galpones para tractor y sembradora, depósitos de fertilizante y acopio de cajones, galpones para aves y tinglados para rollos de forraje.',
-                'Por Ruta 6 seguimos hasta <a href="/galpones-prefabricados/san-ramon">San Ramón, sobre el río Santa Lucía</a>; por Ruta 81 hasta <a href="/galpones-prefabricados/san-jacinto">San Jacinto</a>; y hacia el sur cubrimos <a href="/galpones-prefabricados/santa-rosa">galpones prefabricados en Santa Rosa</a>.',
+                'Por Ruta 6 seguimos hasta <a href="/galpones-prefabricados/san-ramon">San Ramón, sobre el río Santa Lucía</a>; por Ruta 81 hasta <a href="/galpones-prefabricados/san-jacinto">las chacras de San Jacinto</a>; y hacia el sur cubrimos <a href="/galpones-prefabricados/santa-rosa">la zona avícola de Santa Rosa</a>.',
             ],
         ],
         [
@@ -35,7 +35,7 @@ return [
                 'Taller de chacra: galpón chico con portón y espacio para banco de trabajo.',
             ],
             'parrafos_despues' => [
-                'Si lo tuyo es producción, la página de <a href="/galpones-agricolas">galpones para chacras y establecimientos rurales</a> detalla cada variante; el servicio completo está en <a href="/galpones-prefabricados">galpones prefabricados a medida</a>.',
+                'Si lo tuyo es producción, la página de <a href="/galpones-agricolas">galpones para chacras y establecimientos rurales</a> detalla cada variante; el servicio completo está en <a href="/galpones-prefabricados">galpones prefabricados cotizados por ítem</a>.',
             ],
         ],
         [

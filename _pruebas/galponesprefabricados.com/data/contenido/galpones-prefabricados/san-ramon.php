@@ -35,7 +35,7 @@ return [
                 'Depósito comercial o taller dentro de la ciudad: galpón chico, con oficina si hace falta.',
             ],
             'parrafos_despues' => [
-                'Cada uso cambia medidas, cerramientos y platea, y con eso el precio; te lo detallamos por ítem. Cómo armamos un presupuesto está en <a href="/galpones-prefabricados">nuestra página de galpones prefabricados</a>.',
+                'Cada uso cambia medidas, cerramientos y platea, y con eso el precio; te lo detallamos por ítem. Cómo armamos un presupuesto está en <a href="/galpones-prefabricados">la troncal de galpones prefabricados</a>.',
             ],
         ],
         [

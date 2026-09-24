@@ -2,7 +2,7 @@
 /** Galpones prefabricados × Paso de la Arena (oeste de Montevideo, Ruta 1). */
 return [
     'title'       => 'Galpones prefabricados en Paso de la Arena – Ruta 1',
-    'description' => 'Galpones prefabricados en Paso de la Arena: depósitos, talleres y galpones para chacras con acceso por Ruta 1 y Tomkinson. Presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones prefabricados en Paso de la Arena: depósitos, talleres y galpones para chacras con acceso por Ruta 1. Presupuesto a medida por WhatsApp.',
     'h1'          => 'Galpones prefabricados en Paso de la Arena: a medida junto a Ruta 1',
     'eyebrow'     => 'Galpones metálicos sobre Ruta 1',
     'subtitulo'   => 'Diseñamos, fabricamos y montamos galpones de estructura metálica en Paso de la Arena y sus chacras. Coordinamos la visita al predio por WhatsApp.',
@@ -48,7 +48,7 @@ return [
 
     'faq' => [
         ['q' => '¿Llegan a las chacras entre Paso de la Arena y Santiago Vázquez?', 'a' => 'Sí. Galpones Prefabricados cubre toda la zona rural del oeste de Montevideo. Solo confirmamos que el camino de acceso soporte el camión con la estructura; si no, se planifica la descarga en el punto más cercano.'],
-        ['q' => '¿Conviene un galpón cerrado o un tinglado para maquinaria agrícola?', 'a' => 'Si solo querés cubrir tractores e implementos del sol y la lluvia, alcanza con un tinglado. Si guardás insumos, cosecha o herramientas, conviene cerrarlo. Se puede empezar abierto y cerrar después.'],
+        ['q' => '¿Conviene un galpón cerrado o un tinglado para maquinaria agrícola?', 'a' => 'Para cubrir tractores e implementos del sol y la lluvia alcanza con un tinglado; si guardás insumos, cosecha o herramientas, conviene cerrarlo. Se puede empezar abierto y cerrar después.'],
         ['q' => '¿Qué altura de portón necesito para un camión?', 'a' => 'Depende del vehículo más alto que vaya a entrar. Nos decís qué camión usás y calculamos la altura libre y el ancho del portón.'],
         ['q' => '¿Hay que hacer platea de hormigón en Paso de la Arena?', 'a' => 'Depende del uso y del suelo. Un galpón para maquinaria pesada o con piso de trabajo necesita platea; un tinglado puede ir sobre bases aisladas. En la visita revisamos el terreno y lo definimos.'],
     ],
