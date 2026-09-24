@@ -83,10 +83,20 @@ function secciones_t(array $secciones, array $vars): array
     $out = [];
     foreach ($secciones as $sec) {
         if (empty($sec['h2'])) continue;
+        $tabla = null;
+        if (!empty($sec['tabla']['filas'])) {
+            $tabla = [
+                'cabecera' => array_map(fn($x) => t((string)$x, $vars), array_values((array)($sec['tabla']['cabecera'] ?? []))),
+                'filas'    => array_map(fn($f) => array_map(fn($x) => t((string)$x, $vars), array_values((array)$f)), array_values((array)$sec['tabla']['filas'])),
+                'nota'     => t((string)($sec['tabla']['nota'] ?? ''), $vars),
+            ];
+        }
         $out[] = [
             'h2'       => t($sec['h2'], $vars),
             'parrafos' => array_map(fn($x) => t($x, $vars), array_values((array)($sec['parrafos'] ?? []))),
             'lista'    => array_map(fn($x) => t($x, $vars), array_values((array)($sec['lista'] ?? []))),
+            'tabla'    => $tabla,
+            'parrafos_despues' => array_map(fn($x) => t($x, $vars), array_values((array)($sec['parrafos_despues'] ?? []))),
         ];
     }
     return $out;

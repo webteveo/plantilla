@@ -4,7 +4,7 @@
  * Mismos campos que una página servicio×zona. Si el archivo no existe, la página igual se genera con fórmulas.
  */
 return [
-    'title'       => 'Plomero a domicilio: destapaciones, pérdidas y grifería | Plomero Ejemplo [EJEMPLO]',
+    'title'       => 'Plomero a domicilio – Precio por WhatsApp [EJEMPLO]',
     'description' => 'Servicio de plomería a domicilio de Plomero Ejemplo: destapaciones, pérdidas de agua, grifería y termotanques. Precio por WhatsApp antes de ir. [EJEMPLO]',
     'h1'          => 'Plomero a domicilio [EJEMPLO]',
     'eyebrow'     => 'Servicio de plomería de Plomero Ejemplo [EJEMPLO]',

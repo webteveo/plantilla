@@ -7,7 +7,8 @@
  *   /{zona}               hub de zona
  *   /nosotros /contacto /privacidad /terminos
  *   /contacto/enviar      POST del formulario
- *   /sitemap.xml /sitemap-N.xml /robots.txt /llms.txt
+ *   /zonas                índice de todas las zonas (HTML sitemap)
+ *   /sitemap.xml (índice) /sitemap-{tipo}.xml /robots.txt /llms.txt /{indexnow_key}.txt
  * Normalización con 301: barra final, mayúsculas, dobles barras, index.php, ?url= legado.
  * NO se toca para armar un sitio nuevo.
  */
@@ -39,8 +40,9 @@ function router_normalizar(string $path): string
 function router_resolver(string $path, string $method = 'GET'): array
 {
     if ($path === '/') return ['tipo' => 'home', 'path' => '/'];
-    if ($path === '/sitemap.xml') return ['tipo' => 'sitemap', 'n' => 0];
-    if (preg_match('#^/sitemap-(\d+)\.xml$#', $path, $m)) return ['tipo' => 'sitemap', 'n' => (int)$m[1]];
+    if ($path === '/sitemap.xml') return ['tipo' => 'sitemap', 'n' => ''];
+    if (preg_match('#^/sitemap-([a-z0-9-]+)\.xml$#', $path, $m)) return ['tipo' => 'sitemap', 'n' => $m[1]];
+    if (($k = (string)cfg('analitica.indexnow_key')) !== '' && $path === '/' . $k . '.txt') return ['tipo' => 'indexnow-key'];
     if ($path === '/robots.txt') return ['tipo' => 'robots'];
     if ($path === '/llms.txt') return ['tipo' => 'llms'];
 
@@ -50,7 +52,7 @@ function router_resolver(string $path, string $method = 'GET'): array
     foreach ($seg as $s) if (!slug_valido($s)) return ['tipo' => '404', 'path' => $path];
 
     if ($b === null) {
-        if (in_array($a, ['nosotros', 'contacto'], true)) return ['tipo' => $a, 'path' => $path];
+        if (in_array($a, ['nosotros', 'contacto', 'zonas'], true)) return ['tipo' => $a, 'path' => $path];
         if (in_array($a, ['privacidad', 'terminos'], true) && cfg('ui.legales', true)) return ['tipo' => $a, 'path' => $path];
         if (servicio($a)) return ['tipo' => 'servicio', 'servicio' => $a, 'path' => $path];
         if (zona($a) && zona($a)['paginas'] && zona_servicios($a)) return ['tipo' => 'zona', 'zona' => $a, 'path' => $path];
@@ -91,6 +93,10 @@ function router_despachar(): void
         case 'sitemap':
             require BASE_DIR . '/sitemap.php';
             sitemap_emitir($ruta['n']);
+            return;
+        case 'indexnow-key':
+            header('Content-Type: text/plain; charset=utf-8');
+            echo cfg('analitica.indexnow_key');
             return;
         case 'robots':
             header('Content-Type: text/plain; charset=utf-8');

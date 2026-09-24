@@ -115,6 +115,7 @@ function schema_webpage(array $p): array
         'isPartOf'   => ['@id' => schema_id_website()],
         'about'      => ['@id' => schema_id_negocio()],
     ];
+    if (!empty($p['seo']['actualizado'])) $wp['dateModified'] = $p['seo']['actualizado'];
     if (!empty($p['migas']) && count($p['migas']) > 1) $wp['breadcrumb'] = ['@id' => $p['seo']['canonical'] . '#breadcrumb'];
     if (in_array($p['tipo'], ['servicio', 'servicio-zona'], true)) $wp['mainEntity'] = ['@id' => $p['seo']['canonical'] . '#service'];
     return $wp;

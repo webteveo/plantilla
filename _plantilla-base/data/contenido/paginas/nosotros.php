@@ -1,7 +1,7 @@
 <?php
 /** Página /nosotros. [EJEMPLO] */
 return [
-    'title'       => 'Quiénes somos | Plomero Ejemplo [EJEMPLO]',
+    'title'       => 'Quiénes somos – Plomero Ejemplo [EJEMPLO]',
     'description' => 'Conocé al equipo de Plomero Ejemplo: plomeros con presupuesto cerrado, llegada a horario y garantía escrita en Ciudad Ejemplo. [EJEMPLO]',
     'h1'          => 'Quiénes somos [EJEMPLO]',
     'eyebrow'     => 'Nosotros',

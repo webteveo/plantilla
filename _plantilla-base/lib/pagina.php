@@ -17,6 +17,7 @@ function pagina_armar(array $ruta): array
         case 'servicio-zona': $p['servicio'] = servicio($ruta['servicio']); $p['zona'] = zona($ruta['zona']); $p['contenido'] = contenido_servicio_zona($ruta['servicio'], $ruta['zona']); break;
         case 'zona':          $p['zona'] = zona($ruta['zona']); $p['contenido'] = contenido_zona($ruta['zona']); break;
         case 'nosotros':      $p['contenido'] = contenido_pagina('nosotros'); break;
+        case 'zonas':         $p['contenido'] = contenido_pagina('zonas'); break;
         case 'contacto':
         case 'contacto-gracias': $p['contenido'] = contenido_pagina('contacto'); break;
         case 'privacidad':
@@ -66,6 +67,8 @@ function pagina_armar(array $ruta): array
 
     $p['vars']   = $vars;
     $p['comun']  = comun();
+    // Reseñas de esta página (contenido.testimonios) pisan a las globales; solo reales, nunca de relleno
+    if (!empty($c['testimonios'])) $p['comun']['testimonios'] = array_values((array)$c['testimonios']);
     $p['schema'] = schema_bloques($p);
     return $p;
 }

@@ -134,6 +134,15 @@ function recortar(string $s, int $max = 155): string
     return rtrim($pos ? mb_substr($corte, 0, $pos) : $corte, ' ,;:.') . '…';
 }
 
+/** 2026-09-24 → "septiembre de 2026". */
+function fecha_legible(string $iso): string
+{
+    $meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+    $t = strtotime($iso);
+    if (!$t) return $iso;
+    return $meses[(int)date('n', $t) - 1] . ' de ' . date('Y', $t);
+}
+
 /** Une nombres: [A, B, C] → "A, B y C". */
 function lista_natural(array $items): string
 {

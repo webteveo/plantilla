@@ -1,7 +1,7 @@
 <?php
 /** Página /contacto. [EJEMPLO] */
 return [
-    'title'       => 'Contacto | Plomero Ejemplo [EJEMPLO]',
+    'title'       => 'Contacto – Plomero Ejemplo [EJEMPLO]',
     'description' => 'Escribinos por WhatsApp o dejanos tu consulta. Plomero a domicilio en Ciudad Ejemplo con presupuesto antes de ir. [EJEMPLO]',
     'h1'          => 'Contanos qué necesitás [EJEMPLO]',
     'eyebrow'     => 'Contacto',

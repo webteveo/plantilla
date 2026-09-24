@@ -46,9 +46,7 @@ $redes = array_filter((array)cfg('redes', []));
           <li><a href="<?= e(url($z['slug'])) ?>">Servicios en <?= e($z['nombre']) ?></a></li>
           <?php endif; ?>
           <?php endforeach; ?>
-          <?php if ($fZonaPadre): ?>
-          <li><a href="<?= e(url($fZonaPadre['slug'])) ?>">Todas las zonas de <?= e($fZonaPadre['nombre']) ?></a></li>
-          <?php endif; ?>
+          <li><a href="<?= e(url('zonas')) ?>">Todas las zonas</a></li>
         </ul>
       </div>
 

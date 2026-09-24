@@ -19,9 +19,10 @@ data/contenido/
   paginas/home.php         Hero y FAQ de la home.
   paginas/comun.php        Bloques compartidos: pasos, quiénes somos, diferenciadores, textos de secciones, cifras, reseñas reales.
   paginas/nosotros.php     Página /nosotros.
+  paginas/zonas.php        Texto opcional de /zonas (índice de zonas).
   paginas/contacto.php     Página /contacto y /contacto/gracias.
   paginas/legales.php      /privacidad y /terminos (texto genérico con placeholders).
-templates/                 Un archivo por tipo de página: home, servicio, servicio-zona, zona, nosotros, contacto, legales, 404.
+templates/                 Un archivo por tipo de página: home, servicio, servicio-zona, zona, zonas (índice), nosotros, contacto, legales, 404.
 partials/                  head, header, footer, end, hero, breadcrumbs, page-intro, servicios, pasos, nosotros, diferenciadores,
                            zonas (chips), texto (secciones H2), faq, enlaces-relacionados, cta-whatsapp, testimonios, stats, schema.
 lib/
@@ -44,6 +45,7 @@ assets/css/style.css       Diseño original. Sin colores fijos: todo var(--color
 assets/js/main.js          Evento GA4 click_wsp/click_tel, menú, header, contadores, carrusel de reseñas, buscador del 404.
 assets/img/                logo/, hero/, servicios/ (ver assets/img/README.md).
 bin/verificar.php          Verificación: php -l, datos, títulos/H1 únicos, JSON-LD, links, HTTP 200/404/301, rastros de otro sitio.
+bin/indexnow.php           Avisa a IndexNow (Bing/Copilot) las URLs del sitio. Requiere analitica.indexnow_key.
 vendor/                    PHPMailer (solo para el formulario opcional).
 INVENTARIO.md              Relevamiento del sitio original del que se derivó la plantilla.
 ```
@@ -56,8 +58,10 @@ INVENTARIO.md              Relevamiento del sitio original del que se derivó la
 | `/{servicio}` | troncal del servicio | el slug está en `data/servicios.php` |
 | `/{servicio}/{zona}` | servicio × zona | la zona está en `zonas` de ese servicio (`'*'` o lista) |
 | `/{zona}` | hub de zona | la zona tiene `paginas => true` y al menos un servicio |
+| `/zonas` | índice HTML de todas las zonas (sitemap navegable) | siempre |
 | `/nosotros`, `/contacto`, `/privacidad`, `/terminos` | fijas | siempre (legales si `ui.legales`) |
-| `/sitemap.xml`, `/sitemap-N.xml`, `/robots.txt`, `/llms.txt` | generadas | siempre |
+| `/sitemap.xml` (índice), `/sitemap-paginas.xml`, `/sitemap-servicios.xml`, `/sitemap-hubs.xml`, `/sitemap-{servicio}.xml` | generados, segmentados por tipo | siempre |
+| `/robots.txt`, `/llms.txt`, `/{indexnow_key}.txt` | generados | siempre / si hay clave |
 
 Cualquier otra URL devuelve **404 real** (código 404 + página 404). Normalización con 301: barra final (`/plomero/` → `/plomero`), mayúsculas, dobles barras, `/index.php`, `/?url=...` del sitio viejo. Query strings (UTM) se conservan. Canonical = dominio de config + ruta normalizada.
 
@@ -128,7 +132,14 @@ return [
     'h1'            => 'Plomero en Barrio Norte',
     'eyebrow'       => 'Plomería a domicilio en Barrio Norte',
     'subtitulo'     => 'Bajada del hero.',
-    'secciones'     => [['h2' => 'Título', 'parrafos' => ['...', '...'], 'lista' => ['...']], ...],
+    'secciones'     => [
+        ['h2' => 'Título', 'parrafos' => ['...', '...'], 'lista' => ['...']],
+        ['h2' => 'Precios en Barrio Norte', 'parrafos' => ['...'],
+         'tabla' => ['cabecera' => ['Trabajo', 'Desde', 'Incluye'], 'filas' => [['Destapación', '$ 2.500', 'Visita y máquina']], 'nota' => 'Vigente a septiembre de 2026'],
+         'parrafos_despues' => ['...']],   // tabla: trabajos recientes, precios con fecha, tiempos de llegada
+    ],
+    'actualizado'   => '2026-09-01',   // "Actualizado: septiembre de 2026" visible + dateModified en el schema WebPage
+    'testimonios'   => [['nombre' => 'María G.', 'texto' => '...', 'estrellas' => 5, 'fecha' => '2026-08-15', 'fuente' => 'Google']], // reseñas REALES de esta zona; pisan a las globales
     'faq'           => [['q' => '...', 'a' => '...']],
     'faq_reemplaza' => false,   // true = no sumar las FAQ base del servicio
     'wsp_mensaje'   => '',      // pisa el mensaje de WhatsApp de esta página
@@ -148,6 +159,8 @@ Mismo formato para `servicios/{servicio}.php` y `zonas/{zona}.php`. Placeholders
 | home | `sitio.titulo_home` o `{marca} \| {slogan}` | hero.titulo_em + hero.titulo | `sitio.descripcion_home` o marca.descripcion |
 
 Los H2 salen de `secciones` (o del texto automático) y de los títulos de sección en `comun.php`. `bin/verificar.php` falla si un title, H1 o description se repite.
+
+Si el contenido trae `title`, se usa **tal cual** (sin sufijo de marca): quien lo escribe controla el largo. Las fórmulas agregan " – {marca}" (`sitio.sufijo_title`; `false` = nunca).
 
 ## 4. Cómo agregar cosas
 

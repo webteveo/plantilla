@@ -10,13 +10,16 @@ declare(strict_types=1);
 function seo_sufijo(string $title): string
 {
     $marca = (string)cfg('marca.nombre');
-    $suf = (string)(cfg('sitio.sufijo_title') ?: ' | ' . $marca);
+    $cfgSuf = cfg('sitio.sufijo_title');
+    if ($cfgSuf === false) return $title;
+    $suf = (string)($cfgSuf ?: ' – ' . $marca);
     if (str_contains($title, $marca) || str_ends_with($title, trim($suf))) return $title;
     return $title . $suf;
 }
 
 /**
- * Calcula los campos SEO de una página.
+ * Calcula los campos SEO de una página. Si el contenido trae 'title', se usa tal cual (sin sufijo):
+ * quien escribe el title controla el largo. Las fórmulas sí llevan sufijo " – Marca".
  * $pagina: tipo, servicio?, zona?, contenido (array del archivo de contenido), path.
  */
 function seo_pagina(array $p): array
@@ -39,14 +42,14 @@ function seo_pagina(array $p): array
             $sub   = $hero['subtitulo'] ?? cfg('marca.descripcion');
             break;
         case 'servicio':
-            $title = "{$S} | {$marca}";
+            $title = "{$S} – {$marca}";
             $desc  = $srv['descripcion'];
             $h1    = $S;
             $eyebrow = "Servicio de {$marca}";
             $sub   = "Elegí tu zona y escribinos por WhatsApp. " . $srv['descripcion'];
             break;
         case 'servicio-zona':
-            $title = "{$S} en {$Zseo} | {$marca}";
+            $title = "{$S} en {$Zseo} – {$marca}";
             $padreZ = zona_padre_con_paginas($zona['slug']);
             $desc  = "{$S} en {$Z}" . ($padreZ ? ", {$padreZ['nombre']}" : '') . ': ' . mb_strtolower(mb_substr($srv['descripcion'], 0, 1)) . mb_substr($srv['descripcion'], 1);
             $h1    = "{$S} en {$Z}";
@@ -55,31 +58,35 @@ function seo_pagina(array $p): array
             $sub   = "{$S} en {$Z}" . ($vec ? ' y zonas cercanas como ' . lista_natural($vec) : '') . '. Contanos qué necesitás y te respondemos por WhatsApp.';
             break;
         case 'zona':
-            $title = "Servicios de {$rubro} en {$Zseo} | {$marca}";
+            $title = "Servicios de {$rubro} en {$Zseo} – {$marca}";
             $desc  = "{$marca} en {$Z}: " . lista_natural(array_map(fn($x) => $x['nombre'], zona_servicios($zona['slug']))) . '. Escribinos por WhatsApp y te pasamos precio y horario.';
             $h1    = "{$marca} en {$Z}";
             $eyebrow = ucfirst_utf8($rubro) . " en {$Z}";
             $sub   = "Todos nuestros servicios en {$Z}" . ($zona['notas'] ? '. ' . $zona['notas'] : '.');
             break;
+        case 'zonas':
+            $title = "Zonas donde trabajamos – {$marca}"; $desc = "Todas las zonas que atiende {$marca}: " . lista_natural(array_map(fn($z) => $z['nombre'], zonas_raiz())) . ". Elegí la tuya y escribinos por WhatsApp."; $h1 = 'Zonas donde trabajamos'; $eyebrow = 'Cobertura'; $sub = 'Elegí tu zona para ver los servicios disponibles y el tiempo de llegada.';
+            break;
         case 'nosotros':
-            $title = "Quiénes somos | {$marca}"; $desc = "Conocé a {$marca}: " . cfg('marca.descripcion'); $h1 = 'Quiénes somos'; $eyebrow = 'Nosotros'; $sub = cfg('marca.slogan');
+            $title = "Quiénes somos – {$marca}"; $desc = "Conocé a {$marca}: " . cfg('marca.descripcion'); $h1 = 'Quiénes somos'; $eyebrow = 'Nosotros'; $sub = cfg('marca.slogan');
             break;
         case 'contacto':
-            $title = "Contacto | {$marca}"; $desc = "Escribinos por WhatsApp o llamanos. {$marca}: " . cfg('marca.slogan'); $h1 = 'Contacto'; $eyebrow = 'Contacto'; $sub = 'Respondemos por WhatsApp al momento.';
+            $title = "Contacto – {$marca}"; $desc = "Escribinos por WhatsApp o llamanos. {$marca}: " . cfg('marca.slogan'); $h1 = 'Contacto'; $eyebrow = 'Contacto'; $sub = 'Respondemos por WhatsApp al momento.';
             break;
         case 'contacto-gracias':
-            $title = "Mensaje enviado | {$marca}"; $desc = "Tu mensaje fue recibido. {$marca} te responde a la brevedad."; $h1 = '¡Mensaje recibido!'; $eyebrow = 'Contacto'; $sub = '';
+            $title = "Mensaje enviado – {$marca}"; $desc = "Tu mensaje fue recibido. {$marca} te responde a la brevedad."; $h1 = '¡Mensaje recibido!'; $eyebrow = 'Contacto'; $sub = '';
             break;
         case 'privacidad':
         case 'terminos':
-            $title = $c['title'] ?? ucfirst($p['tipo']) . " | {$marca}"; $desc = $c['description'] ?? ''; $h1 = $c['h1'] ?? ucfirst($p['tipo']); $eyebrow = 'Legales'; $sub = '';
+            $title = $c['title'] ?? ucfirst($p['tipo']) . " – {$marca}"; $desc = $c['description'] ?? ''; $h1 = $c['h1'] ?? ucfirst($p['tipo']); $eyebrow = 'Legales'; $sub = '';
             break;
         default: // 404
-            $title = "Página no encontrada | {$marca}"; $desc = "Esta página no existe. Encontrá el servicio o la zona que buscás en {$marca}."; $h1 = 'Página no encontrada'; $eyebrow = 'Error 404'; $sub = 'La página que buscás no existe o cambió de dirección.';
+            $title = "Página no encontrada – {$marca}"; $desc = "Esta página no existe. Encontrá el servicio o la zona que buscás en {$marca}."; $h1 = 'Página no encontrada'; $eyebrow = 'Error 404'; $sub = 'La página que buscás no existe o cambió de dirección.';
     }
 
     // El contenido de la página pisa las fórmulas
-    $title   = t(!empty($c['title']) ? $c['title'] : $title, $vars);
+    $titleExplicito = !empty($c['title']);
+    $title   = t($titleExplicito ? $c['title'] : $title, $vars);
     $desc    = t(!empty($c['description']) ? $c['description'] : $desc, $vars);
     $h1      = t(!empty($c['h1']) ? $c['h1'] : $h1, $vars);
     $eyebrow = t(!empty($c['eyebrow']) ? $c['eyebrow'] : $eyebrow, $vars);
@@ -88,7 +95,7 @@ function seo_pagina(array $p): array
     $noindex = !empty($c['noindex']) || !cfg('sitio.indexar', true) || in_array($p['tipo'], ['404', 'contacto-gracias'], true);
 
     return [
-        'title'       => seo_sufijo($title),
+        'title'       => $titleExplicito ? $title : seo_sufijo($title),
         'description' => recortar($desc, 158),
         'h1'          => $h1,
         'eyebrow'     => $eyebrow,
@@ -97,6 +104,7 @@ function seo_pagina(array $p): array
         'robots'      => $noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1',
         'og_image'    => !empty($c['imagen']) ? asset_abs('img/' . $c['imagen']) : asset_abs((string)cfg('sitio.og_image')),
         'og_type'     => $p['tipo'] === 'home' ? 'website' : 'article',
+        'actualizado' => !empty($c['actualizado']) ? (string)$c['actualizado'] : '',
     ];
 }
 

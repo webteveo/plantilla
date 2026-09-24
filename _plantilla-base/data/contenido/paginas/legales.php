@@ -5,7 +5,7 @@
  */
 return [
     'privacidad' => [
-        'title'       => 'Política de privacidad | {marca}',
+        'title'       => 'Política de privacidad – {marca}',
         'description' => 'Política de privacidad de {dominio}: qué datos recopilamos, para qué y cómo ejercer tus derechos.',
         'h1'          => 'Política de privacidad',
         'secciones' => [
@@ -17,7 +17,7 @@ return [
         ],
     ],
     'terminos' => [
-        'title'       => 'Términos y condiciones | {marca}',
+        'title'       => 'Términos y condiciones – {marca}',
         'description' => 'Condiciones de uso del sitio {dominio} y de los servicios de {marca}.',
         'h1'          => 'Términos y condiciones',
         'secciones' => [

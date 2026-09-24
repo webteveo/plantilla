@@ -1,8 +1,8 @@
 <?php
-/** Header + menú móvil. Los links del menú salen de config ui.menu ('servicios' y 'zonas' son anclas de la home). */
+/** Header + menú móvil. Los links del menú salen de config ui.menu ('servicios' es ancla de la home; 'zonas' es la página /zonas). */
 $menu = [];
 foreach ((array)cfg('ui.menu', []) as $m) {
-    $href = in_array($m['href'], ['servicios', 'zonas'], true) ? url('') . '#' . $m['href'] : url($m['href']);
+    $href = $m['href'] === 'servicios' ? url('') . '#servicios' : url($m['href']);
     $menu[] = ['href' => $href, 'label' => $m['label']];
 }
 $nota = cfg('horario.urgencias_24h') ? 'Atención 24 horas en ' . ($pagina['zona']['nombre'] ?? cfg('direccion.ciudad')) : (cfg('horario.texto') ?: '');

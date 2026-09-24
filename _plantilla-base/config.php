@@ -26,7 +26,7 @@ return [
         'idioma'         => 'es',
         'titulo_home'    => '',                                    // Vacío = fórmula: "{marca} | {slogan}"
         'descripcion_home' => '',                                  // Vacío = marca.descripcion
-        'sufijo_title'   => '',                                    // Vacío = " | {marca}". Se agrega a los title que no lo incluyan.
+        'sufijo_title'   => '',                                    // Vacío = " – {marca}"; false = sin sufijo. Solo se agrega a los title de fórmula (los escritos a mano van tal cual).
         'og_image'       => 'img/logo/og-image.png',               // Relativa a assets/. 1200×630.
         'robots_extra'   => [],                                    // Rutas extra a bloquear en robots.txt, ej. ['/privado/']
         'indexar'        => true,                                  // false = noindex en todo el sitio (staging).
@@ -107,6 +107,7 @@ return [
         'evento_wsp'        => 'click_wsp', // Nombre del evento GA4 que disparan todos los links de WhatsApp.
         'evento_tel'        => 'click_tel',
         'site_verification' => '',          // google-site-verification
+        'indexnow_key'      => '',          // Clave IndexNow (32 hex). El router sirve /{clave}.txt y bin/indexnow.php avisa a Bing/Copilot.
     ],
 
     // ── Schema.org ───────────────────────────────────────────────────────────
@@ -198,7 +199,7 @@ return [
     'ui' => [
         'menu' => [                          // Menú principal. href relativo a la raíz.
             ['href' => 'servicios', 'label' => 'Servicios'],   // 'servicios' = ancla #servicios de la home
-            ['href' => 'zonas',     'label' => 'Zonas'],       // 'zonas' = ancla #zonas de la home
+            ['href' => 'zonas',     'label' => 'Zonas'],       // página /zonas (índice de todas las zonas)
             ['href' => 'nosotros',  'label' => 'Nosotros'],
             ['href' => 'contacto',  'label' => 'Contacto'],
         ],

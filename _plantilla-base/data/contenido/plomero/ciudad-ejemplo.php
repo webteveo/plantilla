@@ -5,7 +5,7 @@
  * Placeholders válidos en cualquier texto: {servicio} {Servicio} {zona} {zona_en} {padre} {marca} {rubro} {telefono} {ciudad}.
  */
 return [
-    'title'       => 'Plomero en Ciudad Ejemplo: destapaciones y pérdidas en el día | Plomero Ejemplo [EJEMPLO]',
+    'title'       => 'Plomero en Ciudad Ejemplo – Destapaciones en el día [EJEMPLO]',
     'description' => 'Plomero a domicilio en toda Ciudad Ejemplo. Destapaciones, pérdidas de agua, grifería y termotanques con precio por WhatsApp antes de ir. [EJEMPLO]',
     'h1'          => 'Plomero en Ciudad Ejemplo [EJEMPLO]',
     'eyebrow'     => 'Plomería a domicilio en toda la ciudad [EJEMPLO]',
@@ -21,6 +21,18 @@ return [
             ],
         ],
         [
+            'h2'       => 'Precios de referencia en Ciudad Ejemplo [EJEMPLO]',
+            'parrafos' => ['Valores orientativos; el precio final se confirma por WhatsApp según el trabajo. [EJEMPLO]'],
+            'tabla'    => [
+                'cabecera' => ['Trabajo', 'Desde', 'Incluye'],
+                'filas'    => [
+                    ['Destapación de pileta o inodoro', '$ 2.500 [EJEMPLO]', 'Visita, máquina y prueba'],
+                    ['Cambio de grifería', '$ 1.800 [EJEMPLO]', 'Mano de obra (sin la grifería)'],
+                ],
+                'nota'     => 'Precios vigentes a septiembre de 2026, en pesos. [EJEMPLO]',
+            ],
+        ],
+        [
             'h2'       => 'Qué resolvemos en Ciudad Ejemplo [EJEMPLO]',
             'parrafos' => ['Estos son los pedidos más frecuentes que recibimos en la ciudad. [EJEMPLO]'],
             'lista'    => [
@@ -30,6 +42,10 @@ return [
             ],
         ],
     ],
+
+    // Tabla (opcional en cualquier sección): trabajos recientes, precios con fecha, tiempos de llegada.
+    // 'parrafos_despues' va después de la tabla o la lista.
+    'actualizado' => '2026-09-01',   // Fecha visible "Actualizado: ..." + dateModified en el schema. [EJEMPLO]
 
     // FAQ propias de esta página. Se muestran antes de las FAQ base del servicio (data/servicios.php).
     'faq' => [

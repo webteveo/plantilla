@@ -4801,3 +4801,11 @@ body.pj-noscroll { overflow: hidden; }
 .review-card__stars svg { width:18px; height:18px; fill:var(--color-borde); }
 .review-card__stars svg.is-on { fill:var(--color-estrella); }
 .review-card>p { font-size:14px; line-height:1.5; color:var(--color-gris-oscuro); letter-spacing:.2px; }
+
+/* ===== TABLAS Y FECHA EN SECCIONES DE TEXTO (plantilla: trabajos, precios) ===== */
+.zona-texto__tabla-wrap { overflow-x: auto; margin: 1rem 0 1.25rem; }
+.zona-texto__tabla { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.zona-texto__tabla th, .zona-texto__tabla td { text-align: left; padding: .6rem .75rem; border-bottom: 1px solid var(--color-borde); vertical-align: top; }
+.zona-texto__tabla th { background: var(--color-fondo-secundario); color: var(--color-acento); font-weight: 700; }
+.zona-texto__nota { font-size: .85rem; color: var(--color-texto-secundario); margin-top: -.5rem; }
+.zona-texto__actualizado { font-size: .85rem; color: var(--color-texto-secundario); margin-top: 1.5rem; }

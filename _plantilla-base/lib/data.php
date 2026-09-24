@@ -283,6 +283,7 @@ function paginas_todas(): array
                     'prioridad' => zona($zs)['tipo'] === 'barrio' ? '0.6' : '0.8'];
         }
     }
+    $p[] = ['tipo' => 'zonas', 'path' => '/zonas', 'lastmod' => $base, 'prioridad' => '0.6'];
     $p[] = ['tipo' => 'nosotros', 'path' => '/nosotros', 'lastmod' => max($base, contenido_archivo_mtime('paginas/nosotros') ?? 0), 'prioridad' => '0.5'];
     $p[] = ['tipo' => 'contacto', 'path' => '/contacto', 'lastmod' => max($base, contenido_archivo_mtime('paginas/contacto') ?? 0), 'prioridad' => '0.6'];
     if (cfg('ui.legales', true)) {
