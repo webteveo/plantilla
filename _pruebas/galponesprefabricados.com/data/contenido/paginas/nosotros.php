@@ -1,7 +1,7 @@
 <?php
 /** /nosotros — rank and rent: marca del sitio + operador cuando exista (eeat-servicios §4). */
 return [
-    'title'       => 'Quiénes somos – Galpones Prefabricados, Montevideo y Canelones',
+    'title'       => 'Quiénes somos – Galpones Prefabricados en Uruguay',
     'description' => 'Galpones Prefabricados conecta a quien necesita un galpón en Montevideo o Canelones con constructores de estructuras metálicas. Presupuesto a medida por WhatsApp.',
     'h1'          => 'Quiénes somos',
     'eyebrow'     => 'Nosotros',

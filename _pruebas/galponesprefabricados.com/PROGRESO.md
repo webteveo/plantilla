@@ -1,5 +1,5 @@
 # Progreso — galponesprefabricados.com
-Estado: en construcción
+Estado: entregado (QA en verde; faltan diseño, imágenes y datos del operador)
 Fecha: 2026-09-24
 
 ## Decisiones (fases 1–2, prueba de la skill: respuestas "decidí vos" salvo dominio, país y cobertura)
@@ -16,10 +16,13 @@ Fecha: 2026-09-24
 - [x] data/servicios.php (5 servicios)
 - [x] paginas: home, comun, nosotros, contacto, legales, zonas
 
-## Falta
-- [ ] galpones-prefabricados × 41 zonas (5 tandas en paralelo)
-- [ ] galpones-metalicos × 6, tinglados × 6, galpones-agricolas × 6, galpones-industriales × 6 (3 tandas)
-- [ ] hubs de zona × 41 (4 tandas)
-- [ ] troncales × 5
-- [ ] QA (scripts/qa.py) hasta sin errores
-- [ ] ENTREGA.md
+- [x] galpones-prefabricados × 41 zonas (5 tandas en paralelo)
+- [x] galpones-metalicos × 6, tinglados × 6, galpones-agricolas × 6, galpones-industriales × 6 (3 tandas)
+- [x] hubs de zona × 41 (4 tandas)
+- [x] troncales × 5
+- [x] QA (scripts/qa.py) sin errores; bin/verificar.php sin errores
+- [x] ENTREGA.md
+
+## Falta (lo hace el usuario)
+- [ ] Diseño, logo, fotos (ver ENTREGA.md §2)
+- [ ] Datos del operador y número de WhatsApp

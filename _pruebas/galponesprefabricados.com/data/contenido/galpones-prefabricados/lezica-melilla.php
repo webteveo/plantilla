@@ -2,7 +2,7 @@
 /** Galpones prefabricados × Lezica / Melilla (Montevideo rural, noroeste). */
 return [
     'title'       => 'Galpones prefabricados en Lezica – Quintas y Cno. Melilla',
-    'description' => 'Galpones prefabricados en Lezica y Melilla, zona rural de Montevideo: packing, maquinaria y depósito en quintas y viñedos junto a Camino Melilla y Ruta 5. Presupuesto por WhatsApp.',
+    'description' => 'Galpones prefabricados en Lezica y Melilla, zona rural de Montevideo: packing, maquinaria y acopio en quintas y viñedos. Presupuesto a medida por WhatsApp.',
     'h1'          => 'Galpones prefabricados en Lezica y Melilla: para quintas y viñedos',
     'eyebrow'     => 'Galpones para el Montevideo rural',
     'subtitulo'   => 'Galpones agrícolas y depósitos de estructura metálica para las quintas de Lezica y Melilla. Relevamos el predio y coordinamos el montaje por WhatsApp.',
@@ -19,7 +19,7 @@ return [
             'h2' => 'Cómo llegamos y qué encontramos en Lezica y Melilla',
             'parrafos' => [
                 'Entramos por Camino Melilla desde Colón, o por Ruta 5 y los caminos que salen hacia el oeste. Cerca está el Aeródromo de Melilla, un buen punto de referencia para ubicar la quinta cuando nos mandás la ubicación. Los caminos internos suelen ser de balasto y los frentes de los predios son largos, así que el camión y la grúa se mueven con comodidad.',
-                'Los predios son quintas de varias hectáreas, con casa, monte de frutales o viñedo y espacio para el galpón cerca del camino. El terreno es de lomadas suaves con bajos hacia las cañadas; elegir bien el punto del galpón evita problemas de agua. Es el mismo trabajo que hacemos en las chacras de <a href="/galpones-prefabricados/paso-de-la-arena">Paso de la Arena</a> y, hacia el otro lado de Ruta 5, en <a href="/galpones-prefabricados/la-paz">galpones en La Paz</a> y en <a href="/galpones-prefabricados/colon-centro-noroeste">galpones prefabricados en Colón</a>.',
+                'Los predios son quintas de varias hectáreas, con casa, monte de frutales o viñedo y espacio para el galpón cerca del camino. El terreno es de lomadas suaves con bajos hacia las cañadas; elegir bien el punto del galpón evita problemas de agua. Es el mismo trabajo que hacemos en las <a href="/galpones-prefabricados/paso-de-la-arena">chacras de Paso de la Arena</a> y, hacia el otro lado de Ruta 5, en <a href="/galpones-prefabricados/la-paz">La Paz por Ruta 5</a> y en <a href="/galpones-prefabricados/colon-centro-noroeste">galpones prefabricados en Colón</a>.',
             ],
         ],
         [

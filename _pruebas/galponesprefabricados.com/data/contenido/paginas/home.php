@@ -1,7 +1,7 @@
 <?php
 /** Home de galponesprefabricados.com */
 return [
-    'title'       => 'Galpones prefabricados en Montevideo y Canelones – Presupuesto a medida',
+    'title'       => 'Galpones prefabricados en Montevideo y Canelones – A medida',
     'description' => 'Galpones prefabricados metálicos en Montevideo y Canelones: depósitos, galpones industriales, agrícolas y tinglados. Presupuesto a medida por WhatsApp, sin cargo.',
     'hero' => [
         'eyebrow'    => 'Estructura metálica fabricada en taller y montada en obra',

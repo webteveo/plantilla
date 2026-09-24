@@ -2,7 +2,7 @@
 /** Galpones agrícolas × Canelones (departamento; la página principal es /galpones-prefabricados/canelones). */
 return [
     'title'       => 'Galpones agrícolas en Canelones – Chacras y granjas',
-    'description' => 'Galpones agrícolas en Canelones para maquinaria, forraje, packing y granjas en chacras de Ruta 5, 6, 7 y 8. Presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones agrícolas en Canelones con presupuesto por WhatsApp: maquinaria, forraje, packing y granjas en chacras de Ruta 5, 6, 7 y 8. Sin cargo.',
     'h1'          => 'Galpones agrícolas en Canelones: maquinaria, acopio, packing y granja',
     'eyebrow'     => 'Galpones rurales en el departamento de Canelones',
     'subtitulo'   => 'Estructura metálica fabricada en taller y montada en tu establecimiento, de la zona hortifrutícola del sur a los tambos del noreste. Relevamiento y presupuesto por WhatsApp.',
@@ -37,7 +37,7 @@ return [
         [
             'h2' => 'Permisos para galpones rurales en Canelones',
             'parrafos' => [
-                'La Intendencia de Canelones pide permiso de construcción también en suelo rural; el trámite es en línea y lo presenta un técnico registrado con los planos firmados. Te orientamos sobre qué documentación lleva y coordinamos con tu arquitecto o ingeniero. Cuando solo necesitás techar, sin paredes, un tinglado puede alcanzar. Las entidades y medidas del servicio están en la troncal de <a href="/galpones-agricolas">galpones rurales</a>, y todos los servicios en la <a href="/canelones">página del departamento de Canelones</a>.',
+                'La Intendencia de Canelones pide permiso de construcción también en suelo rural; el trámite es en línea y lo presenta un técnico registrado con los planos firmados. Te orientamos sobre qué documentación lleva y coordinamos con tu arquitecto o ingeniero. Cuando solo necesitás techar, sin paredes, un tinglado puede alcanzar. Las entidades y medidas del servicio están en la troncal de <a href="/galpones-agricolas">galpones rurales prefabricados</a>, y todos los servicios en la <a href="/canelones">página del departamento de Canelones</a>.',
             ],
         ],
     ],

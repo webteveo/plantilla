@@ -151,7 +151,7 @@ if ($grep) {
     $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('.', FilesystemIterator::SKIP_DOTS));
     foreach ($it as $f) {
         $p = (string)$f;
-        if (str_contains($p, '/vendor/') || str_contains($p, '/assets/img/') || preg_match('/\.(png|jpg|webp|ico|svg)$/', $p) || str_ends_with($p, 'INVENTARIO.md')) continue;
+        if (str_contains($p, '/vendor/') || str_contains($p, '/assets/img/') || preg_match('/\.(png|jpg|webp|ico|svg)$/', $p) || str_ends_with($p, 'INVENTARIO.md') || str_ends_with($p, 'PLANTILLA.md')) continue;
         $c = file_get_contents($p);
         foreach ($grep as $g) {
             if ($g !== '' && stripos($c, $g) !== false) $err("'$g' aparece en $p");

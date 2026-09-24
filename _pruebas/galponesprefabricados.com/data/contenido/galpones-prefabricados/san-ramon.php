@@ -2,7 +2,7 @@
 /** Contenido de /galpones-prefabricados/san-ramon (servicio principal × ciudad sobre Ruta 6 y el río Santa Lucía). */
 return [
     'title'       => 'Galpones prefabricados en San Ramón – Tambos y acopio',
-    'description' => 'Galpones prefabricados en San Ramón, Canelones: maquinaria, acopio y estructuras para tambos y chacras sobre Ruta 6 y Ruta 12. Presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones prefabricados en San Ramón, Canelones: maquinaria, acopio y estructuras para tambos sobre Ruta 6 y 12. Presupuesto a medida por WhatsApp.',
     'h1'          => 'Galpones prefabricados en San Ramón: para tambos, chacras y depósitos',
     'eyebrow'     => 'Galpones metálicos junto al río Santa Lucía',
     'subtitulo'   => 'Fabricamos en taller y montamos en tu predio de San Ramón o su zona rural. Relevamos medidas, uso y terreno y te mandamos el presupuesto por WhatsApp.',
@@ -10,7 +10,7 @@ return [
         [
             'h2'       => 'Galpones prefabricados en San Ramón: cómo trabajamos',
             'parrafos' => [
-                'Galpones Prefabricados construye galpones de estructura metálica en San Ramón, la ciudad de Canelones sobre Ruta 6 y el río Santa Lucía, en el límite con Florida y a unos 70 km de Montevideo. Relevamos el predio, definimos medidas y cerramientos según el uso, cotizamos por ítem y montamos en obra la estructura fabricada en taller. Coordinamos todo por WhatsApp.',
+                'Galpones Prefabricados construye galpones prefabricados en San Ramón, la ciudad de Canelones sobre Ruta 6 y el río Santa Lucía, en el límite con Florida y a unos 70 km de Montevideo. Relevamos el predio, definimos medidas y cerramientos según el uso, cotizamos por ítem y montamos en obra la estructura fabricada en taller. Coordinamos todo por WhatsApp.',
                 'Queda en el extremo norte del departamento: por eso el ítem de montaje se cotiza con la distancia real hasta tu predio, sin cifras genéricas. Los pedidos combinan chacra, tambo y ganadería: maquinaria, acopio de forraje y estructuras para producción.',
             ],
         ],
@@ -25,7 +25,7 @@ return [
         [
             'h2'       => 'Usos típicos de galpones en San Ramón',
             'parrafos' => [
-                'Lo que más se pide en San Ramón y su zona rural:',
+                'Los galpones prefabricados en San Ramón que más se piden, en la ciudad y su zona rural:',
             ],
             'lista'    => [
                 'Galpón para maquinaria y acoplados: luz libre amplia, portón corredizo alto y piso de hormigón.',

@@ -2,7 +2,7 @@
 /** Contenido de /galpones-prefabricados/san-jacinto (servicio principal × localidad rural sobre Ruta 7). */
 return [
     'title'       => 'Galpones prefabricados en San Jacinto – Montaje en chacras',
-    'description' => 'Galpones prefabricados en San Jacinto, Canelones, sobre Ruta 7 y Ruta 81: maquinaria, acopio y producción para chacras y tambos. Presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones prefabricados en San Jacinto, Canelones, sobre Ruta 7 y Ruta 81: maquinaria, acopio y tambos en chacras. Presupuesto a medida por WhatsApp.',
     'h1'          => 'Galpones prefabricados en San Jacinto: montaje en tu chacra',
     'eyebrow'     => 'Galpones metálicos sobre Ruta 7, Canelones',
     'subtitulo'   => 'Estructura metálica fabricada en taller y montada en tu predio de San Jacinto. Relevamos accesos y terreno; el presupuesto por ítem va por WhatsApp.',
@@ -10,8 +10,8 @@ return [
         [
             'h2'       => 'Galpones prefabricados en San Jacinto: cómo trabajamos',
             'parrafos' => [
-                'Galpones Prefabricados hace galpones de estructura metálica en San Jacinto, la localidad de Canelones sobre Ruta 7, a unos 55 km de Montevideo, entre las chacras de Santa Rosa y los campos hacia Migues. Visitamos el predio, relevamos medidas, uso y camino de acceso, y te mandamos por WhatsApp un presupuesto separado por estructura, techo, cerramientos, platea y montaje.',
-                'San Jacinto mezcla chacras de hortifruticultura con predios ganaderos y tambos, así que los galpones que se piden van desde el depósito de maquinaria hasta el acopio de rollos o la estructura para instalaciones de tambo. Cada uno se diseña con su altura y sus cerramientos.',
+                'Galpones Prefabricados hace galpones prefabricados en San Jacinto, la localidad de Canelones sobre Ruta 7, a unos 55 km de Montevideo, entre las chacras de Santa Rosa y los campos hacia Migues. Visitamos el predio, relevamos medidas, uso y camino de acceso, y te mandamos por WhatsApp un presupuesto separado por estructura, techo, cerramientos, platea y montaje.',
+                'San Jacinto mezcla chacras de hortifruticultura con predios ganaderos y tambos, así que los galpones prefabricados en San Jacinto van desde el depósito de maquinaria hasta el acopio de rollos o la estructura para un tambo. Cada uno se diseña con su altura y sus cerramientos.',
             ],
         ],
         [
@@ -25,7 +25,7 @@ return [
         [
             'h2'       => 'Qué define el precio de un galpón en San Jacinto',
             'parrafos' => [
-                'El presupuesto se arma por ítem y en San Jacinto lo mueven estos factores:',
+                'El presupuesto se arma por ítem; en San Jacinto lo mueven estos factores:',
             ],
             'lista'    => [
                 'Uso: no es lo mismo un depósito de maquinaria que un galpón de acopio ventilado o una estructura para tambo.',
@@ -50,7 +50,7 @@ return [
         ['q' => '¿Hacen galpones para acopio de rollos y grano en San Jacinto?', 'a' => 'Sí. Para forraje se usa mucho el tinglado abierto o semicerrado, y para grano un galpón cerrado con piso de hormigón y buena ventilación. Se define con lo que acopiás y en qué volumen.'],
         ['q' => '¿Puede Galpones Prefabricados hacer la estructura de un tambo?', 'a' => 'Podemos cotizar la estructura metálica y la cubierta del galpón; las instalaciones de ordeñe, el piso con canaletas y los equipos van por cuenta del proveedor especializado. Coordinamos medidas con él.'],
         ['q' => '¿Llegan a predios alejados de la ruta?', 'a' => 'Sí, siempre que el camión con la estructura pueda entrar. Revisamos el camino vecinal, los portones y los cables bajos en la visita; si hace falta, fabricamos piezas más cortas.'],
-        ['q' => '¿Cómo definen el tamaño si todavía no compré la maquinaria?', 'a' => 'Se diseña con las medidas de las máquinas que pensás tener y se prevén las fundaciones para agregar pórticos después. Así el galpón crece sin rehacer lo hecho.'],
+        ['q' => '¿Cómo definen el tamaño si todavía no compré la maquinaria?', 'a' => 'Se diseña con las medidas de las máquinas que pensás tener y se prevén las fundaciones para agregar pórticos después, sin rehacer lo hecho.'],
     ],
     'actualizado' => '2026-09-24',
 ];

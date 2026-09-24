@@ -2,7 +2,7 @@
 /** Tinglados × Pando (subservicio; la página principal de la zona es /galpones-prefabricados/pando). */
 return [
     'title'       => 'Tinglados en Pando – Flotas de la zona industrial Ruta 8',
-    'description' => 'Tinglados en Pando para flotas, maquinaria vial y acopio en la zona industrial de Ruta 8. Estructura y chapa a medida. Presupuesto por WhatsApp.',
+    'description' => 'Tinglados en Pando con presupuesto por WhatsApp: techado para flotas, maquinaria vial y acopio en la zona industrial de Ruta 8. A medida.',
     'h1'          => 'Tinglados en Pando: techado metálico para flotas y playas de carga',
     'eyebrow'     => 'Tinglados metálicos en Canelones',
     'subtitulo'   => 'Cubrimos playas de camiones, acopio y áreas de carga en empresas de Pando y Ruta 8. Medimos en el predio y presupuestamos por WhatsApp.',
@@ -39,7 +39,7 @@ return [
         [
             'h2' => 'Otros galpones para empresas de Pando',
             'parrafos' => [
-                'Si el tinglado forma parte de un proyecto mayor, lo combinamos con una nave cerrada: mirá <a href="/galpones-industriales">galpones industriales</a> para luces grandes y portones de camión, o la troncal de <a href="/tinglados">cobertizos y tinglados</a> para ver alturas y pendientes habituales. Todo <a href="/pando">lo que hacemos en Pando</a> está reunido en la página de la zona.',
+                'Si el tinglado forma parte de un proyecto mayor, lo combinamos con una nave cerrada: mirá <a href="/galpones-industriales">naves industriales de grandes luces</a> para luces grandes y portones de camión, o la troncal de <a href="/tinglados">cobertizos y tinglados</a> para ver alturas y pendientes habituales. Todo <a href="/pando">lo que hacemos en Pando</a> está reunido en la página de la zona.',
             ],
         ],
     ],

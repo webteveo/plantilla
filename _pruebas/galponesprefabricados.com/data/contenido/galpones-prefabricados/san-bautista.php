@@ -2,7 +2,7 @@
 /** Contenido de /galpones-prefabricados/san-bautista (servicio principal × localidad rural sobre Ruta 6). */
 return [
     'title'       => 'Galpones prefabricados en San Bautista – Para maquinaria',
-    'description' => 'Galpones prefabricados en San Bautista, Canelones: depósito de maquinaria, acopio y galpones avícolas sobre Ruta 6 y Ruta 81. Presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones prefabricados en San Bautista, Canelones: maquinaria, acopio y galpones avícolas sobre Ruta 6 y Ruta 81. Presupuesto a medida por WhatsApp.',
     'h1'          => 'Galpones prefabricados en San Bautista: maquinaria, acopio y granjas',
     'eyebrow'     => 'Galpones metálicos sobre Ruta 6, Canelones',
     'subtitulo'   => 'Fabricación en taller y montaje en tu predio de San Bautista. Contanos qué vas a guardar y te pasamos un presupuesto por ítem por WhatsApp.',
@@ -10,7 +10,7 @@ return [
         [
             'h2'       => '¿Cómo hacemos un galpón prefabricado en San Bautista?',
             'parrafos' => [
-                'Galpones Prefabricados arma galpones de estructura metálica en San Bautista, localidad rural de Canelones sobre Ruta 6, a unos 60 km de Montevideo y en la zona avícola que comparte con Santa Rosa y San Antonio. Relevamos el predio, definimos luz libre y altura según tus máquinas o tu sistema de cría, y te mandamos el presupuesto por ítem por WhatsApp.',
+                'Galpones Prefabricados arma galpones prefabricados en San Bautista, localidad rural de Canelones sobre Ruta 6, a unos 60 km de Montevideo y en la zona avícola que comparte con Santa Rosa y San Antonio. Relevamos el predio, definimos luz libre y altura según tus máquinas o tu sistema de cría, y te mandamos el presupuesto por ítem por WhatsApp.',
                 'Los productores de la zona suelen pedir dos galpones: uno para maquinaria e implementos y otro de producción. Los cotizamos juntos o por separado, con fundaciones previstas para ampliar después sin rehacer la estructura.',
             ],
         ],
@@ -25,7 +25,7 @@ return [
         [
             'h2'       => 'Usos típicos de galpones en San Bautista',
             'parrafos' => [
-                'Los galpones que más se piden en San Bautista, con lo que cambia en cada uno:',
+                'Los galpones prefabricados en San Bautista que más se piden, con lo que cambia en cada uno:',
             ],
             'lista'    => [
                 'Depósito de maquinaria agrícola: luz libre sin columnas para maniobrar, portón corredizo alto y piso de hormigón.',

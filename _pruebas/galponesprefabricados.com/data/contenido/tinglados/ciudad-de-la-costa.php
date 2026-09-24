@@ -2,7 +2,7 @@
 /** Tinglados × Ciudad de la Costa (subservicio; la página principal de la zona es /galpones-prefabricados/ciudad-de-la-costa). */
 return [
     'title'       => 'Tinglados en Ciudad de la Costa – Lanchas y vehículos',
-    'description' => 'Tinglados en Ciudad de la Costa para lanchas, vehículos y locales de Av. Giannattasio, con bases para arena. Pedí presupuesto por WhatsApp.',
+    'description' => 'Tinglados en Ciudad de la Costa, presupuesto por WhatsApp: techado para lanchas, vehículos y locales de Av. Giannattasio, con bases para arena.',
     'h1'          => 'Tinglados en Ciudad de la Costa: techado para lanchas y vehículos',
     'eyebrow'     => 'Techados metálicos en la costa de Canelones',
     'subtitulo'   => 'Cobertizos abiertos o semicerrados sobre terreno de arena, desde Paso Carrasco hasta El Pinar. Relevamiento en el predio y presupuesto por WhatsApp.',
@@ -36,7 +36,7 @@ return [
         [
             'h2' => 'Permisos en Ciudad de la Costa',
             'parrafos' => [
-                'El permiso lo da la Intendencia de Canelones; se gestiona en línea con un técnico registrado. En predios residenciales conviene revisar también los retiros del lote antes de fijar dónde van las columnas. Te orientamos y coordinamos con tu técnico. Las alturas y pendientes de techo habituales están en la troncal de <a href="/tinglados">techados metálicos</a>, y el resto de los <a href="/ciudad-de-la-costa">servicios en Ciudad de la Costa</a> en la página de la zona.',
+                'El permiso lo da la Intendencia de Canelones; se gestiona en línea con un técnico registrado. En predios residenciales conviene revisar también los retiros del lote antes de fijar dónde van las columnas. Te orientamos y coordinamos con tu técnico. Las alturas y pendientes de techo habituales están en la troncal de <a href="/tinglados">techados metálicos</a>, y el resto de los <a href="/ciudad-de-la-costa">otros galpones en Ciudad de la Costa</a> en la página de la zona.',
             ],
         ],
     ],

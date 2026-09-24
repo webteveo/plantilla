@@ -2,7 +2,7 @@
 /** Contenido de /galpones-prefabricados/san-antonio (servicio principal × localidad rural sobre Ruta 11). */
 return [
     'title'       => 'San Antonio: galpones prefabricados a medida por WhatsApp',
-    'description' => 'Galpones prefabricados en San Antonio, Canelones: depósito de maquinaria, acopio y granjas sobre Ruta 11. Pedí presupuesto a medida por WhatsApp; visitamos el predio.',
+    'description' => 'Galpones prefabricados en San Antonio, Canelones: maquinaria, acopio y granjas sobre Ruta 11. Presupuesto por WhatsApp; visitamos el predio.',
     'h1'          => 'Galpones prefabricados en San Antonio con presupuesto por WhatsApp',
     'eyebrow'     => 'Galpones metálicos sobre Ruta 11 y Ruta 6',
     'subtitulo'   => 'Fabricamos la estructura en taller y la montamos en tu predio de San Antonio. Mandanos medidas y uso por WhatsApp y coordinamos el relevamiento.',
@@ -10,7 +10,7 @@ return [
         [
             'h2'       => 'Galpones prefabricados en San Antonio: cómo trabajamos',
             'parrafos' => [
-                'Galpones Prefabricados monta galpones de estructura metálica en San Antonio, la localidad de Canelones que queda sobre Ruta 11 entre la capital departamental y Santa Rosa, en plena zona de chacras y granjas avícolas. Vamos al predio, relevamos medidas, uso y terreno, y te mandamos por WhatsApp un presupuesto separado por estructura, techo, cerramientos, platea y montaje.',
+                'Los galpones prefabricados en San Antonio que monta Galpones Prefabricados son de estructura metálica, para la localidad de Canelones que queda sobre Ruta 11 entre la capital departamental y Santa Rosa, en plena zona de chacras y granjas avícolas. Vamos al predio, relevamos medidas, uso y terreno, y te mandamos por WhatsApp un presupuesto separado por estructura, techo, cerramientos, platea y montaje.',
                 'San Antonio es chica y casi todo lo que se pide es para producción: un galpón para guardar el tractor y la pulverizadora, un depósito de insumos o un galpón para pollos o ponedoras. Ninguno se cotiza con cifras genéricas; el precio sale de las medidas y de lo que vas a guardar.',
             ],
         ],
@@ -40,15 +40,15 @@ return [
         [
             'h2'       => 'Permisos y trámites en San Antonio',
             'parrafos' => [
-                'El permiso de construcción es de la Intendencia de Canelones: trámite en línea y planos firmados por un técnico registrado. Para galpones de cría además puede haber requisitos sanitarios propios de la actividad, que conviene consultar con el organismo que te habilita. Nosotros te orientamos en la parte constructiva. Más sobre San Antonio, en <a href="/san-antonio">todos nuestros servicios en la localidad</a>.',
+                'El permiso de construcción es de la Intendencia de Canelones: trámite en línea y planos firmados por un técnico registrado. Para galpones de cría además puede haber requisitos sanitarios propios de la actividad, que conviene consultar con el organismo que te habilita. Te orientamos en la parte constructiva. Más sobre San Antonio, en <a href="/san-antonio">todos nuestros servicios en la localidad</a>.',
             ],
         ],
     ],
     'faq' => [
         ['q' => '¿Hacen galpones para pollos en San Antonio?', 'a' => 'Sí. Cotizamos la estructura, el techo y los cerramientos según el largo y la ventilación que necesite tu sistema de cría. Los equipos internos (comederos, bebederos, ventiladores) van por cuenta del proveedor de la granja.'],
-        ['q' => '¿Cuánto demora tener el galpón montado?', 'a' => 'Se define en el presupuesto según medidas y terreno. La fabricación en taller y el montaje en obra son etapas separadas; te damos la estimación cuando relevamos el predio en San Antonio.'],
+        ['q' => '¿Cuánto demora tener el galpón montado?', 'a' => 'Se define en el presupuesto según medidas y terreno. La fabricación en taller y el montaje en obra son etapas separadas; te damos la estimación cuando relevamos el predio para tu galpón prefabricado en San Antonio.'],
         ['q' => '¿Puedo mandar las medidas por WhatsApp sin visita?', 'a' => 'Sí, para un primer presupuesto orientativo alcanza con medidas aproximadas, uso y una foto del lugar. Después Galpones Prefabricados visita el predio para confirmar terreno y accesos antes de fabricar.'],
-        ['q' => '¿Hacen galpones con oficina o vestuario incluido?', 'a' => 'La estructura se puede prever con un módulo para oficina o vestuario. La albañilería y las instalaciones interiores se cotizan aparte o las hace tu constructor; lo importante es definirlo antes de fabricar los pórticos.'],
+        ['q' => '¿Hacen galpones con oficina o vestuario incluido?', 'a' => 'La estructura se puede prever con un módulo para oficina o vestuario. La albañilería y las instalaciones interiores se cotizan aparte o las hace tu constructor.'],
     ],
     'actualizado' => '2026-09-24',
 ];

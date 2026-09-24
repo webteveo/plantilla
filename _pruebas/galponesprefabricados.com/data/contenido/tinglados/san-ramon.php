@@ -2,7 +2,7 @@
 /** Tinglados × San Ramón (subservicio; la página principal de la zona es /galpones-prefabricados/san-ramon). */
 return [
     'title'       => 'Tinglados en San Ramón – Presupuesto por WhatsApp',
-    'description' => 'Tinglados en San Ramón para maquinaria, rollos y camiones en campos de Ruta 6 y Ruta 12. Techado abierto a medida. Presupuesto por WhatsApp sin cargo.',
+    'description' => 'Tinglados en San Ramón con presupuesto por WhatsApp: techado abierto para maquinaria, rollos y camiones en campos de Ruta 6 y Ruta 12.',
     'h1'          => 'Tinglados en San Ramón: techado abierto para maquinaria y rollos',
     'eyebrow'     => 'Techados para el campo en Canelones',
     'subtitulo'   => 'Cobertizos metálicos para establecimientos rurales del noreste de Canelones. Medimos en el campo y presupuestamos por ítem por WhatsApp.',
@@ -19,7 +19,7 @@ return [
             'parrafos' => [
                 'Llegamos por Ruta 6 desde Montevideo; Ruta 12 conecta con Tala hacia el este. La ciudad tiene casco urbano chico y un entorno de campos ganaderos, tambos y chacras. El último tramo suele ser camino vecinal de balasto: lo relevamos antes de mandar el camión con la estructura, sobre todo después de lluvias.',
                 'Los predios son amplios y con lomas suaves. Elegimos con el productor el lugar del tinglado según el drenaje y la maniobra de la maquinaria. Cerca del río Santa Lucía revisamos el nivel del terreno antes de ubicar las bases. Nos piden tinglados en San Ramón para tractores y cosechadoras, para rollos y fardos que se arruinan a la intemperie, y para camiones que cargan en el establecimiento.',
-                'También hacemos <a href="/galpones-prefabricados/tala">galpones en Tala</a>, <a href="/galpones-prefabricados/san-bautista">galpones prefabricados en San Bautista</a> y <a href="/galpones-prefabricados/ciudad-de-canelones">galpones en Canelones ciudad</a>, por Ruta 6 hacia el sur.',
+                'También hacemos <a href="/galpones-prefabricados/tala">galpones en Tala</a>, <a href="/galpones-prefabricados/san-bautista">galpones metálicos en San Bautista</a> y <a href="/galpones-prefabricados/ciudad-de-canelones">depósitos en la ciudad de Canelones</a>, por Ruta 6 hacia el sur.',
             ],
         ],
         [
@@ -37,7 +37,7 @@ return [
         [
             'h2' => 'Galpones para el campo en San Ramón',
             'parrafos' => [
-                'Cuando lo que hay que guardar son insumos, granos o animales, el tinglado queda corto y conviene un galpón cerrado con ventilación: mirá <a href="/galpones-agricolas/san-ramon">galpones agrícolas en San Ramón</a>. Las medidas y pendientes de techo habituales están en la troncal de <a href="/tinglados">estructuras para techado</a>, y todos los servicios de la <a href="/san-ramon">zona de San Ramón</a> en su página.',
+                'Cuando lo que hay que guardar son insumos, granos o animales, el tinglado queda corto y conviene un galpón cerrado con ventilación: mirá <a href="/galpones-agricolas/san-ramon">galpones agrícolas para el campo de San Ramón</a>. Las medidas y pendientes de techo habituales están en la troncal de <a href="/tinglados">estructuras para techado</a>, y todos los servicios de la <a href="/san-ramon">zona de San Ramón</a> en su página.',
             ],
         ],
     ],

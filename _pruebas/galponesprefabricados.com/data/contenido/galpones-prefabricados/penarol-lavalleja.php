@@ -2,7 +2,7 @@
 /** Galpones prefabricados × Peñarol / Lavalleja (norte de Montevideo, estación y talleres ferroviarios). */
 return [
     'title'       => 'Galpones prefabricados en Peñarol – Junto a la vía férrea',
-    'description' => 'Galpones prefabricados en Peñarol, Montevideo: talleres, depósitos y naves chicas en el barrio de la estación y los talleres ferroviarios, con salida a Ruta 5. Presupuesto por WhatsApp.',
+    'description' => 'Galpones prefabricados en Peñarol, Montevideo: talleres y depósitos en el barrio de la estación, con salida a Ruta 5. Presupuesto a medida por WhatsApp.',
     'h1'          => 'Galpones prefabricados en Peñarol: predios junto a la vía y Ruta 5',
     'eyebrow'     => 'Galpones metálicos en Peñarol y Lavalleja',
     'subtitulo'   => 'Galpones de estructura metálica para talleres y depósitos en Peñarol. Fabricación en taller, montaje en tu predio y presupuesto por WhatsApp.',
@@ -38,7 +38,7 @@ return [
         [
             'h2' => 'Permisos y trámites en Peñarol',
             'parrafos' => [
-                'El permiso de construcción lo otorga la Intendencia de Montevideo, con planos firmados por un técnico. En el entorno del barrio histórico de Peñarol hay protección patrimonial, y un galpón nuevo puede tener condiciones de altura o fachada; conviene consultarlo antes de fijar medidas. Nosotros adaptamos el proyecto a lo que se apruebe. Para otros trabajos en la zona, mirá <a href="/montevideo">el resto de servicios en la capital</a>. Si buscás una nave con luz libre mayor, revisá <a href="/galpones-metalicos">galpones metálicos</a>.',
+                'El permiso de construcción lo otorga la Intendencia de Montevideo, con planos firmados por un técnico. En el entorno del barrio histórico de Peñarol hay protección patrimonial, y un galpón nuevo puede tener condiciones de altura o fachada; conviene consultarlo antes de fijar medidas. Nosotros adaptamos el proyecto a lo que se apruebe. Para otros trabajos en la zona, mirá <a href="/montevideo">el resto de servicios en la capital</a>. Si buscás una nave con luz libre mayor, revisá <a href="/galpones-metalicos">galpones metálicos de mayor luz</a>.',
             ],
         ],
     ],

@@ -2,7 +2,7 @@
 /** Galpones agrícolas × San Ramón (subservicio; la página principal de la zona es /galpones-prefabricados/san-ramon). */
 return [
     'title'       => 'Galpones agrícolas en San Ramón – Tambos sobre Ruta 6',
-    'description' => 'Galpones agrícolas en San Ramón: acopio de ración, maquinaria y depósito para tambos y campos de Ruta 6 y Ruta 12. Presupuesto por WhatsApp sin cargo.',
+    'description' => 'Galpones agrícolas en San Ramón, presupuesto por WhatsApp: acopio de ración, maquinaria y depósito para tambos y campos de Ruta 6 y Ruta 12.',
     'h1'          => 'Galpones agrícolas en San Ramón: acopio y maquinaria para el tambo',
     'eyebrow'     => 'Galpones rurales en el noreste de Canelones',
     'subtitulo'   => 'Estructura metálica prefabricada para campos y tambos de San Ramón y la cuenca del Santa Lucía. Visitamos el predio y presupuestamos por WhatsApp.',
@@ -19,7 +19,7 @@ return [
             'parrafos' => [
                 'San Ramón queda en el noreste de Canelones, sobre Ruta 6 y a la altura del río Santa Lucía, que marca el límite con Florida. Ruta 12 sale hacia Tala. Desde la ruta, los establecimientos se alcanzan por caminos vecinales de balasto, y eso condiciona el día en que entra el camión con la estructura.',
                 'El entorno es de campos de lechería y ganadería, con chacras de forraje y granos. Los predios son grandes y con lomas suaves; elegimos con el productor el lugar del galpón por drenaje, cercanía a la sala de ordeñe o al corral y maniobra del mixer y los camiones. Cerca del río revisamos cotas antes de definir las bases.',
-                'Por la misma zona hacemos <a href="/galpones-agricolas/tala">galpones agrícolas en Tala</a>, <a href="/galpones-prefabricados/san-bautista">galpones en San Bautista</a> y <a href="/galpones-prefabricados/ciudad-de-canelones">depósitos en Canelones ciudad</a>.',
+                'Por la misma zona hacemos <a href="/galpones-agricolas/tala">galpones para los campos de Tala</a>, <a href="/galpones-prefabricados/san-bautista">galpones en San Bautista</a> y <a href="/galpones-prefabricados/ciudad-de-canelones">depósitos en Canelones ciudad</a>.',
             ],
         ],
         [

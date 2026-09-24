@@ -2,7 +2,7 @@
 /** Galpones agrícolas × Sauce (subservicio; la página principal de la zona es /galpones-prefabricados/sauce). */
 return [
     'title'       => 'Galpones agrícolas en Sauce – Viñedos, chacras y granjas',
-    'description' => 'Galpones agrícolas en Sauce para viñedos, chacras y granjas de Ruta 33 y Ruta 6: maquinaria, insumos y packing. Pedí presupuesto por WhatsApp.',
+    'description' => 'Galpones agrícolas en Sauce con presupuesto por WhatsApp: maquinaria, insumos y packing para viñedos, chacras y granjas de Ruta 33 y Ruta 6.',
     'h1'          => 'Galpones agrícolas en Sauce: depósito para viñedos, chacras y granjas',
     'eyebrow'     => 'Galpones rurales en Sauce, Canelones',
     'subtitulo'   => 'Galpones metálicos prefabricados para productores de Sauce y su zona rural. Medimos en el predio y te pasamos el presupuesto por WhatsApp.',
@@ -19,7 +19,7 @@ return [
             'parrafos' => [
                 'Llegamos por Ruta 33 desde el sur, pasando Toledo, o por Ruta 6 y el empalme hacia la ciudad. Sauce queda cerca de Montevideo, más cerca que el resto de las zonas rurales del departamento, y eso hace más simple el ingreso del camión con la estructura. Las chacras se alcanzan por caminos vecinales que relevamos en la visita.',
                 'El entorno mezcla viñedos, chacras de hortalizas y frutales, y granjas. Los lotes son medianos y chicos, con cultivos hasta cerca de las construcciones, así que el galpón se ubica cuidando la maniobra de tractores y camiones y el drenaje del predio. Los suelos son firmes; en zonas bajas se ajusta la base de las columnas.',
-                'Por la zona también trabajamos en <a href="/galpones-agricolas/santa-rosa">galpones rurales en Santa Rosa</a>, <a href="/galpones-prefabricados/pando">galpones en Pando</a>, <a href="/galpones-prefabricados/joaquin-suarez">galpones prefabricados en Joaquín Suárez</a> y <a href="/galpones-prefabricados/empalme-olmos">Empalme Olmos</a>.',
+                'Por la zona también trabajamos en <a href="/galpones-agricolas/santa-rosa">galpones rurales en Santa Rosa</a>, <a href="/galpones-prefabricados/pando">galpones para empresas de Pando</a>, <a href="/galpones-prefabricados/joaquin-suarez">galpones prefabricados en Joaquín Suárez</a> y <a href="/galpones-prefabricados/empalme-olmos">galpones rurales de Empalme Olmos</a>.',
             ],
         ],
         [

@@ -2,7 +2,7 @@
 /** Galpones agrícolas × Tala (subservicio; la página principal de la zona es /galpones-prefabricados/tala). */
 return [
     'title'       => 'Galpones agrícolas en Tala – Forraje y granos, Ruta 7',
-    'description' => 'Galpones agrícolas en Tala para maquinaria, forraje y granos en campos de Ruta 7 y Ruta 12. Estructura metálica prefabricada. Presupuesto por WhatsApp.',
+    'description' => 'Galpones agrícolas en Tala con presupuesto por WhatsApp: maquinaria, forraje y granos en campos de Ruta 7 y Ruta 12. Estructura metálica prefabricada.',
     'h1'          => 'Galpones agrícolas en Tala: forraje, granos y maquinaria bajo techo',
     'eyebrow'     => 'Galpones para campo en el este de Canelones',
     'subtitulo'   => 'Galpones metálicos fabricados en taller y montados en establecimientos de Tala y su zona rural. Relevamiento del predio y presupuesto por ítem por WhatsApp.',
@@ -19,7 +19,7 @@ return [
             'parrafos' => [
                 'Llegamos por Ruta 7 desde Montevideo, pasando San Jacinto. Ruta 12 une Tala con San Ramón hacia el oeste. Los establecimientos están sobre la ruta o al final de caminos vecinales de balasto; en la visita relevamos el acceso para el camión con la estructura y para la grúa de montaje.',
                 'La zona es de campos abiertos con ganadería, lechería y agricultura de granos y forraje, con predios más grandes que en el sur del departamento. Eso permite ubicar el galpón donde mejor drena y donde la maquinaria maniobra sin cruzarse con el ganado. Los suelos son firmes en las lomas; en los bajos cerca de arroyos se revisan las bases.',
-                'En la misma región construimos <a href="/galpones-agricolas/san-ramon">galpones rurales en San Ramón</a>, <a href="/galpones-prefabricados/migues">galpones en Migues</a> y <a href="/galpones-prefabricados/montes">galpones prefabricados en Montes</a>.',
+                'En la misma región construimos <a href="/galpones-agricolas/san-ramon">galpones para tambos en San Ramón</a>, <a href="/galpones-prefabricados/migues">galpones en Migues</a> y <a href="/galpones-prefabricados/montes">galpones prefabricados en Montes</a>.',
             ],
         ],
         [

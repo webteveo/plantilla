@@ -2,7 +2,7 @@
 /** Galpones prefabricados × Colón (norte de Montevideo, eje Garzón / Ruta 5). */
 return [
     'title'       => 'Galpones prefabricados en Colón – Depósitos sobre Garzón',
-    'description' => 'Galpones prefabricados en Colón, norte de Montevideo: depósitos, corralones y talleres con acceso por Avenida Garzón, Ruta 5 y Camino Melilla. Presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones prefabricados en Colón, Montevideo: depósitos, corralones y talleres con acceso por Av. Garzón y Ruta 5. Presupuesto a medida por WhatsApp.',
     'h1'          => 'Galpones prefabricados en Colón: depósitos y talleres sobre Garzón',
     'eyebrow'     => 'Galpones metálicos en el norte de Montevideo',
     'subtitulo'   => 'Estructuras metálicas fabricadas en taller y montadas en tu predio de Colón. Escribinos por WhatsApp con las medidas y coordinamos la visita.',
@@ -19,13 +19,13 @@ return [
             'h2' => 'Cómo llegamos y qué encontramos en Colón',
             'parrafos' => [
                 'Llegamos por Avenida Garzón desde el sur o por Ruta 5 desde La Paz y Las Piedras; hacia el oeste, Camino Melilla y Avenida Lezica abren la zona de quintas. La estación de tren de Colón y la vía marcan un eje de predios largos y depósitos que se aprovechan bien para galpones.',
-                'Los predios cambian mucho en pocas cuadras: casas con fondo en las calles internas, locales comerciales con terreno atrás sobre Garzón y lotes más grandes hacia Melilla. El terreno tiene pendiente suave hacia el oeste y la platea se define en la visita. Con el mismo equipo atendemos <a href="/galpones-prefabricados/penarol-lavalleja">Peñarol</a>, las quintas de <a href="/galpones-prefabricados/lezica-melilla">Melilla</a> y, cruzando el límite por Ruta 5, <a href="/galpones-prefabricados/la-paz">La Paz</a> y <a href="/galpones-prefabricados/las-piedras">galpones en Las Piedras</a>.',
+                'Los predios cambian mucho en pocas cuadras: casas con fondo en las calles internas, locales comerciales con terreno atrás sobre Garzón y lotes más grandes hacia Melilla. El terreno tiene pendiente suave hacia el oeste y la platea se define en la visita. Con el mismo equipo atendemos <a href="/galpones-prefabricados/penarol-lavalleja">Peñarol y Lavalleja</a>, las quintas de <a href="/galpones-prefabricados/lezica-melilla">Melilla</a> y, cruzando el límite por Ruta 5, <a href="/galpones-prefabricados/la-paz">La Paz (Canelones)</a> y <a href="/galpones-prefabricados/las-piedras">galpones en Las Piedras</a>.',
             ],
         ],
         [
             'h2' => 'Usos típicos de galpones en Colón',
             'parrafos' => [
-                'Sobre Garzón y en las calles que salen hacia Melilla, los pedidos más frecuentes son estos:',
+                'Lo más pedido sobre Garzón y hacia Melilla:',
             ],
             'lista' => [
                 'Depósitos para barracas, ferreterías y distribuidoras de Garzón que necesitan más stock cubierto.',
@@ -35,7 +35,7 @@ return [
                 'Galpones en el fondo de casas para herramientas, vehículos o un emprendimiento.',
             ],
             'parrafos_despues' => [
-                'Para naves más grandes, con luz libre para autoelevadores, mirá <a href="/galpones-industriales">galpones industriales</a>.',
+                'Para naves más grandes, con luz libre para autoelevadores, mirá <a href="/galpones-industriales">galpones industriales con luz libre</a>.',
             ],
         ],
         [
@@ -47,10 +47,10 @@ return [
     ],
 
     'faq' => [
-        ['q' => '¿Pueden montar un galpón en el fondo de un local de Avenida Garzón?', 'a' => 'Sí, es un pedido frecuente en Colón. Relevamos por dónde entran las piezas y la grúa; si no hay pasaje, la estructura se fabrica en tramos cortos y se arma adentro. El frente sigue funcionando durante el montaje.'],
+        ['q' => '¿Pueden montar un galpón en el fondo de un local de Avenida Garzón?', 'a' => 'Sí, es un pedido frecuente en Colón. Relevamos por dónde entran las piezas; si no hay pasaje, la estructura se fabrica en tramos cortos y se arma adentro. El frente sigue funcionando durante el montaje.'],
         ['q' => '¿Hacen galpones en La Paz y Las Piedras desde Colón?', 'a' => 'Sí. Galpones Prefabricados trabaja a ambos lados del límite: Colón, La Paz y Las Piedras están sobre el mismo eje de Ruta 5. Lo que cambia es la intendencia que da el permiso: Montevideo en Colón, Canelones al cruzar.'],
         ['q' => '¿Qué altura conviene para un depósito con estanterías?', 'a' => 'Se define por la altura de la última estantería más el margen del equipo de carga. Nos pasás cuántos niveles querés y calculamos la altura libre bajo viga.'],
-        ['q' => '¿Cuánto tarda el montaje de un galpón en Colón?', 'a' => 'El plazo se define en el presupuesto según medidas y terreno. La fabricación en taller adelanta trabajo, así que en obra son menos días que en una construcción tradicional.'],
+        ['q' => '¿Cuánto tarda el montaje de un galpón en Colón?', 'a' => 'El plazo se define en el presupuesto según medidas y terreno. Como la estructura viene hecha de taller, en obra son menos días que en una construcción tradicional.'],
     ],
 
     'actualizado' => '2026-09-24',
