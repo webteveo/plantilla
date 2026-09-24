@@ -2,7 +2,7 @@
 /** Galpones prefabricados en Soca (Canelones). Localidad rural entre Ruta 8 y la costa, sobre Ruta 70 y Ruta 35. */
 return [
     'title'       => 'Galpones prefabricados en Soca – Presupuesto por WhatsApp',
-    'description' => 'Galpones prefabricados en Soca, Canelones: depósito rural, maquinaria y taller, a mitad de camino entre Ruta 8 y la Interbalnearia. Pedí presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones prefabricados en Soca, Canelones: depósito rural, maquinaria y taller entre Ruta 8 y la Interbalnearia. Pedí presupuesto por WhatsApp.',
     'h1'          => 'Galpones prefabricados en Soca: presupuesto a medida por WhatsApp',
     'eyebrow'     => 'Galpones metálicos en Canelones',
     'subtitulo'   => 'Galpones de estructura metálica para chacras, campos y emprendimientos de Soca. Relevamos medidas y terreno y te pasamos el presupuesto por ítem.',
@@ -24,7 +24,7 @@ return [
         [
             'h2' => 'Qué define el precio de un galpón en Soca',
             'parrafos' => [
-                'El precio sale del presupuesto a medida, no de una tabla. Estos son los factores que lo mueven en Soca:',
+                'El precio de un galpón prefabricado en Soca sale del presupuesto a medida, no de una tabla. Estos son los factores que lo mueven:',
             ],
             'lista' => [
                 'Superficie y altura libre, que dependen de lo que vas a guardar y de cómo entrás y salís.',
@@ -47,7 +47,7 @@ return [
     'faq' => [
         ['q' => '¿Conviene entrar a Soca por Ruta 8 o por la Interbalnearia?', 'a' => 'Depende de dónde esté el predio. Los que quedan hacia el norte del pueblo se atienden mejor por Ruta 8 y Ruta 35; los que están hacia el sur, por Ruta 70 desde La Floresta. Lo definimos en la visita para que el camión con la estructura llegue sin problemas.'],
         ['q' => '¿Pueden reemplazar un galpón viejo de bloques por uno prefabricado?', 'a' => 'Sí. Galpones Prefabricados releva lo existente y define si se demuele todo o si se aprovecha la platea. La estructura metálica nueva se monta abulonada sobre bases o platea, así que no depende de las paredes viejas.'],
-        ['q' => '¿Hacen galpones chicos para un emprendimiento en Soca?', 'a' => 'Sí. No hay un tamaño mínimo fijo; un galpón de pocos metros para taller, fraccionado o depósito se presupuesta igual que uno grande, con la ventaja de que se puede ampliar agregando pórticos más adelante.'],
+        ['q' => '¿Hacen galpones prefabricados en Soca para un emprendimiento chico?', 'a' => 'Sí. No hay un tamaño mínimo fijo; un galpón de pocos metros para taller, fraccionado o depósito se presupuesta igual que uno grande, con la ventaja de que se puede ampliar agregando pórticos más adelante.'],
     ],
     'actualizado' => '2026-09-24',
 ];

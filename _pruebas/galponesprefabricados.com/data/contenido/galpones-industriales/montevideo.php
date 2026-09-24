@@ -2,7 +2,7 @@
 /** Galpones industriales × Montevideo. Servicio secundario; la página principal de la zona es /galpones-prefabricados/montevideo. */
 return [
     'title'       => 'Galpones industriales en Montevideo – Cerro y Peñarol',
-    'description' => 'Galpones industriales en Montevideo para fábricas, logística y depósitos en Cerro, Paso de la Arena, Peñarol y Camino Carrasco. Presupuesto por ítem por WhatsApp.',
+    'description' => 'Galpones industriales en Montevideo: naves para fábricas, logística y depósitos en Cerro, Peñarol y Camino Carrasco. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones industriales en Montevideo: naves a medida para tu planta',
     'eyebrow'     => 'Naves industriales en Montevideo',
     'subtitulo'   => 'Galpones y naves de estructura metálica para fábricas, operadores logísticos y depósitos en las zonas industriales de Montevideo. Relevamos el predio, presupuestamos por ítem y montamos la estructura fabricada en taller.',
@@ -10,7 +10,7 @@ return [
         [
             'h2' => 'Galpones industriales en Montevideo: cómo trabajamos',
             'parrafos' => [
-                'Galpones Prefabricados hace galpones industriales en Montevideo: naves de estructura metálica para fábricas, logística y depósitos en el Cerro, Paso de la Arena, Peñarol y el eje de Camino Carrasco. Coordinamos por WhatsApp la visita al predio, relevamos medidas, uso y accesos, y te pasamos un presupuesto detallado por ítem. En Montevideo el permiso de construcción se tramita ante la Intendencia con planos firmados, y lo tenemos en cuenta desde el diseño.',
+                'Galpones Prefabricados hace galpones industriales en Montevideo: naves de estructura metálica para fábricas, logística y depósitos en el Cerro, Paso de la Arena, Peñarol y el eje de Camino Carrasco. Coordinamos por WhatsApp la visita al predio, relevamos medidas, uso y accesos, y te pasamos un presupuesto detallado por ítem. En Montevideo el permiso de construcción va ante la Intendencia con planos firmados.',
                 'La nave se define a partir del proceso: luz libre sin columnas intermedias, altura bajo viga para estanterías o autoelevador, cargas de puente grúa si las va a haber, portones para camiones y un módulo de oficinas o vestuarios. Si buscás un depósito o un galpón comercial más chico, eso está en la página de <a href="/galpones-prefabricados/montevideo">galpones prefabricados para Montevideo</a>.',
             ],
         ],
@@ -24,7 +24,7 @@ return [
         [
             'h2' => 'Qué define el precio de un galpón industrial en Montevideo',
             'parrafos' => [
-                'No hay un precio por metro cuadrado fijo: dos naves del mismo tamaño pueden costar muy distinto según lo que tengan que soportar. Estos son los factores que pesan más en un presupuesto para Montevideo:',
+                'Dos naves del mismo tamaño pueden costar muy distinto según lo que tengan que soportar. Estos son los factores que pesan más en un presupuesto para Montevideo:',
             ],
             'lista' => [
                 'Luz libre y altura bajo viga: a más luz sin columnas y más altura, pórticos más pesados.',
@@ -32,30 +32,23 @@ return [
                 'Cerramientos: chapa simple, chapa con aislación o panel, y cuántos frentes se cierran.',
                 'Platea y fundaciones: dependen del estudio de suelo del padrón y del tránsito de autoelevadores.',
                 'Portones, muelles de carga y aberturas: cantidad, tamaño y tipo (corredizo, seccional).',
-                'Oficinas, vestuarios y baños integrados a la nave.',
-                'Acceso al predio urbano: maniobra de camiones y grúa entre construcciones vecinas.',
-                'Proyecto, firma técnica y permiso ante la Intendencia de Montevideo.',
             ],
         ],
         [
             'h2' => 'Permisos y habilitación en Montevideo',
             'parrafos' => [
-                'La Intendencia de Montevideo exige permiso de construcción con planos firmados por arquitecto o ingeniero. Para uso industrial hay que verificar antes que el uso de suelo del padrón admita la actividad, y la habilitación del local se tramita aparte del permiso de obra. Trabajamos con tu técnico y, si todavía no tenés uno, te orientamos sobre el camino. Podés ver <a href="/montevideo">todo lo que hacemos en Montevideo</a> o la troncal de <a href="/galpones-industriales">galpones industriales</a> para comparar tipos de nave.',
+                'La Intendencia de Montevideo exige permiso de construcción con planos firmados por arquitecto o ingeniero. Para uso industrial hay que verificar antes que el uso de suelo del padrón admita la actividad, y la habilitación del local se tramita aparte del permiso de obra. Te orientamos y trabajamos con tu técnico. Mirá <a href="/montevideo">todo lo que hacemos en Montevideo</a> y la troncal de <a href="/galpones-industriales">galpones industriales</a>.',
             ],
         ],
     ],
     'faq' => [
         [
             'q' => '¿Hacen galpones industriales en el Cerro y Paso de la Arena?',
-            'a' => 'Sí. Galpones Prefabricados trabaja en los predios de Ruta 1, Camino Cibils y Camino Tomkinson, donde hay talleres, depósitos y plantas en actividad. Coordinamos la visita por WhatsApp y relevamos accesos para el camión con la estructura.',
+            'a' => 'Sí. Galpones Prefabricados hace galpones industriales en Montevideo en los predios de Ruta 1, Camino Cibils y Camino Tomkinson, donde hay talleres, depósitos y plantas en actividad. Coordinamos la visita por WhatsApp y relevamos accesos para el camión con la estructura.',
         ],
         [
             'q' => '¿Se puede construir la nave por etapas en Montevideo?',
             'a' => 'Sí. Se puede montar primero la nave principal y sumar después oficinas, vestuarios o pórticos nuevos, porque la estructura es abulonada. Conviene que el permiso de la Intendencia contemple la ampliación desde el inicio.',
-        ],
-        [
-            'q' => '¿Qué pasa si el predio está entre construcciones existentes?',
-            'a' => 'Es lo habitual en Montevideo. Al relevar medimos por dónde entra el camión, dónde se ubica la grúa de montaje y qué medianeras hay que respetar. Eso se refleja en el presupuesto y en el plan de montaje.',
         ],
         [
             'q' => '¿Necesito habilitación industrial además del permiso de construcción?',

@@ -2,8 +2,8 @@
 /** Galpones prefabricados en Montes (Canelones). Localidad rural del sureste, sobre Ruta 80 cerca de Ruta 8. */
 return [
     'title'       => 'Galpones prefabricados en Montes – Acceso por Ruta 8 y 80',
-    'description' => 'Galpones prefabricados en Montes, Canelones: estructura metálica para maquinaria, acopio y depósito rural, con acceso por Ruta 8 y Ruta 80. Presupuesto por WhatsApp.',
-    'h1'          => 'Galpones prefabricados en Montes: montaje en campo con acceso por Ruta 8',
+    'description' => 'Galpones prefabricados en Montes, Canelones: maquinaria, acopio y depósito rural, con acceso por Ruta 8 y Ruta 80. Presupuesto por WhatsApp.',
+    'h1'          => 'Galpones prefabricados en Montes: montaje en campo por Ruta 8 y 80',
     'eyebrow'     => 'Galpones metálicos en el sureste de Canelones',
     'subtitulo'   => 'Galpones de estructura metálica para chacras y campos de Montes y su zona. Coordinamos la visita al predio por WhatsApp y presupuestamos por ítem.',
     'secciones'   => [
@@ -24,7 +24,7 @@ return [
         [
             'h2' => 'Usos típicos de galpones en Montes',
             'parrafos' => [
-                'Los pedidos que llegan desde Montes son en su mayoría de campo. Estos son los más comunes:',
+                'Los galpones prefabricados en Montes que más se piden son de campo. Estos son los más comunes:',
             ],
             'lista' => [
                 'Galpón para maquinaria agrícola con portón corredizo y altura para cosechadora.',
@@ -34,19 +34,19 @@ return [
                 'Cobertura para vehículos y herramientas al lado de la casa del campo.',
             ],
             'parrafos_despues' => [
-                'Si lo que necesitás es solo techo, sin laterales, mirá la página de <a href="/tinglados">tinglados metálicos</a>: se monta más rápido y se puede cerrar después. Y en la troncal de <a href="/galpones-prefabricados">galpones prefabricados</a> están las opciones de estructura y cerramiento.',
+                'Si lo que necesitás es solo techo, sin laterales, mirá la página de <a href="/tinglados">tinglados metálicos</a>: se monta más rápido y se puede cerrar después. Y en la troncal de <a href="/galpones-prefabricados">todos los galpones prefabricados</a> están las opciones de estructura y cerramiento.',
             ],
         ],
         [
             'h2' => 'Permisos y trámites en Montes',
             'parrafos' => [
-                'El permiso de construcción para un galpón en Montes lo da la Intendencia de Canelones, con un trámite en línea que presenta un técnico registrado. Aplica tanto en el casco urbano como en suelo rural. Nosotros te orientamos con las medidas y la memoria del galpón para que el técnico arme los planos; conviene iniciarlo antes de fabricar.',
+                'El permiso de construcción para un galpón en Montes lo da la Intendencia de Canelones, con un trámite en línea que presenta un técnico registrado. Aplica tanto en el casco urbano como en suelo rural. Te damos las medidas y la memoria del galpón para los planos; conviene iniciarlo antes de fabricar.',
             ],
         ],
     ],
     'faq' => [
         ['q' => '¿Cómo llega la estructura a un campo en Montes?', 'a' => 'En camión por Ruta 8 y Ruta 80, y después por el camino del predio. Por eso en la visita revisamos anchos de portones, curvas y el estado del camino interno. Si un tramo no soporta el camión cargado, se busca dónde descargar y cómo acercar las piezas.'],
-        ['q' => '¿Qué galpón conviene para acopio de rollos en Montes?', 'a' => 'Un tinglado con aleros y altura suficiente para apilar y cargar con el tractor. Se puede dejar abierto o cerrar el lado del viento predominante. Galpones Prefabricados lo dimensiona según la cantidad de rollos y cómo los movés.'],
+        ['q' => '¿Qué galpón prefabricado en Montes conviene para acopio de rollos?', 'a' => 'Un tinglado con aleros y altura suficiente para apilar y cargar con el tractor. Se puede dejar abierto o cerrar el lado del viento predominante. Galpones Prefabricados lo dimensiona según la cantidad de rollos y cómo los movés.'],
         ['q' => '¿Se puede agrandar el galpón cuando crezca la producción?', 'a' => 'Sí. La estructura es modular y se agregan pórticos en el sentido del largo sin rehacer lo existente. Conviene dejarlo previsto en el diseño, sobre todo en la platea y en el lateral que se va a abrir.'],
     ],
     'actualizado' => '2026-09-24',

@@ -2,8 +2,8 @@
 /** Galpones prefabricados en Tala (Canelones). Zona rural del este del departamento, sobre Ruta 7 y Ruta 12. */
 return [
     'title'       => 'Galpones prefabricados en Tala – Chacras y Ruta 7',
-    'description' => 'Galpones prefabricados en Tala, Canelones: depósito de maquinaria, acopio y talleres en chacras y campo. Presupuesto a medida por WhatsApp según medidas y terreno.',
-    'h1'          => 'Galpones prefabricados en Tala: presupuesto a medida para chacras y campo',
+    'description' => 'Galpones prefabricados en Tala, Canelones: maquinaria, acopio y talleres en chacras y campo. Presupuesto por WhatsApp según medidas y terreno.',
+    'h1'          => 'Galpones prefabricados en Tala: a medida para chacras y campo',
     'eyebrow'     => 'Galpones metálicos en el este de Canelones',
     'subtitulo'   => 'Estructura metálica fabricada en taller y montada en tu predio de Tala o alrededores. Relevamos medidas y accesos y te pasamos el presupuesto por WhatsApp.',
     'secciones'   => [
@@ -11,7 +11,7 @@ return [
             'h2' => 'Galpones prefabricados en Tala: cómo trabajamos',
             'parrafos' => [
                 'Galpones Prefabricados hace galpones de estructura metálica en Tala y en los establecimientos rurales de su entorno, sobre Ruta 7 y Ruta 12. Primero relevamos medidas, uso y terreno; después te mandamos un presupuesto detallado por ítem y coordinamos la fabricación en taller y el montaje en obra. Todo se arranca con un mensaje por WhatsApp con las medidas aproximadas y qué vas a guardar.',
-                'Tala es una ciudad de servicios para una zona de chacras y campo ganadero, a algo más de 60 km de Montevideo por Ruta 7. Eso define lo que se pide: galpones altos para maquinaria, acopio de fardos y depósitos de insumos, más algún taller o depósito comercial en el casco urbano.',
+                'Tala es una ciudad de servicios para una zona de chacras y campo ganadero, a algo más de 60 km de Montevideo por Ruta 7. Eso define lo que se pide: galpones altos para maquinaria, acopio de fardos y depósitos de insumos, más algún taller en el casco urbano.',
             ],
         ],
         [
@@ -24,7 +24,7 @@ return [
         [
             'h2' => 'Usos típicos de galpones en Tala',
             'parrafos' => [
-                'Estos son los pedidos que más se repiten en la zona. Si el tuyo no está, contanos el uso y lo dimensionamos igual.',
+                'Estos son los galpones prefabricados en Tala que más se piden. Si el tuyo no está, contanos el uso y lo dimensionamos igual.',
             ],
             'lista' => [
                 'Galpón para tractor, sembradora y pulverizadora, con portón alto y piso de hormigón.',
@@ -40,7 +40,7 @@ return [
         [
             'h2' => 'Permisos y trámites en Tala',
             'parrafos' => [
-                'Tala pertenece al departamento de Canelones, así que el permiso de construcción se tramita ante la Intendencia de Canelones. El trámite es en línea y lo presenta un técnico registrado con los planos del galpón. En suelo rural el permiso también corresponde: te orientamos sobre qué documentación pide la intendencia antes de fabricar, para no montar nada que después haya que regularizar.',
+                'Tala pertenece al departamento de Canelones, así que el permiso de construcción se tramita ante la Intendencia de Canelones. El trámite es en línea y lo presenta un técnico registrado con los planos del galpón. En suelo rural también corresponde. Te orientamos sobre qué pide la intendencia antes de fabricar un galpón prefabricado en Tala, para no tener que regularizar después.',
             ],
         ],
     ],
@@ -48,7 +48,6 @@ return [
         ['q' => '¿Hacen galpones en chacras alejadas de Tala, sobre caminos vecinales?', 'a' => 'Sí. Lo importante es que entre un camión con la estructura y haya lugar para maniobrar en el predio. En la visita revisamos el acceso desde Ruta 7 o Ruta 12 y el camino interno, y si hace falta se planifica el montaje para días sin barro.'],
         ['q' => '¿Qué altura necesita un galpón para maquinaria agrícola en Tala?', 'a' => 'Depende de la máquina más alta que vas a guardar, en general la cosechadora o la pulverizadora con el botalón plegado. Con ese dato Galpones Prefabricados define la altura libre bajo viga y el portón, con margen para entrar sin maniobras raras.'],
         ['q' => '¿El galpón se puede empezar como tinglado y cerrar más adelante?', 'a' => 'Sí. Muchos productores arrancan con estructura y techo, y después agregan los laterales cuando lo necesitan. Conviene decirlo al presupuestar para dejar prevista la fijación de los cerramientos. Podés ver más en la página de <a href="/tinglados">tinglados</a>.'],
-        ['q' => '¿Cuánto demora un galpón prefabricado en Tala?', 'a' => 'El plazo se define en el presupuesto según medidas, cerramientos y terreno. La fabricación se hace en taller y el montaje en obra suele ser la parte más corta, siempre que la platea o las bases estén listas cuando llega la estructura.'],
     ],
     'actualizado' => '2026-09-24',
 ];

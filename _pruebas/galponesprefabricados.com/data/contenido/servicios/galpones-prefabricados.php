@@ -2,7 +2,7 @@
 /** Troncal: galpones prefabricados en Montevideo y Canelones (servicio principal). */
 return [
     'title'       => 'Galpones prefabricados en Montevideo y Canelones: a medida',
-    'description' => 'Galpones prefabricados de estructura metálica en Montevideo y Canelones: depósito, taller, comercio y campo. Pedí presupuesto a medida por WhatsApp con medidas y uso.',
+    'description' => 'Galpones prefabricados de estructura metálica en Montevideo y Canelones: depósito, comercio y campo. Pedí presupuesto a medida por WhatsApp.',
     'h1'          => 'Galpones prefabricados en Montevideo y Canelones a medida por WhatsApp',
     'eyebrow'     => 'Galpones prefabricados en Montevideo y Canelones',
     'subtitulo'   => 'Fabricamos la estructura en taller y la montamos en tu terreno. Nos mandás medidas, uso y ubicación por WhatsApp y te pasamos un presupuesto detallado por ítem.',
@@ -12,8 +12,7 @@ return [
             'h2' => '¿Qué es un galpón prefabricado y para qué sirve?',
             'parrafos' => [
                 'Galpones Prefabricados fabrica galpones de estructura metálica en Montevideo y Canelones: las piezas se cortan y arman en taller y se montan en obra sobre una platea o fundaciones. Sirven como depósito, taller, local comercial, nave para logística o galpón de campo. Mandanos medidas, uso y ubicación del terreno por WhatsApp y te pasamos un presupuesto a medida, detallado por ítem.',
-                'Un galpón prefabricado se resuelve con pórticos de columnas y vigas, correas y cubierta de chapa trapezoidal galvanizada. Los cerramientos laterales pueden ser de chapa, de bloque o mixtos, y se eligen según el uso. Frente a una construcción tradicional de mampostería, la ventaja está en que casi todo el trabajo se hace en taller: en el terreno quedan la platea, el montaje y las terminaciones.',
-                'Como la estructura va abulonada, el galpón se puede agrandar sumando pórticos o desmontar y trasladar. Por eso conviene definir desde el principio para qué lo vas a usar: no es lo mismo guardar herramientas que recibir camiones con mercadería.',
+                'Un galpón prefabricado se resuelve con pórticos de columnas y vigas, correas y cubierta de chapa trapezoidal galvanizada, con laterales de chapa, bloque o mixtos según el uso. Frente a una construcción tradicional de mampostería, la ventaja está en que casi todo el trabajo se hace en taller: en el terreno quedan la platea, el montaje y las terminaciones. Conviene definir desde el principio para qué lo vas a usar: no es lo mismo guardar herramientas que recibir camiones con mercadería.',
             ],
         ],
         [
@@ -30,7 +29,7 @@ return [
                 'Montaje: columnas, pórticos, correas, chapa de techo, cerramientos, portones y desagües. Se entrega listo para usar.',
             ],
             'parrafos_despues' => [
-                'El plazo de cada etapa se define en el presupuesto según medidas y terreno. Trabajamos de lunes a viernes de 8 a 18 y respondemos consultas por WhatsApp o por correo.',
+                'El plazo de cada etapa se define en el presupuesto según medidas y terreno.',
             ],
         ],
         [
@@ -47,27 +46,27 @@ return [
                 'Permisos y honorarios técnicos: planos firmados y trámite ante la intendencia.',
             ],
             'parrafos_despues' => [
-                'Con medidas, uso y ubicación te pasamos un presupuesto sin cargo. Si tenés dudas sobre el tamaño, contanos qué vas a guardar y te proponemos medidas.',
+                'Con medidas, uso y ubicación te pasamos un presupuesto sin cargo.',
             ],
         ],
         [
             'h2' => 'Permisos de construcción para galpones en Montevideo y Canelones',
             'parrafos' => [
-                'Un galpón prefabricado es una construcción fija y, en general, necesita permiso de construcción. En Montevideo el trámite se hace ante la Intendencia de Montevideo con planos firmados por un técnico. En Canelones se gestiona ante la Intendencia de Canelones, en línea y con técnico registrado. Los requisitos cambian según la zona, el tamaño y el uso del galpón, así que conviene consultar antes de fabricar. Galpones Prefabricados te orienta sobre el trámite que corresponde a tu terreno y aporta la documentación de la estructura.',
+                'Un galpón prefabricado es una construcción fija y, en general, necesita permiso de construcción. En Montevideo el trámite se hace ante la Intendencia de Montevideo con planos firmados por un técnico. En Canelones se gestiona ante la Intendencia de Canelones, en línea y con técnico registrado. Galpones Prefabricados te orienta sobre el trámite que corresponde a tu terreno y aporta la documentación de la estructura.',
             ],
         ],
         [
             'h2' => 'Galpón prefabricado, metálico, tinglado, agrícola o industrial: ¿cuál te sirve?',
             'parrafos' => [
                 'Todos los galpones que hacemos son prefabricados de estructura metálica; lo que cambia es el uso y, con él, el diseño. Si te interesa el detalle de pórticos, perfiles y chapa, mirá la página de <a href="/galpones-metalicos">galpones de estructura metálica</a>. Si solo necesitás techo, sin laterales, lo que buscás es un <a href="/tinglados">tinglado metálico</a>: menos obra y menor costo.',
-                'Para chacras y establecimientos rurales están los <a href="/galpones-agricolas">galpones agrícolas para maquinaria y acopio</a>, con portones altos y ventilación. Para fábricas, depósitos logísticos y talleres grandes, los <a href="/galpones-industriales">galpones industriales y naves logísticas</a> se calculan para cargas, puente grúa y tránsito de autoelevadores. Si no sabés cuál te corresponde, contanos el uso por WhatsApp y te lo decimos.',
+                'Para chacras y establecimientos rurales están los <a href="/galpones-agricolas">galpones agrícolas para maquinaria y acopio</a>, con portones altos y ventilación. Para fábricas, depósitos logísticos y talleres grandes, los <a href="/galpones-industriales">galpones industriales y naves logísticas</a> se calculan para cargas, puente grúa y tránsito de autoelevadores.',
             ],
         ],
         [
             'h2' => '¿En qué zonas hacemos galpones prefabricados?',
             'parrafos' => [
                 'Cubrimos todo Montevideo y el departamento de Canelones. En el eje de Ruta 8 hacemos <a href="/galpones-prefabricados/pando">galpones prefabricados en Pando y su zona industrial</a>, y en el eje de Ruta 5, <a href="/galpones-prefabricados/las-piedras">galpones en Las Piedras</a> para comercios y depósitos. Sobre la Interbalnearia y Av. Giannattasio atendemos <a href="/galpones-prefabricados/ciudad-de-la-costa">Ciudad de la Costa</a>, donde el suelo arenoso define la platea.',
-                'Cerca del aeropuerto y de Zonamerica, por Ruta 101, montamos <a href="/galpones-prefabricados/colonia-nicolich">depósitos prefabricados en Colonia Nicolich</a>. En Montevideo trabajamos en barrios con predios amplios como <a href="/galpones-prefabricados/paso-de-la-arena">Paso de la Arena, por Ruta 1 y Camino Cibils</a>, y en zonas semirrurales como <a href="/galpones-prefabricados/villa-garcia">Villa García</a>. Si tu zona no aparece, preguntanos: en general llegamos.',
+                'Cerca del aeropuerto y de Zonamerica, por Ruta 101, montamos <a href="/galpones-prefabricados/colonia-nicolich">depósitos prefabricados en Colonia Nicolich</a>. En Montevideo trabajamos en barrios con predios amplios como <a href="/galpones-prefabricados/paso-de-la-arena">Paso de la Arena, por Ruta 1 y Camino Cibils</a>, y en zonas semirrurales como <a href="/galpones-prefabricados/villa-garcia">Villa García</a>.',
             ],
         ],
     ],

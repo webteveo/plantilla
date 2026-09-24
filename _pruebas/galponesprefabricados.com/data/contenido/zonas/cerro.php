@@ -2,7 +2,7 @@
 /** Hub de zona /cerro: galpones y tinglados en el Cerro de Montevideo. */
 return [
     'title'       => 'Galpones en el Cerro – Talleres y depósitos, Cno. Cibils',
-    'description' => 'Galpones y tinglados metálicos en el Cerro, Montevideo: talleres, depósitos y estructuras para predios en pendiente. Presupuesto a medida por WhatsApp con visita al terreno.',
+    'description' => 'Galpones y tinglados metálicos en el Cerro, Montevideo: talleres y depósitos en predios con pendiente. Presupuesto a medida por WhatsApp.',
     'h1'          => 'Galpones y tinglados en el Cerro',
     'eyebrow'     => 'Construcción de galpones en el Cerro, Montevideo',
     'subtitulo'   => 'Estructuras metálicas fabricadas en taller y montadas en el barrio, entre la bahía y Camino Cibils. Contanos el uso y te pasamos presupuesto por WhatsApp.',
@@ -25,7 +25,7 @@ return [
     'faq' => [
         ['q' => '¿Se puede montar un galpón en un terreno con pendiente en el Cerro?', 'a' => 'Sí. Se nivela el terreno o se escalona la platea, y las columnas se anclan a bases calculadas para esa diferencia de nivel. El relevamiento en el predio define cuánto movimiento de suelo hace falta y eso se presupuesta aparte.'],
         ['q' => '¿La cercanía al río afecta la estructura metálica?', 'a' => 'El ambiente salino acelera la corrosión. Por eso en el Cerro Galpones Prefabricados propone chapa galvanizada, tratamiento antióxido en perfiles y revisión de los anclajes. Se define en el presupuesto según la ubicación exacta del predio.'],
-        ['q' => '¿Cómo llega la estructura al Cerro?', 'a' => 'Las piezas se fabrican en taller y viajan en camión por Ruta 1 o Camino Cibils. En el relevamiento vemos si el camión entra al predio o si hay que descargar en la calle y planificar el montaje según el ancho de la vereda.'],
+        ['q' => '¿Cómo llega la estructura al Cerro?', 'a' => 'Las piezas se fabrican en taller y viajan en camión por Ruta 1 o Camino Cibils. En el relevamiento vemos si el camión entra al predio o si hay que descargar en la calle.'],
     ],
     'actualizado' => '2026-09-24',
 ];

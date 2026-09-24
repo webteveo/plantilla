@@ -2,7 +2,7 @@
 /** Hub de zona /lezica-melilla: galpones y tinglados en Lezica y Melilla, zona rural de Montevideo. */
 return [
     'title'       => 'Galpones en Lezica y Melilla – Chacras, viveros y packing',
-    'description' => 'Galpones y tinglados metálicos en Lezica y Melilla, Montevideo rural: maquinaria, packing, viveros y depósito de insumos. Presupuesto a medida por WhatsApp con visita a la chacra.',
+    'description' => 'Galpones y tinglados en Lezica y Melilla, Montevideo rural: maquinaria, packing y viveros. Presupuesto a medida por WhatsApp con visita a la chacra.',
     'h1'          => 'Galpones y tinglados en Lezica y Melilla',
     'eyebrow'     => 'Construcción de galpones en Lezica, Montevideo',
     'subtitulo'   => 'Estructuras metálicas para chacras, quintas y viveros sobre Camino Melilla y Ruta 5. Contanos qué vas a guardar y te pasamos presupuesto por WhatsApp.',

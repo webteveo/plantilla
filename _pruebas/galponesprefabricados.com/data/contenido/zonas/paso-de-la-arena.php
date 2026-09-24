@@ -2,7 +2,7 @@
 /** Hub de zona /paso-de-la-arena: galpones y tinglados en Paso de la Arena, Montevideo. */
 return [
     'title'       => 'Galpones en Paso de la Arena – Ruta 1 y Cno. Tomkinson',
-    'description' => 'Constructor de galpones en Paso de la Arena, Montevideo: depósitos sobre Ruta 1, talleres y galpones para quintas. Presupuesto a medida por WhatsApp con relevamiento del terreno.',
+    'description' => 'Galpones en Paso de la Arena, Montevideo: depósitos sobre Ruta 1, talleres y galpones para quintas. Presupuesto a medida por WhatsApp.',
     'h1'          => 'Galpones y tinglados en Paso de la Arena',
     'eyebrow'     => 'Construcción de galpones en Paso de la Arena',
     'subtitulo'   => 'Galpones metálicos para predios entre Ruta 1, Camino Tomkinson y Camino Cibils. Relevamos el terreno y te pasamos el presupuesto por WhatsApp.',

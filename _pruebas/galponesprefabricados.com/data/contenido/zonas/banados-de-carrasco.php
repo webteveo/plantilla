@@ -2,7 +2,7 @@
 /** Hub de zona /banados-de-carrasco: galpones y tinglados en Bañados de Carrasco, Montevideo. */
 return [
     'title'       => 'Galpones en Bañados de Carrasco – Terreno bajo, platea',
-    'description' => 'Galpones y tinglados metálicos en Bañados de Carrasco, Montevideo: depósitos cerca del aeropuerto y Zonamerica, con fundaciones pensadas para terreno bajo. Presupuesto por WhatsApp.',
+    'description' => 'Galpones en Bañados de Carrasco, Montevideo: depósitos cerca del aeropuerto y Zonamerica, con fundaciones para terreno bajo. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones y tinglados en Bañados de Carrasco',
     'eyebrow'     => 'Construcción de galpones en Bañados de Carrasco',
     'subtitulo'   => 'Estructuras metálicas para predios entre Camino Carrasco, Cochabamba y Ruta 8, con la platea y las fundaciones resueltas para suelo húmedo. Presupuesto por WhatsApp.',
@@ -25,7 +25,7 @@ return [
     'faq' => [
         ['q' => '¿Se puede hacer un galpón en un terreno bajo de Bañados de Carrasco?', 'a' => 'Sí, con la platea y las fundaciones adecuadas. Galpones Prefabricados releva el nivel del predio y propone relleno, platea elevada o bases más profundas según el caso. Eso se define antes de fabricar la estructura.'],
         ['q' => '¿Qué define el precio de un galpón en Bañados de Carrasco?', 'a' => 'Las medidas y la altura, el tipo de cerramiento y, en esta zona en particular, el trabajo de suelo: relleno, drenaje y fundaciones. Sin cifras genéricas; te pasamos el presupuesto por ítem después de la visita.'],
-        ['q' => '¿Hacen galpones para empresas que trabajan con el aeropuerto o Zonamerica?', 'a' => 'Sí. Bañados de Carrasco es una ubicación habitual para depósitos de logística y servicios por la cercanía a Ruta 101. Diseñamos portones y altura según el vehículo que va a entrar y coordinamos el permiso con la Intendencia de Montevideo.'],
+        ['q' => '¿Hacen galpones para empresas que trabajan con el aeropuerto o Zonamerica?', 'a' => 'Sí. Bañados de Carrasco es una ubicación habitual para depósitos de logística por la cercanía a Ruta 101. Diseñamos portones y altura según el vehículo que va a entrar.'],
     ],
     'actualizado' => '2026-09-24',
 ];

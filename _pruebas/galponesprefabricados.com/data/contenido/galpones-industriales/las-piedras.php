@@ -2,7 +2,7 @@
 /** Galpones industriales × Las Piedras. Servicio secundario; la página principal de la zona es /galpones-prefabricados/las-piedras. */
 return [
     'title'       => 'Las Piedras: galpones industriales con puente grúa',
-    'description' => 'Galpones industriales en Las Piedras, sobre Ruta 5: naves para talleres metalúrgicos, fábricas y depósitos, con puente grúa si el proceso lo pide. Presupuesto por ítem por WhatsApp.',
+    'description' => 'Galpones industriales en Las Piedras, sobre Ruta 5: naves para talleres metalúrgicos, fábricas y depósitos, con puente grúa. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones industriales en Las Piedras: taller, fábrica y depósito',
     'eyebrow'     => 'Naves industriales en Las Piedras',
     'subtitulo'   => 'Naves de estructura metálica para talleres, fábricas y depósitos en Las Piedras y el corredor de Ruta 5. Relevamos el predio, calculamos la estructura para tu carga y presupuestamos por ítem.',
@@ -42,7 +42,7 @@ return [
         ],
         [
             'q' => '¿Un galpón industrial en Las Piedras sirve para abastecer Montevideo?',
-            'a' => 'Muchas empresas lo hacen: por Ruta 5 se llega a Colón, Peñarol y el anillo de la Ruta 102 sin atravesar el centro. Por eso se piden depósitos de distribución con racks y varios portones.',
+            'a' => 'Es un uso frecuente de los galpones industriales en Las Piedras: por Ruta 5 se llega a Colón, Peñarol y el anillo de la Ruta 102 sin atravesar el centro. Por eso se piden depósitos de distribución con racks y varios portones.',
         ],
         [
             'q' => '¿Qué altura conviene para un taller metalúrgico?',

@@ -2,7 +2,7 @@
 /** Hub de zona /colon-centro-noroeste: galpones y tinglados en Colón, Montevideo. */
 return [
     'title'       => 'Galpones en Colón – Corralones y depósitos sobre Ruta 5',
-    'description' => 'Constructor de galpones en Colón, Montevideo: depósitos y distribuidoras sobre Av. Garzón y Ruta 5, talleres y galpones de fondo. Presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones en Colón, Montevideo: depósitos y distribuidoras sobre Av. Garzón y Ruta 5, talleres y galpones de fondo. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones y tinglados en Colón',
     'eyebrow'     => 'Construcción de galpones en Colón, Montevideo',
     'subtitulo'   => 'Galpones metálicos fabricados en taller y montados en tu predio, entre Av. Garzón, Camino Melilla y el límite con Canelones. Presupuesto por WhatsApp.',

@@ -2,7 +2,7 @@
 /** Hub de zona: /paso-carrasco. Servicio disponible: galpones prefabricados. */
 return [
     'title'       => 'Galpones en Paso Carrasco – Límite con Montevideo',
-    'description' => 'Galpones para depósito, taller y comercio en Paso Carrasco, entre Av. de las Américas y Ruta 101. Relevamos el predio y pasamos presupuesto por WhatsApp.',
+    'description' => 'Galpones para depósito, taller y comercio en Paso Carrasco, entre Av. de las Américas y Ruta 101. Relevamos el predio y cotizamos por WhatsApp.',
     'h1'          => 'Galpones y tinglados en Paso Carrasco',
     'eyebrow'     => 'Galpones en Paso Carrasco, Canelones',
     'subtitulo'   => 'Depósitos, talleres y galpones comerciales del otro lado del arroyo Carrasco. Relevamos el predio y pasamos presupuesto por WhatsApp.',

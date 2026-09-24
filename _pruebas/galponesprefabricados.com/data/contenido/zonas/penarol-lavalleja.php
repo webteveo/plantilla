@@ -2,7 +2,7 @@
 /** Hub de zona /penarol-lavalleja: galpones y tinglados en Peñarol, Montevideo. */
 return [
     'title'       => 'Galpones en Peñarol – Talleres y depósitos de barrio',
-    'description' => 'Galpones y tinglados metálicos en Peñarol, Montevideo: talleres, chapa y pintura, depósitos de comercio en lotes chicos y medianos. Presupuesto a medida por WhatsApp con visita al predio.',
+    'description' => 'Galpones y tinglados en Peñarol, Montevideo: talleres, chapa y pintura y depósitos en lotes chicos. Presupuesto a medida por WhatsApp con visita.',
     'h1'          => 'Galpones y tinglados en Peñarol',
     'eyebrow'     => 'Construcción de galpones en Peñarol, Montevideo',
     'subtitulo'   => 'Estructuras metálicas a medida para predios entre Av. Sayago, la vía férrea y Ruta 5. Contanos las medidas y te pasamos presupuesto por WhatsApp.',

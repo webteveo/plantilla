@@ -2,7 +2,7 @@
 /** Galpones industriales × Colonia Nicolich. Servicio secundario; la página principal de la zona es /galpones-prefabricados/colonia-nicolich. */
 return [
     'title'       => 'Colonia Nicolich: galpones industriales y logísticos',
-    'description' => 'Galpones industriales en Colonia Nicolich, junto al Aeropuerto de Carrasco y Ruta 101: naves logísticas, depósitos y talleres para operadores de carga. Presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones industriales en Colonia Nicolich, junto al Aeropuerto de Carrasco y Ruta 101: naves logísticas y depósitos. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones industriales en Colonia Nicolich: naves para logística',
     'eyebrow'     => 'Naves logísticas en Colonia Nicolich',
     'subtitulo'   => 'Naves y depósitos para operadores logísticos, transportistas y talleres en Colonia Nicolich, entre Ruta 101, Ruta 102 y el aeropuerto. Relevamos el terreno y presupuestamos por ítem por WhatsApp.',
@@ -31,10 +31,8 @@ return [
                 'Altura bajo viga según los racks y el equipo de carga que vas a usar.',
                 'Luz libre: pasillos de autoelevador sin columnas intermedias.',
                 'Muelles, rampas y portones: cantidad y tipo según camiones y furgones que operan por día.',
-                'Cerramientos: chapa simple o con aislación si la mercadería lo pide.',
                 'Oficinas de despacho, vestuarios y baños dentro de la nave.',
                 'Playa de maniobra y acceso desde Ruta 101 o Ruta 102 para camiones grandes.',
-                'Proyecto, firma técnica y permiso ante la Intendencia de Canelones.',
             ],
         ],
         [
@@ -47,7 +45,7 @@ return [
     'faq' => [
         [
             'q' => '¿Hacen depósitos logísticos cerca del Aeropuerto de Carrasco?',
-            'a' => 'Sí. Galpones Prefabricados trabaja en los predios de Ruta 101 y Ruta 102 en Colonia Nicolich, donde se instalan operadores de carga y courier. Coordinamos la visita por WhatsApp.',
+            'a' => 'Sí. Galpones Prefabricados hace galpones industriales en Colonia Nicolich en los predios de Ruta 101 y Ruta 102, donde se instalan operadores de carga y courier. Coordinamos la visita por WhatsApp.',
         ],
         [
             'q' => '¿El suelo arenoso de Colonia Nicolich complica la platea?',
@@ -56,10 +54,6 @@ return [
         [
             'q' => '¿Conviene una nave con muelles o con portones a nivel?',
             'a' => 'Si operás con camiones de caja alta y autoelevador, muelles. Si entran furgones y camionetas, portones a nivel con rampa. Muchas naves de la zona combinan ambos; lo definimos según tu flota.',
-        ],
-        [
-            'q' => '¿Se puede construir la nave en etapas?',
-            'a' => 'Sí. La estructura abulonada permite montar primero la nave y sumar después pórticos, oficinas o un tinglado para carga. Conviene que el permiso ante la Intendencia de Canelones contemple la ampliación.',
         ],
     ],
     'actualizado' => '2026-09-24',

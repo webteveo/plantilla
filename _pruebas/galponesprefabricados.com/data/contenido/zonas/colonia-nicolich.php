@@ -2,7 +2,7 @@
 /** Hub de zona: /colonia-nicolich. Servicios disponibles: prefabricados, industriales. */
 return [
     'title'       => 'Galpones en Colonia Nicolich – Corredor logístico Ruta 101',
-    'description' => 'Naves logísticas, depósitos y galpones en Colonia Nicolich, entre Ruta 101 y Ruta 102, junto al Aeropuerto de Carrasco. Presupuesto a medida por WhatsApp.',
+    'description' => 'Naves logísticas, depósitos y galpones en Colonia Nicolich, entre Ruta 101 y Ruta 102, junto al Aeropuerto de Carrasco. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones y tinglados en Colonia Nicolich',
     'eyebrow'     => 'Galpones en Colonia Nicolich, Canelones',
     'subtitulo'   => 'Naves logísticas y depósitos entre Ruta 101 y Ruta 102, a minutos del Aeropuerto de Carrasco. Presupuesto a medida por WhatsApp.',

@@ -2,7 +2,7 @@
 /** Galpones industriales × Canelones (departamento). Servicio secundario; la página principal de la zona es /galpones-prefabricados/canelones. */
 return [
     'title'       => 'Galpones industriales en Canelones – Presupuesto WhatsApp',
-    'description' => 'Galpones industriales en Canelones: naves para logística y fábricas en los corredores de Ruta 8, Ruta 5 y Ruta 101. Relevamiento del predio y presupuesto por ítem por WhatsApp.',
+    'description' => 'Galpones industriales en Canelones: naves para logística y fábricas sobre Ruta 8, Ruta 5 y Ruta 101. Presupuesto por ítem por WhatsApp.',
     'h1'          => 'Galpones industriales en Canelones: naves en Ruta 5, 8 y 101',
     'eyebrow'     => 'Galpones metálicos en Canelones',
     'subtitulo'   => 'Naves para logística, fábricas y depósitos en todo el departamento de Canelones, del área metropolitana a las ciudades sobre las rutas. Presupuesto a medida por ítem, coordinado por WhatsApp.',
@@ -10,7 +10,7 @@ return [
         [
             'h2' => 'Galpones industriales en Canelones: cómo trabajamos',
             'parrafos' => [
-                'Galpones Prefabricados hace galpones industriales en Canelones, el departamento que concentra los corredores logísticos del área metropolitana: Ruta 8 con Barros Blancos y Pando, Ruta 5 con Las Piedras y Ruta 101 junto al aeropuerto. Nos escribís por WhatsApp con medidas aproximadas y uso, visitamos el predio y te pasamos un presupuesto por ítem. El permiso se tramita en línea ante la Intendencia de Canelones con un técnico registrado, y lo prevemos desde el diseño.',
+                'Galpones Prefabricados hace galpones industriales en Canelones, el departamento que concentra los corredores logísticos del área metropolitana: Ruta 8 con Barros Blancos y Pando, Ruta 5 con Las Piedras y Ruta 101 junto al aeropuerto. Nos escribís por WhatsApp con medidas aproximadas y uso, visitamos el predio y te pasamos un presupuesto por ítem. El permiso se tramita en línea ante la Intendencia de Canelones con un técnico registrado.',
                 'Diseñamos cada nave para su proceso: pórticos calculados para la luz y el viento del lugar, altura para estanterías o autoelevador, portones para camiones y oficinas anexas. Para galpones de depósito, comercio o campo, el detalle está en <a href="/galpones-prefabricados/canelones">galpones prefabricados en todo Canelones</a>.',
             ],
         ],
@@ -31,8 +31,6 @@ return [
                 'Naves para plantas de alimentos, envasado y packing industrial en los cinturones de chacras.',
                 'Talleres metalúrgicos y de mantenimiento de flota con puente grúa o portones de gran altura.',
                 'Centros de cross-docking cerca del aeropuerto y del anillo de la Ruta 102.',
-                'Ampliaciones de fábricas existentes, con nave nueva pegada a la construcción actual.',
-                'Naves con oficinas, vestuarios y comedor integrados para plantas con personal en turnos.',
             ],
         ],
         [
@@ -54,10 +52,6 @@ return [
         [
             'q' => '¿Qué diferencia hay entre un galpón industrial y un galpón de depósito común en Canelones?',
             'a' => 'El industrial se calcula para cargas y usos específicos: puente grúa, estanterías altas, muelles, tránsito de autoelevadores y anexos de oficinas. Un depósito común suele tener menos exigencias de altura y carga, y por eso cuesta menos.',
-        ],
-        [
-            'q' => '¿Cómo se coordina el relevamiento en Canelones?',
-            'a' => 'Nos mandás por WhatsApp la ubicación del predio, las medidas aproximadas y el uso. Con eso agendamos la visita para relevar terreno, accesos y frente a ruta, y después te llega el presupuesto por ítem.',
         ],
     ],
     'actualizado' => '2026-09-24',

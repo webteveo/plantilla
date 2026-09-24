@@ -2,7 +2,7 @@
 /** Troncal: galpones industriales en Montevideo y Canelones (intención: uso industrial y logístico). */
 return [
     'title'       => 'Galpones industriales en Montevideo y Canelones – Naves',
-    'description' => 'Galpones industriales y naves logísticas en Montevideo y Canelones: grandes luces, portones para camiones, puente grúa y oficinas. Presupuesto por WhatsApp según tu proceso.',
+    'description' => 'Galpones industriales y naves logísticas en Montevideo y Canelones: grandes luces, portones para camiones, puente grúa. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones industriales en Montevideo y Canelones a medida por WhatsApp',
     'eyebrow'     => 'Naves industriales en Montevideo y Canelones',
     'subtitulo'   => 'Estructura metálica calculada para tu proceso: cargas, alturas y muelles de carga. Nos contás qué vas a producir o almacenar y te pasamos el presupuesto por etapas.',
@@ -30,7 +30,7 @@ return [
                 'Montaje de la estructura, cubierta con iluminación cenital, cerramientos, portones seccionales o corredizos y muelles.',
             ],
             'parrafos_despues' => [
-                'Trabajar por etapas permite empezar a operar con la nave y sumar oficinas o una segunda nave después. El plazo de cada etapa se define en el presupuesto según medidas y terreno.',
+                'El plazo de cada etapa se define en el presupuesto según medidas y terreno.',
             ],
         ],
         [
@@ -47,27 +47,27 @@ return [
                 'Oficinas, vestuarios y baños integrados, y el suelo del predio para las fundaciones.',
             ],
             'parrafos_despues' => [
-                'Con el uso, las medidas y el predio te pasamos el presupuesto sin cargo. Si todavía no tenés layout, contanos el proceso y lo armamos juntos.',
+                'Con el uso, las medidas y el predio te pasamos el presupuesto sin cargo.',
             ],
         ],
         [
             'h2' => 'Permisos y habilitaciones para naves industriales',
             'parrafos' => [
-                'Un galpón industrial requiere permiso de construcción: en Montevideo ante la Intendencia de Montevideo, con planos firmados por un técnico; en Canelones ante la Intendencia de Canelones, en línea y con técnico registrado. Además, la actividad puede requerir habilitaciones específicas según el rubro y la zona, que se tramitan aparte y con su propio técnico. Conviene verificar el uso del suelo del predio antes de comprar o proyectar. Galpones Prefabricados trabaja con tu arquitecto o ingeniero y aporta la documentación de la estructura.',
+                'Un galpón industrial requiere permiso de construcción: en Montevideo ante la Intendencia de Montevideo, con planos firmados por un técnico; en Canelones ante la Intendencia de Canelones, en línea y con técnico registrado. Además, la actividad puede requerir habilitaciones específicas según el rubro y la zona, que se tramitan aparte y con su propio técnico. Galpones Prefabricados trabaja con tu arquitecto o ingeniero y aporta la documentación de la estructura.',
             ],
         ],
         [
             'h2' => 'Nave industrial, galpón prefabricado, metálico o tinglado: ¿qué te corresponde?',
             'parrafos' => [
                 'Si lo que necesitás es un depósito para mercadería liviana, herramientas o un comercio, alcanza con un <a href="/galpones-prefabricados">galpón prefabricado para depósito o comercio</a>, más simple y económico. La <a href="/galpones-metalicos">estructura de acero con pórticos y correas</a> es la misma base; la nave industrial la lleva a cargas y luces mayores.',
-                'Para un sector de carga y descarga cubierto junto a la nave, un <a href="/tinglados">tinglado metálico anexo</a> resuelve el techado sin cerrar más superficie. Y si el establecimiento es rural, con maquinaria, acopio o packing, mirá los <a href="/galpones-agricolas">galpones agrícolas</a>. Contanos el proceso y te decimos qué estructura conviene.',
+                'Para un sector de carga y descarga cubierto junto a la nave, un <a href="/tinglados">tinglado metálico anexo</a> resuelve el techado sin cerrar más superficie. Y si el establecimiento es rural, con maquinaria, acopio o packing, mirá los <a href="/galpones-agricolas">galpones agrícolas</a>.',
             ],
         ],
         [
             'h2' => '¿Dónde hacemos galpones industriales?',
             'parrafos' => [
                 'Montamos naves en los polos industriales y logísticos de <a href="/galpones-industriales/montevideo">Montevideo</a> y <a href="/galpones-industriales/canelones">Canelones</a>. En el corredor de Ruta 8 hacemos <a href="/galpones-industriales/pando">galpones industriales en la zona industrial de Pando</a> y en <a href="/galpones-industriales/barros-blancos">Barros Blancos, entre Ruta 8 y Ruta 102</a>.',
-                'Cerca del aeropuerto y de Zonamerica, por Ruta 101, montamos <a href="/galpones-industriales/colonia-nicolich">naves logísticas en Colonia Nicolich</a>. Sobre Ruta 5, atendemos <a href="/galpones-industriales/las-piedras">Las Piedras</a> y su entorno de talleres y depósitos. Si tu predio está en otro corredor, consultanos por WhatsApp.',
+                'Cerca del aeropuerto y de Zonamerica, por Ruta 101, montamos <a href="/galpones-industriales/colonia-nicolich">naves logísticas en Colonia Nicolich</a>. Sobre Ruta 5, atendemos <a href="/galpones-industriales/las-piedras">Las Piedras</a> y su entorno de talleres y depósitos.',
             ],
         ],
     ],

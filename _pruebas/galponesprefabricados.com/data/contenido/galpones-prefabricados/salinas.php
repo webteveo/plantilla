@@ -2,8 +2,8 @@
 /** Galpones prefabricados en Salinas (Canelones). Balneario de la Costa de Oro sobre la Ruta Interbalnearia; terrenos de arena y pinos. */
 return [
     'title'       => 'Galpones prefabricados en Salinas – Terrenos de arena',
-    'description' => 'Galpones prefabricados en Salinas, Costa de Oro: depósitos, cocheras para lanchas y vehículos y galpones para comercios en terrenos de arena. Presupuesto por WhatsApp.',
-    'h1'          => 'Galpones prefabricados en Salinas: estructura metálica para terrenos de arena',
+    'description' => 'Galpones prefabricados en Salinas, Costa de Oro: depósitos, cocheras para lanchas y comercios en terrenos de arena. Presupuesto por WhatsApp.',
+    'h1'          => 'Galpones prefabricados en Salinas: estructura metálica sobre arena',
     'eyebrow'     => 'Galpones metálicos en la Costa de Oro',
     'subtitulo'   => 'Galpones de estructura metálica para casas, comercios y emprendimientos de Salinas y Salinas Norte. Relevamos el terreno y te pasamos el presupuesto por WhatsApp.',
     'secciones'   => [
@@ -11,7 +11,7 @@ return [
             'h2' => 'Galpones prefabricados en Salinas: cómo trabajamos',
             'parrafos' => [
                 'Galpones Prefabricados construye galpones metálicos en Salinas, el primer balneario de la Costa de Oro después del arroyo Pando, a ambos lados de la Ruta Interbalnearia. Coordinamos por WhatsApp una visita al terreno, presupuestamos estructura, techo, cerramientos, platea y montaje por ítem, fabricamos en taller y montamos en obra. Acá el dato clave es el suelo: arena, que pide fundaciones bien resueltas.',
-                'Salinas creció mucho como zona de vivienda permanente, no solo de veraneo. Por eso, además de cocheras y depósitos para casas, se piden galpones para comercios, talleres y emprendimientos que se instalan sobre la Interbalnearia o en Salinas Norte.',
+                'Salinas creció como zona de vivienda permanente, no solo de veraneo. Por eso, además de cocheras y depósitos para casas, se piden galpones para comercios, talleres y emprendimientos sobre la Interbalnearia o en Salinas Norte.',
             ],
         ],
         [
@@ -24,7 +24,7 @@ return [
         [
             'h2' => 'Usos típicos de galpones en Salinas',
             'parrafos' => [
-                'En un balneario con vida todo el año los pedidos son variados. Los más frecuentes:',
+                'En un balneario con vida todo el año, los galpones prefabricados en Salinas que se piden son variados. Los más frecuentes:',
             ],
             'lista' => [
                 'Cochera cerrada para lancha, trailer y vehículos en casas de veraneo que quedan cerradas fuera de temporada.',
@@ -34,7 +34,7 @@ return [
                 'Depósito para emprendimiento: carpintería, herrería o servicios para casas de veraneo.',
             ],
             'parrafos_despues' => [
-                'Si el galpón va a ser un local o depósito con mostrador, te sirve la página de <a href="/galpones-metalicos">galpones metálicos para depósitos y locales</a>. Y en la troncal de <a href="/galpones-prefabricados">galpones prefabricados</a> están las opciones de cerramiento y portón.',
+                'Si el galpón va a ser un local o depósito con mostrador, te sirve la página de <a href="/galpones-metalicos">galpones metálicos para depósitos y locales</a>. Y en la troncal de <a href="/galpones-prefabricados">galpones prefabricados de chapa</a> están las opciones de cerramiento y portón.',
             ],
         ],
         [
@@ -47,8 +47,7 @@ return [
     'faq' => [
         ['q' => '¿Cómo se funda un galpón prefabricado en la arena de Salinas?', 'a' => 'Con platea o bases de hormigón dimensionadas para suelo arenoso, con la compactación y el nivel que corresponda. Se define en la visita según el terreno y el tamaño del galpón. Galpones Prefabricados entrega las medidas y la posición de los anclajes para hacer la platea.'],
         ['q' => '¿La chapa aguanta la salinidad de la costa?', 'a' => 'Usamos chapa galvanizada y estructura con protección antióxido, que es lo indicado para ambientes cercanos al mar. Igual conviene un mantenimiento periódico de pintura en la estructura, sobre todo en galpones a pocas cuadras de la rambla.'],
-        ['q' => '¿Hacen galpones chicos para guardar la lancha en Salinas?', 'a' => 'Sí. Se dimensiona según el largo de la lancha con trailer, más espacio para maniobrar y algún vehículo. Un galpón de ese tamaño se presupuesta igual que uno grande, con portón corredizo o de dos hojas.'],
-        ['q' => '¿Trabajan en Salinas Norte y en la zona de la rambla por igual?', 'a' => 'Sí, en todo el balneario. Cambia el acceso: en Salinas Norte los predios son más amplios y el camión entra más fácil; cerca de la rambla hay calles de arena angostas y hay que planificar la descarga.'],
+        ['q' => '¿Hacen galpones chicos para guardar la lancha en Salinas?', 'a' => 'Sí. Se dimensiona según el largo de la lancha con trailer, más espacio para maniobrar y algún vehículo. Un galpón prefabricado en Salinas de ese tamaño se presupuesta igual que uno grande, con portón corredizo o de dos hojas.'],
     ],
     'actualizado' => '2026-09-24',
 ];

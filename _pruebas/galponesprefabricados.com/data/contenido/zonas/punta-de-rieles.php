@@ -2,7 +2,7 @@
 /** Hub de zona /punta-de-rieles: galpones y tinglados en Punta de Rieles, Montevideo. */
 return [
     'title'       => 'Galpones en Punta de Rieles – Depósitos en Cno. Maldonado',
-    'description' => 'Constructor de galpones en Punta de Rieles, Montevideo: depósitos y distribuidoras sobre Camino Maldonado (Ruta 8), talleres y galpones de fondo. Presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones en Punta de Rieles, Montevideo: depósitos y distribuidoras sobre Camino Maldonado (Ruta 8) y talleres. Presupuesto a medida por WhatsApp.',
     'h1'          => 'Galpones y tinglados en Punta de Rieles',
     'eyebrow'     => 'Construcción de galpones en Punta de Rieles, Montevideo',
     'subtitulo'   => 'Galpones metálicos fabricados en taller y montados sobre el corredor de Camino Maldonado. Contanos las medidas y el uso, y te pasamos presupuesto por WhatsApp.',

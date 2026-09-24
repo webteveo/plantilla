@@ -2,7 +2,7 @@
 /** Hub de zona /manga: galpones y tinglados en Manga, Montevideo. */
 return [
     'title'       => 'Galpones en Manga – Quintas y predios semirrurales',
-    'description' => 'Constructor de galpones en Manga, Montevideo: galpones para maquinaria, tinglados para vehículos y depósitos en predios amplios sobre Camino Mendoza. Presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones en Manga, Montevideo: maquinaria, tinglados para vehículos y depósitos en predios amplios de Camino Mendoza. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones y tinglados en Manga',
     'eyebrow'     => 'Construcción de galpones en Manga, Montevideo',
     'subtitulo'   => 'Estructuras metálicas para quintas y predios grandes entre Camino Mendoza, Camino Toledo Chico y Ruta 8. Relevamos el terreno y te pasamos presupuesto por WhatsApp.',

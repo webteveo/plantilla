@@ -2,7 +2,7 @@
 /** Troncal: galpones agrícolas en Montevideo y Canelones (intención: uso rural). */
 return [
     'title'       => 'Galpones agrícolas en Montevideo y Canelones – Uso rural',
-    'description' => 'Galpones agrícolas para chacras y establecimientos rurales de Canelones y Montevideo: maquinaria, forraje, packing e insumos. Presupuesto por WhatsApp según medidas y uso.',
+    'description' => 'Galpones agrícolas para chacras y establecimientos rurales de Canelones y Montevideo: maquinaria, forraje, packing e insumos. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones agrícolas en Montevideo y Canelones: presupuesto por WhatsApp',
     'eyebrow'     => 'Galpones rurales en Montevideo y Canelones',
     'subtitulo'   => 'Estructura metálica prefabricada con portones altos y ventilación, montada en tu predio. Contanos qué guardás y cómo se llega, y te pasamos el presupuesto por ítem.',
@@ -13,7 +13,6 @@ return [
             'parrafos' => [
                 'Un galpón agrícola es un galpón de estructura metálica pensado para el trabajo rural: guardar maquinaria, acopiar granos y forraje, hacer packing de fruta y hortalizas, o proteger insumos y herramientas. Galpones Prefabricados los fabrica en taller y los monta en chacras y establecimientos de Canelones y Montevideo. Mandanos por WhatsApp qué vas a guardar y dónde está el predio, y te pasamos un presupuesto a medida.',
                 'Lo que lo diferencia de un depósito común es el uso: portones altos para que entre un tractor con implemento, ventilación para que el forraje no se caliente, piso que aguante el tránsito de maquinaria y, si hay packing, un sector limpio y con luz. En la zona hortifrutícola y vitivinícola de Canelones, el galpón también sirve para preparar y despachar producción.',
-                'Como es estructura abulonada, se puede empezar con un módulo y agregar pórticos cuando crece la producción o entra una máquina más grande.',
             ],
         ],
         [
@@ -30,7 +29,7 @@ return [
                 'Montaje de la estructura, chapa de techo, laterales, portones y ventilación; entrega listo para usar.',
             ],
             'parrafos_despues' => [
-                'En chacras con caminos de tierra coordinamos el ingreso del camión y del equipo de montaje según el estado del acceso. El plazo se define en el presupuesto según medidas y terreno.',
+                'En chacras con caminos de tierra coordinamos el ingreso del camión según el estado del acceso; el plazo se define en el presupuesto.',
             ],
         ],
         [
@@ -47,20 +46,20 @@ return [
                 'Acceso: caminos vecinales, portones de entrada, distancia desde la ruta. Y permisos con técnico.',
             ],
             'parrafos_despues' => [
-                'Con la lista de maquinaria, el uso y la ubicación del predio te pasamos el presupuesto sin cargo y te proponemos medidas si no las tenés definidas.',
+                'Con la lista de maquinaria, el uso y la ubicación del predio te pasamos el presupuesto sin cargo.',
             ],
         ],
         [
             'h2' => 'Permisos para galpones en suelo rural de Canelones y Montevideo',
             'parrafos' => [
-                'En suelo rural también se tramita permiso de construcción. En Canelones se hace ante la Intendencia de Canelones, en línea y con técnico registrado; en el suelo rural de Montevideo, como Lezica o Villa García, ante la Intendencia de Montevideo con planos firmados por un técnico. Los requisitos pueden variar según la categoría del suelo, el tamaño del galpón y la actividad, por lo que conviene consultar antes de fabricar. Galpones Prefabricados te orienta sobre el trámite que corresponde a tu predio.',
+                'En suelo rural también se tramita permiso de construcción. En Canelones se hace ante la Intendencia de Canelones, en línea y con técnico registrado; en el suelo rural de Montevideo, como Lezica o Villa García, ante la Intendencia de Montevideo con planos firmados por un técnico. Los requisitos pueden variar según la categoría del suelo y la actividad. Galpones Prefabricados te orienta sobre el trámite que corresponde a tu predio.',
             ],
         ],
         [
             'h2' => 'Galpón agrícola, tinglado o galpón industrial: ¿cuál conviene en el campo?',
             'parrafos' => [
                 'Si la maquinaria solo necesita techo, un <a href="/tinglados">tinglado abierto para maquinaria</a> cuesta menos y se monta más rápido; muchos productores lo combinan con un galpón cerrado para insumos. Cuando el galpón es para un establecimiento con packing grande, cámaras o carga con autoelevador, conviene mirar los <a href="/galpones-industriales">galpones industriales y logísticos</a>, calculados para esas cargas.',
-                'Para el detalle de pórticos, perfiles y protección del acero, mirá <a href="/galpones-metalicos">galpones de estructura metálica</a>; y si querés ver el servicio general para depósito, comercio y campo, está en <a href="/galpones-prefabricados">galpones prefabricados en Montevideo y Canelones</a>. Contanos tu caso y te decimos qué tipo de galpón te sirve.',
+                'Para el detalle de pórticos, perfiles y protección del acero, mirá <a href="/galpones-metalicos">galpones de estructura metálica</a>; y si querés ver el servicio general para depósito, comercio y campo, está en <a href="/galpones-prefabricados">galpones prefabricados en Montevideo y Canelones</a>.',
             ],
         ],
         [

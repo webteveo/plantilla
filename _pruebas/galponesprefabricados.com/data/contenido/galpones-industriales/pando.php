@@ -2,7 +2,7 @@
 /** Galpones industriales × Pando. Servicio secundario; la página principal de la zona es /galpones-prefabricados/pando. */
 return [
     'title'       => 'Galpones industriales en Pando – Zona industrial Ruta 8',
-    'description' => 'Galpones industriales en Pando, en la zona industrial de Ruta 8: naves para fábricas, depósitos y logística con portones para camiones. Pedí presupuesto a medida por WhatsApp.',
+    'description' => 'Galpones industriales en Pando, en la zona industrial de Ruta 8: naves para fábricas, depósitos y logística. Presupuesto a medida por WhatsApp.',
     'h1'          => 'Galpones industriales en Pando: naves para la zona industrial',
     'eyebrow'     => 'Naves industriales en Pando',
     'subtitulo'   => 'Naves para fábricas, depósitos y logística en la zona industrial de Pando y su entorno sobre Ruta 8. Relevamos el predio, presupuestamos por ítem y montamos la estructura fabricada en taller.',
@@ -32,9 +32,7 @@ return [
                 'Cerramientos: chapa, panel aislado o mampostería en la parte baja para golpes de autoelevador.',
                 'Platea de hormigón: espesor según el peso de máquinas y el tránsito de camiones adentro.',
                 'Portones para camiones y muelles: cantidad y ubicación según el flujo de carga.',
-                'Anexos: oficinas, vestuarios, comedor y sala eléctrica dentro o pegados a la nave.',
                 'Accesos al predio desde Ruta 8 para el camión con la estructura y la grúa de montaje.',
-                'Proyecto, firma técnica y permiso ante la Intendencia de Canelones.',
             ],
         ],
         [
@@ -47,7 +45,7 @@ return [
     'faq' => [
         [
             'q' => '¿Hacen naves dentro de la zona industrial de Pando?',
-            'a' => 'Sí. Galpones Prefabricados trabaja en los predios de Ruta 8 y en el entorno de la ciudad, tanto naves nuevas como ampliaciones pegadas a plantas existentes. Coordinamos la visita al terreno por WhatsApp.',
+            'a' => 'Sí. Galpones Prefabricados hace galpones industriales en Pando en los predios de Ruta 8 y en el entorno de la ciudad, tanto naves nuevas como ampliaciones pegadas a plantas existentes. Coordinamos la visita al terreno por WhatsApp.',
         ],
         [
             'q' => '¿Puedo ampliar una fábrica existente en Pando con un galpón prefabricado?',
@@ -56,10 +54,6 @@ return [
         [
             'q' => '¿Qué portones conviene poner en una nave con tránsito de camiones?',
             'a' => 'Depende del flujo: portones corredizos de gran ancho para entrar con el camión, o seccionales con muelle si se descarga desde afuera. Lo definimos con vos según cuántos camiones entran por día y qué tipo.',
-        ],
-        [
-            'q' => '¿Cuánto demora una nave industrial en Pando?',
-            'a' => 'No damos un plazo genérico: se define en el presupuesto según medidas, terreno y permisos. Al fabricar la estructura en taller, el tiempo de obra en el predio es menor que en una construcción tradicional.',
         ],
     ],
     'actualizado' => '2026-09-24',

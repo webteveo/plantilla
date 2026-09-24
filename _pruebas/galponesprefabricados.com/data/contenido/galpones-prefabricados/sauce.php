@@ -2,8 +2,8 @@
 /** Galpones prefabricados en Sauce (Canelones). Ciudad rodeada de viñedos y granjas, sobre Ruta 33 y cerca de Ruta 6. */
 return [
     'title'       => 'Galpones prefabricados en Sauce – Viñedos y granjas',
-    'description' => 'Galpones prefabricados en Sauce, Canelones: depósitos para viñedos, granjas y hortifruticultura, talleres y comercios sobre Ruta 33. Presupuesto a medida por WhatsApp.',
-    'h1'          => 'Galpones prefabricados en Sauce: depósitos para viñedos, granjas y comercios',
+    'description' => 'Galpones prefabricados en Sauce, Canelones: depósitos para viñedos, granjas y comercios sobre Ruta 33. Presupuesto a medida por WhatsApp.',
+    'h1'          => 'Galpones prefabricados en Sauce: depósitos para viñedos y granjas',
     'eyebrow'     => 'Galpones metálicos en la zona granjera de Canelones',
     'subtitulo'   => 'Estructura metálica fabricada en taller y montada en tu predio de Sauce. Presupuesto detallado por ítem y visita coordinada por WhatsApp.',
     'secciones'   => [
@@ -24,7 +24,7 @@ return [
         [
             'h2' => 'Usos típicos de galpones en Sauce',
             'parrafos' => [
-                'Por el perfil granjero y vitivinícola de la zona, estos son los pedidos que más aparecen:',
+                'Por el perfil granjero y vitivinícola de la zona, estos son los galpones prefabricados en Sauce que más se piden:',
             ],
             'lista' => [
                 'Galpón de packing para fruta y hortalizas, con piso de hormigón y ventilación.',
@@ -34,7 +34,7 @@ return [
                 'Taller mecánico o de herrería con altura para vehículos.',
             ],
             'parrafos_despues' => [
-                'Los usos rurales tienen su propia página en <a href="/galpones-agricolas/sauce">galpones agrícolas en Sauce</a>. Para el resto, la troncal de <a href="/galpones-prefabricados">galpones prefabricados de estructura metálica</a> detalla qué incluye cada ítem del presupuesto.',
+                'Los usos rurales tienen su propia página en <a href="/galpones-agricolas/sauce">galpones agrícolas en Sauce</a>. Para el resto, la troncal de <a href="/galpones-prefabricados">estructura metálica prefabricada</a> detalla qué incluye cada ítem del presupuesto.',
             ],
         ],
         [
@@ -47,8 +47,7 @@ return [
     'faq' => [
         ['q' => '¿Hacen galpones de packing para chacras de Sauce?', 'a' => 'Sí. Un packing necesita piso de hormigón, buena ventilación y portones para cargar camionetas o camiones chicos bajo techo. Galpones Prefabricados lo dimensiona según el volumen que movés en temporada.'],
         ['q' => '¿Un galpón en Sauce se puede aislar para guardar vino o fruta?', 'a' => 'Se puede prever aislación térmica en techo y laterales al diseñar la estructura. No reemplaza una cámara de frío, pero baja mucho la temperatura interior en verano. Se cotiza como ítem aparte.'],
-        ['q' => '¿Atienden comercios del centro de Sauce, no solo chacras?', 'a' => 'Sí. Un depósito para comercio en solar urbano se presupuesta igual, con atención a los retiros y al escurrimiento hacia la calle. Mandanos las medidas del terreno por WhatsApp y te decimos qué galpón entra.'],
-        ['q' => '¿Cuánto tiempo lleva montar el galpón en el predio?', 'a' => 'Se define en el presupuesto según medidas y terreno. Como la estructura llega fabricada del taller, el trabajo en el predio es principalmente el montaje abulonado y el cerramiento, siempre que la platea esté lista.'],
+        ['q' => '¿Atienden comercios del centro de Sauce, no solo chacras?', 'a' => 'Sí. Un galpón prefabricado en Sauce para comercio, en solar urbano, se presupuesta igual, con atención a los retiros y al escurrimiento hacia la calle. Mandanos las medidas del terreno por WhatsApp y te decimos qué galpón entra.'],
     ],
     'actualizado' => '2026-09-24',
 ];

@@ -2,7 +2,7 @@
 /** Galpones prefabricados en Migues (Canelones). Localidad rural del este, sobre Ruta 80 y Ruta 81. */
 return [
     'title'       => 'Galpones prefabricados en Migues – Maquinaria y forraje',
-    'description' => 'Galpones prefabricados en Migues, Canelones, para maquinaria, acopio de forraje y depósito rural. Estructura metálica montada en tu predio. Pedí presupuesto por WhatsApp.',
+    'description' => 'Galpones prefabricados en Migues, Canelones, para maquinaria, forraje y depósito rural. Montaje en tu predio. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones prefabricados en Migues: estructuras para maquinaria y acopio',
     'eyebrow'     => 'Galpones rurales en Canelones',
     'subtitulo'   => 'Fabricamos la estructura en taller y la montamos en tu establecimiento de Migues. Contanos qué vas a guardar y te pasamos un presupuesto por ítem por WhatsApp.',
@@ -24,7 +24,7 @@ return [
         [
             'h2' => 'Qué define el precio de un galpón en Migues',
             'parrafos' => [
-                'No manejamos precios por metro cuadrado fijos porque dos galpones del mismo tamaño pueden costar distinto. Lo que mueve el presupuesto en Migues es esto:',
+                'No manejamos precios fijos por metro cuadrado porque dos galpones del mismo tamaño pueden costar distinto. Lo que mueve el presupuesto de un galpón prefabricado en Migues es esto:',
             ],
             'lista' => [
                 'Medidas y altura libre: un galpón para cosechadora necesita más altura que uno para fardos.',
@@ -40,8 +40,8 @@ return [
     ],
     'faq' => [
         ['q' => '¿Trabajan en establecimientos rurales de Migues sin conexión a la red eléctrica?', 'a' => 'Sí. Para el montaje coordinamos las herramientas y el equipo necesario según lo que haya en el predio. Lo consultamos en la visita junto con el acceso y el lugar de descarga.'],
-        ['q' => '¿Un galpón para acopio de forraje en Migues necesita laterales?', 'a' => 'No siempre. Para fardos y rollos muchas veces alcanza con techo y uno o dos laterales del lado del viento y la lluvia, y dejar el resto abierto para ventilar. Lo definimos según cómo cargás y descargás.'],
-        ['q' => '¿Pueden hacer un galpón para guardar la maquinaria de varios vecinos?', 'a' => 'Sí, se dimensiona igual que cualquier otro: por la máquina más grande y por la cantidad de equipos. Galpones Prefabricados te propone medidas y cantidad de portones según cómo se va a usar.'],
+        ['q' => '¿Un galpón prefabricado en Migues para acopio de forraje necesita laterales?', 'a' => 'No siempre. Para fardos y rollos muchas veces alcanza con techo y uno o dos laterales del lado del viento y la lluvia, y dejar el resto abierto para ventilar. Lo definimos según cómo cargás y descargás.'],
+        ['q' => '¿Pueden hacer un galpón para guardar la maquinaria de varios vecinos?', 'a' => 'Sí. Un galpón prefabricado en Migues para uso compartido se dimensiona igual que cualquier otro: por la máquina más grande y por la cantidad de equipos. Galpones Prefabricados te propone medidas y cantidad de portones según cómo se va a usar.'],
         ['q' => '¿El presupuesto incluye la platea de hormigón?', 'a' => 'Se cotiza como ítem separado. Si preferís hacer la platea con un contratista local, te pasamos las medidas, los niveles y la ubicación de los anclajes para que quede lista antes del montaje.'],
     ],
     'actualizado' => '2026-09-24',

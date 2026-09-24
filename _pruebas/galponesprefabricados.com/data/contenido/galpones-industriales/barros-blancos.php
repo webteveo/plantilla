@@ -2,7 +2,7 @@
 /** Galpones industriales × Barros Blancos. Servicio secundario; la página principal de la zona es /galpones-prefabricados/barros-blancos. */
 return [
     'title'       => 'Barros Blancos: galpones industriales entre Ruta 8 y 102',
-    'description' => 'Galpones industriales en Barros Blancos, sobre Ruta 8 entre Montevideo y Pando: naves logísticas, depósitos y talleres con acceso a Ruta 102 y el aeropuerto. Presupuesto por WhatsApp.',
+    'description' => 'Galpones industriales en Barros Blancos, sobre Ruta 8 entre Montevideo y Pando: naves logísticas, depósitos y talleres. Presupuesto por WhatsApp.',
     'h1'          => 'Galpones industriales en Barros Blancos: naves logísticas sobre Ruta 8',
     'eyebrow'     => 'Naves industriales en Barros Blancos',
     'subtitulo'   => 'Depósitos logísticos, naves y talleres en Barros Blancos, en el tramo de Ruta 8 que une Montevideo con Pando. Relevamos el predio y te pasamos un presupuesto por ítem por WhatsApp.',
@@ -30,8 +30,6 @@ return [
                 'Depósito de distribución con altura para racks y muelles de carga hacia la playa de camiones.',
                 'Nave de cross-docking: portones enfrentados y piso continuo para autoelevadores.',
                 'Taller de mantenimiento de flota con fosa, portones altos y sector de repuestos.',
-                'Depósito de materiales de construcción o insumos con tinglado anexo para carga a la intemperie.',
-                'Nave de producción liviana con oficinas y vestuarios al frente y playa de maniobra atrás.',
                 'Galpón para transportista: guarda de camiones, depósito y oficina de despacho en un mismo predio.',
             ],
         ],
@@ -46,10 +44,6 @@ return [
         [
             'q' => '¿Conviene un depósito logístico en Barros Blancos o en Montevideo?',
             'a' => 'Depende de tu operación. Barros Blancos tiene predios más grandes con frente a Ruta 8 y salida rápida al aeropuerto por Ruta 102, y sigue a pocos kilómetros del límite con Montevideo. Te presupuestamos la nave en cualquiera de los dos.',
-        ],
-        [
-            'q' => '¿Cuántos muelles de carga necesita mi nave?',
-            'a' => 'Se calcula con cuántos camiones cargan o descargan a la vez en el pico del día y de qué tipo son. Con ese dato definimos muelles, portones y el tamaño de la playa de maniobra.',
         ],
         [
             'q' => '¿Hacen galpones industriales en Villa Aeroparque?',
